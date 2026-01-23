@@ -21,6 +21,8 @@
                 <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#beer" class="nav-link">Beer</a></li>
                 <li><a href="#orders" class="nav-link">Orders</a></li>
+                <li><a href="#merch" class="nav-link">Merch</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#contacts" class="nav-link">Contacts</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
@@ -215,6 +217,70 @@
         </div>
     </section>
 
+    <!-- Merchandise Section -->
+    <section id="merch" class="merch-section">
+        <div class="container">
+            <header class="section-header fade-in">
+                <h2 class="section-title">Merchandise</h2>
+                <p class="section-subtitle">Wear the spirit of two cities</p>
+            </header>
+
+            <div class="merch-grid">
+                <!-- Merch Item 1 -->
+                <article class="merch-card fade-in">
+                    <div class="merch-image-placeholder">
+                        <div class="merch-icon"></div>
+                        <span class="merch-label">T-Shirt</span>
+                    </div>
+                    <div class="merch-content">
+                        <h3 class="merch-name">JEBREWSALEM Classic Tee</h3>
+                        <span class="merch-price">$29.99</span>
+                        <p class="merch-description">
+                            Premium cotton t-shirt featuring our iconic logo. 
+                            Comfortable, stylish, and perfect for beer lovers.
+                        </p>
+                        <div class="merch-details">
+                            <span class="detail"><strong>Sizes:</strong> S, M, L, XL, XXL</span>
+                            <span class="detail"><strong>Material:</strong> 100% Cotton</span>
+                            <span class="detail"><strong>Colors:</strong> Black, White, Sand</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <header class="section-header fade-in">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">A visual journey through our craft</p>
+            </header>
+
+            <div class="gallery-grid">
+                <!-- Gallery items will be generated dynamically by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-image-container">
+                <div class="lightbox-placeholder" id="lightboxImage">Photo</div>
+            </div>
+            <div class="lightbox-caption">
+                <h3 class="lightbox-caption-title" id="lightboxTitle">Title</h3>
+                <p class="lightbox-caption-text" id="lightboxDescription">Description</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Contacts Section -->
     <section id="contacts" class="contacts-section">
         <div class="container">
@@ -278,6 +344,7 @@
         </div>
     </footer>
 
+    <script src="js/gallery-data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

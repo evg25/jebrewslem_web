@@ -24,6 +24,16 @@
     const navLinks = document.querySelectorAll('.nav-link');
     const fadeElements = document.querySelectorAll('.fade-in');
     
+    // Gallery & Lightbox elements
+    let galleryItems = [];
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    
+    let currentImageIndex = 0;
+    
     // ===================================================================
     // Sticky Navigation - Add shadow on scroll
     // ===================================================================
@@ -138,6 +148,94 @@
     }
     
     // ===================================================================
+    // Gallery Generation
+    // ===================================================================
+    
+    function renderGallery() {
+        const galleryGrid = document.querySelector('.gallery-grid');
+        if (!galleryGrid) return;
+        
+        galleryGrid.innerHTML = '';
+        
+        galleryData.forEach((item, index) => {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'gallery-item fade-in';
+            galleryItem.setAttribute('data-index', index);
+            galleryItem.setAttribute('data-title', item.title);
+            galleryItem.setAttribute('data-description', item.description);
+            
+            galleryItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}" class="gallery-image">
+                <div class="gallery-overlay">
+                    <span class="gallery-title">${item.title}</span>
+                </div>
+            `;
+            
+            galleryItem.addEventListener('click', function() {
+                openLightbox(parseInt(this.getAttribute('data-index')));
+            });
+            
+            galleryGrid.appendChild(galleryItem);
+        });
+        
+        // Update galleryItems array after rendering
+        galleryItems = document.querySelectorAll('.gallery-item');
+        
+        // Force fade-in animation for gallery items
+        setTimeout(() => {
+            galleryItems.forEach(item => {
+                item.classList.add('visible');
+            });
+        }, 100);
+    }
+
+    // ===================================================================
+    // Gallery & Lightbox
+    // ===================================================================
+    
+    function openLightbox(index) {
+        currentImageIndex = index;
+        updateLightboxImage();
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    function updateLightboxImage() {
+        // Get current gallery data
+        const currentData = galleryData[currentImageIndex];
+        
+        // Update image
+        lightboxImage.innerHTML = `<img src="${currentData.image}" alt="${currentData.title}" class="lightbox-img">`;
+        
+        // Update caption
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxDescription = document.getElementById('lightboxDescription');
+        
+        if (lightboxTitle) {
+            lightboxTitle.textContent = currentData.title;
+        }
+        
+        if (lightboxDescription) {
+            lightboxDescription.textContent = currentData.description;
+        }
+    }
+    
+    function showPrevImage() {
+        currentImageIndex = (currentImageIndex - 1 + galleryData.length) % galleryData.length;
+        updateLightboxImage();
+    }
+    
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % galleryData.length;
+        updateLightboxImage();
+    }
+    
+    // ===================================================================
     // Throttle Function for Performance
     // ===================================================================
     
@@ -195,6 +293,49 @@
                 toggleMobileNav();
             }
         }, 250));
+        
+        // Gallery item clicks
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-index'));
+                openLightbox(index);
+            });
+        });
+        
+        // Lightbox controls
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', closeLightbox);
+        }
+        
+        if (lightboxPrev) {
+            lightboxPrev.addEventListener('click', showPrevImage);
+        }
+        
+        if (lightboxNext) {
+            lightboxNext.addEventListener('click', showNextImage);
+        }
+        
+        // Close lightbox on background click
+        if (lightbox) {
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        }
+        
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', function(e) {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrevImage();
+                } else if (e.key === 'ArrowRight') {
+                    showNextImage();
+                }
+            }
+        });
     }
     
     // ===================================================================
@@ -202,7 +343,13 @@
     // ===================================================================
     
     function init() {
-        // Initial checks
+        // Render gallery first
+        renderGallery();
+        console.log('🚀 JEBREWSALEM init started');
+        
+                // Render gallery first
+        renderGallery();
+                // Initial checks
         handleNavScroll();
         checkFadeIn();
         handleSectionHighlight();
