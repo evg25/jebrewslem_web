@@ -170,6 +170,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .nav-logo {
@@ -224,6 +225,11 @@ address {
     border: none;
     cursor: pointer;
     padding: var(--space-xs);
+    position: absolute;
+    left: var(--space-md);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
 }
 
 .nav-toggle span {
