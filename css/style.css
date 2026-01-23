@@ -409,7 +409,7 @@ address {
 
 .section-subtitle {
     font-size: var(--font-size-lg);
-    color: var(--color-warm-gray);
+    color: var(--color-dark);
     font-weight: var(--font-weight-semibold);
     text-transform: none;
     font-family: var(--font-body);
