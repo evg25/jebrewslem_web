@@ -189,23 +189,34 @@ address {
     display: block;
 }
 
-.nav-menu {
-    display: flex;
-    gap: var(--space-xl);
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: var(--nav-height);
+        left: 0;
+
+        width: 70%;
+        max-width: 400px;
+
+        background-color: var(--color-sand);
+        flex-direction: column;
+        padding: var(--space-lg);
+        gap: var(--space-md);
+
+        border-right: var(--border-width) solid var(--color-dark);
+
+        /* Drawer behavior */
+        transform: translateX(-100%);
+        transition: transform var(--transition-base);
+
+        box-shadow: var(--shadow-md);
+    }
+    
+    .nav-menu.active {
+        transform: translateX(0);
+    }
 }
 
-.nav-link {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-dark);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: var(--space-xs) 0;
-    border-bottom: var(--border-width) solid transparent;
-    transition: color var(--transition-fast),
-                border-color var(--transition-fast);
-}
 
 .nav-link:hover {
     color: var(--color-gold);
@@ -237,6 +248,37 @@ address {
     height: 3px;
     background-color: var(--color-dark);
     transition: all var(--transition-fast);
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+    margin-right: var(--space-md);
+}
+
+.lang-btn {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-sm);
+    color: var(--color-dark);
+    background: none;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.lang-btn:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+}
+
+.lang-btn.active {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-dark);
 }
 
 /* ===================================================================

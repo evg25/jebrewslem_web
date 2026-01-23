@@ -15,6 +15,49 @@
     'use strict';
 
     // ===================================================================
+    // Internationalization (i18n)
+    // ===================================================================
+    
+    let currentLang = localStorage.getItem('lang') || 'en';
+    
+    function translatePage() {
+        const lang = translations[currentLang];
+        if (!lang) return;
+        
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let value = lang;
+            
+            keys.forEach(k => {
+                value = value?.[k];
+            });
+            
+            if (value) {
+                element.textContent = value;
+            }
+        });
+        
+        // Update language buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+        
+        // Update HTML lang attribute
+        document.documentElement.lang = currentLang;
+        
+        // Update HTML dir attribute for RTL languages
+        document.documentElement.dir = currentLang === 'he' ? 'rtl' : 'ltr';
+    }
+    
+    function switchLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+        translatePage();
+    }
+
+    // ===================================================================
     // DOM Elements
     // ===================================================================
     
@@ -265,6 +308,13 @@
     // ===================================================================
     
     function initEventListeners() {
+        // Language switcher
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                switchLanguage(this.getAttribute('data-lang'));
+            });
+        });
+        
         // Scroll events
         window.addEventListener('scroll', handleScroll);
         
@@ -343,6 +393,9 @@
     // ===================================================================
     
     function init() {
+        // Apply saved language
+        translatePage();
+        
         // Render gallery first
         renderGallery();
         console.log('🚀 JEBREWSALEM init started');
