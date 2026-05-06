@@ -389,6 +389,137 @@
     }
     
     // ===================================================================
+    // Order & Event Request Form
+    // ===================================================================
+
+    function initOrderForm() {
+        const form = document.getElementById('orderForm');
+        if (!form) return;
+
+        const typeInputs = form.querySelectorAll('input[name="requestType"]');
+        const typeError = document.getElementById('typeError');
+
+        // Show/hide type-specific fields on radio change
+        typeInputs.forEach(function(input) {
+            input.addEventListener('change', function() {
+                ['tshirt', 'keg', 'tap'].forEach(function(type) {
+                    const block = document.getElementById('fields-' + type);
+                    if (block) block.hidden = (type !== input.value);
+                });
+                if (typeError) typeError.hidden = true;
+            });
+        });
+
+        // Submit handler
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const successMsg = document.getElementById('orderSuccess');
+            const errorMsg = document.getElementById('orderError');
+
+            // Hide previous messages
+            if (successMsg) successMsg.hidden = true;
+            if (errorMsg) errorMsg.hidden = true;
+
+            if (!validateOrderForm(form)) {
+                if (errorMsg) errorMsg.hidden = false;
+                // Scroll to first error
+                const firstError = form.querySelector('.input-error, .field-error:not([hidden])');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                return;
+            }
+
+            // -------------------------------------------------------
+            // Placeholder submit handler
+            // TODO: replace with actual backend / email service call
+            // e.g.: fetch('/api/order', { method: 'POST', body: new FormData(form) })
+            // -------------------------------------------------------
+            if (successMsg) successMsg.hidden = false;
+            form.reset();
+            // Reset type-specific blocks and card highlights
+            ['tshirt', 'keg', 'tap'].forEach(function(type) {
+                const block = document.getElementById('fields-' + type);
+                if (block) block.hidden = true;
+            });
+        });
+    }
+
+    function validateOrderForm(form) {
+        var valid = true;
+
+        // Clear previous errors
+        form.querySelectorAll('.field-error:not(#typeError)').forEach(function(el) { el.remove(); });
+        form.querySelectorAll('.input-error').forEach(function(el) { el.classList.remove('input-error'); });
+
+        var lang = translations[currentLang];
+        var errs = lang && lang.orders && lang.orders.errors ? lang.orders.errors : {};
+
+        // Validate request type selected
+        var typeSelected = form.querySelector('input[name="requestType"]:checked');
+        var typeError = document.getElementById('typeError');
+        if (!typeSelected) {
+            if (typeError) {
+                typeError.hidden = false;
+                typeError.textContent = errs.type || 'Please select a request type.';
+            }
+            valid = false;
+        } else if (typeError) {
+            typeError.hidden = true;
+        }
+
+        // Validate common required fields
+        ['orderName', 'orderEmail', 'orderPhone', 'orderConsent'].forEach(function(id) {
+            var field = document.getElementById(id);
+            if (!field) return;
+            if (field.type === 'checkbox') {
+                if (!field.checked) {
+                    addFieldError(field, errs.required || 'This field is required.');
+                    valid = false;
+                }
+                return;
+            }
+            if (!field.value.trim()) {
+                addFieldError(field, errs.required || 'This field is required.');
+                valid = false;
+                return;
+            }
+            if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())) {
+                addFieldError(field, errs.email || 'Please enter a valid email address.');
+                valid = false;
+            }
+        });
+
+        // Validate visible number fields (positive integers only)
+        form.querySelectorAll('input[type="number"]').forEach(function(field) {
+            if (isFieldVisible(field) && field.value !== '') {
+                var val = Number(field.value);
+                if (!Number.isInteger(val) || val < 1) {
+                    addFieldError(field, errs.number || 'Please enter a positive number.');
+                    valid = false;
+                }
+            }
+        });
+
+        return valid;
+    }
+
+    function isFieldVisible(field) {
+        var parent = field.closest('.type-fields');
+        return !parent || !parent.hidden;
+    }
+
+    function addFieldError(field, message) {
+        field.classList.add('input-error');
+        var span = document.createElement('span');
+        span.className = 'field-error';
+        span.setAttribute('role', 'alert');
+        span.textContent = message;
+        field.parentNode.appendChild(span);
+    }
+
+    // ===================================================================
     // Initialize on DOM Ready
     // ===================================================================
     
@@ -409,6 +540,9 @@
         
         // Set up event listeners
         initEventListeners();
+
+        // Initialize order form
+        initOrderForm();
         
         // Mark first nav link as active by default
         if (navLinks.length > 0) {

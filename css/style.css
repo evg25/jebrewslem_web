@@ -546,79 +546,8 @@ address {
 }
 
 /* ===================================================================
-   Orders Section
+   Contacts Section
    =================================================================== */
-
-.orders-section {
-    padding: var(--space-3xl) 0;
-    background-color: var(--color-bg);
-}
-
-.orders-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
-}
-
-.order-card {
-    background-color: var(--color-sand);
-    border: var(--border-width) solid var(--color-dark);
-    border-radius: var(--border-radius);
-    padding: var(--space-xl);
-    text-align: center;
-    transition: transform var(--transition-base);
-}
-
-.order-card:hover {
-    transform: translateY(-4px);
-}
-
-.order-icon {
-    margin-bottom: var(--space-lg);
-}
-
-.icon-box,
-.icon-location,
-.icon-subscription {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    background-color: var(--color-gold);
-    border: var(--border-width) solid var(--color-dark);
-    border-radius: var(--border-radius);
-}
-
-.order-title {
-    font-size: var(--font-size-2xl);
-    margin-bottom: var(--space-md);
-}
-
-.order-description {
-    font-size: var(--font-size-base);
-    margin-bottom: var(--space-lg);
-    line-height: 1.6;
-}
-
-.order-features {
-    text-align: left;
-    margin-bottom: var(--space-xl);
-    padding-left: var(--space-md);
-}
-
-.order-features li {
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--space-sm);
-    padding-left: var(--space-md);
-    position: relative;
-}
-
-.order-features li::before {
-    content: '■';
-    position: absolute;
-    left: 0;
-    color: var(--color-gold);
-    font-size: var(--font-size-base);
-}
 
 /* ===================================================================
    Merchandise Section
@@ -1319,6 +1248,275 @@ address {
         width: 40px;
         height: 40px;
         font-size: var(--font-size-2xl);
+    }
+}
+
+/* ===================================================================
+   Order & Event Request Form
+   =================================================================== */
+
+.orders-section {
+    padding: var(--space-3xl) 0;
+    background-color: var(--color-bg);
+}
+
+.order-form-wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* Fieldset reset */
+.form-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-legend {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--space-md);
+    display: block;
+    width: 100%;
+}
+
+/* Request type cards */
+.request-type-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+}
+
+.type-option {
+    cursor: pointer;
+}
+
+.type-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.type-card {
+    display: block;
+    padding: var(--space-md) var(--space-sm);
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-base);
+    letter-spacing: 0.03em;
+    border: var(--border-width) solid var(--color-dark);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: background-color var(--transition-base), color var(--transition-base);
+    user-select: none;
+}
+
+.type-card:hover {
+    background-color: var(--color-warm-gray);
+}
+
+.type-option input[type="radio"]:checked + .type-card {
+    background-color: var(--color-gold);
+    border-color: var(--color-dark);
+    font-weight: var(--font-weight-bold);
+}
+
+.type-option input[type="radio"]:focus-visible + .type-card {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+/* Type-specific field blocks */
+.type-fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    border: var(--border-width) solid var(--color-sand);
+    border-radius: var(--border-radius);
+    background-color: rgba(156, 205, 227, 0.1);
+    animation: fadeInFields var(--transition-base) ease;
+}
+
+@keyframes fadeInFields {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Layout helpers */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group--narrow {
+    max-width: 200px;
+}
+
+/* Labels */
+.form-group label {
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-dark);
+}
+
+/* Inputs, selects, textarea */
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form input[type="number"],
+.order-form input[type="date"],
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.order-form input[type="date"] {
+    cursor: pointer;
+}
+
+.order-form select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232B1A12' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(242, 183, 5, 0.3);
+}
+
+.order-form input[readonly] {
+    background-color: var(--color-warm-gray);
+    opacity: 0.7;
+    cursor: default;
+}
+
+/* Error state */
+.order-form .input-error {
+    border-color: #c0392b;
+}
+
+.field-error {
+    font-size: var(--font-size-xs);
+    color: #c0392b;
+    font-weight: var(--font-weight-semibold);
+    margin-top: 2px;
+}
+
+/* Checkbox */
+.form-group--checkbox {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    cursor: pointer;
+    font-size: var(--font-size-xs);
+    line-height: 1.5;
+    color: var(--color-dark);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    accent-color: var(--color-gold);
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+/* Success / Error messages */
+.form-message {
+    padding: var(--space-md) var(--space-lg);
+    border: var(--border-width) solid;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.form-message--success {
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+    color: #1b5e20;
+}
+
+.form-message--error {
+    background-color: #fdecea;
+    border-color: #c0392b;
+    color: #b71c1c;
+}
+
+/* Submit button */
+#orderSubmit {
+    align-self: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .request-type-selector {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group--narrow {
+        max-width: 100%;
+    }
+
+    #orderSubmit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .type-card {
+        padding: var(--space-sm);
+        font-size: var(--font-size-xs);
     }
 }
 

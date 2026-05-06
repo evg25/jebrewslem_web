@@ -109,68 +109,177 @@
         </div>
     </section>
 
-    <!-- Orders Section -->
+    <!-- Orders / Request Form Section -->
     <section id="orders" class="orders-section">
         <div class="container">
             <header class="section-header fade-in">
-                <h2 class="section-title" data-i18n="orders.title">Get JEBREWSALEM</h2>
-                <p class="section-subtitle" data-i18n="orders.subtitle">Bring the spirit of two cities to your table</p>
+                <h2 class="section-title" data-i18n="orders.title">Order &amp; Event Request</h2>
+                <p class="section-subtitle" data-i18n="orders.subtitle">T-shirts, kegs, and event tap setups &mdash; tell us what you need.</p>
             </header>
 
-            <div class="orders-grid">
-                <!-- Order Option 1 -->
-                <div class="order-card fade-in">
-                    <div class="order-icon">
-                        <div class="icon-box"></div>
-                    </div>
-                    <h3 class="order-title" data-i18n="orders.direct.title">Direct Order</h3>
-                    <p class="order-description" data-i18n="orders.direct.description">
-                        Order directly from our brewery. Choose your favorites, 
-                        select quantity, and we'll deliver the craft right to your door.
-                    </p>
-                    <ul class="order-features">
-                        <li data-i18n="orders.direct.feature1">Free delivery on orders over $50</li>
-                        <li data-i18n="orders.direct.feature2">Fresh from the brewery</li>
-                        <li data-i18n="orders.direct.feature3">Special packaging available</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary" data-i18n="orders.direct.btn">Order Online</a>
-                </div>
+            <div class="order-form-wrapper fade-in">
+                <form id="orderForm" class="order-form" novalidate>
 
-                <!-- Order Option 2 -->
-                <div class="order-card fade-in">
-                    <div class="order-icon">
-                        <div class="icon-location"></div>
-                    </div>
-                    <h3 class="order-title" data-i18n="orders.nearby.title">Find Nearby</h3>
-                    <p class="order-description" data-i18n="orders.nearby.description">
-                        Discover JEBREWSALEM at select bars, restaurants, and retailers. 
-                        Experience our beer in venues that share our passion for quality.
-                    </p>
-                    <ul class="order-features">
-                        <li data-i18n="orders.nearby.feature1">50+ partner locations</li>
-                        <li data-i18n="orders.nearby.feature2">Always fresh stock</li>
-                        <li data-i18n="orders.nearby.feature3">Knowledgeable staff</li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary" data-i18n="orders.nearby.btn">Find Locations</a>
-                </div>
+                    <!-- Request Type Selector -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend" data-i18n="orders.typeLabel">What would you like to order?</legend>
+                        <div class="request-type-selector" role="group">
+                            <label class="type-option">
+                                <input type="radio" name="requestType" value="tshirt">
+                                <span class="type-card" data-i18n="orders.type.tshirt">T-shirt</span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="requestType" value="keg">
+                                <span class="type-card" data-i18n="orders.type.keg">30 L beer keg</span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="requestType" value="tap">
+                                <span class="type-card" data-i18n="orders.type.tap">Beer with tap equipment</span>
+                            </label>
+                        </div>
+                        <span class="field-error" id="typeError" hidden role="alert" data-i18n="orders.errors.type">Please select a request type.</span>
+                    </fieldset>
 
-                <!-- Order Option 3 -->
-                <div class="order-card fade-in">
-                    <div class="order-icon">
-                        <div class="icon-subscription"></div>
+                    <!-- T-shirt specific fields -->
+                    <div id="fields-tshirt" class="type-fields" hidden>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tshirtGender" data-i18n="orders.fields.gender">Gender / fit</label>
+                                <select id="tshirtGender" name="tshirtGender">
+                                    <option value="" data-i18n="orders.fields.selectPlaceholder">&mdash; Select &mdash;</option>
+                                    <option value="men" data-i18n="orders.fields.genderMale">Men</option>
+                                    <option value="women" data-i18n="orders.fields.genderFemale">Women</option>
+                                    <option value="unisex" data-i18n="orders.fields.genderUnisex">Unisex</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tshirtSize" data-i18n="orders.fields.size">Size</label>
+                                <select id="tshirtSize" name="tshirtSize">
+                                    <option value="" data-i18n="orders.fields.selectPlaceholder">&mdash; Select &mdash;</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group form-group--narrow">
+                            <label for="tshirtQty" data-i18n="orders.fields.quantity">Quantity</label>
+                            <input type="number" id="tshirtQty" name="tshirtQty" min="1" step="1" value="1">
+                        </div>
                     </div>
-                    <h3 class="order-title" data-i18n="orders.club.title">Beer Club</h3>
-                    <p class="order-description" data-i18n="orders.club.description">
-                        Join our monthly beer club for exclusive releases, 
-                        limited editions, and special merchandise. Members get first taste of everything new.
-                    </p>
-                    <ul class="order-features">
-                        <li data-i18n="orders.club.feature1">Monthly exclusive releases</li>
-                        <li data-i18n="orders.club.feature2">Members-only events</li>
-                        <li data-i18n="orders.club.feature3">Priority access to limited editions</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary" data-i18n="orders.club.btn">Join the Club</a>
-                </div>
+
+                    <!-- 30 L keg specific fields -->
+                    <div id="fields-keg" class="type-fields" hidden>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="kegBeer" data-i18n="orders.fields.beer">Beer</label>
+                                <input type="text" id="kegBeer" name="kegBeer" value="Brevnov Ale - 2024" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="kegVolume" data-i18n="orders.fields.volume">Volume</label>
+                                <input type="text" id="kegVolume" name="kegVolume" value="30 L" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="kegQty" data-i18n="orders.fields.kegsQty">Number of kegs</label>
+                                <input type="number" id="kegQty" name="kegQty" min="1" step="1" value="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="kegDate" data-i18n="orders.fields.date">Preferred date</label>
+                                <input type="date" id="kegDate" name="kegDate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="kegDelivery" data-i18n="orders.fields.delivery">Pickup / delivery</label>
+                            <select id="kegDelivery" name="kegDelivery">
+                                <option value="" data-i18n="orders.fields.selectPlaceholder">&mdash; Select &mdash;</option>
+                                <option value="pickup" data-i18n="orders.fields.deliveryPickup">Pickup</option>
+                                <option value="delivery" data-i18n="orders.fields.deliveryPrague">Delivery in Prague</option>
+                                <option value="discuss" data-i18n="orders.fields.deliveryDiscuss">Need to discuss</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Beer with tap equipment specific fields -->
+                    <div id="fields-tap" class="type-fields" hidden>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tapDate" data-i18n="orders.fields.eventDate">Event date</label>
+                                <input type="date" id="tapDate" name="tapDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="tapLocation" data-i18n="orders.fields.eventLocation">Event location</label>
+                                <input type="text" id="tapLocation" name="tapLocation">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tapPeople" data-i18n="orders.fields.people">Approx. number of people</label>
+                                <input type="number" id="tapPeople" name="tapPeople" min="1" step="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="tapKegs" data-i18n="orders.fields.kegsNeeded">How many 30 L kegs do you need?</label>
+                                <input type="number" id="tapKegs" name="tapKegs" min="1" step="1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tapSetup" data-i18n="orders.fields.setupNeeded">Do you need delivery / setup?</label>
+                            <select id="tapSetup" name="tapSetup">
+                                <option value="" data-i18n="orders.fields.selectPlaceholder">&mdash; Select &mdash;</option>
+                                <option value="yes" data-i18n="orders.fields.setupYes">Yes</option>
+                                <option value="no" data-i18n="orders.fields.setupNo">No</option>
+                                <option value="unsure" data-i18n="orders.fields.setupUnsure">Not sure</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Common fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orderName" data-i18n="orders.fields.name">Name *</label>
+                            <input type="text" id="orderName" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="orderEmail" data-i18n="orders.fields.email">Email *</label>
+                            <input type="email" id="orderEmail" name="email" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orderPhone" data-i18n="orders.fields.phone">Phone *</label>
+                            <input type="tel" id="orderPhone" name="phone" required autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="orderComment" data-i18n="orders.fields.comment">Comment</label>
+                            <input type="text" id="orderComment" name="comment">
+                        </div>
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="form-group form-group--checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="orderConsent" name="consent" required>
+                            <span data-i18n="orders.fields.consent">I agree to be contacted regarding this request.</span>
+                        </label>
+                    </div>
+
+                    <!-- Success / error messages -->
+                    <div id="orderSuccess" class="form-message form-message--success" hidden role="status">
+                        <span data-i18n="orders.success">Your request has been sent! We'll get back to you soon.</span>
+                    </div>
+                    <div id="orderError" class="form-message form-message--error" hidden role="alert">
+                        <span data-i18n="orders.error">Please fill in all required fields correctly.</span>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary" id="orderSubmit">
+                        <span data-i18n="orders.fields.submit">Send request</span>
+                    </button>
+
+                </form>
             </div>
         </div>
     </section>

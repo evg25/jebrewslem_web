@@ -38,34 +38,55 @@ const translations = {
             }
         },
         
-        // Orders Section
+        // Orders / Request Form Section
         orders: {
-            title: 'Get JEBREWSALEM',
-            subtitle: 'Bring the spirit of two cities to your table',
-            direct: {
-                title: 'Direct Order',
-                description: 'Order directly from our brewery. Choose your favorites, select quantity, and we\'ll deliver the craft right to your door.',
-                feature1: 'Free delivery on orders over $50',
-                feature2: 'Fresh from the brewery',
-                feature3: 'Special packaging available',
-                btn: 'Order Online'
+            title: 'Order & Event Request',
+            subtitle: 'T-shirts, kegs, and event tap setups — tell us what you need.',
+            typeLabel: 'What would you like to order?',
+            type: {
+                tshirt: 'T-shirt',
+                keg: '30 L beer keg',
+                tap: 'Beer with tap equipment'
             },
-            nearby: {
-                title: 'Find Nearby',
-                description: 'Discover JEBREWSALEM at select bars, restaurants, and retailers. Experience our beer in venues that share our passion for quality.',
-                feature1: '50+ partner locations',
-                feature2: 'Always fresh stock',
-                feature3: 'Knowledgeable staff',
-                btn: 'Find Locations'
+            fields: {
+                name: 'Name *',
+                email: 'Email *',
+                phone: 'Phone *',
+                comment: 'Comment',
+                consent: 'I agree to be contacted regarding this request.',
+                submit: 'Send request',
+                selectPlaceholder: '— Select —',
+                gender: 'Gender / fit',
+                genderMale: 'Men',
+                genderFemale: 'Women',
+                genderUnisex: 'Unisex',
+                size: 'Size',
+                quantity: 'Quantity',
+                beer: 'Beer',
+                volume: 'Volume',
+                kegsQty: 'Number of kegs',
+                delivery: 'Pickup / delivery',
+                deliveryPickup: 'Pickup',
+                deliveryPrague: 'Delivery in Prague',
+                deliveryDiscuss: 'Need to discuss',
+                date: 'Preferred date',
+                eventDate: 'Event date',
+                eventLocation: 'Event location',
+                people: 'Approx. number of people',
+                kegsNeeded: 'How many 30 L kegs do you need?',
+                setupNeeded: 'Do you need delivery / setup?',
+                setupYes: 'Yes',
+                setupNo: 'No',
+                setupUnsure: 'Not sure'
             },
-            club: {
-                title: 'Beer Club',
-                description: 'Join our monthly beer club for exclusive releases, limited editions, and special merchandise. Members get first taste of everything new.',
-                feature1: 'Monthly exclusive releases',
-                feature2: 'Members-only events',
-                feature3: 'Priority access to limited editions',
-                btn: 'Join the Club'
-            }
+            errors: {
+                required: 'This field is required.',
+                email: 'Please enter a valid email address.',
+                number: 'Please enter a positive number.',
+                type: 'Please select a request type.'
+            },
+            success: 'Your request has been sent! We\'ll get back to you soon.',
+            error: 'Please fill in all required fields correctly.'
         },
         
         // Merchandise Section
@@ -150,32 +171,55 @@ const translations = {
         
         // Orders Section
         orders: {
-            title: 'Získejte JEBREWSALEM',
-            subtitle: 'Přineste ducha dvou měst ke svému stolu',
-            direct: {
-                title: 'Přímá objednávka',
-                description: 'Objednejte si přímo z našeho pivovaru. Vyberte si své oblíbené, zvolte množství a my doručíme řemeslo přímo k vašim dveřím.',
-                feature1: 'Doprava zdarma při objednávkách nad $50',
-                feature2: 'Čerstvé z pivovaru',
-                feature3: 'Speciální balení k dispozici',
-                btn: 'Objednat online'
+        // Orders / Request Form Section
+        orders: {
+            title: 'Objednávka / poptávka na akci',
+            subtitle: 'Trička, sudy, výčepní zařízení na akce \u2014 napište nám, co potřebujete.',
+            typeLabel: 'Co si chcete objednat?',
+            type: {
+                tshirt: 'Tričko',
+                keg: 'Sud piva 30 l',
+                tap: 'Pivo s výčepním zařízením'
             },
-            nearby: {
-                title: 'Najít poblíž',
-                description: 'Objevte JEBREWSALEM ve vybraných barech, restauracích a obchodech. Vychutnejte si naše pivo v místech, která sdílejí naši vášeň pro kvalitu.',
-                feature1: 'Více než 50 partnerských míst',
-                feature2: 'Vždy čerstvá zásoba',
-                feature3: 'Odborný personál',
-                btn: 'Najít místa'
+            fields: {
+                name: 'Jméno *',
+                email: 'Email *',
+                phone: 'Telefon *',
+                comment: 'Poznámka',
+                consent: 'Souhlasím s tím, aby mě společnost kontaktovala ohledně této poptávky.',
+                submit: 'Odeslat poptávku',
+                selectPlaceholder: '\u2014 Vyberte \u2014',
+                gender: 'Střih',
+                genderMale: 'Pánské',
+                genderFemale: 'Dámské',
+                genderUnisex: 'Unisex',
+                size: 'Velikost',
+                quantity: 'Počet kusů',
+                beer: 'Pivo',
+                volume: 'Objem',
+                kegsQty: 'Počet sudů',
+                delivery: 'Odběr / doručení',
+                deliveryPickup: 'Osobní odběr',
+                deliveryPrague: 'Doručení po Praze',
+                deliveryDiscuss: 'Domluvit individuálně',
+                date: 'Preferovaný termín',
+                eventDate: 'Datum akce',
+                eventLocation: 'Místo akce',
+                people: 'Přibližný počet lidí',
+                kegsNeeded: 'Kolik 30l sudů potřebujete?',
+                setupNeeded: 'Potřebujete doručení / instalaci?',
+                setupYes: 'Ano',
+                setupNo: 'Ne',
+                setupUnsure: 'Nejsem si jistý/á'
             },
-            club: {
-                title: 'Pivní klub',
-                description: 'Připojte se k našemu měsíčnímu pivnímu klubu pro exkluzivní vydání, limitované edice a speciální zboží. Členové dostanou první ochutnávku všeho nového.',
-                feature1: 'Měsíční exkluzivní vydání',
-                feature2: 'Akce pouze pro členy',
-                feature3: 'Prioritní přístup k limitovaným edicím',
-                btn: 'Vstoupit do klubu'
-            }
+            errors: {
+                required: 'Toto pole je povinné.',
+                email: 'Zadejte prosím platnou emailovou adresu.',
+                number: 'Zadejte prosím kladné číslo.',
+                type: 'Vyberte prosím typ poptávky.'
+            },
+            success: 'Vaše poptávka byla odeslána! Brzy se vám ozveme.',
+            error: 'Vyplňte prosím všechna povinná pole správně.'
         },
         
         // Merchandise Section
