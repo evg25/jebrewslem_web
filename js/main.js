@@ -399,6 +399,24 @@
         const typeInputs = form.querySelectorAll('input[name="requestType"]');
         const typeError = document.getElementById('typeError');
 
+        // "Order Now" button in Merch → scroll to form with T-shirt pre-selected
+        var orderTshirtBtn = document.getElementById('orderTshirtBtn');
+        if (orderTshirtBtn) {
+            orderTshirtBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var radio = form.querySelector('input[name="requestType"][value="tshirt"]');
+                if (radio) {
+                    radio.checked = true;
+                    radio.dispatchEvent(new Event('change'));
+                }
+                var target = document.getElementById('orders');
+                if (target) {
+                    var top = target.getBoundingClientRect().top + window.pageYOffset - (nav ? nav.offsetHeight : 0);
+                    window.scrollTo({ top: top, behavior: 'smooth' });
+                }
+            });
+        }
+
         // Show/hide type-specific fields on radio change
         typeInputs.forEach(function(input) {
             input.addEventListener('change', function() {
