@@ -1349,6 +1349,11 @@ address {
     animation: fadeInFields var(--transition-base) ease;
 }
 
+/* Ensure hidden attribute wins over display:flex */
+.type-fields[hidden] {
+    display: none;
+}
+
 @keyframes fadeInFields {
     from { opacity: 0; transform: translateY(-6px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -1389,6 +1394,7 @@ address {
 .order-form input[type="date"],
 .order-form select,
 .order-form textarea {
+.order-form textarea {
     width: 100%;
     padding: var(--space-sm) var(--space-md);
     font-family: var(--font-body);
@@ -1400,6 +1406,11 @@ address {
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
     appearance: none;
     -webkit-appearance: none;
+}
+
+.order-form textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .order-form input[type="date"] {
