@@ -431,11 +431,52 @@
                 return;
             }
 
-            // -------------------------------------------------------
-            // Placeholder submit handler
-            // TODO: replace with actual backend / email service call
-            // e.g.: fetch('/api/order', { method: 'POST', body: new FormData(form) })
-            // -------------------------------------------------------
+            // Build WhatsApp message from form data
+            var type = (form.querySelector('input[name="requestType"]:checked') || {}).value || '';
+            var typeLabels = { tshirt: 'T-shirt', keg: '30 L keg', tap: 'Beer + tap equipment' };
+            var lines = [];
+            lines.push('*New request: ' + (typeLabels[type] || type) + '*');
+
+            if (type === 'tshirt') {
+                var gender = form.querySelector('#tshirtGender');
+                var size   = form.querySelector('#tshirtSize');
+                var qty    = form.querySelector('#tshirtQty');
+                if (gender && gender.value) lines.push('Gender/fit: ' + gender.options[gender.selectedIndex].text);
+                if (size   && size.value)   lines.push('Size: ' + size.value);
+                if (qty    && qty.value)    lines.push('Qty: ' + qty.value);
+            } else if (type === 'keg') {
+                var kegQty  = form.querySelector('#kegQty');
+                var kegDate = form.querySelector('#kegDate');
+                var kegDel  = form.querySelector('#kegDelivery');
+                lines.push('Beer: Brevnov Ale - 2024 / 30 L');
+                if (kegQty  && kegQty.value)  lines.push('Kegs: ' + kegQty.value);
+                if (kegDate && kegDate.value) lines.push('Date: ' + kegDate.value);
+                if (kegDel  && kegDel.value)  lines.push('Delivery: ' + kegDel.options[kegDel.selectedIndex].text);
+            } else if (type === 'tap') {
+                var tapDate     = form.querySelector('#tapDate');
+                var tapLocation = form.querySelector('#tapLocation');
+                var tapPeople   = form.querySelector('#tapPeople');
+                var tapKegs     = form.querySelector('#tapKegs');
+                var tapSetup    = form.querySelector('#tapSetup');
+                if (tapDate     && tapDate.value)     lines.push('Event date: ' + tapDate.value);
+                if (tapLocation && tapLocation.value) lines.push('Location: ' + tapLocation.value);
+                if (tapPeople   && tapPeople.value)   lines.push('People: ~' + tapPeople.value);
+                if (tapKegs     && tapKegs.value)     lines.push('Kegs needed: ' + tapKegs.value);
+                if (tapSetup    && tapSetup.value)    lines.push('Setup: ' + tapSetup.options[tapSetup.selectedIndex].text);
+            }
+
+            var name    = form.querySelector('#orderName');
+            var email   = form.querySelector('#orderEmail');
+            var phone   = form.querySelector('#orderPhone');
+            var comment = form.querySelector('#orderComment');
+            if (name    && name.value)    lines.push('Name: ' + name.value);
+            if (email   && email.value)   lines.push('Email: ' + email.value);
+            if (phone   && phone.value)   lines.push('Phone: ' + phone.value);
+            if (comment && comment.value) lines.push('Comment: ' + comment.value);
+
+            var waUrl = 'https://wa.me/420775431677?text=' + encodeURIComponent(lines.join('\n'));
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+
             if (successMsg) successMsg.hidden = false;
             form.reset();
             // Reset type-specific blocks and card highlights
