@@ -515,6 +515,36 @@ address {
     color: var(--color-dark);
 }
 
+.untappd-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-bg);
+    background-color: #FFCF3F;
+    border: 2px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color var(--transition-base), transform var(--transition-base);
+    color: var(--color-dark);
+}
+
+.untappd-link:hover {
+    background-color: var(--color-gold);
+    transform: translateY(-2px);
+}
+
+.untappd-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-dark);
+    flex-shrink: 0;
+}
+
 /* ===================================================================
    Orders Section
    =================================================================== */

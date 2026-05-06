@@ -30,25 +30,11 @@ const translations = {
         beer: {
             title: 'Our Craft',
             subtitle: 'Every bottle is a journey between two ancient cities',
-            goldenGate: {
-                name: 'Golden Gate Lager',
-                style: 'Czech Pilsner',
-                description: 'Light as Jerusalem sun, crisp as Prague morning. A golden tribute to both cities\' gates, where stories begin.'
-            },
-            stoneGolem: {
-                name: 'Stone Golem Ale',
-                style: 'Amber Ale',
-                description: 'Bold and mysterious like the legendary Golem itself. Deep amber hues carry the weight of ancient tales and modern craft.'
-            },
-            midnightTemple: {
-                name: 'Midnight Temple Stout',
-                style: 'Imperial Stout',
-                description: 'Dark as Prague nights, deep as Jerusalem history. Rich, complex, unforgettable—a beer for contemplation.'
-            },
-            oldCity: {
-                name: 'Old City Wheat',
-                style: 'Hefeweizen',
-                description: 'Cloudy like ancient wisdom, refreshing like a breeze through cobblestone streets. Tradition in every sip.'
+            untappdLabel: 'View on Untappd',
+            brevnovAle: {
+                name: 'Brevnov Ale - 2024',
+                style: 'APA',
+                description: 'Brewed in the shadow of Prague\'s oldest monastery. Bright, hoppy, and balanced — our first craft ale.'
             }
         },
         
@@ -154,25 +140,11 @@ const translations = {
         beer: {
             title: 'Naše řemeslo',
             subtitle: 'Každá láhev je cesta mezi dvěma prastarými městy',
-            goldenGate: {
-                name: 'Golden Gate Lager',
-                style: 'Český ležák',
-                description: 'Lehký jako jeruzalémské slunce, svěží jako pražské ráno. Zlatá pocta bránám obou měst, kde začínají příběhy.'
-            },
-            stoneGolem: {
-                name: 'Stone Golem Ale',
-                style: 'Jantarový ležák',
-                description: 'Odvážný a tajemný jako legendární Golem samotný. Hluboké jantarové odstíny nesou váhu prastarých příběhů a moderního řemesla.'
-            },
-            midnightTemple: {
-                name: 'Midnight Temple Stout',
-                style: 'Imperial Stout',
-                description: 'Tmavý jako pražské noci, hluboký jako jeruzalémská historie. Bohatý, komplexní, nezapomenutelný—pivo k rozjímání.'
-            },
-            oldCity: {
-                name: 'Old City Wheat',
-                style: 'Hefe Weizen',
-                description: 'Zakalené jako pradávná moudrost, osvěžující jako vánek dlážděnými ulicemi. Tradice v každém doušku.'
+            untappdLabel: 'Zobrazit na Untappd',
+            brevnovAle: {
+                name: 'Brevnov Ale - 2024',
+                style: 'APA',
+                description: 'Uvařeno ve stínu nejstaršího pražského kláštera. Svěží, chmelové a vyvážené — naše první craft ale.'
             }
         },
         
