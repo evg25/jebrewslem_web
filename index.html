@@ -189,7 +189,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="kegDate" data-i18n="orders.fields.date">Preferred date</label>
-                                <input type="date" id="kegDate" name="kegDate">
+                                <input type="text" id="kegDate" name="kegDate" placeholder="DD.MM.YYYY" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" inputmode="numeric">
                             </div>
                         </div>
                         <div class="form-group">
@@ -208,7 +208,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="tapDate" data-i18n="orders.fields.eventDate">Event date</label>
-                                <input type="date" id="tapDate" name="tapDate">
+                                <input type="text" id="tapDate" name="tapDate" placeholder="DD.MM.YYYY" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" inputmode="numeric">
                             </div>
                             <div class="form-group">
                                 <label for="tapLocation" data-i18n="orders.fields.eventLocation">Event location</label>
@@ -374,14 +374,6 @@
                     </div>
                 </div>
 
-                <!-- Map Placeholder -->
-                <div class="contact-map fade-in">
-                    <div class="map-placeholder">
-                        <div class="map-marker"></div>
-                        <p class="map-text">Map Location</p>
-                        <p class="map-subtext">Old Town Quarter, Prague</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

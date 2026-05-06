@@ -502,6 +502,16 @@
             }
         });
 
+        // Validate date fields (DD.MM.YYYY format)
+        form.querySelectorAll('input[placeholder="DD.MM.YYYY"]').forEach(function(field) {
+            if (isFieldVisible(field) && field.value.trim() !== '') {
+                if (!/^\d{2}\.\d{2}\.\d{4}$/.test(field.value.trim())) {
+                    addFieldError(field, errs.date || 'Please use DD.MM.YYYY format.');
+                    valid = false;
+                }
+            }
+        });
+
         return valid;
     }
 

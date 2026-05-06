@@ -1391,7 +1391,6 @@ address {
 .order-form input[type="email"],
 .order-form input[type="tel"],
 .order-form input[type="number"],
-.order-form input[type="date"],
 .order-form select,
 .order-form textarea {
 .order-form textarea {
@@ -1411,6 +1410,10 @@ address {
 .order-form textarea {
     resize: vertical;
     min-height: 100px;
+}
+
+.order-form input[placeholder="DD.MM.YYYY"] {
+    letter-spacing: 0.05em;
 }
 
 .order-form input[type="date"] {

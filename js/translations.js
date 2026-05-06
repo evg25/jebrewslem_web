@@ -83,6 +83,7 @@ const translations = {
                 required: 'This field is required.',
                 email: 'Please enter a valid email address.',
                 number: 'Please enter a positive number.',
+                date: 'Please use DD.MM.YYYY format.',
                 type: 'Please select a request type.'
             },
             success: 'Your request has been sent! We\'ll get back to you soon.',
@@ -214,6 +215,7 @@ const translations = {
                 required: 'Toto pole je povinné.',
                 email: 'Zadejte prosím platnou emailovou adresu.',
                 number: 'Zadejte prosím kladné číslo.',
+                date: 'Použijte prosím formát DD.MM.RRRR.',
                 type: 'Vyberte prosím typ poptávky.'
             },
             success: 'Vaše poptávka byla odeslána! Brzy se vám ozveme.',
