@@ -169,8 +169,6 @@ const translations = {
             }
         },
         
-        // Orders Section
-        orders: {
         // Orders / Request Form Section
         orders: {
             title: 'Objednávka / poptávka na akci',
