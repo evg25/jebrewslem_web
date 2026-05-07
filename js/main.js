@@ -497,11 +497,15 @@
 
             if (successMsg) successMsg.hidden = false;
             form.reset();
-            // Reset type-specific blocks and card highlights
+            // Reset type-specific blocks, card highlights, and age checkboxes
             ['tshirt', 'keg', 'tap'].forEach(function(type) {
                 const block = document.getElementById('fields-' + type);
                 if (block) block.hidden = true;
             });
+            var kegAge = document.getElementById('kegAgeConfirm');
+            var tapAge = document.getElementById('tapAgeConfirm');
+            if (kegAge) kegAge.checked = false;
+            if (tapAge) tapAge.checked = false;
         });
     }
 
@@ -528,17 +532,19 @@
             typeError.hidden = true;
         }
 
+        // Validate age confirmation for keg/tap types
+        var type = (form.querySelector('input[name="requestType"]:checked') || {}).value || '';
+        if (type === 'keg' || type === 'tap') {
+            var ageId = type === 'keg' ? 'kegAgeConfirm' : 'tapAgeConfirm';
+            var ageField = document.getElementById(ageId);
+            if (ageField && !ageField.checked) {
+                addFieldError(ageField, errs.required || 'This field is required.');
+                valid = false;
+            }
+        }
+
         // Validate common required fields
         ['orderName', 'orderEmail', 'orderPhone', 'orderConsent'].forEach(function(id) {
-            var field = document.getElementById(id);
-            if (!field) return;
-            if (field.type === 'checkbox') {
-                if (!field.checked) {
-                    addFieldError(field, errs.required || 'This field is required.');
-                    valid = false;
-                }
-                return;
-            }
             if (!field.value.trim()) {
                 addFieldError(field, errs.required || 'This field is required.');
                 valid = false;

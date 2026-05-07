@@ -13,6 +13,7 @@ Hosted on GitHub Pages via custom domain `jebrewsalem.cz`.
 /
 ├── index.html                  # Main single-page site (all sections)
 ├── obchodni-podminky.html      # Standalone legal page (Czech Terms & Conditions)
+├── ochrana-osobnich-udaju.html # Standalone GDPR / privacy policy page (Czech)
 ├── beer.html                   # Legacy / standalone beer page
 ├── contacts.html               # Legacy / standalone contacts page
 ├── merchandise.html            # Legacy / standalone merch page
@@ -67,7 +68,17 @@ Single-page layout with scroll-based navigation. Sections in order:
 - Uses `css/style.css` + `css/legal.css`
 - Contains: company info (Jebrewsalem s.r.o., IČO 22215794, sídlo Na okraji 439/44 Praha), 14 sections of approved T&C
 - `[DOPLNIT DATUM]` placeholder left in place until effective date is confirmed
-- Linked from footer of `index.html` via `.footer-legal-link`
+- Linked from footer of `index.html` and `ochrana-osobnich-udaju.html` via `.footer-legal-link`
+
+### `ochrana-osobnich-udaju.html` — GDPR / Privacy Policy Page
+- Standalone page, Czech language
+- URL: `/ochrana-osobnich-udaju`
+- Does NOT use `main.js` or `translations.js` (no JS dependencies)
+- Uses `css/style.css` + `css/legal.css`
+- Contains: approved Czech GDPR / privacy policy text, 10 sections
+- `[DOPLNIT DATUM]` placeholder left in place until effective date is confirmed
+- Linked from footer of `index.html` and `obchodni-podminky.html` via `.footer-legal-link`
+- Also linked from the order/request form consent checkbox via `.form-gdpr-link`
 
 ---
 

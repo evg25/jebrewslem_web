@@ -53,7 +53,9 @@ const translations = {
                 email: 'Email *',
                 phone: 'Phone *',
                 comment: 'Comment',
-                consent: 'I agree to be contacted regarding this request.',
+                consent: 'I acknowledge that my personal data will be processed for the purpose of handling my request.',
+                consentLink: '(Privacy policy)',
+                ageConfirm: 'I confirm that I am over 18 years old.',
                 submit: 'Send request',
                 selectPlaceholder: '— Select —',
                 gender: 'Gender / fit',
@@ -134,7 +136,7 @@ const translations = {
         footer: {
             tagline: 'Craft beer with soul',
             copyright: '© 2026 JEBREWSALEM. All rights reserved.',
-            disclaimer: 'Drink responsibly. You must be 21+ to consume alcohol.'
+            disclaimer: 'Drink responsibly. You must be 18+ to consume alcohol.'
         }
     },
     
@@ -185,7 +187,9 @@ const translations = {
                 email: 'Email *',
                 phone: 'Telefon *',
                 comment: 'Poznámka',
-                consent: 'Souhlasím s tím, aby mě společnost kontaktovala ohledně této poptávky.',
+                consent: 'Beru na vědomí zpracování osobních údajů za účelem vyřízení mé poptávky.',
+                consentLink: '(Zásady ochrany osobních údajů)',
+                ageConfirm: 'Potvrzuji, že jsem starší 18 let.',
                 submit: 'Odeslat poptávku',
                 selectPlaceholder: '\u2014 Vyberte \u2014',
                 gender: 'Střih',
@@ -266,7 +270,7 @@ const translations = {
         footer: {
             tagline: 'Řemeslné pivo s duší',
             copyright: '© 2026 JEBREWSALEM. Všechna práva vyhrazena.',
-            disclaimer: 'Pijte odpovědně. Musíte mít 21+.'
+            disclaimer: 'Pijte odpovědně. Musíte být starší 18 let.'
         }
     }
 };
