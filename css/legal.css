@@ -1,0 +1,146 @@
+/* ===================================================================
+   Legal Page Styles (obchodni-podminky)
+   =================================================================== */
+
+/* Top bar with back link */
+.legal-topbar {
+    background-color: var(--color-dark);
+    border-bottom: 4px solid var(--color-gold);
+    padding: var(--space-sm) 0;
+}
+
+.legal-back-link {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    color: var(--color-gold);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color var(--transition-fast);
+}
+
+.legal-back-link:hover,
+.legal-back-link:focus {
+    color: var(--color-bg);
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
+/* Main content area */
+.legal-page {
+    padding: var(--space-3xl) 0 var(--space-2xl);
+    background-color: var(--color-bg);
+    min-height: calc(100vh - 200px);
+}
+
+.legal-container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Page title */
+.legal-title {
+    font-size: var(--font-size-3xl);
+    color: var(--color-dark);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-md);
+    border-bottom: var(--border-width) solid var(--color-gold);
+}
+
+/* Company info block */
+.legal-meta {
+    background-color: var(--color-sand);
+    border: var(--border-width) solid var(--color-dark);
+    border-radius: var(--border-radius);
+    padding: var(--space-md) var(--space-lg);
+    margin-bottom: var(--space-2xl);
+    font-size: var(--font-size-sm);
+    line-height: 1.8;
+    color: var(--color-dark);
+}
+
+.legal-meta a {
+    color: var(--color-dark);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: underline;
+}
+
+.legal-meta a:hover,
+.legal-meta a:focus {
+    color: var(--color-gold);
+}
+
+/* Sections */
+.legal-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.legal-section h2 {
+    font-size: var(--font-size-xl);
+    color: var(--color-dark);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 2px solid var(--color-warm-gray);
+}
+
+.legal-section p {
+    font-size: var(--font-size-sm);
+    line-height: 1.8;
+    color: var(--color-dark);
+    margin-bottom: var(--space-sm);
+}
+
+.legal-section ul {
+    list-style: disc;
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.legal-section ul li {
+    font-size: var(--font-size-sm);
+    line-height: 1.8;
+    color: var(--color-dark);
+    margin-bottom: var(--space-xs);
+}
+
+/* ===================================================================
+   Footer legal link (used in both index.html and legal page footer)
+   =================================================================== */
+
+.footer-legal-link {
+    color: var(--color-warm-gray);
+    font-size: var(--font-size-xs);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.footer-legal-link:hover,
+.footer-legal-link:focus {
+    color: var(--color-gold);
+    border-bottom-color: var(--color-gold);
+    outline: none;
+}
+
+.footer-legal-link--active {
+    color: var(--color-gold);
+    border-bottom-color: var(--color-gold);
+}
+
+/* ===================================================================
+   Responsive
+   =================================================================== */
+
+@media (max-width: 600px) {
+    .legal-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .legal-section h2 {
+        font-size: var(--font-size-lg);
+    }
+
+    .legal-meta {
+        padding: var(--space-sm) var(--space-md);
+    }
+}

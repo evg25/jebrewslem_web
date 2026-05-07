@@ -1041,6 +1041,21 @@ address {
     margin-bottom: var(--space-xs);
 }
 
+.footer-legal-link {
+    color: var(--color-warm-gray);
+    font-size: var(--font-size-xs);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.footer-legal-link:hover,
+.footer-legal-link:focus {
+    color: var(--color-gold);
+    border-bottom-color: var(--color-gold);
+    outline: none;
+}
+
 /* ===================================================================
    Animations
    =================================================================== */
