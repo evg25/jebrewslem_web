@@ -65,7 +65,8 @@ Single-page layout with scroll-based navigation. Sections in order:
 - URL: `/obchodni-podminky`
 - Does NOT use `main.js` or `translations.js` (no JS dependencies)
 - Uses `css/style.css` + `css/legal.css`
-- Contains: company info (Jebrewsalem s.r.o., IČO 22215794), 9 sections of T&C
+- Contains: company info (Jebrewsalem s.r.o., IČO 22215794, sídlo Na okraji 439/44 Praha), 14 sections of approved T&C
+- `[DOPLNIT DATUM]` placeholder left in place until effective date is confirmed
 - Linked from footer of `index.html` via `.footer-legal-link`
 
 ---
