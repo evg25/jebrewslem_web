@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://jebrewsalem.cz/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jebrewsalem.cz/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://jebrewsalem.cz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jebrewsalem.cz/"/>
+  </url>
+
+  <url>
+    <loc>https://jebrewsalem.cz/obchodni-podminky</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://jebrewsalem.cz/ochrana-osobnich-udaju</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

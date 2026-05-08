@@ -15,6 +15,29 @@
     'use strict';
 
     // ===================================================================
+    // GA4 Analytics Helpers
+    // Safe no-ops when GA4 is not loaded or disabled.
+    // Replace G-XXXXXXXXXX in index.html with your real Measurement ID.
+    // ===================================================================
+
+    function trackEvent(eventName, params) {
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, params || {});
+        }
+    }
+
+    function initOutboundTracking() {
+        document.addEventListener('click', function(e) {
+            var link = e.target.closest('a[href]');
+            if (!link) return;
+            var href = link.getAttribute('href');
+            if (href && /^https?:\/\//i.test(href) && href.indexOf('jebrewsalem.cz') === -1) {
+                trackEvent('click', { event_category: 'outbound', link_url: href });
+            }
+        });
+    }
+
+    // ===================================================================
     // Internationalization (i18n)
     // ===================================================================
     
@@ -495,6 +518,12 @@
             var waUrl = 'https://wa.me/420775431677?text=' + encodeURIComponent(lines.join('\n'));
             window.open(waUrl, '_blank', 'noopener,noreferrer');
 
+            // GA4: track lead form submission
+            trackEvent('generate_lead', {
+                event_category: 'form',
+                form_type: typeSelected ? typeSelected.value : 'unknown'
+            });
+
             if (successMsg) successMsg.hidden = false;
             form.reset();
             // Reset type-specific blocks, card highlights, and age checkboxes
@@ -618,7 +647,10 @@
 
         // Initialize order form
         initOrderForm();
-        
+
+        // GA4: track outbound link clicks
+        initOutboundTracking();
+
         // Mark first nav link as active by default
         if (navLinks.length > 0) {
             navLinks[0].classList.add('active');

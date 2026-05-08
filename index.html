@@ -3,22 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JEBREWSALEM - Craft Beer with Soul. A unique fusion of Jerusalem and Prague brewing traditions.">
-    <title>JEBREWSALEM | Craft Beer with Soul</title>
+    <meta name="description" content="Prague craft brewery fusing Jerusalem and Czech traditions. Craft beer, keg rental, beer tap rental, and branded merch. Order online.">
+    <title>JEBREWSALEM | Prague Craft Brewery — Beer, Keg &amp; Tap Rental</title>
     <link rel="canonical" href="https://jebrewsalem.cz/">
     <link rel="icon" href="/favicon.ico">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="JEBREWSALEM | Craft Beer with Soul">
+    <meta property="og:title" content="JEBREWSALEM | Prague Craft Brewery">
     <meta property="og:description" content="JEBREWSALEM – Craft Beer with Soul. A unique fusion of Jerusalem and Prague brewing traditions.">
     <meta property="og:url" content="https://jebrewsalem.cz/">
     <meta property="og:image" content="https://jebrewsalem.cz/og.jpg">
-    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="JEBREWSALEM">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JEBREWSALEM | Prague Craft Brewery">
+    <meta name="twitter:description" content="Prague craft brewery fusing Jerusalem and Czech traditions. Craft beer, keg rental, beer tap rental, and branded merch.">
+    <meta name="twitter:image" content="https://jebrewsalem.cz/og.jpg">
+
+    <!-- Structured Data (schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "Brewery"],
+          "@id": "https://jebrewsalem.cz/#brewery",
+          "name": "JEBREWSALEM",
+          "url": "https://jebrewsalem.cz/",
+          "logo": "https://jebrewsalem.cz/assets/logo.jpeg",
+          "image": "https://jebrewsalem.cz/assets/logo.jpeg",
+          "description": "Prague craft brewery fusing Jerusalem and Czech brewing traditions. Craft beer, keg rental, beer tap rental, and branded merchandise.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Prague",
+            "addressCountry": "CZ"
+          },
+          "telephone": "+420775431677",
+          "email": "jebrewsalem@gmail.com",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Products and Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Craft Beer" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Keg Rental Prague" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beer Tap Rental Prague" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Branded Merchandise" } }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ================================================================
+         Google Analytics 4
+         Replace BOTH occurrences of G-XXXXXXXXXX with your Measurement ID.
+         Get your ID: https://analytics.google.com → Admin → Data Streams
+         ================================================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <!-- Sticky Navigation -->
