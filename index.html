@@ -6,13 +6,17 @@
     <meta name="description" content="Prague craft brewery fusing Jerusalem and Czech traditions. Craft beer, keg rental, beer tap rental, and branded merch. Order online.">
     <title>JEBREWSALEM | Prague Craft Brewery — Beer, Keg &amp; Tap Rental</title>
     <link rel="canonical" href="https://jebrewsalem.cz/">
+    <link rel="alternate" hreflang="cs" href="https://jebrewsalem.cz/">
+    <link rel="alternate" hreflang="en" href="https://jebrewsalem.cz/">
+    <link rel="alternate" hreflang="x-default" href="https://jebrewsalem.cz/">
     <link rel="icon" href="/favicon.ico">
     <meta property="og:type" content="website">
     <meta property="og:title" content="JEBREWSALEM | Prague Craft Brewery">
-    <meta property="og:description" content="JEBREWSALEM – Craft Beer with Soul. A unique fusion of Jerusalem and Prague brewing traditions.">
+    <meta property="og:description" content="Prague craft brewery fusing Jerusalem and Czech traditions. Craft beer, keg rental, beer tap rental, and branded merch. Order online.">
     <meta property="og:url" content="https://jebrewsalem.cz/">
     <meta property="og:image" content="https://jebrewsalem.cz/og.jpg">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="cs_CZ">
     <meta property="og:site_name" content="JEBREWSALEM">
 
     <!-- Twitter Card -->
@@ -29,25 +33,40 @@
         {
           "@type": ["LocalBusiness", "Brewery"],
           "@id": "https://jebrewsalem.cz/#brewery",
-          "name": "JEBREWSALEM",
+          "name": "Jebrewsalem s.r.o.",
+          "alternateName": "JEBREWSALEM",
           "url": "https://jebrewsalem.cz/",
           "logo": "https://jebrewsalem.cz/assets/logo.jpeg",
           "image": "https://jebrewsalem.cz/assets/logo.jpeg",
           "description": "Prague craft brewery fusing Jerusalem and Czech brewing traditions. Craft beer, keg rental, beer tap rental, and branded merchandise.",
+          "foundingDate": "2024",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Prague",
+            "streetAddress": "Na okraji 439/44",
+            "addressLocality": "Praha",
+            "addressRegion": "Veleslavín",
+            "postalCode": "162 00",
             "addressCountry": "CZ"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Prague",
+            "sameAs": "https://www.wikidata.org/wiki/Q1085"
           },
           "telephone": "+420775431677",
           "email": "jebrewsalem@gmail.com",
+          "sameAs": [
+            "https://www.instagram.com/jebrewsalem",
+            "https://www.facebook.com/jebrewsalem",
+            "https://untappd.com/Jebrewsalem"
+          ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Products and Services",
             "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Craft Beer" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Keg Rental Prague" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beer Tap Rental Prague" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Craft Beer — Brevnov Ale" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pronájem pivního sudu Praha", "url": "https://jebrewsalem.cz/keg-rental-prague" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pronájem výčepu na akce Praha", "url": "https://jebrewsalem.cz/beer-tap-rental-prague" } },
               { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Branded Merchandise" } }
             ]
           }
@@ -208,6 +227,11 @@
             </header>
 
             <div class="order-form-wrapper fade-in">
+                <p style="margin-bottom:1em;font-size:var(--font-size-sm);color:var(--color-warm-gray);">
+                    <a href="/keg-rental-prague" style="color:var(--color-gold);">Pronájem sudu Praha</a>
+                    &nbsp;&middot;&nbsp;
+                    <a href="/beer-tap-rental-prague" style="color:var(--color-gold);">Pronájem výčepu Praha</a>
+                </p>
                 <form id="orderForm" class="order-form" novalidate>
 
                     <!-- Request Type Selector -->
@@ -436,10 +460,9 @@
 
                     <h3 class="contact-heading" data-i18n="contacts.follow">Follow Our Journey</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
-                        <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
-                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
-                        <a href="#" class="social-link" aria-label="Untappd">Untappd</a>
+                        <a href="https://www.instagram.com/jebrewsalem" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                        <a href="https://www.facebook.com/jebrewsalem" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                        <a href="https://untappd.com/Jebrewsalem" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Untappd">Untappd</a>
                     </div>
                 </div>
 

@@ -4,12 +4,32 @@
 
   <url>
     <loc>https://jebrewsalem.cz/</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://jebrewsalem.cz/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://jebrewsalem.cz/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jebrewsalem.cz/"/>
+  </url>
+
+  <url>
+    <loc>https://jebrewsalem.cz/keg-rental-prague</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://jebrewsalem.cz/keg-rental-prague"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jebrewsalem.cz/keg-rental-prague"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jebrewsalem.cz/keg-rental-prague"/>
+  </url>
+
+  <url>
+    <loc>https://jebrewsalem.cz/beer-tap-rental-prague</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://jebrewsalem.cz/beer-tap-rental-prague"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jebrewsalem.cz/beer-tap-rental-prague"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jebrewsalem.cz/beer-tap-rental-prague"/>
   </url>
 
   <url>
