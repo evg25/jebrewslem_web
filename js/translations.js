@@ -193,11 +193,12 @@ const translations = {
 
         // Cookie consent banner
         consent: {
-            ariaLabel: 'Cookie consent',
-            text: 'We store your language preference in localStorage (essential, no consent needed). With your permission, we also load Google Analytics for anonymous site analytics.',
+            ariaLabel: 'Cookie preferences',
+            title: 'Cookie preferences',
+            text: 'We use essential storage to remember your language choice. With your consent, we also use analytics cookies to understand how visitors use our website and improve it.',
             policyLink: 'Privacy Policy',
-            reject: 'Reject analytics',
-            accept: 'Accept analytics'
+            reject: 'Reject optional cookies',
+            accept: 'Accept cookies'
         }
     },
     
@@ -389,10 +390,11 @@ const translations = {
         // Souhlas s cookies
         consent: {
             ariaLabel: 'Nastavení cookies',
-            text: 'Vaši jazykovou volbu ukládáme do localStorage prohlížeče (nezbytné, bez souhlasu). S vaším souhlasem také načítáme Google Analytics pro anonymní analýzu návštěvnosti.',
+            title: 'Nastavení cookies',
+            text: 'Používáme nezbytné úložiště pro zapamatování volby jazyka. S vaším souhlasem používáme také analytické cookies, abychom lépe porozuměli návštěvnosti webu a mohli ho zlepšovat.',
             policyLink: 'Zásady ochrany osobních údajů',
-            reject: 'Odmítnout analytics',
-            accept: 'Přijmout analytics'
+            reject: 'Odmítnout volitelné cookies',
+            accept: 'Přijmout cookies'
         }
     }
 };

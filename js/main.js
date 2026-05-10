@@ -71,24 +71,33 @@
         banner.id = 'cookieConsentBanner';
         banner.setAttribute('role', 'dialog');
         banner.setAttribute('aria-label', t.ariaLabel || 'Cookie consent');
+        // Inline critical layout styles as fallback in case CSS is not yet cached
+        banner.style.cssText = 'position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);width:calc(100% - 3rem);max-width:860px;z-index:9999;background:#1e120c;border:2px solid #F2B705;border-radius:6px;box-shadow:0 8px 32px rgba(26,18,12,0.55);';
         banner.innerHTML =
             '<div class="cookie-banner__inner">' +
-                '<p class="cookie-banner__text">' +
-                    (t.text || 'We use analytics cookies to improve this site.') +
-                    ' <a href="/ochrana-osobnich-udaju" class="cookie-banner__link">' +
-                        (t.policyLink || 'Privacy Policy') +
-                    '</a>' +
-                '</p>' +
+                '<div class="cookie-banner__copy">' +
+                    '<p class="cookie-banner__title">' +
+                        (t.title || 'Cookie preferences') +
+                    '</p>' +
+                    '<p class="cookie-banner__text">' +
+                        (t.text || 'We use essential and optional analytics cookies.') +
+                        ' <a href="/ochrana-osobnich-udaju" class="cookie-banner__link">' +
+                            (t.policyLink || 'Privacy Policy') +
+                        '</a>' +
+                    '</p>' +
+                '</div>' +
                 '<div class="cookie-banner__actions">' +
                     '<button id="cookieReject" class="cookie-banner__btn cookie-banner__btn--secondary">' +
-                        (t.reject || 'Reject analytics') +
+                        (t.reject || 'Reject optional cookies') +
                     '</button>' +
                     '<button id="cookieAccept" class="cookie-banner__btn cookie-banner__btn--primary">' +
-                        (t.accept || 'Accept analytics') +
+                        (t.accept || 'Accept cookies') +
                     '</button>' +
                 '</div>' +
             '</div>';
         document.body.appendChild(banner);
+        var rect = banner.getBoundingClientRect();
+        console.log('[consent] banner rect:', rect.width, 'x', rect.height, '| bottom:', rect.bottom);
 
         document.getElementById('cookieAccept').addEventListener('click', function() {
             console.log('[consent] User accepted analytics');
