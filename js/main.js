@@ -72,7 +72,7 @@
         banner.setAttribute('role', 'dialog');
         banner.setAttribute('aria-label', t.ariaLabel || 'Cookie consent');
         // Inline critical layout styles as fallback in case CSS is not yet cached
-        banner.style.cssText = 'position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);width:calc(100% - 3rem);max-width:860px;z-index:9999;background:#1e120c;border:2px solid #F2B705;border-radius:6px;box-shadow:0 8px 32px rgba(26,18,12,0.55);';
+        banner.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);width:calc(100% - 3rem);max-width:820px;z-index:9999;background:#1A120D;border:1px solid rgba(212,160,80,0.3);border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.6);';
         banner.innerHTML =
             '<div class="cookie-banner__inner">' +
                 '<div class="cookie-banner__copy">' +

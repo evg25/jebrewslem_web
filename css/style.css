@@ -1564,152 +1564,151 @@ address {
 
 /* ===================================================================
    Cookie Consent Banner
-   Fixed bottom bar — shown only until the user makes a consent choice.
-   Brand style: warm dark background, gold accent, Bebas Neue headings.
+   Fixed bottom-centered card, shown once until the user makes a choice.
+   Warm heritage palette matching JEBREWSALEM brand.
    =================================================================== */
 
 #cookieConsentBanner {
     position: fixed;
-    bottom: var(--space-md);
+    bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 2 * var(--space-md));
-    max-width: 860px;
+    width: calc(100% - 3rem);
+    max-width: 820px;
     z-index: 9999;
-    background-color: #1e120c;
-    border: 2px solid var(--color-gold);
-    border-radius: 6px;
-    box-shadow: 0 8px 32px rgba(26, 18, 12, 0.55);
+    background-color: #1A120D;
+    border: 1px solid rgba(212, 160, 80, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .cookie-banner__inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-md) var(--space-lg);
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
 }
 
 .cookie-banner__copy {
     flex: 1;
-    min-width: 220px;
+    min-width: 200px;
 }
 
 .cookie-banner__title {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-lg);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-gold);
-    margin: 0 0 var(--space-xs);
-    line-height: 1.1;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: #FFF4E0;
+    margin: 0 0 0.45rem;
+    line-height: 1.2;
 }
 
 .cookie-banner__text {
     margin: 0;
-    font-size: var(--font-size-xs);
-    line-height: 1.7;
-    color: var(--color-warm-gray);
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #DCC8A4;
+    text-transform: none;
 }
 
 .cookie-banner__link {
-    color: var(--color-gold);
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    color: #D89A32;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(216, 154, 50, 0.45);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
     white-space: nowrap;
-    transition: color var(--transition-fast);
 }
 
 .cookie-banner__link:hover,
 .cookie-banner__link:focus {
-    color: var(--color-bg);
+    color: #EDB84A;
+    border-bottom-color: #EDB84A;
     outline: none;
 }
 
 .cookie-banner__actions {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xs);
+    gap: 0.5rem;
     flex-shrink: 0;
+    min-width: 200px;
 }
 
 .cookie-banner__btn {
-    display: inline-block;
-    font-family: var(--font-heading);
-    font-size: 1rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: none;
     line-height: 1;
-    padding: 0.65rem 1.4rem;
-    border-radius: 4px;
-    border: 2px solid var(--color-gold);
+    padding: 0.6rem 1.25rem;
+    border-radius: 5px;
     cursor: pointer;
-    white-space: nowrap;
-    transition: background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+    text-align: center;
+    transition: background-color var(--transition-fast),
+                color var(--transition-fast),
+                border-color var(--transition-fast),
+                box-shadow var(--transition-fast);
 }
 
 .cookie-banner__btn:focus-visible {
-    outline: 3px solid var(--color-gold);
-    outline-offset: 3px;
+    outline: 2px solid #D89A32;
+    outline-offset: 2px;
 }
 
 .cookie-banner__btn--primary {
-    background-color: var(--color-gold);
-    color: var(--color-dark);
-    font-weight: var(--font-weight-bold);
+    background-color: #D89A32;
+    color: #1A120D;
+    border: 1px solid #D89A32;
 }
 
 .cookie-banner__btn--primary:hover {
-    background-color: #d9a304;
-    border-color: #d9a304;
-    color: var(--color-dark);
-    box-shadow: 0 2px 10px rgba(242, 183, 5, 0.35);
+    background-color: #EDB84A;
+    border-color: #EDB84A;
+    box-shadow: 0 2px 10px rgba(216, 154, 50, 0.35);
 }
 
 .cookie-banner__btn--secondary {
     background-color: transparent;
-    color: var(--color-warm-gray);
-    border-color: rgba(184, 168, 143, 0.4);
-    font-size: 0.8rem;
+    color: #DCC8A4;
+    border: 1px solid rgba(212, 160, 80, 0.45);
 }
 
 .cookie-banner__btn--secondary:hover {
-    color: var(--color-bg);
-    border-color: var(--color-warm-gray);
-    background-color: rgba(184, 168, 143, 0.12);
+    background-color: rgba(212, 160, 80, 0.1);
+    color: #FFF4E0;
+    border-color: rgba(212, 160, 80, 0.7);
 }
 
 @media (max-width: 680px) {
     #cookieConsentBanner {
         bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        max-width: 100%;
+        left: 12px;
+        right: 12px;
+        width: auto;
+        max-width: none;
         transform: none;
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
+        border-radius: 8px 8px 0 0;
         border-bottom: none;
     }
 
     .cookie-banner__inner {
         flex-direction: column;
         align-items: stretch;
-        padding: var(--space-md);
-        gap: var(--space-sm);
+        gap: 1rem;
+        padding: 1rem 1.125rem;
     }
 
     .cookie-banner__actions {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-
-    .cookie-banner__btn {
-        flex: 1;
-        text-align: center;
-        min-width: 140px;
+        min-width: 0;
+        width: 100%;
     }
 }
 
