@@ -103,6 +103,48 @@
     margin-bottom: var(--space-xs);
 }
 
+.legal-section h3 {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.legal-section code {
+    background-color: var(--color-sand);
+    padding: 0.1em 0.35em;
+    border-radius: 2px;
+    font-family: monospace;
+    font-size: 0.875em;
+    color: var(--color-dark);
+}
+
+.legal-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-xs);
+}
+
+.legal-section th,
+.legal-section td {
+    border: 1px solid var(--color-warm-gray);
+    padding: var(--space-xs) var(--space-sm);
+    text-align: left;
+    line-height: 1.6;
+    color: var(--color-dark);
+}
+
+.legal-section th {
+    background-color: var(--color-sand);
+    font-weight: var(--font-weight-semibold);
+    font-family: var(--font-body);
+}
+
 /* ===================================================================
    Footer legal link (used in both index.html and legal page footer)
    =================================================================== */

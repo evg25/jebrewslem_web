@@ -189,6 +189,15 @@ const translations = {
             ctaBtn: 'Go to order form',
             contactTitle: 'Questions?',
             contactDesc: 'Contact us by email or WhatsApp.'
+        },
+
+        // Cookie consent banner
+        consent: {
+            ariaLabel: 'Cookie consent',
+            text: 'We store your language preference in localStorage (essential, no consent needed). With your permission, we also load Google Analytics for anonymous site analytics.',
+            policyLink: 'Privacy Policy',
+            reject: 'Reject analytics',
+            accept: 'Accept analytics'
         }
     },
     
@@ -375,6 +384,15 @@ const translations = {
             ctaBtn: 'Přejít na formulář',
             contactTitle: 'Máte dotazy?',
             contactDesc: 'Kontaktujte nás e-mailem nebo přes WhatsApp.'
+        },
+
+        // Souhlas s cookies
+        consent: {
+            ariaLabel: 'Nastavení cookies',
+            text: 'Vaši jazykovou volbu ukládáme do localStorage prohlížeče (nezbytné, bez souhlasu). S vaším souhlasem také načítáme Google Analytics pro anonymní analýzu návštěvnosti.',
+            policyLink: 'Zásady ochrany osobních údajů',
+            reject: 'Odmítnout analytics',
+            accept: 'Přijmout analytics'
         }
     }
 };

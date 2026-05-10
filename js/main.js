@@ -14,10 +14,14 @@
 (function() {
     'use strict';
 
+    // Cookie consent storage key and GA4 measurement ID
+    var CONSENT_KEY = 'jebrewsalem_cookie_consent';
+    var GA4_ID = 'G-9KEPM05RS2';
+
     // ===================================================================
     // GA4 Analytics Helpers
-    // Safe no-ops when GA4 is not loaded or disabled.
-    // Replace G-XXXXXXXXXX in index.html with your real Measurement ID.
+    // trackEvent() is a safe no-op when GA4 has not been loaded.
+    // GA4 is loaded dynamically only after the user accepts analytics.
     // ===================================================================
 
     function trackEvent(eventName, params) {
@@ -35,6 +39,72 @@
                 trackEvent('click', { event_category: 'outbound', link_url: href });
             }
         });
+    }
+
+    // ===================================================================
+    // Cookie Consent & GA4 Loader
+    // GA4 is injected dynamically only after the user accepts analytics.
+    // Consent is persisted in localStorage under CONSENT_KEY.
+    // ===================================================================
+
+    function loadGA4() {
+        if (typeof window.gtag === 'function') return;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', GA4_ID);
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+        document.head.appendChild(script);
+    }
+
+    function showCookieBanner() {
+        var t = (translations[currentLang] && translations[currentLang].consent) || {};
+        var banner = document.createElement('div');
+        banner.id = 'cookieConsentBanner';
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-label', t.ariaLabel || 'Cookie consent');
+        banner.innerHTML =
+            '<div class="cookie-banner__inner">' +
+                '<p class="cookie-banner__text">' +
+                    (t.text || 'We use analytics cookies to improve this site.') +
+                    ' <a href="/ochrana-osobnich-udaju" class="cookie-banner__link">' +
+                        (t.policyLink || 'Privacy Policy') +
+                    '</a>' +
+                '</p>' +
+                '<div class="cookie-banner__actions">' +
+                    '<button id="cookieReject" class="cookie-banner__btn cookie-banner__btn--secondary">' +
+                        (t.reject || 'Reject analytics') +
+                    '</button>' +
+                    '<button id="cookieAccept" class="cookie-banner__btn cookie-banner__btn--primary">' +
+                        (t.accept || 'Accept analytics') +
+                    '</button>' +
+                '</div>' +
+            '</div>';
+        document.body.appendChild(banner);
+
+        document.getElementById('cookieAccept').addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'accepted_analytics');
+            banner.remove();
+            loadGA4();
+        });
+        document.getElementById('cookieReject').addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'rejected_analytics');
+            banner.remove();
+        });
+    }
+
+    function initCookieConsent() {
+        var stored = localStorage.getItem(CONSENT_KEY);
+        if (stored === 'accepted_analytics') {
+            loadGA4();
+            return;
+        }
+        if (stored === 'rejected_analytics') {
+            return;
+        }
+        showCookieBanner();
     }
 
     // ===================================================================
@@ -650,6 +720,9 @@
 
         // GA4: track outbound link clicks
         initOutboundTracking();
+
+        // Cookie consent: check stored preference or show banner
+        initCookieConsent();
 
         // Mark first nav link as active by default
         if (navLinks.length > 0) {

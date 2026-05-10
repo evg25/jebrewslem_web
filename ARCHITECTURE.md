@@ -90,6 +90,9 @@ Single IIFE pattern, `init()` called on `DOMContentLoaded`.
 |---|---|
 | `translatePage()` | Resolves `data-i18n` keys from `translations` object, sets `textContent` |
 | `switchLanguage(lang)` | Saves lang to `localStorage`, calls `translatePage()` |
+| `loadGA4()` | Dynamically injects GA4 script tag; initialises `window.gtag`; idempotent |
+| `showCookieBanner()` | Creates and appends the consent banner DOM node; wires Accept/Reject buttons |
+| `initCookieConsent()` | Reads `CONSENT_KEY` from localStorage; loads GA4 or shows banner accordingly |
 | `checkFadeIn()` | Scroll-triggered opacity animation for `.fade-in` elements |
 | `renderGallery()` | Generates `.gallery-item` elements from `galleryData` array |
 | `openLightbox(index)` | Opens full-screen image viewer |
@@ -110,6 +113,36 @@ No backend required.
 - `translatePage()` resolves dot-path and sets `element.textContent`
 - Language persisted in `localStorage` key `lang`
 - Legal page is Czech-only, not translated
+- Cookie consent banner text is in `translations.*.consent.*` (EN + CS)
+
+---
+
+## Cookie Consent System
+
+GA4 is **never** loaded on initial page load. Consent is managed entirely client-side.
+
+| localStorage key | Possible values | Meaning |
+|---|---|---|
+| `lang` | `en` / `cs` | Language preference (functional, no consent needed) |
+| `jebrewsalem_cookie_consent` | `accepted_analytics` / `rejected_analytics` | User's analytics consent choice |
+
+**Flow on page load (`initCookieConsent`):**
+1. Read `jebrewsalem_cookie_consent` from localStorage.
+2. If `accepted_analytics` → call `loadGA4()` immediately (silently, no banner).
+3. If `rejected_analytics` → do nothing (GA4 never loads).
+4. If absent → call `showCookieBanner()` to render the consent UI.
+
+**`loadGA4()`** is idempotent (checks `typeof window.gtag`). It:
+- Sets `window.dataLayer` and `window.gtag`.
+- Calls `gtag('config', GA4_ID)` to queue the config hit.
+- Appends `<script async src="gtag/js?id=...">` to `<head>`.
+
+**`trackEvent()`** calls `gtag('event', ...)` only if `typeof gtag === 'function'`, so it
+is a safe no-op when analytics was rejected or not yet initialised.
+
+**Banner** is a `<div id="cookieConsentBanner" role="dialog">` appended to `<body>`.
+Styled via `.cookie-banner__*` classes in `css/style.css` (fixed bottom bar).
+Text comes from `translations[currentLang].consent.*` (EN/CS bilingual).
 
 ---
 
