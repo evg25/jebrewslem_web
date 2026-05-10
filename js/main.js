@@ -76,21 +76,21 @@
         banner.innerHTML =
             '<div class="cookie-banner__inner">' +
                 '<div class="cookie-banner__copy">' +
-                    '<p class="cookie-banner__title">' +
+                    '<p class="cookie-banner__title" style="color:#FFF4E0;font-family:Inter,sans-serif;font-size:1rem;font-weight:700;margin:0 0 0.45rem;line-height:1.2;">' +
                         (t.title || 'Cookie preferences') +
                     '</p>' +
-                    '<p class="cookie-banner__text">' +
+                    '<p class="cookie-banner__text" style="color:#DCC8A4;font-family:Inter,sans-serif;font-size:0.875rem;line-height:1.55;margin:0;">' +
                         (t.text || 'We use essential and optional analytics cookies.') +
-                        ' <a href="/ochrana-osobnich-udaju" class="cookie-banner__link">' +
+                        ' <a href="/ochrana-osobnich-udaju" class="cookie-banner__link" style="color:#D89A32;text-decoration:underline;">' +
                             (t.policyLink || 'Privacy Policy') +
                         '</a>' +
                     '</p>' +
                 '</div>' +
                 '<div class="cookie-banner__actions">' +
-                    '<button id="cookieReject" class="cookie-banner__btn cookie-banner__btn--secondary">' +
+                    '<button id="cookieReject" class="cookie-banner__btn cookie-banner__btn--secondary" style="display:block;width:100%;padding:0.75rem 1.5rem;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;background:transparent;color:#DCC8A4;border:1px solid rgba(212,160,80,0.45);border-radius:5px;cursor:pointer;">' +
                         (t.reject || 'Reject optional cookies') +
                     '</button>' +
-                    '<button id="cookieAccept" class="cookie-banner__btn cookie-banner__btn--primary">' +
+                    '<button id="cookieAccept" class="cookie-banner__btn cookie-banner__btn--primary" style="display:block;width:100%;padding:0.75rem 1.5rem;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;background:#D89A32;color:#1A120D;border:1px solid #D89A32;border-radius:5px;cursor:pointer;">' +
                         (t.accept || 'Accept cookies') +
                     '</button>' +
                 '</div>' +
