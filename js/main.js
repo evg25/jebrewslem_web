@@ -48,7 +48,11 @@
     // ===================================================================
 
     function loadGA4() {
-        if (typeof window.gtag === 'function') return;
+        if (typeof window.gtag === 'function') {
+            console.log('[consent] GA4 already loaded, skipping');
+            return;
+        }
+        console.log('[consent] Loading GA4:', GA4_ID);
         window.dataLayer = window.dataLayer || [];
         window.gtag = function() { window.dataLayer.push(arguments); };
         window.gtag('js', new Date());
@@ -56,10 +60,12 @@
         var script = document.createElement('script');
         script.async = true;
         script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+        script.onload = function() { console.log('[consent] GA4 script loaded'); };
         document.head.appendChild(script);
     }
 
     function showCookieBanner() {
+        console.log('[consent] Showing cookie banner, lang:', currentLang);
         var t = (translations[currentLang] && translations[currentLang].consent) || {};
         var banner = document.createElement('div');
         banner.id = 'cookieConsentBanner';
@@ -85,11 +91,13 @@
         document.body.appendChild(banner);
 
         document.getElementById('cookieAccept').addEventListener('click', function() {
+            console.log('[consent] User accepted analytics');
             localStorage.setItem(CONSENT_KEY, 'accepted_analytics');
             banner.remove();
             loadGA4();
         });
         document.getElementById('cookieReject').addEventListener('click', function() {
+            console.log('[consent] User rejected analytics');
             localStorage.setItem(CONSENT_KEY, 'rejected_analytics');
             banner.remove();
         });
@@ -97,11 +105,13 @@
 
     function initCookieConsent() {
         var stored = localStorage.getItem(CONSENT_KEY);
+        console.log('[consent] stored consent:', stored);
         if (stored === 'accepted_analytics') {
             loadGA4();
             return;
         }
         if (stored === 'rejected_analytics') {
+            console.log('[consent] Analytics rejected, GA4 not loaded');
             return;
         }
         showCookieBanner();
