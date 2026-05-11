@@ -14,7 +14,7 @@ const translations = {
             orders: 'Orders',
             merch: 'Merch',
             gallery: 'Gallery',
-            contacts: 'Contacts'
+            contacts: 'Contact'
         },
         
         // Hero Section
@@ -53,8 +53,8 @@ const translations = {
                 email: 'Email *',
                 phone: 'Phone *',
                 comment: 'Comment',
-                consent: 'I acknowledge that my personal data will be processed for the purpose of handling my request.',
-                consentLink: '(Privacy policy)',
+                consent: 'I agree to the processing of my personal data for the purpose of handling this request.',
+                consentLink: 'See our Privacy Policy',
                 ageConfirm: 'I confirm that I am over 18 years old.',
                 submit: 'Send request',
                 selectPlaceholder: '— Select —',
@@ -98,7 +98,7 @@ const translations = {
             subtitle: 'Wear the spirit of two cities',
             tshirt: {
                 name: 'JEBREWSALEM Classic Tee',
-                price: '499 Kč',
+                price: '500 Kč',
                 description: 'Limited Jebrewsalem brewery T-shirt with original artwork. Soft everyday wear for craft beer lovers, festivals, and taproom events.',
                 sizes: 'Sizes:',
                 sizesValue: 'S, M, L, XL, XXL',
@@ -118,8 +118,8 @@ const translations = {
         
         // Contacts Section
         contacts: {
-            title: 'Get in Touch',
-            subtitle: 'Questions, collaborations, or just want to say hi?',
+            title: 'Contact',
+            subtitle: 'Get in touch with us',
             visit: 'Visit Us',
             brewery: 'JEBREWSALEM Brewery',
             location: 'Old Town Quarter',
@@ -210,7 +210,7 @@ const translations = {
             orders: 'Objednávky',
             merch: 'Merch',
             gallery: 'Galerie',
-            contacts: 'Kontakty'
+            contacts: 'Kontakt'
         },
         
         // Hero Section
@@ -249,8 +249,8 @@ const translations = {
                 email: 'Email *',
                 phone: 'Telefon *',
                 comment: 'Poznámka',
-                consent: 'Beru na vědomí zpracování osobních údajů za účelem vyřízení mé poptávky.',
-                consentLink: '(Zásady ochrany osobních údajů)',
+                consent: 'Souhlasím se zpracováním svých osobních údajů za účelem vyřízení této poptávky.',
+                consentLink: 'Viz Zásady ochrany osobních údajů',
                 ageConfirm: 'Potvrzuji, že jsem starší 18 let.',
                 submit: 'Odeslat poptávku',
                 selectPlaceholder: '\u2014 Vyberte \u2014',
@@ -294,7 +294,7 @@ const translations = {
             subtitle: 'Noste ducha dvou měst',
             tshirt: {
                 name: 'JEBREWSALEM Klasické tričko',
-                price: '499 Kč',
+                price: '500 Kč',
                 description: 'Limitované tričko pivovaru Jebrewsalem s originálním artwork. Pohodné každodenní oblečení pro milovníky craft piva, festivaly a taproom akce.',
                 sizes: 'Velikosti:',
                 sizesValue: 'S, M, L, XL, XXL',
@@ -314,8 +314,8 @@ const translations = {
         
         // Contacts Section
         contacts: {
-            title: 'Kontaktujte nás',
-            subtitle: 'Otázky, spolupráce nebo jen chcete pozdravit?',
+            title: 'Kontakt',
+            subtitle: 'Ozvěte se nám',
             visit: 'Navštivte nás',
             brewery: 'Pivovar JEBREWSALEM',
             location: 'Čtvrť Starého Města',

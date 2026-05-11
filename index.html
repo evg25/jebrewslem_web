@@ -97,7 +97,7 @@
                 <li><a href="#merch" class="nav-link" data-i18n="nav.merch">Merch</a></li>
                 <li><a href="#orders" class="nav-link" data-i18n="nav.orders">Orders</a></li>
                 <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Gallery</a></li>
-                <li><a href="#contacts" class="nav-link" data-i18n="nav.contacts">Contacts</a></li>
+                <li><a href="#contacts" class="nav-link" data-i18n="nav.contacts">Contact</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
                 <span></span>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="merch-content">
                         <h3 class="merch-name" data-i18n="merch.tshirt.name">JEBREWSALEM Classic Tee</h3>
-                        <span class="merch-price" data-i18n="merch.tshirt.price">499 Kč</span>
+                        <span class="merch-price" data-i18n="merch.tshirt.price">500 Kč</span>
                         <p class="merch-description" data-i18n="merch.tshirt.description">
                             Limited Jebrewsalem brewery T-shirt with original artwork. Soft everyday wear for craft beer lovers, festivals, and taproom events.
                         </p>
@@ -376,8 +376,11 @@
                     <div class="form-group form-group--checkbox">
                         <label class="checkbox-label">
                             <input type="checkbox" id="orderConsent" name="consent" required>
-                            <span data-i18n="orders.fields.consent">I acknowledge that my personal data will be processed for the purpose of handling my request.</span>
-                            <a href="/ochrana-osobnich-udaju" class="form-gdpr-link" target="_blank" rel="noopener noreferrer" data-i18n="orders.fields.consentLink">(Privacy policy)</a>
+                            <!-- Text wrapper keeps consent sentence and link in one inline flow -->
+                            <span class="checkbox-label__text">
+                                <span data-i18n="orders.fields.consent">I agree to the processing of my personal data for the purpose of handling this request.</span>
+                                <a href="/ochrana-osobnich-udaju" class="form-gdpr-link" target="_blank" rel="noopener noreferrer" data-i18n="orders.fields.consentLink">See our Privacy Policy</a>
+                            </span>
                         </label>
                     </div>
 
@@ -433,7 +436,7 @@
     <section id="contacts" class="contacts-section">
         <div class="container">
             <header class="section-header">
-                <h2 class="section-title" data-i18n="contacts.title">Get in Touch</h2>
+                <h2 class="section-title" data-i18n="contacts.title">Contact</h2>
                 <p class="section-subtitle" data-i18n="contacts.subtitle">Questions, collaborations, or just want to say hi?</p>
             </header>
 
@@ -465,6 +468,7 @@
                 <div class="footer-brand">
                     <h4>JEBREWSALEM</h4>
                     <p data-i18n="footer.tagline">Craft beer with soul</p>
+                    <p class="footer-location">Prague, Czech Republic</p>
                 </div>
                 <div class="footer-legal">
                     <p data-i18n="footer.copyright">&copy; 2026 JEBREWSALEM. All rights reserved.</p>
