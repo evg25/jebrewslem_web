@@ -81,6 +81,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* belt-and-suspenders with body; fixes cases where body overflow-x alone doesn't contain fixed/absolute children */
 }
 
 body {
@@ -124,6 +125,14 @@ a:hover {
 
 ul {
     list-style: none;
+}
+
+/* Prevent media elements from ever exceeding their container */
+img,
+video,
+svg,
+iframe {
+    max-width: 100%;
 }
 
 address {
@@ -316,8 +325,9 @@ address {
 .hero-headline {
     font-size: var(--font-size-4xl);
     margin-bottom: var(--space-lg);
-    line-height: 1;
+    line-height: 1.05;
     color: var(--color-dark);
+    overflow-wrap: break-word; /* prevent long words from overflowing on narrow viewports */
 }
 
 .hero-manifesto {
@@ -1114,11 +1124,13 @@ address {
         position: fixed;
         top: var(--nav-height);
         left: 0;
-        width: 70%;
-        max-width: 400px;
+        /* cap at 280px so drawer never dominates the viewport */
+        width: min(80vw, 280px);
+        max-width: 280px;
         background-color: var(--color-sand);
-        padding: var(--space-lg);
-        gap: var(--space-md);
+        /* remove horizontal padding here; nav-link handles its own inset */
+        padding: var(--space-md) 0;
+        gap: 2px;
         border-right: var(--border-width) solid var(--color-dark);
         border-bottom: 1px solid var(--color-border);
         transform: translateX(-100%);
@@ -1141,14 +1153,18 @@ address {
     .nav-link {
         display: block;
         width: 100%;
-        padding: var(--space-sm) 0;
+        padding: 12px var(--space-md);
         border-bottom: none;
+        /* reserve space for left accent so layout does not shift on activation */
+        border-left: 3px solid transparent;
         font-size: var(--font-size-base);
     }
     
     .nav-link.active {
         color: var(--color-gold);
         border-bottom: none;
+        border-left-color: var(--color-gold); /* visible gold left accent line */
+        background-color: rgba(242, 183, 5, 0.08); /* subtle gold tint background */
     }
     
     /* Language switcher on mobile */
@@ -1178,9 +1194,26 @@ address {
     
     /* Hero adjustments */
     .hero-section {
-        padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-xl);
+        /* remove horizontal padding — .container handles the inset;
+           double padding was narrowing content to ~264px on 360px devices */
+        padding: calc(var(--nav-height) + var(--space-xl)) 0 var(--space-xl);
+        min-height: auto; /* don't lock the section to full-viewport height on mobile */
     }
-    
+
+    .hero-logo-container {
+        margin-bottom: var(--space-xl);
+    }
+
+    .hero-manifesto {
+        font-size: var(--font-size-base);
+        line-height: 1.6;
+        margin-bottom: var(--space-lg);
+    }
+
+    .hero-manifesto p:last-child {
+        font-size: var(--font-size-lg);
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: stretch;
@@ -1221,7 +1254,32 @@ address {
     .nav-logo {
         height: 45px;
     }
-    
+
+    /* Hero — further tighten on very small phones */
+    .hero-section {
+        padding-top: calc(var(--nav-height) + var(--space-lg));
+        padding-bottom: var(--space-lg);
+    }
+
+    .hero-logo-container {
+        margin-bottom: var(--space-lg);
+    }
+
+    /* Use clamp() so the headline scales fluidly and never clips on the right */
+    .hero-headline {
+        font-size: clamp(1.5rem, 7vw, 2rem);
+        line-height: 1.1;
+    }
+
+    .hero-manifesto {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-md);
+    }
+
+    .hero-manifesto p:last-child {
+        font-size: var(--font-size-base);
+    }
+
     .btn {
         width: 100%;
         text-align: center;
