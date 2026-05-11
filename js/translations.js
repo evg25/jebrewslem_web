@@ -98,8 +98,8 @@ const translations = {
             subtitle: 'Wear the spirit of two cities',
             tshirt: {
                 name: 'JEBREWSALEM Classic Tee',
-                price: '$29.99',
-                description: 'Premium cotton t-shirt featuring our iconic logo. Comfortable, stylish, and perfect for beer lovers.',
+                price: '499 Kč',
+                description: 'Limited Jebrewsalem brewery T-shirt with original artwork. Soft everyday wear for craft beer lovers, festivals, and taproom events.',
                 sizes: 'Sizes:',
                 sizesValue: 'S, M, L, XL, XXL',
                 material: 'Material:',
@@ -294,8 +294,8 @@ const translations = {
             subtitle: 'Noste ducha dvou měst',
             tshirt: {
                 name: 'JEBREWSALEM Klasické tričko',
-                price: '$29.99',
-                description: 'prémiové bavlněné tričko s naším ikonickým logem. Pohodlné, stylové a perfektní pro milovníky piva.',
+                price: '499 Kč',
+                description: 'Limitované tričko pivovaru Jebrewsalem s originálním artwork. Pohodné každodenní oblečení pro milovníky craft piva, festivaly a taproom akce.',
                 sizes: 'Velikosti:',
                 sizesValue: 'S, M, L, XL, XXL',
                 material: 'Materiál:',
