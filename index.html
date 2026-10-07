@@ -8,6 +8,7 @@
 <title>Beer Golem — komunitní objednávky</title>
 <style>
 :root{color-scheme:light;--ink:#040507;--muted:#66615a;--paper:#fffdf7;--line:#e5e0d2;--gold:#deab1e;--white:#fff;--red:#a33030}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea{font:inherit}button,a,input,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}[hidden]{display:none!important}header{background:var(--white);color:var(--ink);border-bottom:3px solid var(--gold);padding:20px max(20px,calc((100vw - 1160px)/2))}.brand{display:flex;align-items:center;gap:13px}.mark{width:88px;height:88px;flex-shrink:0;object-fit:contain;border-radius:50%;background:#fff}.wordmark{font-size:23px;font-weight:850;letter-spacing:.04em;line-height:1.1}.brand small{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase}main{max-width:1160px;margin:auto;padding:30px 20px 110px}h1{font-size:clamp(30px,6vw,46px);line-height:1.13;letter-spacing:-.04em;margin:8px 0 14px}h2{font-size:23px;margin:0 0 18px}p{margin:0 0 16px}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:750}.muted{color:var(--muted)}.intro{max-width:630px;margin-bottom:30px}.layout{display:grid;gap:26px}.catalog{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}.card,.panel{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px}.card{display:flex;flex-direction:column;min-width:0}.card .brewery{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:750}.card h3{font-size:25px;line-height:1.15;margin:7px 0 12px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:14px}.description{font-size:14px;margin:14px 0;overflow-wrap:anywhere}.photo{width:100%;height:175px;object-fit:contain;margin-bottom:20px;border-radius:12px;background:var(--paper)}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:20px}.price{font-size:21px;font-weight:800;white-space:nowrap}.stepper{display:flex;align-items:center;gap:4px;background:#f6efc5;border-radius:12px;padding:3px}.stepper button{border:0;background:transparent;border-radius:9px;min-width:44px;min-height:44px;font-size:25px;color:var(--ink)}.stepper button:hover{background:#f6efc5}.quantity{min-width:28px;text-align:center;font-weight:750;font-variant-numeric:tabular-nums}.primary{background:var(--gold);color:var(--ink);border:0;border-radius:12px;padding:15px 20px;font-weight:750;min-height:52px;width:100%}.primary:hover{background:#eac04b}.text-button{border:0;background:transparent;min-height:44px;padding:8px 0;text-decoration:underline;color:var(--muted)}.field{display:block;margin:18px 0 0;font-size:14px;font-weight:700}.field input,.field textarea{display:block;width:100%;border:1px solid #d7d0bf;border-radius:10px;min-height:50px;background:#fff;padding:12px;margin-top:6px;color:var(--ink)}textarea{resize:vertical;min-height:90px!important}.error{color:var(--red);font-size:14px;margin:12px 0;overflow-wrap:anywhere}.notice{font-size:13px;margin:12px 0 0}.cart-item{padding:15px 0;border-bottom:1px solid var(--line)}.cart-item strong{display:block;overflow-wrap:anywhere}.cart-item .row{margin-top:10px}.row{display:flex;align-items:center;justify-content:space-between;gap:15px}.totals{margin:22px 0;font-variant-numeric:tabular-nums}.totals .row:last-child{font-size:22px;font-weight:850;margin-top:8px}.checkout{border-top:1px solid var(--line);padding-top:8px}.checkout .primary{margin-top:22px}.auth{max-width:430px;margin:30px auto}.auth .primary{margin-top:20px}.auth h1{font-size:34px}.empty{padding:24px;border:1px dashed #c9bea1;border-radius:16px;grid-column:1/-1}.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.toolbar h2{margin:0}.sticky-cart{position:fixed;bottom:14px;left:20px;right:20px;max-width:500px;margin:auto;background:var(--ink);color:white;border:1px solid #deab1e;box-shadow:0 8px 30px #04050733;border-radius:14px;padding:16px 20px;text-decoration:none;z-index:5;display:flex;justify-content:space-between;gap:12px;font-weight:750}footer{border-top:1px solid var(--line);padding:24px 20px 100px;text-align:center;font-size:14px;color:var(--muted)}footer strong{color:var(--ink)}.storage-warning{background:#fff0ce;border-radius:10px;padding:12px;font-size:14px;margin-bottom:20px}.status{margin:20px 0}.status button{margin-top:10px}.security-note{font-size:12px;color:var(--muted);margin-top:20px}noscript{display:block;padding:20px;text-align:center}.auth label{font-size:15px}@media(min-width:850px){.layout{grid-template-columns:minmax(0,1fr) 350px;align-items:start}.basket{position:sticky;top:24px}.sticky-cart{display:none}main{padding-bottom:60px}footer{padding-bottom:30px}}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}.language-switcher{display:flex;gap:4px}.lang-btn{min-width:44px;min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);font-weight:750}.lang-btn.active{background:var(--gold);border-color:var(--gold)}@media(max-width:380px){header{padding-left:12px;padding-right:12px}.mark{width:64px;height:64px}.wordmark{font-size:19px}}
 </style>
 </head>
 <body>
@@ -34,6 +35,72 @@
 </main><footer><strong>Beer Golem</strong><br><span data-i18n="address">Pohořelec 153/2, Praha 1</span></footer>
 <script>
 'use strict';
+const TEXT = {
+ cs: {
+  title:'Beer Golem — komunitní objednávky',description:'Komunitní objednávky piva Beer Golem. Vyberte si pivo a pošlete objednávku přes WhatsApp.',
+  language:'Jazyk',brandSubtitle:'Komunitní objednávky',noScript:'Pro objednání piva prosím povolte JavaScript.',
+  storageWarning:'Prohlížeč nepovoluje ukládání. Přihlášení a košík budou fungovat pouze do zavření stránky.',
+  authEyebrow:'Pro naši komunitu',authTitle:'Vítejte u Golema.',authIntro:'Zadejte společné heslo a vyberte si svoje pivo.',
+  password:'Heslo',loginButton:'Otevřít nabídku',securityNote:'Heslo omezuje náhodný přístup. Katalog je veřejný soubor na statickém hostingu.',
+  shopEyebrow:'Dobré pivo. Dobrá společnost.',shopTitle:'Co si dáte příště?',
+  shopIntro:'Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.',logout:'Odhlásit se',
+  catalogTitle:'Nabídka piva',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vymazat košík',
+  name:'Jméno *',phone:'Telefon *',note:'Poznámka',notePlaceholder:'Např. kdy si pivo vyzvednete',
+  orderButton:'Objednat přes WhatsApp',orderNotice:'WhatsApp otevře připravenou zprávu. Odešlete ji sami. Košík zůstane uložený.',
+  address:'Pohořelec 153/2, Praha 1',emptyCatalog:'Nabídku právě připravujeme. Brzy zde najdete dostupná piva.',
+  emptyCart:'Zatím tu není žádné pivo. Vyberte si z nabídky.',loading:'Načítáme nabídku…',
+  loadError:'Nabídku se nepodařilo načíst. Zkontrolujte soubor beers.json nebo to zkuste znovu.',
+  retry:'Zkusit znovu',httpsError:'Pro přihlášení otevřete stránku přes HTTPS.',
+  passwordUnset:'Heslo stránky ještě není nastavené.',wrongPassword:'Nesprávné heslo. Zkuste to znovu.',
+  add:'Přidat',remove:'Odebrat',quantity:'Počet kusů',styleCount:'druhů',pieces:'ks',alcohol:'% alkoholu',
+  needBeer:'Nejprve přidejte pivo do košíku.',required:'Vyplňte prosím jméno a telefon.',
+  whatsappError:'Číslo WhatsApp není správně nastavené.',orderTitle:'Beer Golem — nová objednávka',
+  orderName:'Jméno',orderPhone:'Telefon',orderTotal:'Celkem',orderPrice:'Cena celkem',orderNote:'Poznámka',
+  styles:{'Nealkoholické pivo':'Nealkoholické pivo','Nakouřený ležák':'Nakouřený ležák','Polotmavý ležák':'Polotmavý ležák','Světlý ležák':'Světlý ležák'}
+ },
+ en: {
+  title:'Beer Golem — community orders',description:'Community beer orders from Beer Golem. Choose your beer and send your order via WhatsApp.',
+  language:'Language',brandSubtitle:'Community orders',noScript:'Please enable JavaScript to order beer.',
+  storageWarning:'Your browser does not allow storage. Sign-in and your cart will only work until you close this page.',
+  authEyebrow:'For our community',authTitle:'Welcome to Golem.',authIntro:'Enter the shared password and choose your beer.',
+  password:'Password',loginButton:'Open the selection',securityNote:'The password limits casual access. The catalog is a public file on static hosting.',
+  shopEyebrow:'Good beer. Good company.',shopTitle:'What will you have next?',
+  shopIntro:'Choose your beer, add your contact details, and send us your order via WhatsApp.',logout:'Sign out',
+  catalogTitle:'Beer selection',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',
+  name:'Name *',phone:'Phone *',note:'Note',notePlaceholder:'For example, when you will pick up the beer',
+  orderButton:'Order via WhatsApp',orderNotice:'WhatsApp will open a prepared message. Send it yourself. Your cart will remain saved.',
+  address:'Pohořelec 153/2, Prague 1',emptyCatalog:'We are preparing the selection. Available beers will appear here soon.',
+  emptyCart:'There is no beer here yet. Choose from the selection.',loading:'Loading the selection…',
+  loadError:'Could not load the selection. Check beers.json or try again.',
+  retry:'Try again',httpsError:'Open this page over HTTPS to sign in.',
+  passwordUnset:'The page password has not been configured.',wrongPassword:'Incorrect password. Please try again.',
+  add:'Add',remove:'Remove',quantity:'Quantity',styleCount:'styles',pieces:'pcs',alcohol:'% ABV',
+  needBeer:'Add beer to your cart first.',required:'Please enter your name and phone number.',
+  whatsappError:'The WhatsApp number is not configured correctly.',orderTitle:'Beer Golem — new order',
+  orderName:'Name',orderPhone:'Phone',orderTotal:'Total',orderPrice:'Total price',orderNote:'Note',
+  styles:{'Nealkoholické pivo':'Non-alcoholic beer','Nakouřený ležák':'Smoked lager','Polotmavý ležák':'Semi-dark lager','Světlý ležák':'Pale lager'}
+ }
+};
+let currentLang='cs';
+try {const savedLang=localStorage.getItem('beer-golem:lang'); if(savedLang==='cs'||savedLang==='en') currentLang=savedLang;} catch {}
+function t(key) {return TEXT[currentLang][key];}
+function translatePage() {
+ const lang=TEXT[currentLang];
+ document.documentElement.lang=currentLang;
+ document.title=lang.title;
+ document.querySelector('meta[name="description"]').content=lang.description;
+ document.querySelector('.language-switcher').setAttribute('aria-label',lang.language);
+ document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=lang[el.dataset.i18n];});
+ document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{el.placeholder=lang[el.dataset.i18nPlaceholder];});
+ document.querySelectorAll('.lang-btn').forEach(btn=>{const active=btn.dataset.lang===currentLang; btn.classList.toggle('active',active); btn.setAttribute('aria-pressed',String(active));});
+}
+function setLanguage(lang) {
+ if(!TEXT[lang]) return;
+ currentLang=lang;
+ try {localStorage.setItem('beer-golem:lang',lang);} catch {}
+ translatePage();
+ if(loaded) {renderCatalog();renderCart();}
+}
 const CONFIG = {
     passwordHash: "c2bb9abc9f8382e824d7259b7266f6ab31cffc1197307f5d3f4edb4a0ff2dfb2",
     whatsappNumber: "420775431677",
@@ -44,8 +111,10 @@ const CONFIG = {
 const KEYS = {auth:'beer-golem:auth:v1', cart:'beer-golem:cart:v1'};
 const MAX_QUANTITY = 999;
 const $ = id => document.getElementById(id);
-const money = value => new Intl.NumberFormat('cs-CZ', {maximumFractionDigits:2}).format(value) + ' Kč';
+const money = value => new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ', {maximumFractionDigits:2}).format(value) + (currentLang==='en'?' CZK':' Kč');
 let beers = [], cart = Object.create(null), loaded = false, loading = false, sessionExpires = 0;
+document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
+translatePage();
 function readStored(key) {try {return JSON.parse(localStorage.getItem(key));} catch {return null;}}
 function saveStored(key, value) {try {localStorage.setItem(key, JSON.stringify(value));} catch {$('storage-warning').hidden = false;}}
 function removeStored(key) {try {localStorage.removeItem(key);} catch {$('storage-warning').hidden = false;}}
@@ -75,19 +144,19 @@ function totals() {return selections().reduce((acc,item)=>({count:acc.count+item
 function beerLabel(beer) {return [beer.brewery,beer.name].filter(Boolean).join(' ');}
 function stepper(beer, where) {
  const wrap=element('div','stepper');
- const minus=element('button','', '−'); minus.type='button'; minus.setAttribute('aria-label','Odebrat '+beerLabel(beer)); minus.dataset.id=beer.id; minus.dataset.delta='-1'; minus.disabled=!(cart[beer.id]>0);
- const qty=element('span','quantity',String(cart[beer.id]||0)); qty.dataset.quantityId=beer.id; qty.setAttribute('aria-label','Počet kusů: '+(cart[beer.id]||0));
- const plus=element('button','', '+'); plus.type='button'; plus.setAttribute('aria-label','Přidat '+beerLabel(beer)); plus.dataset.id=beer.id; plus.dataset.delta='1'; plus.disabled=(cart[beer.id]||0)>=MAX_QUANTITY;
+ const minus=element('button','', '−'); minus.type='button'; minus.setAttribute('aria-label',t('remove')+' '+beerLabel(beer)); minus.dataset.id=beer.id; minus.dataset.delta='-1'; minus.disabled=!(cart[beer.id]>0);
+ const qty=element('span','quantity',String(cart[beer.id]||0)); qty.dataset.quantityId=beer.id; qty.setAttribute('aria-label',t('quantity')+': '+(cart[beer.id]||0));
+ const plus=element('button','', '+'); plus.type='button'; plus.setAttribute('aria-label',t('add')+' '+beerLabel(beer)); plus.dataset.id=beer.id; plus.dataset.delta='1'; plus.disabled=(cart[beer.id]||0)>=MAX_QUANTITY;
  wrap.append(minus,qty,plus); return wrap;
 }
 function renderCatalog() {
- $('catalog').replaceChildren(); $('catalog-count').textContent=beers.length+' druhů';
- if(!beers.length) {$('catalog').append(element('p','empty muted','Nabídku právě připravujeme. Brzy zde najdete dostupná piva.')); return;}
+ $('catalog').replaceChildren(); $('catalog-count').textContent=beers.length+' '+t('styleCount');
+ if(!beers.length) {$('catalog').append(element('p','empty muted',t('emptyCatalog'))); return;}
  for(const beer of beers) {
   const card=element('article','card'), src=safeImage(beer.image);
   if(src) {const img=element('img','photo'); img.src=src; img.alt=beerLabel(beer); img.loading='lazy'; img.referrerPolicy='no-referrer'; img.addEventListener('error',()=>img.remove(),{once:true}); card.append(img);}
   if(beer.brewery) card.append(element('div','brewery',beer.brewery));
-  const meta=[beer.style,beer.plato == null ? null : new Intl.NumberFormat('cs-CZ').format(beer.plato)+' °P',beer.abv == null ? null : new Intl.NumberFormat('cs-CZ').format(beer.abv)+' % alkoholu',beer.volume].filter(Boolean).join(' · ');
+  const meta=[TEXT[currentLang].styles[beer.style]||beer.style,beer.plato == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.plato)+' °P',beer.abv == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.abv)+' '+t('alcohol'),beer.volume].filter(Boolean).join(' · ');
   card.append(element('h3','',beer.name),element('div','meta',meta));
   if(beer.description) card.append(element('p','description muted',beer.description));
   const bottom=element('div','card-bottom'); bottom.append(element('span','price',money(beer.price)),stepper(beer,'catalog')); card.append(bottom); $('catalog').append(card);
@@ -95,32 +164,32 @@ function renderCatalog() {
 }
 function renderCart() {
  const items=selections(), total=totals(); $('cart-items').replaceChildren();
- if(!items.length) $('cart-items').append(element('p','muted','Zatím tu není žádné pivo. Vyberte si z nabídky.'));
+ if(!items.length) $('cart-items').append(element('p','muted',t('emptyCart')));
  for(const {beer,qty,cents} of items) {const line=element('div','cart-item'); line.append(element('strong','',beerLabel(beer)),element('span','meta',beer.volume+' · '+money(beer.price)+' / ks')); const row=element('div','row'); row.append(stepper(beer,'cart'),element('strong','',money(cents/100))); line.append(row); $('cart-items').append(line);}
- $('total-count').textContent=$('mobile-count').textContent=total.count+' ks'; $('total-price').textContent=$('mobile-price').textContent=money(total.cents/100); $('clear-cart').disabled=!total.count; $('order-button').disabled=!loaded || !total.count; $('cart-link').hidden=!total.count;
+ $('total-count').textContent=$('mobile-count').textContent=total.count+' '+t('pieces'); $('total-price').textContent=$('mobile-price').textContent=money(total.cents/100); $('clear-cart').disabled=!total.count; $('order-button').disabled=!loaded || !total.count; $('cart-link').hidden=!total.count;
 }
 function changeQuantity(id,delta) {
  if(!requireAuth() || !loaded || !beers.some(b=>b.id===id)) return;
  const qty=Math.max(0,Math.min(MAX_QUANTITY,(cart[id]||0)+delta)); if(qty) cart[id]=qty; else delete cart[id]; saveStored(KEYS.cart,cart);
  // Keep product controls in place to preserve touch and keyboard focus.
- for(const el of $('catalog').querySelectorAll('[data-quantity-id]')) if(el.dataset.quantityId===id) {el.textContent=String(qty); el.setAttribute('aria-label','Počet kusů: '+qty);}
+ for(const el of $('catalog').querySelectorAll('[data-quantity-id]')) if(el.dataset.quantityId===id) {el.textContent=String(qty); el.setAttribute('aria-label',t('quantity')+': '+qty);}
  for(const el of $('catalog').querySelectorAll('button[data-id]')) if(el.dataset.id===id) el.disabled=Number(el.dataset.delta)<0?qty===0:qty>=MAX_QUANTITY;
  renderCart(); showError('order-error','');
 }
 async function loadCatalog() {
- if(loading) return; loading=true; loaded=false; $('catalog-status').textContent='Načítáme nabídku…';
+ if(loading) return; loading=true; loaded=false; $('catalog-status').textContent=t('loading');
  try {const response=await fetch('./beers.json',{cache:'no-store'}); if(!response.ok) throw new Error('HTTP '+response.status); const next=validateCatalog(await response.json()); if(!hasAuth()) return; beers=next; cart=cleanCart(readStored(KEYS.cart)); saveStored(KEYS.cart,cart); loaded=true; $('catalog-status').replaceChildren(); renderCatalog(); renderCart();}
- catch(error) {$('catalog-status').replaceChildren(element('p','error','Nabídku se nepodařilo načíst. Zkontrolujte soubor beers.json nebo to zkuste znovu.')); const retry=element('button','primary','Zkusit znovu'); retry.type='button'; retry.addEventListener('click',()=>{if(requireAuth()) loadCatalog();}); $('catalog-status').append(retry); $('order-button').disabled=true;}
+ catch(error) {$('catalog-status').replaceChildren(element('p','error',t('loadError'))); const retry=element('button','primary',t('retry')); retry.type='button'; retry.addEventListener('click',()=>{if(requireAuth()) loadCatalog();}); $('catalog-status').append(retry); $('order-button').disabled=true;}
  finally {loading=false;}
 }
 function openShop() {$('auth').hidden=true; $('shop').hidden=false; $('password').value=''; loadCatalog();}
 $('login-form').addEventListener('submit',async event=>{
  event.preventDefault(); showError('login-error',''); $('login-button').disabled=true;
  try {
-  if(!globalThis.crypto?.subtle) throw new Error('Pro přihlášení otevřete stránku přes HTTPS.');
-  if(!/^[a-f0-9]{64}$/i.test(CONFIG.passwordHash)) throw new Error('Heslo stránky ještě není nastavené.');
+  if(!globalThis.crypto?.subtle) throw new Error(t('httpsError'));
+  if(!/^[a-f0-9]{64}$/i.test(CONFIG.passwordHash)) throw new Error(t('passwordUnset'));
   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode($('password').value)); const hash=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
-  if(hash!==CONFIG.passwordHash.toLowerCase()) throw new Error('Nesprávné heslo. Zkuste to znovu.');
+  if(hash!==CONFIG.passwordHash.toLowerCase()) throw new Error(t('wrongPassword'));
   sessionExpires=Date.now()+CONFIG.authDays*86400000; saveStored(KEYS.auth,{hash:CONFIG.passwordHash,expires:sessionExpires}); openShop();
  } catch(error) {showError('login-error',error.message);} finally {$('login-button').disabled=false;}
 });
@@ -128,16 +197,16 @@ $('logout').addEventListener('click',()=>{sessionExpires=0; removeStored(KEYS.au
 for(const id of ['catalog','cart-items']) $(id).addEventListener('click',event=>{const button=event.target.closest('button[data-id]'); if(button && !button.disabled) changeQuantity(button.dataset.id,Number(button.dataset.delta));});
 $('clear-cart').addEventListener('click',()=>{if(!requireAuth()) return; cart=Object.create(null); saveStored(KEYS.cart,cart); renderCatalog(); renderCart(); showError('order-error','');});
 function orderMessage(name,phone,note) {
- const total=totals(), lines=['Beer Golem — nová objednávka','','Jméno: '+name,'Telefon: '+phone,''];
+ const total=totals(), lines=[t('orderTitle'),'',t('orderName')+': '+name,t('orderPhone')+': '+phone,''];
  for(const {beer,qty,cents} of selections()) lines.push(qty+'× '+beerLabel(beer)+' '+beer.volume+' — '+money(cents/100));
- lines.push('','Celkem: '+total.count+' ks','Cena celkem: '+money(total.cents/100)); if(note) lines.push('','Poznámka: '+note); return lines.join('\n');
+ lines.push('',t('orderTotal')+': '+total.count+' '+t('pieces'),t('orderPrice')+': '+money(total.cents/100)); if(note) lines.push('',t('orderNote')+': '+note); return lines.join('\n');
 }
 $('order-form').addEventListener('submit',event=>{
  event.preventDefault(); showError('order-error',''); if(!requireAuth()) return;
- if(!loaded || !totals().count) {showError('order-error','Nejprve přidejte pivo do košíku.'); return;}
+ if(!loaded || !totals().count) {showError('order-error',t('needBeer')); return;}
  const name=$('customer-name').value.trim(), phone=$('customer-phone').value.trim(), note=$('customer-note').value.trim();
- if(!name || !phone) {showError('order-error','Vyplňte prosím jméno a telefon.'); (!name?$('customer-name'):$('customer-phone')).focus(); return;}
- if(!/^[1-9][0-9]{6,14}$/.test(CONFIG.whatsappNumber)) {showError('order-error','Číslo WhatsApp není správně nastavené.'); return;}
+ if(!name || !phone) {showError('order-error',t('required')); (!name?$('customer-name'):$('customer-phone')).focus(); return;}
+ if(!/^[1-9][0-9]{6,14}$/.test(CONFIG.whatsappNumber)) {showError('order-error',t('whatsappError')); return;}
  location.href='https://wa.me/'+CONFIG.whatsappNumber+'?text='+encodeURIComponent(orderMessage(name,phone,note));
 });
 window.addEventListener('storage',event=>{if(event.key===KEYS.auth || event.key===null) {const auth=readStored(KEYS.auth); sessionExpires=validAuth(auth)?auth.expires:0; requireAuth();} if(loaded && (event.key===KEYS.cart || event.key===null)) {cart=cleanCart(readStored(KEYS.cart)); renderCatalog(); renderCart();}});
