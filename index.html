@@ -9,6 +9,7 @@
 <style>
 :root{color-scheme:light;--ink:#040507;--muted:#66615a;--paper:#fffdf7;--line:#e5e0d2;--gold:#deab1e;--white:#fff;--red:#a33030}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea{font:inherit}button,a,input,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}[hidden]{display:none!important}header{background:var(--white);color:var(--ink);border-bottom:3px solid var(--gold);padding:20px max(20px,calc((100vw - 1160px)/2))}.brand{display:flex;align-items:center;gap:13px}.mark{width:88px;height:88px;flex-shrink:0;object-fit:contain;border-radius:50%;background:#fff}.wordmark{font-size:23px;font-weight:850;letter-spacing:.04em;line-height:1.1}.brand small{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase}main{max-width:1160px;margin:auto;padding:30px 20px 110px}h1{font-size:clamp(30px,6vw,46px);line-height:1.13;letter-spacing:-.04em;margin:8px 0 14px}h2{font-size:23px;margin:0 0 18px}p{margin:0 0 16px}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:750}.muted{color:var(--muted)}.intro{max-width:630px;margin-bottom:30px}.layout{display:grid;gap:26px}.catalog{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}.card,.panel{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px}.card{display:flex;flex-direction:column;min-width:0}.card .brewery{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:750}.card h3{font-size:25px;line-height:1.15;margin:7px 0 12px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:14px}.description{font-size:14px;margin:14px 0;overflow-wrap:anywhere}.photo{width:100%;height:175px;object-fit:contain;margin-bottom:20px;border-radius:12px;background:var(--paper)}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:20px}.price{font-size:21px;font-weight:800;white-space:nowrap}.stepper{display:flex;align-items:center;gap:4px;background:#f6efc5;border-radius:12px;padding:3px}.stepper button{border:0;background:transparent;border-radius:9px;min-width:44px;min-height:44px;font-size:25px;color:var(--ink)}.stepper button:hover{background:#f6efc5}.quantity{min-width:28px;text-align:center;font-weight:750;font-variant-numeric:tabular-nums}.primary{background:var(--gold);color:var(--ink);border:0;border-radius:12px;padding:15px 20px;font-weight:750;min-height:52px;width:100%}.primary:hover{background:#eac04b}.text-button{border:0;background:transparent;min-height:44px;padding:8px 0;text-decoration:underline;color:var(--muted)}.field{display:block;margin:18px 0 0;font-size:14px;font-weight:700}.field input,.field textarea{display:block;width:100%;border:1px solid #d7d0bf;border-radius:10px;min-height:50px;background:#fff;padding:12px;margin-top:6px;color:var(--ink)}textarea{resize:vertical;min-height:90px!important}.error{color:var(--red);font-size:14px;margin:12px 0;overflow-wrap:anywhere}.notice{font-size:13px;margin:12px 0 0}.cart-item{padding:15px 0;border-bottom:1px solid var(--line)}.cart-item strong{display:block;overflow-wrap:anywhere}.cart-item .row{margin-top:10px}.row{display:flex;align-items:center;justify-content:space-between;gap:15px}.totals{margin:22px 0;font-variant-numeric:tabular-nums}.totals .row:last-child{font-size:22px;font-weight:850;margin-top:8px}.checkout{border-top:1px solid var(--line);padding-top:8px}.checkout .primary{margin-top:22px}.auth{max-width:430px;margin:30px auto}.auth .primary{margin-top:20px}.auth h1{font-size:34px}.empty{padding:24px;border:1px dashed #c9bea1;border-radius:16px;grid-column:1/-1}.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.toolbar h2{margin:0}.sticky-cart{position:fixed;bottom:14px;left:20px;right:20px;max-width:500px;margin:auto;background:var(--ink);color:white;border:1px solid #deab1e;box-shadow:0 8px 30px #04050733;border-radius:14px;padding:16px 20px;text-decoration:none;z-index:5;display:flex;justify-content:space-between;gap:12px;font-weight:750}footer{border-top:1px solid var(--line);padding:24px 20px 100px;text-align:center;font-size:14px;color:var(--muted)}footer strong{color:var(--ink)}.storage-warning{background:#fff0ce;border-radius:10px;padding:12px;font-size:14px;margin-bottom:20px}.status{margin:20px 0}.status button{margin-top:10px}.security-note{font-size:12px;color:var(--muted);margin-top:20px}noscript{display:block;padding:20px;text-align:center}.auth label{font-size:15px}@media(min-width:850px){.layout{grid-template-columns:minmax(0,1fr) 350px;align-items:start}.basket{position:sticky;top:24px}.sticky-cart{display:none}main{padding-bottom:60px}footer{padding-bottom:30px}}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}.language-switcher{display:flex;gap:4px}.lang-btn{min-width:44px;min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);font-weight:750}.lang-btn.active{background:var(--gold);border-color:var(--gold)}@media(max-width:380px){header{padding-left:12px;padding-right:12px}.mark{width:64px;height:64px}.wordmark{font-size:19px}}
+.filters{display:flex;gap:8px;overflow-x:auto;margin:0 0 18px;padding:2px 2px 7px;scrollbar-width:thin}.filter-btn{flex:0 0 auto;min-height:42px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--ink);font-size:14px;font-weight:700;white-space:nowrap}.filter-btn:hover{border-color:var(--gold)}.filter-btn.active{background:var(--ink);border-color:var(--ink);color:var(--white)}
 </style>
 </head>
 <body>
@@ -27,7 +28,7 @@
 </section>
 <section id="shop" hidden>
 <div class="intro"><p class="eyebrow" data-i18n="shopEyebrow">Dobré pivo. Dobrá společnost.</p><h1 data-i18n="shopTitle">Co si dáte příště?</h1><p class="muted" data-i18n="shopIntro">Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.</p><button id="logout" class="text-button" type="button" data-i18n="logout">Odhlásit se</button></div>
-<div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div><div id="catalog-status" class="status" role="status"></div><div id="catalog" class="catalog"></div></section>
+<div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div><div id="style-filters" class="filters" role="group" aria-label="Filtrovat podle stylu"></div><div id="catalog-status" class="status" role="status"></div><div id="catalog" class="catalog"></div></section>
 <aside id="basket" class="basket panel" aria-labelledby="basket-title"><h2 id="basket-title" data-i18n="basketTitle">Váš košík</h2><div id="cart-items"></div><div class="totals" aria-live="polite" aria-atomic="true"><div class="row"><span data-i18n="itemCount">Počet kusů</span><strong id="total-count">0 ks</strong></div><div class="row"><span data-i18n="total">Celkem</span><span id="total-price">0 Kč</span></div></div><button id="clear-cart" class="text-button" type="button" disabled data-i18n="clearCart">Vymazat košík</button>
 <form id="order-form" class="checkout"><label class="field"><span data-i18n="name">Jméno *</span><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></label><label class="field"><span data-i18n="phone">Telefon *</span><input id="customer-phone" name="phone" type="tel" autocomplete="tel" maxlength="50" required></label><label class="field"><span data-i18n="note">Poznámka</span><textarea id="customer-note" name="note" rows="3" maxlength="1500" placeholder="Např. kdy si pivo vyzvednete" data-i18n-placeholder="notePlaceholder"></textarea></label><p id="order-error" class="error" role="alert" hidden></p><button id="order-button" type="submit" class="primary" disabled data-i18n="orderButton">Objednat přes WhatsApp</button><p class="muted notice" data-i18n="orderNotice">WhatsApp otevře připravenou zprávu. Odešlete ji sami. Košík zůstane uložený.</p></form></aside></div>
 <a id="cart-link" class="sticky-cart" href="#basket" hidden><span><span data-i18n="basketTitle">Váš košík</span> · <span id="mobile-count">0 ks</span></span><span id="mobile-price">0 Kč</span></a>
@@ -44,7 +45,7 @@ const TEXT = {
   password:'Heslo',loginButton:'Otevřít nabídku',securityNote:'Heslo omezuje náhodný přístup. Katalog je veřejný soubor na statickém hostingu.',
   shopEyebrow:'Dobré pivo. Dobrá společnost.',shopTitle:'Co si dáte příště?',
   shopIntro:'Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.',logout:'Odhlásit se',
-  catalogTitle:'Nabídka piva',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vymazat košík',
+  catalogTitle:'Nabídka piva',allStyles:'Vše',filterByStyle:'Filtrovat podle stylu',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vymazat košík',
   name:'Jméno *',phone:'Telefon *',note:'Poznámka',notePlaceholder:'Např. kdy si pivo vyzvednete',
   orderButton:'Objednat přes WhatsApp',orderNotice:'WhatsApp otevře připravenou zprávu. Odešlete ji sami. Košík zůstane uložený.',
   address:'Pohořelec 153/2, Praha 1',emptyCatalog:'Nabídku právě připravujeme. Brzy zde najdete dostupná piva.',
@@ -66,7 +67,7 @@ const TEXT = {
   password:'Password',loginButton:'Open the selection',securityNote:'The password limits casual access. The catalog is a public file on static hosting.',
   shopEyebrow:'Good beer. Good company.',shopTitle:'What will you have next?',
   shopIntro:'Choose your beer, add your contact details, and send us your order via WhatsApp.',logout:'Sign out',
-  catalogTitle:'Beer selection',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',
+  catalogTitle:'Beer selection',allStyles:'All',filterByStyle:'Filter by style',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',
   name:'Name *',phone:'Phone *',note:'Note',notePlaceholder:'For example, when you will pick up the beer',
   orderButton:'Order via WhatsApp',orderNotice:'WhatsApp will open a prepared message. Send it yourself. Your cart will remain saved.',
   address:'Pohořelec 153/2, Prague 1',emptyCatalog:'We are preparing the selection. Available beers will appear here soon.',
@@ -113,7 +114,7 @@ const KEYS = {auth:'beer-golem:auth:v1', cart:'beer-golem:cart:v1'};
 const MAX_QUANTITY = 999;
 const $ = id => document.getElementById(id);
 const money = value => new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ', {maximumFractionDigits:2}).format(value) + (currentLang==='en'?' CZK':' Kč');
-let beers = [], cart = Object.create(null), loaded = false, loading = false, sessionExpires = 0, catalogMessage = '';
+let beers = [], cart = Object.create(null), loaded = false, loading = false, sessionExpires = 0, catalogMessage = '', activeStyle = '';
 document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
 translatePage();
 function readStored(key) {try {return JSON.parse(localStorage.getItem(key));} catch {return null;}}
@@ -150,19 +151,28 @@ function stepper(beer, where) {
  const plus=element('button','', '+'); plus.type='button'; plus.setAttribute('aria-label',t('add')+' '+beerLabel(beer)); plus.dataset.id=beer.id; plus.dataset.delta='1'; plus.disabled=(cart[beer.id]||0)>=MAX_QUANTITY;
  wrap.append(minus,qty,plus); return wrap;
 }
+function styleLabel(style) {return TEXT[currentLang].styles[style]||style;}
+function renderStyleFilters() {
+ const styles=[...new Set(beers.map(beer=>beer.style).filter(Boolean))].sort((a,b)=>styleLabel(a).localeCompare(styleLabel(b),currentLang));
+ if(activeStyle && !styles.includes(activeStyle)) activeStyle='';
+ const filters=$('style-filters'); filters.setAttribute('aria-label',t('filterByStyle')); filters.replaceChildren();
+ for(const style of ['',...styles]) {const button=element('button','filter-btn'+(style===activeStyle?' active':''),style?styleLabel(style):t('allStyles')); button.type='button'; button.dataset.style=style; button.setAttribute('aria-pressed',String(style===activeStyle)); filters.append(button);}
+}
 function renderCatalog() {
- $('catalog').replaceChildren(); $('catalog-count').textContent=beers.length+' '+t('styleCount');
- if(!beers.length) {$('catalog').append(element('p','empty muted',t('emptyCatalog'))); return;}
- for(const beer of beers) {
+ renderStyleFilters(); const shown=activeStyle?beers.filter(beer=>beer.style===activeStyle):beers;
+ $('catalog').replaceChildren(); $('catalog-count').textContent=(activeStyle?shown.length+'/'+beers.length:beers.length)+' '+t('styleCount');
+ if(!shown.length) {$('catalog').append(element('p','empty muted',t('emptyCatalog'))); return;}
+ for(const beer of shown) {
   const card=element('article','card'), src=safeImage(beer.image);
   if(src) {const img=element('img','photo'); img.src=src; img.alt=beerLabel(beer); img.loading='lazy'; img.referrerPolicy='no-referrer'; img.addEventListener('error',()=>img.remove(),{once:true}); card.append(img);}
   if(beer.brewery) card.append(element('div','brewery',beer.brewery));
-  const meta=[TEXT[currentLang].styles[beer.style]||beer.style,beer.plato == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.plato)+' °P',beer.abv == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.abv)+' '+t('alcohol'),beer.volume].filter(Boolean).join(' · ');
+  const meta=[styleLabel(beer.style),beer.plato == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.plato)+'°',beer.abv == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.abv)+' '+t('alcohol'),beer.volume].filter(Boolean).join(' · ');
   card.append(element('h3','',beer.name),element('div','meta',meta));
   if(beer.description) card.append(element('p','description muted',beer.description));
   const bottom=element('div','card-bottom'); bottom.append(element('span','price',money(beer.price)),stepper(beer,'catalog')); card.append(bottom); $('catalog').append(card);
  }
 }
+$('style-filters').addEventListener('click',event=>{const button=event.target.closest('button[data-style]'); if(!button) return; activeStyle=button.dataset.style; renderCatalog();});
 function renderCart() {
  const items=selections(), total=totals(); $('cart-items').replaceChildren();
  if(!items.length) $('cart-items').append(element('p','muted',t('emptyCart')));
