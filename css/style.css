@@ -376,7 +376,7 @@ address {
 }
 
 .home-hero__list li::before {
-    content: '•';
+    content: "\2022";
     position: absolute;
     left: 0;
     top: 50%;
@@ -406,6 +406,55 @@ address {
     display: flex;
     gap: var(--space-md);
     flex-wrap: wrap;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-section {
+        min-height: 100vh;
+        padding-top: calc(var(--nav-height) + var(--space-2xl));
+        padding-bottom: var(--space-2xl);
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-xl);
+    }
+
+    .hero-text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        gap: var(--space-md);
+    }
+
+    .hero-subtitle,
+    .hero-headline {
+        margin-bottom: 0;
+    }
+
+    .hero-headline {
+        font-size: clamp(3rem, 6vw, var(--font-size-4xl));
+    }
+
+    .home-hero__subtitle,
+    .home-hero__list {
+        margin: 0;
+    }
+
+    .home-hero__list {
+        width: fit-content;
+        align-items: flex-start;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-logo-container {
+        width: min(100%, 320px);
+    }
 }
 
 /* ===================================================================
@@ -1300,20 +1349,30 @@ address {
     .hero-content {
         flex-direction: column;
         text-align: center;
-        gap: var(--space-2xl);
+        gap: var(--space-lg);
     }
     
     .hero-text {
+        justify-content: flex-start;
         text-align: center;
-        gap: var(--space-xl);
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    .hero-subtitle,
+    .hero-headline {
+        margin-bottom: 0;
     }
     
     .home-hero__subtitle {
         text-align: center;
+        margin: 0;
     }
     
     .home-hero__list {
-        align-items: center;
+        width: fit-content;
+        margin: 0;
+        align-items: flex-start;
     }
     
     .hero-subtitle {
@@ -1321,7 +1380,8 @@ address {
     }
     
     .hero-logo-container {
-        margin-bottom: var(--space-xl);
+        width: min(100%, 280px);
+        margin-bottom: 0;
     }
 
     .hero-manifesto {
