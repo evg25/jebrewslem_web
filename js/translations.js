@@ -14,7 +14,7 @@ const translations = {
             orders: 'Orders',
             merch: 'Merch',
             gallery: 'Gallery',
-            contacts: 'Contacts'
+            contacts: 'Contact'
         },
         
         // Hero Section
@@ -29,37 +29,67 @@ const translations = {
         beer: {
             title: 'AMERICAN PALE ALE',
             subtitle: 'A light, refreshing, and easy-drinking craft beer<br>with a stable, proven recipe',
-            btnPricing: 'View Pricing'
+            btnPricing: 'View Pricing',
+            untappdLabel: 'View on Untappd',
+            brevnovAle: {
+                name: 'Brevnov Ale - 2024',
+                style: 'APA',
+                description: 'Brewed in the shadow of Prague\'s oldest monastery. Bright, hoppy, and balanced — our first craft ale.'
+            }
         },
         
-        // Orders Section
+        // Orders / Request Form Section
         orders: {
-            title: 'Get JEBREWSALEM',
-            subtitle: 'Bring the spirit of two cities to your table',
-            direct: {
-                title: 'Direct Order',
-                description: 'Order directly from our brewery. Choose your favorites, select quantity, and we\'ll deliver the craft right to your door.',
-                feature1: 'Free delivery on orders over $50',
-                feature2: 'Fresh from the brewery',
-                feature3: 'Special packaging available',
-                btn: 'Order Online'
+            title: 'Order & Event Request',
+            subtitle: 'T-shirts, kegs, and event tap setups — tell us what you need.',
+            typeLabel: 'What would you like to order?',
+            type: {
+                tshirt: 'T-shirt',
+                keg: '30 L beer keg',
+                tap: 'Beer with tap equipment'
             },
-            nearby: {
-                title: 'Find Nearby',
-                description: 'Discover JEBREWSALEM at select bars, restaurants, and retailers. Experience our beer in venues that share our passion for quality.',
-                feature1: '50+ partner locations',
-                feature2: 'Always fresh stock',
-                feature3: 'Knowledgeable staff',
-                btn: 'Find Locations'
+            fields: {
+                name: 'Name *',
+                email: 'Email *',
+                phone: 'Phone *',
+                comment: 'Comment',
+                consent: 'I agree to the processing of my personal data for the purpose of handling this request.',
+                consentLink: 'See our Privacy Policy',
+                ageConfirm: 'I confirm that I am over 18 years old.',
+                submit: 'Send request',
+                selectPlaceholder: '— Select —',
+                gender: 'Gender / fit',
+                genderMale: 'Men',
+                genderFemale: 'Women',
+                genderUnisex: 'Unisex',
+                size: 'Size',
+                quantity: 'Quantity',
+                beer: 'Beer',
+                volume: 'Volume',
+                kegsQty: 'Number of kegs',
+                delivery: 'Pickup / delivery',
+                deliveryPickup: 'Pickup',
+                deliveryPrague: 'Delivery in Prague',
+                deliveryDiscuss: 'Need to discuss',
+                date: 'Preferred date',
+                eventDate: 'Event date',
+                eventLocation: 'Event location',
+                people: 'Approx. number of people',
+                kegsNeeded: 'How many 30 L kegs do you need?',
+                setupNeeded: 'Do you need delivery / setup?',
+                setupYes: 'Yes',
+                setupNo: 'No',
+                setupUnsure: 'Not sure'
             },
-            club: {
-                title: 'Beer Club',
-                description: 'Join our monthly beer club for exclusive releases, limited editions, and special merchandise. Members get first taste of everything new.',
-                feature1: 'Monthly exclusive releases',
-                feature2: 'Members-only events',
-                feature3: 'Priority access to limited editions',
-                btn: 'Join the Club'
-            }
+            errors: {
+                required: 'This field is required.',
+                email: 'Please enter a valid email address.',
+                number: 'Please enter a positive number.',
+                date: 'Please use DD.MM.YYYY format.',
+                type: 'Please select a request type.'
+            },
+            success: 'Your request has been sent! We\'ll get back to you soon.',
+            error: 'Please fill in all required fields correctly.'
         },
         
         // Merchandise Section
@@ -68,8 +98,8 @@ const translations = {
             subtitle: 'Wear the spirit of two cities',
             tshirt: {
                 name: 'JEBREWSALEM Classic Tee',
-                price: '$29.99',
-                description: 'Premium cotton t-shirt featuring our iconic logo. Comfortable, stylish, and perfect for beer lovers.',
+                price: '500 Kč',
+                description: 'Limited Jebrewsalem brewery T-shirt with original artwork. Soft everyday wear for craft beer lovers, festivals, and taproom events.',
                 sizes: 'Sizes:',
                 sizesValue: 'S, M, L, XL, XXL',
                 material: 'Material:',
@@ -88,8 +118,8 @@ const translations = {
         
         // Contacts Section
         contacts: {
-            title: 'Get in Touch',
-            subtitle: 'Questions, collaborations, or just want to say hi?',
+            title: 'Contact',
+            subtitle: 'Get in touch with us',
             visit: 'Visit Us',
             brewery: 'JEBREWSALEM Brewery',
             location: 'Old Town Quarter',
@@ -106,7 +136,69 @@ const translations = {
         footer: {
             tagline: 'Craft beer with soul',
             copyright: '© 2026 JEBREWSALEM. All rights reserved.',
-            disclaimer: 'Drink responsibly. You must be 21+ to consume alcohol.'
+            disclaimer: 'Drink responsibly. You must be 18+ to consume alcohol.'
+        },
+
+        // Keg Rental page
+        kegRental: {
+            title: 'Beer Keg Rental Prague | JEBREWSALEM',
+            metaDesc: 'Rent a 30\u202fL craft beer keg in Prague. Brevnov Ale delivered or picked up. No minimum order, 12\u202fh lead time. 1\u2009000\u202fCZK deposit.',
+            h1: 'Beer Keg Rental Prague',
+            intro: 'Order a 30\u202fL keg of our Brevnov Ale craft beer for your event, party, or personal enjoyment. We operate in Prague only.',
+            whatTitle: 'What you get',
+            whatDesc: 'A full 30\u202fL keg of Brevnov Ale \u2014 our Prague-brewed American Pale Ale (5\u202f% ABV, 22\u202fIBU). Available keg-only or keg\u202f+\u202ftap equipment.',
+            detailsTitle: 'Rental details',
+            deposit: 'Keg deposit',
+            depositValue: '1\u202f000\u202fCZK (refundable)',
+            leadTime: 'Lead time',
+            leadTimeValue: 'As little as 12 hours',
+            minOrder: 'Minimum order',
+            minOrderValue: 'None',
+            area: 'Service area',
+            areaValue: 'Prague only',
+            delivery: 'Delivery',
+            deliveryValue: 'Pickup or delivery in Prague',
+            ctaTitle: 'Ready to order?',
+            ctaDesc: 'Fill out the order form on our homepage and select \u201c30\u202fL beer keg\u201d.',
+            ctaBtn: 'Go to order form',
+            contactTitle: 'Questions?',
+            contactDesc: 'Contact us by email or WhatsApp.'
+        },
+
+        // Tap Rental page
+        tapRental: {
+            title: 'Beer Tap Rental Prague | JEBREWSALEM',
+            metaDesc: 'Beer tap equipment rental for events in Prague. Keg + tap setup, private parties and corporate events. 10\u202f000\u202fCZK deposit, 12\u202fh lead time.',
+            h1: 'Beer Tap Rental Prague',
+            intro: 'Full beer tap setup with our Brevnov Ale craft beer for your event. Private parties, corporate events, and celebrations in Prague.',
+            whatTitle: 'What is included',
+            whatDesc: 'A complete beer on tap solution: 30\u202fL keg(s) of Brevnov Ale plus tap equipment. Ideal for events where guests appreciate fresh draft beer.',
+            detailsTitle: 'Service details',
+            deposit: 'Equipment deposit',
+            depositValue: '10\u202f000\u202fCZK (refundable)',
+            leadTime: 'Lead time',
+            leadTimeValue: 'As little as 12 hours',
+            minOrder: 'Minimum order',
+            minOrderValue: 'None',
+            area: 'Service area',
+            areaValue: 'Prague only',
+            events: 'Suitable for',
+            eventsValue: 'Private parties, corporate events, celebrations',
+            ctaTitle: 'Ready to book?',
+            ctaDesc: 'Fill out the order form on our homepage and select \u201cBeer with tap equipment\u201d.',
+            ctaBtn: 'Go to order form',
+            contactTitle: 'Questions?',
+            contactDesc: 'Contact us by email or WhatsApp.'
+        },
+
+        // Cookie consent banner
+        consent: {
+            ariaLabel: 'Cookie preferences',
+            title: 'Cookie preferences',
+            text: 'We use essential storage to remember your language choice. With your consent, we also use optional analytics cookies to understand how visitors use our website and improve it.',
+            policyLink: 'Privacy Policy',
+            reject: 'Reject optional cookies',
+            accept: 'Accept optional cookies'
         }
     },
     
@@ -118,7 +210,7 @@ const translations = {
             orders: 'Objednávky',
             merch: 'Merch',
             gallery: 'Galerie',
-            contacts: 'Kontakty'
+            contacts: 'Kontakt'
         },
         
         // Hero Section
@@ -133,37 +225,67 @@ const translations = {
         beer: {
             title: 'AMERICAN PALE ALE',
             subtitle: 'Lehké, osvěžující a snadno pitelné řemeslné pivo<br>se stabilním, prověřeným receptem',
-            btnPricing: 'Zobrazit ceny'
+            btnPricing: 'Zobrazit ceny',
+            untappdLabel: 'Zobrazit na Untappd',
+            brevnovAle: {
+                name: 'Brevnov Ale - 2024',
+                style: 'APA',
+                description: 'Uvařeno ve stínu nejstaršího pražského kláštera. Svěží, chmelové a vyvážené — naše první craft ale.'
+            }
         },
         
-        // Orders Section
+        // Orders / Request Form Section
         orders: {
-            title: 'Získejte JEBREWSALEM',
-            subtitle: 'Přineste ducha dvou měst ke svému stolu',
-            direct: {
-                title: 'Přímá objednávka',
-                description: 'Objednejte si přímo z našeho pivovaru. Vyberte si své oblíbené, zvolte množství a my doručíme řemeslo přímo k vašim dveřím.',
-                feature1: 'Doprava zdarma při objednávkách nad $50',
-                feature2: 'Čerstvé z pivovaru',
-                feature3: 'Speciální balení k dispozici',
-                btn: 'Objednat online'
+            title: 'Objednávka / poptávka na akci',
+            subtitle: 'Trička, sudy, výčepní zařízení na akce \u2014 napište nám, co potřebujete.',
+            typeLabel: 'Co si chcete objednat?',
+            type: {
+                tshirt: 'Tričko',
+                keg: 'Sud piva 30 l',
+                tap: 'Pivo s výčepním zařízením'
             },
-            nearby: {
-                title: 'Najít poblíž',
-                description: 'Objevte JEBREWSALEM ve vybraných barech, restauracích a obchodech. Vychutnejte si naše pivo v místech, která sdílejí naši vášeň pro kvalitu.',
-                feature1: 'Více než 50 partnerských míst',
-                feature2: 'Vždy čerstvá zásoba',
-                feature3: 'Odborný personál',
-                btn: 'Najít místa'
+            fields: {
+                name: 'Jméno *',
+                email: 'Email *',
+                phone: 'Telefon *',
+                comment: 'Poznámka',
+                consent: 'Souhlasím se zpracováním svých osobních údajů za účelem vyřízení této poptávky.',
+                consentLink: 'Viz Zásady ochrany osobních údajů',
+                ageConfirm: 'Potvrzuji, že jsem starší 18 let.',
+                submit: 'Odeslat poptávku',
+                selectPlaceholder: '\u2014 Vyberte \u2014',
+                gender: 'Střih',
+                genderMale: 'Pánské',
+                genderFemale: 'Dámské',
+                genderUnisex: 'Unisex',
+                size: 'Velikost',
+                quantity: 'Počet kusů',
+                beer: 'Pivo',
+                volume: 'Objem',
+                kegsQty: 'Počet sudů',
+                delivery: 'Odběr / doručení',
+                deliveryPickup: 'Osobní odběr',
+                deliveryPrague: 'Doručení po Praze',
+                deliveryDiscuss: 'Domluvit individuálně',
+                date: 'Preferovaný termín',
+                eventDate: 'Datum akce',
+                eventLocation: 'Místo akce',
+                people: 'Přibližný počet lidí',
+                kegsNeeded: 'Kolik 30l sudů potřebujete?',
+                setupNeeded: 'Potřebujete doručení / instalaci?',
+                setupYes: 'Ano',
+                setupNo: 'Ne',
+                setupUnsure: 'Nejsem si jistý/á'
             },
-            club: {
-                title: 'Pivní klub',
-                description: 'Připojte se k našemu měsíčnímu pivnímu klubu pro exkluzivní vydání, limitované edice a speciální zboží. Členové dostanou první ochutnávku všeho nového.',
-                feature1: 'Měsíční exkluzivní vydání',
-                feature2: 'Akce pouze pro členy',
-                feature3: 'Prioritní přístup k limitovaným edicím',
-                btn: 'Vstoupit do klubu'
-            }
+            errors: {
+                required: 'Toto pole je povinné.',
+                email: 'Zadejte prosím platnou emailovou adresu.',
+                number: 'Zadejte prosím kladné číslo.',
+                date: 'Použijte prosím formát DD.MM.RRRR.',
+                type: 'Vyberte prosím typ poptávky.'
+            },
+            success: 'Vaše poptávka byla odeslána! Brzy se vám ozveme.',
+            error: 'Vyplňte prosím všechna povinná pole správně.'
         },
         
         // Merchandise Section
@@ -172,8 +294,8 @@ const translations = {
             subtitle: 'Noste ducha dvou měst',
             tshirt: {
                 name: 'JEBREWSALEM Klasické tričko',
-                price: '$29.99',
-                description: 'prémiové bavlněné tričko s naším ikonickým logem. Pohodlné, stylové a perfektní pro milovníky piva.',
+                price: '500 Kč',
+                description: 'Limitované tričko pivovaru Jebrewsalem s originálním artwork. Pohodné každodenní oblečení pro milovníky craft piva, festivaly a taproom akce.',
                 sizes: 'Velikosti:',
                 sizesValue: 'S, M, L, XL, XXL',
                 material: 'Materiál:',
@@ -192,8 +314,8 @@ const translations = {
         
         // Contacts Section
         contacts: {
-            title: 'Kontaktujte nás',
-            subtitle: 'Otázky, spolupráce nebo jen chcete pozdravit?',
+            title: 'Kontakt',
+            subtitle: 'Ozvěte se nám',
             visit: 'Navštivte nás',
             brewery: 'Pivovar JEBREWSALEM',
             location: 'Čtvrť Starého Města',
@@ -210,8 +332,69 @@ const translations = {
         footer: {
             tagline: 'Řemeslné pivo s duší',
             copyright: '© 2026 JEBREWSALEM. Všechna práva vyhrazena.',
-            disclaimer: 'Pijte odpovědně. Musíte mít 21+.'
+            disclaimer: 'Pijte odpovědně. Musíte být starší 18 let.'
+        },
+
+        // Keg Rental page
+        kegRental: {
+            title: 'Pronájem pivního sudu Praha | JEBREWSALEM',
+            metaDesc: 'Pronájem 30l pivního sudu v Praze. Craft pivo Brevnov Ale \u2014 osobní odběr nebo doručení. Bez minimální objednávky, do 12 hodin. Záloha 1\u202f000\u202fKč.',
+            h1: 'Pronájem pivního sudu Praha',
+            intro: 'Půjčte si 30l sud našeho craft piva Brevnov Ale na párty, oslavu nebo firemní akci. Provozujeme pouze na území Prahy.',
+            whatTitle: 'Co dostanete',
+            whatDesc: 'Plný 30l sud piva Brevnov Ale \u2014 Prague-brewed American Pale Ale (5\u202f% alc., 22\u202fIBU). Na výběr: pouze sud, nebo sud\u202f+\u202fvýčepní zařízení.',
+            detailsTitle: 'Detaily pronájmu',
+            deposit: 'Záloha za sud',
+            depositValue: '1\u202f000\u202fKč (vratná)',
+            leadTime: 'Dodací lhůta',
+            leadTimeValue: 'Již od 12 hodin',
+            minOrder: 'Minimální objednávka',
+            minOrderValue: 'Žádná',
+            area: 'Oblast doručení',
+            areaValue: 'Pouze Praha',
+            delivery: 'Předání',
+            deliveryValue: 'Osobní odběr nebo doručení po Praze',
+            ctaTitle: 'Chcete si objednat?',
+            ctaDesc: 'Vyplňte poptávkový formulář na úvodní stránce a vyberte \u201eSud piva 30\u202fl\u201c.',
+            ctaBtn: 'Přejít na formulář',
+            contactTitle: 'Máte dotazy?',
+            contactDesc: 'Kontaktujte nás e-mailem nebo přes WhatsApp.'
+        },
+
+        // Tap Rental page
+        tapRental: {
+            title: 'Pronájem výčepu Praha | JEBREWSALEM',
+            metaDesc: 'Pronájem pivního výčepu na akce v Praze. Keg + výčepní zařízení, soukromé a firemní akce. Záloha 10\u202f000\u202fKč, dodání do 12 hodin.',
+            h1: 'Pronájem výčepu na akce Praha',
+            intro: 'Kompletní výčepní servis s naším craft pivem Brevnov Ale. Soukromé párty, firemní akce a oslavy na území Prahy.',
+            whatTitle: 'Co je součástí služby',
+            whatDesc: 'Kompletní řešení čepovaného piva: 30l sud(y) Brevnov Ale + výčepní zařízení. Ideální pro akce, kde si hosté chtějí vychutnat čerstvé pivo přímo z pipy.',
+            detailsTitle: 'Detaily služby',
+            deposit: 'Záloha za výčepní zařízení',
+            depositValue: '10\u202f000\u202fKč (vratná)',
+            leadTime: 'Dodací lhůta',
+            leadTimeValue: 'Již od 12 hodin',
+            minOrder: 'Minimální objednávka',
+            minOrderValue: 'Žádná',
+            area: 'Oblast služby',
+            areaValue: 'Pouze Praha',
+            events: 'Vhodné pro',
+            eventsValue: 'Soukromé párty, firemní akce, oslavy',
+            ctaTitle: 'Chcete zarezervovat?',
+            ctaDesc: 'Vyplňte poptávkový formulář na úvodní stránce a vyberte \u201ePivo s výčepním zařízením\u201c.',
+            ctaBtn: 'Přejít na formulář',
+            contactTitle: 'Máte dotazy?',
+            contactDesc: 'Kontaktujte nás e-mailem nebo přes WhatsApp.'
+        },
+
+        // Souhlas s cookies
+        consent: {
+            ariaLabel: 'Nastavení cookies',
+            title: 'Nastavení cookies',
+            text: 'Používáme nezbytné úložiště pro zapamatování volby jazyka. S vaším souhlasem používáme také volitelné analytické cookies, abychom lépe porozuměli návštěvnosti webu a mohli ho zlepšovat.',
+            policyLink: 'Zásady ochrany osobních údajů',
+            reject: 'Odmítnout volitelné cookies',
+            accept: 'Přijmout volitelné cookies'
         }
     }
 };
-

@@ -81,6 +81,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* belt-and-suspenders with body; fixes cases where body overflow-x alone doesn't contain fixed/absolute children */
 }
 
 body {
@@ -124,6 +125,14 @@ a:hover {
 
 ul {
     list-style: none;
+}
+
+/* Prevent media elements from ever exceeding their container */
+img,
+video,
+svg,
+iframe {
+    max-width: 100%;
 }
 
 address {
@@ -338,6 +347,7 @@ address {
     margin-bottom: 0;
     line-height: 1;
     color: var(--color-dark);
+    overflow-wrap: break-word; /* prevent long words from overflowing on narrow viewports */
 }
 
 .home-hero__subtitle {
@@ -573,80 +583,44 @@ address {
     color: var(--color-dark);
 }
 
-/* ===================================================================
-   Orders Section
-   =================================================================== */
-
-.orders-section {
-    padding: var(--space-3xl) 0;
-    background-color: var(--color-bg);
-}
-
-.orders-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
-}
-
-.order-card {
-    background-color: var(--color-sand);
-    border: var(--border-width) solid var(--color-dark);
-    border-radius: var(--border-radius);
-    padding: var(--space-xl);
-    text-align: center;
-    transition: transform var(--transition-base);
-}
-
-.order-card:hover {
-    transform: translateY(-4px);
-}
-
-.order-icon {
-    margin-bottom: var(--space-lg);
-}
-
-.icon-box,
-.icon-location,
-.icon-subscription {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    background-color: var(--color-gold);
-    border: var(--border-width) solid var(--color-dark);
-    border-radius: var(--border-radius);
-}
-
-.order-title {
-    font-size: var(--font-size-2xl);
-    margin-bottom: var(--space-md);
-}
-
-.order-description {
-    font-size: var(--font-size-base);
-    margin-bottom: var(--space-lg);
-    line-height: 1.6;
-}
-
-.order-features {
-    text-align: left;
-    margin-bottom: var(--space-xl);
-    padding-left: var(--space-md);
-}
-
-.order-features li {
+/* Secondary/ghost style — Untappd is informational, not the primary conversion action */
+.untappd-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
+    font-family: var(--font-body);
     font-size: var(--font-size-sm);
-    margin-bottom: var(--space-sm);
-    padding-left: var(--space-md);
-    position: relative;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    background-color: transparent;
+    border: 2px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color var(--transition-base), color var(--transition-fast);
 }
 
-.order-features li::before {
-    content: '■';
-    position: absolute;
-    left: 0;
-    color: var(--color-gold);
-    font-size: var(--font-size-base);
+.untappd-link:hover {
+    background-color: var(--color-dark);
+    color: var(--color-bg);
 }
+
+.untappd-link:hover .untappd-icon {
+    fill: var(--color-bg);
+}
+
+.untappd-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-dark);
+    flex-shrink: 0;
+    transition: fill var(--transition-fast);
+}
+
+/* ===================================================================
+   Contacts Section
+   =================================================================== */
 
 /* ===================================================================
    Merchandise Section
@@ -654,7 +628,7 @@ address {
 
 .merch-section {
     background-color: var(--color-bg);
-    padding: var(--space-5xl) 0;
+    padding: var(--space-3xl) 0;
 }
 
 .merch-grid {
@@ -677,30 +651,34 @@ address {
     box-shadow: var(--shadow-lg);
 }
 
+/* Product visual — dark branded panel; logo image replaces the old dark square */
 .merch-image-placeholder {
-    background-color: var(--color-warm-gray);
-    height: 300px;
+    background-color: var(--color-dark);
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: var(--space-sm);
     border-bottom: var(--border-width) solid var(--color-dark);
     position: relative;
 }
 
-.merch-icon {
-    width: 120px;
-    height: 120px;
-    background-color: var(--color-dark);
+/* Brand logo as product visual; replace src with real product photo when available */
+.merch-product-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: var(--border-width) solid var(--color-gold);
     border-radius: var(--border-radius);
-    margin-bottom: var(--space-md);
 }
 
 .merch-label {
     font-family: var(--font-heading);
-    font-size: var(--font-size-2xl);
-    color: var(--color-dark);
+    font-size: var(--font-size-lg);
+    color: var(--color-gold);
     text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
 .merch-content {
@@ -731,14 +709,14 @@ address {
     margin-bottom: var(--space-lg);
 }
 
+/* Specs — 2-col grid, no heavy nested box */
 .merch-details {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xs) var(--space-md);
     margin-bottom: var(--space-lg);
-    padding: var(--space-md);
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: var(--border-radius);
+    padding: var(--space-sm) 0;
+    border-top: 1px solid rgba(43, 26, 18, 0.18);
 }
 
 .merch-details .detail {
@@ -751,9 +729,18 @@ address {
     .merch-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .merch-image-placeholder {
-        height: 250px;
+        height: 220px;
+    }
+
+    .merch-product-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .merch-content {
+        padding: var(--space-md);
     }
 }
 
@@ -763,7 +750,7 @@ address {
 
 .contacts-section {
     padding: var(--space-3xl) 0;
-    background-color: var(--color-sand);
+    background-color: var(--color-bg); /* Light background — alternates with the blue Gallery section above */
 }
 
 /* ===================================================================
@@ -772,7 +759,7 @@ address {
 
 .gallery-section {
     padding: var(--space-3xl) 0;
-    background-color: var(--color-bg);
+    background-color: var(--color-sand); /* Blue section — matches the alternating sand/light rhythm */
 }
 
 .gallery-grid {
@@ -1032,6 +1019,8 @@ address {
 .contact-details a {
     color: var(--color-dark);
     font-weight: var(--font-weight-semibold);
+    /* prevent phone/email from wrapping mid-value (e.g. "677" appearing alone on a line) */
+    white-space: nowrap;
 }
 
 .contact-details a:hover {
@@ -1126,9 +1115,22 @@ address {
 .footer-brand p {
     font-size: var(--font-size-lg);
     color: var(--color-sand);
-    margin-bottom: var(--space-xl);
+    /* reduced default; last-child rule provides the gap above the legal block */
+    margin-bottom: var(--space-sm);
     text-transform: none;
     font-family: var(--font-body);
+}
+
+.footer-brand p:last-child {
+    margin-bottom: var(--space-xl);
+}
+
+/* Location sub-line in footer — smaller, less prominent than tagline.
+   Use .footer-brand .footer-location for specificity over .footer-brand p */
+.footer-brand .footer-location {
+    font-size: var(--font-size-xs);
+    color: var(--color-warm-gray);
+    letter-spacing: 0.04em;
 }
 
 .footer-legal {
@@ -1138,6 +1140,40 @@ address {
 
 .footer-legal p {
     margin-bottom: var(--space-xs);
+}
+
+.footer-legal-link {
+    color: var(--color-warm-gray);
+    font-size: var(--font-size-xs);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.footer-legal-link:hover,
+.footer-legal-link:focus {
+    color: var(--color-gold);
+    border-bottom-color: var(--color-gold);
+    outline: none;
+}
+
+/* Privacy Policy link inside the GDPR consent label — gold accent, clearly clickable */
+.form-gdpr-link {
+    color: var(--color-gold);
+    font-size: inherit;
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-gold);
+    margin-left: 0.25em;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.form-gdpr-link:hover,
+.form-gdpr-link:focus {
+    color: var(--color-dark);
+    border-bottom-color: var(--color-dark);
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
 }
 
 /* ===================================================================
@@ -1185,11 +1221,13 @@ address {
         position: fixed;
         top: var(--nav-height);
         left: 0;
-        width: 70%;
-        max-width: 400px;
+        /* cap at 280px so drawer never dominates the viewport */
+        width: min(80vw, 280px);
+        max-width: 280px;
         background-color: var(--color-sand);
-        padding: var(--space-lg);
-        gap: var(--space-md);
+        /* remove horizontal padding here; nav-link handles its own inset */
+        padding: var(--space-md) 0;
+        gap: 2px;
         border-right: var(--border-width) solid var(--color-dark);
         border-bottom: 1px solid var(--color-border);
         transform: translateX(-100%);
@@ -1212,14 +1250,18 @@ address {
     .nav-link {
         display: block;
         width: 100%;
-        padding: var(--space-sm) 0;
+        padding: 12px var(--space-md);
         border-bottom: none;
+        /* reserve space for left accent so layout does not shift on activation */
+        border-left: 3px solid transparent;
         font-size: var(--font-size-base);
     }
     
     .nav-link.active {
         color: var(--color-gold);
         border-bottom: none;
+        border-left-color: var(--color-gold); /* visible gold left accent line */
+        background-color: rgba(242, 183, 5, 0.08); /* subtle gold tint background */
     }
     
     /* Language switcher on mobile */
@@ -1249,7 +1291,10 @@ address {
     
     /* Hero adjustments */
     .hero-section {
-        padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-xl);
+        /* remove horizontal padding — .container handles the inset;
+           double padding was narrowing content to ~264px on 360px devices */
+        padding: calc(var(--nav-height) + var(--space-xl)) 0 var(--space-xl);
+        min-height: auto; /* don't lock the section to full-viewport height on mobile */
     }
     
     .hero-content {
@@ -1275,6 +1320,20 @@ address {
         font-size: var(--font-size-lg);
     }
     
+    .hero-logo-container {
+        margin-bottom: var(--space-xl);
+    }
+
+    .hero-manifesto {
+        font-size: var(--font-size-base);
+        line-height: 1.6;
+        margin-bottom: var(--space-lg);
+    }
+
+    .hero-manifesto p:last-child {
+        font-size: var(--font-size-lg);
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: stretch;
@@ -1290,7 +1349,22 @@ address {
     .contacts-grid {
         grid-template-columns: 1fr;
     }
-    
+
+    /* Contact info card — lighter border and tighter padding on mobile */
+    .contact-info {
+        padding: var(--space-md);
+        border-width: 1px;
+    }
+
+    /* Social buttons — tighter gap and full-width on mobile for clean stacking */
+    .social-links {
+        gap: var(--space-sm);
+    }
+
+    .social-link {
+        text-align: center;
+    }
+
     /* Gallery - 2 columns on tablet */
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1316,7 +1390,32 @@ address {
     .nav-logo {
         height: 45px;
     }
-    
+
+    /* Hero — further tighten on very small phones */
+    .hero-section {
+        padding-top: calc(var(--nav-height) + var(--space-lg));
+        padding-bottom: var(--space-lg);
+    }
+
+    .hero-logo-container {
+        margin-bottom: var(--space-lg);
+    }
+
+    /* Use clamp() so the headline scales fluidly and never clips on the right */
+    .hero-headline {
+        font-size: clamp(1.5rem, 7vw, 2rem);
+        line-height: 1.1;
+    }
+
+    .hero-manifesto {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-md);
+    }
+
+    .hero-manifesto p:last-child {
+        font-size: var(--font-size-base);
+    }
+
     .btn {
         width: 100%;
         text-align: center;
@@ -1335,36 +1434,29 @@ address {
         flex-direction: column;
         gap: var(--space-sm);
     }
-    
-    /* Gallery - horizontal scroll with 2 columns visible on mobile */
+
+    /* Merch card — compact on small phones */
+    .merch-image-placeholder {
+        height: 180px;
+    }
+
+    .merch-product-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .merch-content {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .merch-details {
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery - 2-column wrapping grid on small phones (replaces horizontal scroll) */
     .gallery-grid {
-        grid-template-columns: repeat(10, calc(50% - var(--space-sm) / 2));
-        grid-auto-flow: column;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: var(--color-gold) var(--color-warm-gray);
-        padding-bottom: var(--space-md);
-    }
-    
-    .gallery-grid::-webkit-scrollbar {
-        height: 8px;
-    }
-    
-    .gallery-grid::-webkit-scrollbar-track {
-        background: var(--color-warm-gray);
-        border-radius: var(--border-radius);
-    }
-    
-    .gallery-grid::-webkit-scrollbar-thumb {
-        background: var(--color-gold);
-        border-radius: var(--border-radius);
-    }
-    
-    .gallery-item {
-        scroll-snap-align: start;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
     }
     
     /* Lightbox adjustments */
@@ -1380,6 +1472,493 @@ address {
         width: 40px;
         height: 40px;
         font-size: var(--font-size-2xl);
+    }
+}
+
+/* ===================================================================
+   Order & Event Request Form
+   =================================================================== */
+
+.orders-section {
+    padding: var(--space-3xl) 0;
+    background-color: var(--color-bg);
+}
+
+.order-form-wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* Fieldset reset */
+.form-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-legend {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--space-md);
+    display: block;
+    width: 100%;
+}
+
+/* Request type cards */
+.request-type-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+}
+
+.type-option {
+    cursor: pointer;
+}
+
+.type-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.type-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: var(--space-md) var(--space-sm);
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-base);
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    border: var(--border-width) solid var(--color-dark);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: background-color var(--transition-base), color var(--transition-base);
+    user-select: none;
+}
+
+.type-card:hover {
+    background-color: var(--color-warm-gray);
+}
+
+.type-option input[type="radio"]:checked + .type-card {
+    background-color: var(--color-gold);
+    border-color: var(--color-dark);
+    font-weight: var(--font-weight-bold);
+}
+
+.type-option input[type="radio"]:focus-visible + .type-card {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+/* Type-specific field blocks */
+.type-fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    border: var(--border-width) solid var(--color-sand);
+    border-radius: var(--border-radius);
+    background-color: rgba(156, 205, 227, 0.1);
+    animation: fadeInFields var(--transition-base) ease;
+}
+
+/* Ensure hidden attribute wins over display:flex */
+.type-fields[hidden] {
+    display: none;
+}
+
+@keyframes fadeInFields {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Layout helpers */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group--narrow {
+    max-width: 200px;
+}
+
+/* Labels */
+.form-group label {
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-dark);
+}
+
+/* Inputs, selects, textarea */
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form input[type="number"],
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm); /* 16px — prevents iOS auto-zoom */
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.order-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.order-form input[placeholder="DD.MM.YYYY"] {
+    letter-spacing: 0.05em;
+}
+
+.order-form input[type="date"] {
+    cursor: pointer;
+}
+
+.order-form select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232B1A12' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(242, 183, 5, 0.3);
+}
+
+.order-form input[readonly] {
+    background-color: var(--color-warm-gray);
+    opacity: 0.7;
+    cursor: default;
+}
+
+/* Error state */
+.order-form .input-error {
+    border-color: #c0392b;
+}
+
+.field-error {
+    font-size: var(--font-size-xs);
+    color: #c0392b;
+    font-weight: var(--font-weight-semibold);
+    margin-top: 2px;
+}
+
+/* Checkbox */
+.form-group--checkbox {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    cursor: pointer;
+    font-size: var(--font-size-xs);
+    line-height: 1.5;
+    color: var(--color-dark);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    accent-color: var(--color-gold);
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+/* Wraps the GDPR consent sentence and Privacy Policy link into a single inline-flow text block */
+.checkbox-label__text {
+    flex: 1;
+    font-size: var(--font-size-xs);
+    line-height: 1.6;
+    color: var(--color-dark);
+}
+
+/* Success / Error messages */
+.form-message {
+    padding: var(--space-md) var(--space-lg);
+    border: var(--border-width) solid;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.form-message--success {
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+    color: #1b5e20;
+}
+
+.form-message--error {
+    background-color: #fdecea;
+    border-color: #c0392b;
+    color: #b71c1c;
+}
+
+/* Submit button — small top margin separates it visually from the GDPR consent block */
+#orderSubmit {
+    align-self: flex-start;
+    margin-top: var(--space-xs);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .request-type-selector {
+        grid-template-columns: 1fr;
+    }
+
+    /* Full-width cards with comfortable tap targets on mobile */
+    .type-card {
+        min-height: 56px;
+        font-size: var(--font-size-sm);
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group--narrow {
+        max-width: 100%;
+    }
+
+    /* Tighter form gap on mobile keeps it compact without cramping */
+    .order-form {
+        gap: var(--space-md);
+    }
+
+    /* Slightly larger checkbox for a comfortable touch target on mobile */
+    .checkbox-label input[type="checkbox"] {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+    }
+
+    /* Inputs: explicit min-height for comfortable touch targets */
+    .order-form input[type="text"],
+    .order-form input[type="email"],
+    .order-form input[type="tel"],
+    .order-form input[type="number"],
+    .order-form select {
+        min-height: 48px;
+    }
+
+    /* Textarea: taller field on mobile feels like a proper message box */
+    .order-form textarea {
+        min-height: 120px;
+    }
+
+    /* Type-specific field block: tighter padding on mobile */
+    .type-fields {
+        padding: var(--space-md);
+    }
+
+    #orderSubmit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Slightly smaller font still readable with Bebas Neue on tiny screens */
+    .type-card {
+        font-size: var(--font-size-xs);
+        /* Keep vertical padding for tap comfort; reduce horizontal only */
+        padding: var(--space-sm) var(--space-xs);
+        min-height: 52px;
+    }
+}
+
+/* ===================================================================
+   Cookie Consent Banner
+   Fixed bottom-centered card, shown once until the user makes a choice.
+   Warm heritage palette matching JEBREWSALEM brand.
+   =================================================================== */
+
+#cookieConsentBanner {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 3rem);
+    max-width: 820px;
+    z-index: 9999;
+    background-color: #1A120D;
+    border: 1px solid rgba(212, 160, 80, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.cookie-banner__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.cookie-banner__copy {
+    flex: 1;
+    min-width: 200px;
+}
+
+.cookie-banner__title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: #FFF4E0;
+    margin: 0 0 0.45rem;
+    line-height: 1.2;
+}
+
+.cookie-banner__text {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #DCC8A4;
+    text-transform: none;
+}
+
+.cookie-banner__link {
+    color: #D89A32;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(216, 154, 50, 0.45);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+    white-space: nowrap;
+}
+
+.cookie-banner__link:hover,
+.cookie-banner__link:focus {
+    color: #EDB84A;
+    border-bottom-color: #EDB84A;
+    outline: none;
+}
+
+.cookie-banner__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.cookie-banner__btn {
+    display: block;
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color var(--transition-fast),
+                color var(--transition-fast),
+                border-color var(--transition-fast),
+                box-shadow var(--transition-fast);
+}
+
+.cookie-banner__btn:focus-visible {
+    outline: 2px solid #D89A32;
+    outline-offset: 2px;
+}
+
+.cookie-banner__btn--primary {
+    background-color: #D89A32;
+    color: #1A120D;
+    border: 1px solid #D89A32;
+}
+
+.cookie-banner__btn--primary:hover {
+    background-color: #EDB84A;
+    border-color: #EDB84A;
+    box-shadow: 0 2px 10px rgba(216, 154, 50, 0.35);
+}
+
+.cookie-banner__btn--secondary {
+    background-color: transparent;
+    color: #DCC8A4;
+    border: 1px solid rgba(212, 160, 80, 0.45);
+}
+
+.cookie-banner__btn--secondary:hover {
+    background-color: rgba(212, 160, 80, 0.1);
+    color: #FFF4E0;
+    border-color: rgba(212, 160, 80, 0.7);
+}
+
+@media (max-width: 680px) {
+    #cookieConsentBanner {
+        bottom: 0;
+        left: 12px;
+        right: 12px;
+        width: auto;
+        max-width: none;
+        transform: none;
+        border-radius: 8px 8px 0 0;
+        border-bottom: none;
+    }
+
+    .cookie-banner__inner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1rem 1.125rem;
+    }
+
+    .cookie-banner__actions {
+        min-width: 0;
+        width: 100%;
     }
 }
 
