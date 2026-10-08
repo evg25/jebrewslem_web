@@ -11,7 +11,7 @@ Hosted on GitHub Pages via custom domain `jebrewsalem.cz`.
 
 ```
 /
-├── index.html                  # Main single-page site (all sections)
+├── shop.html                   # Main page and community ordering experience
 ├── obchodni-podminky.html      # Standalone legal page (Czech Terms & Conditions)
 ├── ochrana-osobnich-udaju.html # Standalone GDPR / privacy policy page (Czech)
 ├── beer.html                   # Legacy / standalone beer page
@@ -52,14 +52,8 @@ Hosted on GitHub Pages via custom domain `jebrewsalem.cz`.
 
 ## Pages
 
-### `index.html` — Main Page
-Single-page layout with scroll-based navigation. Sections in order:
-1. `#hero` — Hero / landing
-2. `#beer` — Current beer (Brevnov Ale – 2024, APA, 5% / 22 IBU + Untappd link)
-3. `#merch` — Merchandise (t-shirt card with Order Now → pre-fills orders form)
-4. `#orders` — Order & Event Request form (T-shirt / 30 L keg / Beer + tap equipment)
-5. `#gallery` — Photo gallery (dynamically rendered from `gallery-data.js`)
-6. `#contacts` — Contact info + social links
+### `shop.html` — Main Page
+Community beer ordering page with a catalog, basket, and order form.
 
 ### `obchodni-podminky.html` — Legal Page
 - Standalone page, Czech language
@@ -68,7 +62,7 @@ Single-page layout with scroll-based navigation. Sections in order:
 - Uses `css/style.css` + `css/legal.css`
 - Contains: company info (Jebrewsalem s.r.o., IČO 22215794, sídlo Na okraji 439/44 Praha), 14 sections of approved T&C
 - `[DOPLNIT DATUM]` placeholder left in place until effective date is confirmed
-- Linked from footer of `index.html` and `ochrana-osobnich-udaju.html` via `.footer-legal-link`
+- Linked from footer of `ochrana-osobnich-udaju.html` via `.footer-legal-link`
 
 ### `ochrana-osobnich-udaju.html` — GDPR / Privacy Policy Page
 - Standalone page, Czech language
@@ -77,7 +71,7 @@ Single-page layout with scroll-based navigation. Sections in order:
 - Uses `css/style.css` + `css/legal.css`
 - Contains: approved Czech GDPR / privacy policy text, 10 sections
 - `[DOPLNIT DATUM]` placeholder left in place until effective date is confirmed
-- Linked from footer of `index.html` and `obchodni-podminky.html` via `.footer-legal-link`
+- Linked from footer of `obchodni-podminky.html` via `.footer-legal-link`
 - Also linked from the order/request form consent checkbox via `.form-gdpr-link`
 
 ---
