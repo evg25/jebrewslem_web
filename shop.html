@@ -24,9 +24,9 @@
 <p id="storage-warning" class="storage-warning" data-i18n="storageWarning" hidden>Prohlížeč nepovoluje ukládání. Košík nebude uložen po zavření stránky.</p>
 <section id="shop">
 <div class="intro"><p class="eyebrow" data-i18n="shopEyebrow">Dobré pivo. Dobrá společnost.</p><h1 data-i18n="shopTitle">Co si dáte příště?</h1><p class="muted" data-i18n="shopIntro">Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.</p></div>
-<div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div>[...]
+<div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div><p id="catalog-updated" class="catalog-updated muted" hidden></p><div id="category-filters" class="filters" role="group" aria-label="Filtrovat podle typu piva"></div><div id="catalog-status" class="status" role="status"></div><div id="catalog" class="catalog"></div></section>
 <aside id="basket" class="basket panel" aria-labelledby="basket-title"><h2 id="basket-title" data-i18n="basketTitle">Váš košík</h2><div id="cart-items"></div><button id="restore-cart" class="restore" type="button" data-i18n="restoreCart">Obnovit košík</button></aside>
-<form id="order-form" class="checkout"><label class="field"><span data-i18n="name">Jméno *</span><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></label><label clas[...]
+<form id="order-form" class="checkout"><label class="field"><span data-i18n="name">Jméno *</span><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></label><label class="field"><span data-i18n="phone">Telefon *</span><input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="50" required></label><fieldset class="fulfillment"><legend data-i18n="fulfillmentTitle">Převzetí objednávky *</legend><label class="fulfillment-option"><input type="radio" name="fulfillment" value="pickup" checked><span><strong data-i18n="pickup">Vyzvednutí v Beer Golem</strong><small data-i18n="pickupDetails">Pohořelec 153/2, Praha 1 · ne–pá 12:00–18:00</small></span></label><label class="fulfillment-option"><input type="radio" name="fulfillment" value="delivery"><span><strong data-i18n="delivery">Doručení</strong><small data-i18n="deliveryDetails">Podmínky a cenu potvrdíme přes WhatsApp.</small></span></label></fieldset><label id="delivery-address-field" class="field" hidden><span data-i18n="deliveryAddress">Adresa doručení *</span><input id="delivery-address" name="deliveryAddress" autocomplete="street-address" maxlength="300"></label><label class="field"><span data-i18n="note">Poznámka</span><textarea id="customer-note" name="note" rows="3" maxlength="1500" placeholder="Např. kdy si pivo vyzvednete" data-i18n-placeholder="notePlaceholder"></textarea></label><label class="age-check"><input id="age-confirmation" type="checkbox" required><span data-i18n="ageConfirm">Potvrzuji, že mi bylo 18 let.</span></label><p id="order-error" class="error" role="alert" hidden></p><button id="order-button" type="submit" class="primary" disabled data-i18n="orderButton">Objednat přes WhatsApp</button><p class="muted notice" data-i18n="orderNotice">WhatsApp otevře připravenou zprávu. Objednávka je potvrzena až po naší odpovědi. Košík se po otevření WhatsAppu vymaže.</p></form></aside></div>
 <a id="cart-link" class="sticky-cart" href="#basket" hidden><span><span data-i18n="basketTitle">Váš košík</span> · <span id="mobile-count">0 ks</span></span><span id="mobile-price">0 Kč</span></a>
 </section>
 </main><footer><strong>Beer Golem</strong><br><span data-i18n="address">Pohořelec 153/2, Praha 1</span></footer>
@@ -39,8 +39,8 @@ const TEXT = {
   storageWarning:'Prohlížeč nepovoluje ukládání. Košík nebude uložen po zavření stránky.',
   shopEyebrow:'Dobré pivo. Dobrá společnost.',shopTitle:'Co si dáte příště?',
   shopIntro:'Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.',
-  catalogTitle:'Nabídka piva',catalogUpdated:'Nabídka aktualizována',filterByCategory:'Filtrovat podle typu piva',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vyma[...]
-  name:'Jméno *',phone:'Telefon *',fulfillmentTitle:'Převzetí objednávky *',pickup:'Vyzvednutí v Beer Golem',pickupDetails:'Pohořelec 153/2, Praha 1 · ne–pá 12:00–18:00',delivery:'Doručen[...]
+  catalogTitle:'Nabídka piva',catalogUpdated:'Nabídka aktualizována',filterByCategory:'Filtrovat podle typu piva',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vymazat košík',restoreCart:'Obnovit poslední košík',maxQuantityNotice:'Maximálně 6 ks od jednoho piva.',
+  name:'Jméno *',phone:'Telefon *',fulfillmentTitle:'Převzetí objednávky *',pickup:'Vyzvednutí v Beer Golem',pickupDetails:'Pohořelec 153/2, Praha 1 · ne–pá 12:00–18:00',delivery:'Doručení',deliveryDetails:'Podmínky a cenu potvrdíme přes WhatsApp.',deliveryAddress:'Adresa doručení *',ageConfirm:'Potvrzuji, že mi bylo 18 let.',note:'Poznámka',notePlaceholder:'Např. čas vyzvednutí nebo pokyny k doručení',
   orderButton:'Objednat přes WhatsApp',orderNotice:'WhatsApp otevře připravenou zprávu. Objednávka je potvrzena až po naší odpovědi. Košík se po otevření WhatsAppu vymaže.',
   address:'Pohořelec 153/2, Praha 1',emptyCatalog:'Nabídku právě připravujeme. Brzy zde najdete dostupná piva.',
   emptyCart:'Zatím tu není žádné pivo. Vyberte si z nabídky.',loading:'Načítáme nabídku…',
@@ -51,7 +51,7 @@ const TEXT = {
   whatsappError:'Číslo WhatsApp není správně nastavené.',orderTitle:'Beer Golem — nová objednávka',
   orderName:'Jméno',orderPhone:'Telefon',orderMethod:'Převzetí',orderAddress:'Adresa doručení',orderTotal:'Celkem',orderPrice:'Cena celkem',orderNote:'Poznámka',
   categories:{'':'Vše',lager:'Ležáky',wheat:'Pšeničná',ipa:'IPA & chmelená',sour:'Sour & ovocná',nonalcoholic:'Nealko',stout:'Stouty'},
-  styles:{'Weizenbier':'Pšeničné pivo','Nealkoholické pivo':'Nealkoholické pivo','Nakouřený ležák':'Nakouřený ležák','Polotmavý ležák':'Polotmavý ležák','Světlý ležák':'Světlý[...]
+  styles:{'Weizenbier':'Pšeničné pivo','Nealkoholické pivo':'Nealkoholické pivo','Nakouřený ležák':'Nakouřený ležák','Polotmavý ležák':'Polotmavý ležák','Světlý ležák':'Světlý ležák','IPA':'IPA','NEIPA':'NEIPA','Sour Ale w/ Raspberry':'Malinový sour ale','Rauchbier':'Kouřový ležák'}
  },
  en: {
   title:'Beer Golem — community orders',description:'Community beer orders from Beer Golem. Choose your beer and send your order via WhatsApp.',
@@ -59,8 +59,8 @@ const TEXT = {
   storageWarning:'Your browser does not allow storage. Your cart will not be saved after you close this page.',
   shopEyebrow:'Good beer. Good company.',shopTitle:'What will you have next?',
   shopIntro:'Choose your beer, add your contact details, and send us your order via WhatsApp.',
-  catalogTitle:'Beer selection',catalogUpdated:'Selection updated',filterByCategory:'Filter by beer type',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',restoreCart:'Re[...]
-  name:'Name *',phone:'Phone *',fulfillmentTitle:'How you will receive the order *',pickup:'Pick up at Beer Golem',pickupDetails:'Pohořelec 153/2, Prague 1 · Sun–Fri 12:00–18:00',delivery:'Deliv[...]
+  catalogTitle:'Beer selection',catalogUpdated:'Selection updated',filterByCategory:'Filter by beer type',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',restoreCart:'Restore last cart',maxQuantityNotice:'Maximum 6 cans of each beer.',
+  name:'Name *',phone:'Phone *',fulfillmentTitle:'How you will receive the order *',pickup:'Pick up at Beer Golem',pickupDetails:'Pohořelec 153/2, Prague 1 · Sun–Fri 12:00–18:00',delivery:'Delivery',deliveryDetails:'We will confirm the terms and price via WhatsApp.',deliveryAddress:'Delivery address *',ageConfirm:'I confirm that I am 18 or older.',note:'Note',notePlaceholder:'For example, pickup time or delivery instructions',
   orderButton:'Order via WhatsApp',orderNotice:'WhatsApp will open a prepared message. Your order is confirmed only after our reply. Your cart will be cleared when WhatsApp opens.',
   address:'Pohořelec 153/2, Prague 1',emptyCatalog:'We are preparing the selection. Available beers will appear here soon.',
   emptyCart:'There is no beer here yet. Choose from the selection.',loading:'Loading the selection…',
@@ -71,7 +71,7 @@ const TEXT = {
   whatsappError:'The WhatsApp number is not configured correctly.',orderTitle:'Beer Golem — new order',
   orderName:'Name',orderPhone:'Phone',orderMethod:'Fulfilment',orderAddress:'Delivery address',orderTotal:'Total',orderPrice:'Total price',orderNote:'Note',
   categories:{'':'All',lager:'Lagers',wheat:'Wheat beer',ipa:'IPA & hoppy',sour:'Sour & fruity',nonalcoholic:'Non-alcoholic',stout:'Stouts'},
-  styles:{'Weizenbier':'Wheat beer','Nealkoholické pivo':'Non-alcoholic beer','Nakouřený ležák':'Smoked lager','Polotmavý ležák':'Semi-dark lager','Světlý ležák':'Pale lager','IPA':'IPA','[...]
+  styles:{'Weizenbier':'Wheat beer','Nealkoholické pivo':'Non-alcoholic beer','Nakouřený ležák':'Smoked lager','Polotmavý ležák':'Semi-dark lager','Světlý ležák':'Pale lager','IPA':'IPA','NEIPA':'NEIPA','Sour Ale w/ Raspberry':'Raspberry sour ale','Rauchbier':'Smoked lager'}
  }
 };
 let currentLang='cs';
@@ -114,7 +114,7 @@ function saveStored(key, value) {try {localStorage.setItem(key, JSON.stringify(v
 function removeStored(key) {try {localStorage.removeItem(key);} catch {$('storage-warning').hidden = false;}}
 function element(tag, className, value) {const el=document.createElement(tag); if(className) el.className=className; if(value !== undefined) el.textContent=value; return el;}
 function showError(id, message) {$(id).textContent=message; $(id).hidden=!message;}
-function safeImage(value) {if(typeof value !== 'string' || !value.trim()) return null; try {const url=new URL(value,location.href); return ['https:','http:'].includes(url.protocol)?url.href:null;} cat[...]
+function safeImage(value) {if(typeof value !== 'string' || !value.trim()) return null; try {const url=new URL(value,location.href); return ['https:','http:'].includes(url.protocol)?url.href:null;} catch {return null;}}
 function validateCatalog(data) {
  if(!Array.isArray(data)) throw new Error('Katalog musí být pole JSON.');
  const ids=new Set(), valid=[]; let skipped=0;
@@ -123,7 +123,7 @@ function validateCatalog(data) {
   if(typeof beer.available !== 'boolean') {skipped++; continue;}
   ids.add(beer.id);
   if(!beer.available) continue;
-  const invalidRequired=['name','volume'].some(k=>typeof beer[k] !== 'string' || !beer[k].trim()) || !FILTER_CATEGORIES.includes(beer.category) || !beer.category || !Number.isFinite(beer.price) || bee[...]
+  const invalidRequired=['name','volume'].some(k=>typeof beer[k] !== 'string' || !beer[k].trim()) || !FILTER_CATEGORIES.includes(beer.category) || !beer.category || !Number.isFinite(beer.price) || beer.price<0 || !Number.isFinite(beer.sort);
   const invalidNumbers=(beer.abv != null && (!Number.isFinite(beer.abv) || beer.abv<0 || beer.abv>100)) || (beer.plato != null && (!Number.isFinite(beer.plato) || beer.plato<0));
   const invalidText=['brewery','style','description','description_cs','description_en','image'].some(k=>beer[k] !== undefined && typeof beer[k] !== 'string');
   if(invalidRequired || invalidNumbers || invalidText) {skipped++; continue;}
@@ -131,15 +131,15 @@ function validateCatalog(data) {
  }
  return {items:valid.sort((a,b)=>a.sort-b.sort),skipped};
 }
-function cleanCart(value) {const next=Object.create(null); if(value && typeof value==='object' && !Array.isArray(value)) for(const beer of beers) {const qty=value[beer.id]; if(Number.isSafeInteger(qty[...]
+function cleanCart(value) {const next=Object.create(null); if(value && typeof value==='object' && !Array.isArray(value)) for(const beer of beers) {const qty=value[beer.id]; if(Number.isSafeInteger(qty) && qty>0) next[beer.id]=Math.min(qty,MAX_QUANTITY);} return next;}
 function selections() {return beers.filter(b=>cart[b.id]>0).map(beer=>({beer,qty:cart[beer.id],cents:Math.round(beer.price*100)*cart[beer.id]}));}
 function totals() {return selections().reduce((acc,item)=>({count:acc.count+item.qty,cents:acc.cents+item.cents}),{count:0,cents:0});}
 function beerLabel(beer) {return [beer.brewery,beer.name].filter(Boolean).join(' ');}
 function stepper(beer, where) {
  const wrap=element('div','stepper');
- const minus=element('button','', '−'); minus.type='button'; minus.setAttribute('aria-label',t('remove')+' '+beerLabel(beer)); minus.dataset.id=beer.id; minus.dataset.delta='-1'; minus.disabled=!(ca[...]
+ const minus=element('button','', '−'); minus.type='button'; minus.setAttribute('aria-label',t('remove')+' '+beerLabel(beer)); minus.dataset.id=beer.id; minus.dataset.delta='-1'; minus.disabled=!(cart[beer.id]>0);
  const qty=element('span','quantity',String(cart[beer.id]||0)); qty.dataset.quantityId=beer.id; qty.setAttribute('aria-label',t('quantity')+': '+(cart[beer.id]||0));
- const plus=element('button','', '+'); plus.type='button'; plus.setAttribute('aria-label',t('add')+' '+beerLabel(beer)); plus.dataset.id=beer.id; plus.dataset.delta='1'; plus.disabled=(cart[beer.id]||[...]
+ const plus=element('button','', '+'); plus.type='button'; plus.setAttribute('aria-label',t('add')+' '+beerLabel(beer)); plus.dataset.id=beer.id; plus.dataset.delta='1'; plus.disabled=(cart[beer.id]||0)>=MAX_QUANTITY;
  wrap.append(minus,qty,plus); return wrap;
 }
 function styleLabel(style) {return TEXT[currentLang].styles[style]||style;}
@@ -152,35 +152,35 @@ function beerCountLabel(count,total) {
 }
 function renderCategoryFilters() {
  const filters=$('category-filters'); filters.setAttribute('aria-label',t('filterByCategory'));
- if(filters.children.length!==FILTER_CATEGORIES.length) {filters.replaceChildren(); for(const category of FILTER_CATEGORIES) {const button=element('button','filter-btn'); button.type='button'; button.[...]
- for(const button of filters.children) {const category=button.dataset.category, selected=category===activeCategory; button.querySelector('.filter-label').textContent=TEXT[currentLang].categories[categ[...]
+ if(filters.children.length!==FILTER_CATEGORIES.length) {filters.replaceChildren(); for(const category of FILTER_CATEGORIES) {const button=element('button','filter-btn'); button.type='button'; button.dataset.category=category; button.append(element('span','filter-label'),element('span','filter-count')); filters.append(button);}}
+ for(const button of filters.children) {const category=button.dataset.category, selected=category===activeCategory; button.querySelector('.filter-label').textContent=TEXT[currentLang].categories[category]; button.querySelector('.filter-count').textContent=String(category?beers.filter(beer=>beer.category===category).length:beers.length); button.classList.toggle('active',selected); button.setAttribute('aria-pressed',String(selected));}
 }
-function renderCatalogUpdated() {const box=$('catalog-updated'); if(!(catalogUpdatedAt instanceof Date) || Number.isNaN(catalogUpdatedAt.getTime())) {box.hidden=true; return;} box.textContent=t('catal[...]
+function renderCatalogUpdated() {const box=$('catalog-updated'); if(!(catalogUpdatedAt instanceof Date) || Number.isNaN(catalogUpdatedAt.getTime())) {box.hidden=true; return;} box.textContent=t('catalogUpdated')+': '+new Intl.DateTimeFormat(currentLang==='en'?'en-GB':'cs-CZ',{dateStyle:'medium',timeStyle:'short'}).format(catalogUpdatedAt); box.hidden=false;}
 function renderCatalog() {
  renderCategoryFilters(); renderCatalogUpdated(); const shown=activeCategory?beers.filter(beer=>beer.category===activeCategory):beers;
  $('catalog').replaceChildren(); $('catalog-count').textContent=beerCountLabel(shown.length,activeCategory?beers.length:null);
  if(!shown.length) {$('catalog').append(element('p','empty muted',t('emptyCatalog'))); return;}
  for(const beer of shown) {
   const src=safeImage(beer.image), card=element('article','card'+(src?' has-photo':''));
-  if(src) {const img=element('img','photo'); img.src=src; img.alt=beerLabel(beer); img.loading='lazy'; img.referrerPolicy='no-referrer'; img.addEventListener('error',()=>img.remove(),{once:true}); car[...]
+  if(src) {const img=element('img','photo'); img.src=src; img.alt=beerLabel(beer); img.loading='lazy'; img.referrerPolicy='no-referrer'; img.addEventListener('error',()=>img.remove(),{once:true}); card.append(img);}
   if(beer.brewery) card.append(element('div','brewery',beer.brewery));
-  const meta=[styleLabel(beer.style),beer.plato == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.plato)+'°',beer.abv == null ? null : new Intl.NumberFormat(curre[...]
+  const meta=[styleLabel(beer.style),beer.plato == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.plato)+'°',beer.abv == null ? null : new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ').format(beer.abv)+' '+t('alcohol'),beer.volume].filter(Boolean).join(' · ');
   card.append(element('h3','',beer.name),element('div','meta',meta));
   const description=beerDescription(beer); if(description) card.append(element('p','description muted',description));
   const bottom=element('div','card-bottom'); bottom.append(element('span','price',money(beer.price)),stepper(beer,'catalog')); card.append(bottom); $('catalog').append(card);
  }
 }
 $('category-filters').addEventListener('click',event=>{const button=event.target.closest('button[data-category]'); if(!button) return; activeCategory=button.dataset.category; renderCatalog();});
-function restorableCart() {const saved=readStored(KEYS.lastCart); if(!saved || !Number.isFinite(saved.savedAt) || Date.now()-saved.savedAt>LAST_CART_TTL) {removeStored(KEYS.lastCart); return Object.cr[...]
+function restorableCart() {const saved=readStored(KEYS.lastCart); if(!saved || !Number.isFinite(saved.savedAt) || Date.now()-saved.savedAt>LAST_CART_TTL) {removeStored(KEYS.lastCart); return Object.create(null);} return cleanCart(saved.cart);}
 function renderCart() {
  const items=selections(), total=totals(); $('cart-items').replaceChildren();
  if(!items.length) $('cart-items').append(element('p','muted',t('emptyCart')));
- for(const {beer,qty,cents} of items) {const line=element('div','cart-item'); line.append(element('strong','',beerLabel(beer)),element('span','meta',beer.volume+' · '+money(beer.price)+' / ks')); con[...]
- $('total-count').textContent=$('mobile-count').textContent=total.count+' '+t('pieces'); $('total-price').textContent=$('mobile-price').textContent=money(total.cents/100); $('clear-cart').disabled=!to[...]
+ for(const {beer,qty,cents} of items) {const line=element('div','cart-item'); line.append(element('strong','',beerLabel(beer)),element('span','meta',beer.volume+' · '+money(beer.price)+' / ks')); const row=element('div','row'); row.append(stepper(beer,'cart'),element('strong','',money(cents/100))); line.append(row); $('cart-items').append(line);}
+ $('total-count').textContent=$('mobile-count').textContent=total.count+' '+t('pieces'); $('total-price').textContent=$('mobile-price').textContent=money(total.cents/100); $('clear-cart').disabled=!total.count; $('order-button').disabled=!loaded || !total.count; $('cart-link').hidden=!total.count; $('restore-cart').hidden=!!total.count || !Object.keys(restorableCart()).length;
 }
 function renderCatalogMessage() {
  const box=$('catalog-status');
- if(catalogMessage==='loadError') {box.replaceChildren(element('p','error',t('loadError'))); const retry=element('button','primary',t('retry')); retry.type='button'; retry.addEventListener('click',()=[...]
+ if(catalogMessage==='loadError') {box.replaceChildren(element('p','error',t('loadError'))); const retry=element('button','primary',t('retry')); retry.type='button'; retry.addEventListener('click',loadCatalog); box.append(retry);}
  else if(catalogMessage) box.textContent=t(catalogMessage);
  else if(skippedBeers) {box.replaceChildren(element('p','filter-warning',t('invalidItemsSkipped')));}
  else box.textContent='';
@@ -199,13 +199,13 @@ async function loadCatalog() {
  catch(error) {catalogMessage='loadError'; renderCatalogMessage(); $('order-button').disabled=true;}
  finally {loading=false;}
 }
-function restoreContact() {const contact=readStored(KEYS.contact); if(!contact || typeof contact!=='object') return; if(typeof contact.name==='string') $('customer-name').value=contact.name; if(typeof[...]
+function restoreContact() {const contact=readStored(KEYS.contact); if(!contact || typeof contact!=='object') return; if(typeof contact.name==='string') $('customer-name').value=contact.name; if(typeof contact.phone==='string') $('customer-phone').value=contact.phone;}
 function saveContact() {saveStored(KEYS.contact,{name:$('customer-name').value.trim(),phone:$('customer-phone').value.trim()});}
-function updateFulfillment() {const delivery=document.querySelector('input[name="fulfillment"]:checked')?.value==='delivery'; $('delivery-address-field').hidden=!delivery; $('delivery-address').requir[...]
+function updateFulfillment() {const delivery=document.querySelector('input[name="fulfillment"]:checked')?.value==='delivery'; $('delivery-address-field').hidden=!delivery; $('delivery-address').required=delivery;}
 for(const id of ['customer-name','customer-phone']) $(id).addEventListener('change',saveContact);
 document.querySelectorAll('input[name="fulfillment"]').forEach(input=>input.addEventListener('change',updateFulfillment));
 restoreContact(); updateFulfillment();
-for(const id of ['catalog','cart-items']) $(id).addEventListener('click',event=>{const button=event.target.closest('button[data-id]'); if(button && !button.disabled) changeQuantity(button.dataset.id,N[...]
+for(const id of ['catalog','cart-items']) $(id).addEventListener('click',event=>{const button=event.target.closest('button[data-id]'); if(button && !button.disabled) changeQuantity(button.dataset.id,Number(button.dataset.delta));});
 $('clear-cart').addEventListener('click',()=>{cart=Object.create(null); saveStored(KEYS.cart,cart); renderCatalog(); renderCart(); showError('order-error','');});
 $('restore-cart').addEventListener('click',()=>{const restored=restorableCart(); if(!Object.keys(restored).length) {renderCart(); return;} cart=restored; saveStored(KEYS.cart,cart); renderCatalog(); renderCart();});
 function orderMessage(name,phone,note,fulfillment,address) {
@@ -218,7 +218,7 @@ function orderMessage(name,phone,note,fulfillment,address) {
 $('order-form').addEventListener('submit',event=>{
  event.preventDefault(); showError('order-error','');
  if(!loaded || !totals().count) {showError('order-error',t('needBeer')); return;}
- const name=$('customer-name').value.trim(), phone=$('customer-phone').value.trim(), note=$('customer-note').value.trim(), fulfillment=document.querySelector('input[name="fulfillment"]:checked')?.valu[...]
+ const name=$('customer-name').value.trim(), phone=$('customer-phone').value.trim(), note=$('customer-note').value.trim(), fulfillment=document.querySelector('input[name="fulfillment"]:checked')?.value||'pickup', address=$('delivery-address').value.trim();
  if(!name || !phone) {showError('order-error',t('required')); (!name?$('customer-name'):$('customer-phone')).focus(); return;}
  if(fulfillment==='delivery' && !address) {showError('order-error',t('addressRequired')); $('delivery-address').focus(); return;}
  if(!/^[1-9][0-9]{6,14}$/.test(CONFIG.whatsappNumber)) {showError('order-error',t('whatsappError')); return;}
