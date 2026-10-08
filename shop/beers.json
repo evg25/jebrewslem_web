@@ -1,5 +1,21 @@
 [
   {
+    "id": "jebrewsalem-apa-12",
+    "brewery": "Jebrewsalem",
+    "name": "Jebrewsalem APA",
+    "style": "American Pale Ale",
+    "category": "ipa",
+    "abv": 5,
+    "volume": "0.5 l",
+    "price": 79,
+    "description": "",
+    "image": "",
+    "available": true,
+    "sort": 0,
+    "plato": 12,
+    "imageSource": null
+  },
+  {
     "id": "clock-goldie-11",
     "brewery": "Clock",
     "name": "Goldie 11°",
