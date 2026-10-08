@@ -19,37 +19,17 @@ const translations = {
         
         // Hero Section
         hero: {
-            headline: 'Where Jerusalem Meets Prague',
-            manifesto1: 'Born from the ancient stones of Jerusalem and the brewing tradition of Prague, JEBREWSALEM is more than beer—it\'s a cultural bridge. Each brew tells a story of two cities, two traditions, one soul.',
-            manifesto2: 'Crafted with passion, served with history.',
-            btnBeers: 'Explore Our Beers',
-            btnOrder: 'Order Now'
+            subtitle: 'Jebrewsalem',
+            headline: 'American Pale Ale for Bars',
+            btnTasting: 'Book a Tasting',
+            btnExplore: 'Explore the Beer'
         },
         
         // Beer Section
         beer: {
-            title: 'Our Craft',
-            subtitle: 'Every bottle is a journey between two ancient cities',
-            goldenGate: {
-                name: 'Golden Gate Lager',
-                style: 'Czech Pilsner',
-                description: 'Light as Jerusalem sun, crisp as Prague morning. A golden tribute to both cities\' gates, where stories begin.'
-            },
-            stoneGolem: {
-                name: 'Stone Golem Ale',
-                style: 'Amber Ale',
-                description: 'Bold and mysterious like the legendary Golem itself. Deep amber hues carry the weight of ancient tales and modern craft.'
-            },
-            midnightTemple: {
-                name: 'Midnight Temple Stout',
-                style: 'Imperial Stout',
-                description: 'Dark as Prague nights, deep as Jerusalem history. Rich, complex, unforgettable—a beer for contemplation.'
-            },
-            oldCity: {
-                name: 'Old City Wheat',
-                style: 'Hefeweizen',
-                description: 'Cloudy like ancient wisdom, refreshing like a breeze through cobblestone streets. Tradition in every sip.'
-            }
+            title: 'AMERICAN PALE ALE',
+            subtitle: 'A light, refreshing, and easy-drinking craft beer<br>with a stable, proven recipe',
+            btnPricing: 'View Pricing'
         },
         
         // Orders Section
@@ -143,37 +123,17 @@ const translations = {
         
         // Hero Section
         hero: {
-            headline: 'Kde se setkává Jeruzalém s Prahou',
-            manifesto1: 'Zrozený z prastarých kamenů Jeruzaléma a pivovarnické tradice Prahy, JEBREWSALEM je více než pivo—je to kulturní most. Každý várka vypráví příběh dvou měst, dvou tradic, jedné duše.',
-            manifesto2: 'Vařeno s vášní, podáváno s historií.',
-            btnBeers: 'Prozkoumejte naše piva',
-            btnOrder: 'Objednat nyní'
+            subtitle: 'Jebrewsalem',
+            headline: 'American Pale Ale pro bary',
+            btnTasting: 'Rezervovat degustaci',
+            btnExplore: 'Prozkoumat pivo'
         },
         
         // Beer Section
         beer: {
-            title: 'Naše řemeslo',
-            subtitle: 'Každá láhev je cesta mezi dvěma prastarými městy',
-            goldenGate: {
-                name: 'Golden Gate Lager',
-                style: 'Český ležák',
-                description: 'Lehký jako jeruzalémské slunce, svěží jako pražské ráno. Zlatá pocta bránám obou měst, kde začínají příběhy.'
-            },
-            stoneGolem: {
-                name: 'Stone Golem Ale',
-                style: 'Jantarový ležák',
-                description: 'Odvážný a tajemný jako legendární Golem samotný. Hluboké jantarové odstíny nesou váhu prastarých příběhů a moderního řemesla.'
-            },
-            midnightTemple: {
-                name: 'Midnight Temple Stout',
-                style: 'Imperial Stout',
-                description: 'Tmavý jako pražské noci, hluboký jako jeruzalémská historie. Bohatý, komplexní, nezapomenutelný—pivo k rozjímání.'
-            },
-            oldCity: {
-                name: 'Old City Wheat',
-                style: 'Hefe Weizen',
-                description: 'Zakalené jako pradávná moudrost, osvěžující jako vánek dlážděnými ulicemi. Tradice v každém doušku.'
-            }
+            title: 'AMERICAN PALE ALE',
+            subtitle: 'Lehké, osvěžující a snadno pitelné řemeslné pivo<br>se stabilním, prověřeným receptem',
+            btnPricing: 'Zobrazit ceny'
         },
         
         // Orders Section

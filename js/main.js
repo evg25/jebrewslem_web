@@ -207,8 +207,11 @@
             galleryItem.setAttribute('data-title', item.title);
             galleryItem.setAttribute('data-description', item.description);
             
+            // Generate descriptive alt text for SEO and accessibility
+            const altText = item.alt || `JEBREWSALEM craft beer - ${item.title}`;
+            
             galleryItem.innerHTML = `
-                <img src="${item.image}" alt="${item.title}" class="gallery-image">
+                <img src="${item.image}" alt="${altText}" class="gallery-image">
                 <div class="gallery-overlay">
                     <span class="gallery-title">${item.title}</span>
                 </div>
@@ -252,8 +255,11 @@
         // Get current gallery data
         const currentData = galleryData[currentImageIndex];
         
+        // Generate descriptive alt text for SEO and accessibility
+        const altText = currentData.alt || `JEBREWSALEM craft beer - ${currentData.title}`;
+        
         // Update image
-        lightboxImage.innerHTML = `<img src="${currentData.image}" alt="${currentData.title}" class="lightbox-img">`;
+        lightboxImage.innerHTML = `<img src="${currentData.image}" alt="${altText}" class="lightbox-img">`;
         
         // Update caption
         const lightboxTitle = document.getElementById('lightboxTitle');
@@ -410,6 +416,12 @@
         // Set up event listeners
         initEventListeners();
         
+        // Initialize modal
+        initModal();
+        
+        // Initialize pricing modal
+        initPricingModal();
+        
         // Mark first nav link as active by default
         if (navLinks.length > 0) {
             navLinks[0].classList.add('active');
@@ -421,6 +433,122 @@
     // ===================================================================
     // Page Load Handler
     // ===================================================================
+    
+    // ===================================================================
+    // Modal - Tasting Form
+    // ===================================================================
+    
+    function initModal() {
+        const modal = document.getElementById('tastingModal');
+        const btn = document.getElementById('bookTastingBtn');
+        const closeBtn = modal?.querySelector('.modal-close');
+        const form = document.getElementById('tastingForm');
+        
+        // Open modal
+        btn?.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Close modal
+        closeBtn?.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+        
+        // Close on outside click
+        modal?.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Handle form submission
+        form?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            console.log('Tasting request:', data);
+            
+            // Show success message
+            alert('Thank you! We will contact you soon to arrange the tasting.');
+            
+            // Reset form and close modal
+            form.reset();
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+    }
+    
+    // ===================================================================
+    // Modal - Pricing Form
+    // ===================================================================
+    
+    function initPricingModal() {
+        const modal = document.getElementById('pricingModal');
+        const btn = document.getElementById('viewPricingBtn');
+        const closeBtn = document.getElementById('pricingModalClose');
+        const form = document.getElementById('pricingForm');
+        
+        // Open modal
+        btn?.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Close modal
+        closeBtn?.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+        
+        // Close on outside click
+        modal?.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Handle form submission
+        form?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            console.log('Pricing request:', data);
+            
+            // Show success message
+            alert('Thank you! We will send you our pricing information soon.');
+            
+            // Reset form and close modal
+            form.reset();
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+    }
     
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

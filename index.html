@@ -48,126 +48,162 @@
     <section id="hero" class="hero-section">
         <div class="container">
             <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <h2 class="hero-subtitle" data-i18n="hero.subtitle">Jebrewsalem</h2>
+                    <h1 class="hero-headline" data-i18n="hero.headline">American Pale Ale for Bars</h1>
+                    
+                    <p class="home-hero__subtitle">
+                        Brewed in Prague.<br>
+                        Inspired by Israel.
+                    </p>
+
+                    <ul style="list-style-type: disc; padding-left: 1.25rem; margin: 1.5rem 0;">
+                        <li style="margin-bottom: 0.5rem;">One style</li>
+                        <li style="margin-bottom: 0.5rem;">Consistent quality</li>
+                        <li style="margin-bottom: 0.5rem;">Clear profit</li>
+                    </ul>
+                    
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" id="bookTastingBtn" data-i18n="hero.btnTasting">Book a Tasting</button>
+                        <a href="#beer" class="btn btn-secondary" data-i18n="hero.btnExplore">Explore the Beer</a>
+                    </div>
+                </div>
+                
                 <!-- Actual logo image - visual anchor -->
                 <div class="hero-logo-container">
                     <img src="assets/logo.jpeg" alt="JEBREWSALEM - Craft Beer Brand" class="hero-logo">
                 </div>
-                
-                <h1 class="hero-headline" data-i18n="hero.headline">Where Jerusalem Meets Prague</h1>
-                
-                <div class="hero-manifesto">
-                    <p data-i18n="hero.manifesto1">
-                        Born from the ancient stones of Jerusalem and the brewing tradition of Prague, 
-                        JEBREWSALEM is more than beer—it's a cultural bridge. Each brew tells a story 
-                        of two cities, two traditions, one soul.
-                    </p>
-                    <p data-i18n="hero.manifesto2">
-                        Crafted with passion, served with history.
-                    </p>
-                </div>
-                
-                <div class="hero-cta">
-                    <a href="#beer" class="btn btn-primary" data-i18n="hero.btnBeers">Explore Our Beers</a>
-                    <a href="#orders" class="btn btn-secondary" data-i18n="hero.btnOrder">Order Now</a>
-                </div>
             </div>
         </div>
     </section>
+
+    <!-- Tasting Form Modal -->
+    <div id="tastingModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Book a Tasting</h2>
+            <form class="tasting-form" id="tastingForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="venue">Venue / Business</label>
+                    <input type="text" id="venue" name="venue" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your venue and preferred dates"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Beer Section -->
     <section id="beer" class="beer-section">
         <div class="container">
             <header class="section-header fade-in">
-                <h2 class="section-title" data-i18n="beer.title">Our Craft</h2>
-                <p class="section-subtitle" data-i18n="beer.subtitle">Every bottle is a journey between two ancient cities</p>
+                <h2 class="section-title" data-i18n="beer.title">AMERICAN PALE ALE</h2>
+                <p class="section-subtitle" data-i18n="beer.subtitle">A light, refreshing, and easy-drinking craft beer<br>with a stable, proven recipe</p>
             </header>
 
             <div class="beer-grid">
-                <!-- Beer Card 1 -->
+                <!-- Beer Card -->
                 <article class="beer-card fade-in">
                     <div class="beer-illustration">
                         <div class="beer-icon icon-golden"></div>
                     </div>
                     <div class="beer-content">
-                        <h3 class="beer-name" data-i18n="beer.goldenGate.name">Golden Gate Lager</h3>
-                        <span class="beer-style" data-i18n="beer.goldenGate.style">Czech Pilsner</span>
-                        <p class="beer-description" data-i18n="beer.goldenGate.description">
-                            Light as Jerusalem sun, crisp as Prague morning. 
-                            A golden tribute to both cities' gates, where stories begin.
-                        </p>
-                        <div class="beer-specs">
-                            <span class="spec"><strong>ABV:</strong> 4.8%</span>
-                            <span class="spec"><strong>IBU:</strong> 35</span>
+                        <h3 class="beer-name">Břevnov Ale - 2024</h3>
+                        <span class="beer-style">APA</span>
+                        
+                        <div class="beer-description">
+                            <p><strong>Style:</strong> American Pale Ale</p>
+                            <p><strong>ABV:</strong> 5%</p>
+                            <p><strong>IBU:</strong> 22</p>
+                            <p><strong>Original Gravity:</strong> 12°</p>
+                            <p><strong>Taste:</strong> light, refreshing, easy-drinking</p>
+                            <p><strong>Hops:</strong> Mosaic, Magnum</p>
+                            <p><strong>Flavor consistency:</strong> brewed for 2+ years, no experimental batches</p>
+                            <p><strong>Production model:</strong> Flying brewer</p>
+                            <p><strong>Brewing location:</strong> Prague</p>
+                            <p><strong>Delivery format:</strong> 30L kegs</p>
                         </div>
-                    </div>
-                </article>
-
-                <!-- Beer Card 2 -->
-                <article class="beer-card fade-in">
-                    <div class="beer-illustration">
-                        <div class="beer-icon icon-amber"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3 class="beer-name" data-i18n="beer.stoneGolem.name">Stone Golem Ale</h3>
-                        <span class="beer-style" data-i18n="beer.stoneGolem.style">Amber Ale</span>
-                        <p class="beer-description" data-i18n="beer.stoneGolem.description">
-                            Bold and mysterious like the legendary Golem itself. 
-                            Deep amber hues carry the weight of ancient tales and modern craft.
-                        </p>
+                        
                         <div class="beer-specs">
-                            <span class="spec"><strong>ABV:</strong> 6.2%</span>
-                            <span class="spec"><strong>IBU:</strong> 42</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Beer Card 3 -->
-                <article class="beer-card fade-in">
-                    <div class="beer-illustration">
-                        <div class="beer-icon icon-dark"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3 class="beer-name" data-i18n="beer.midnightTemple.name">Midnight Temple Stout</h3>
-                        <span class="beer-style" data-i18n="beer.midnightTemple.style">Imperial Stout</span>
-                        <p class="beer-description" data-i18n="beer.midnightTemple.description">
-                            Dark as Prague nights, deep as Jerusalem history. 
-                            Rich, complex, unforgettable—a beer for contemplation.
-                        </p>
-                        <div class="beer-specs">
-                            <span class="spec"><strong>ABV:</strong> 8.5%</span>
-                            <span class="spec"><strong>IBU:</strong> 55</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Beer Card 4 -->
-                <article class="beer-card fade-in">
-                    <div class="beer-illustration">
-                        <div class="beer-icon icon-wheat"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3 class="beer-name" data-i18n="beer.oldCity.name">Old City Wheat</h3>
-                        <span class="beer-style" data-i18n="beer.oldCity.style">Hefeweizen</span>
-                        <p class="beer-description" data-i18n="beer.oldCity.description">
-                            Cloudy like ancient wisdom, refreshing like a breeze 
-                            through cobblestone streets. Tradition in every sip.
-                        </p>
-                        <div class="beer-specs">
-                            <span class="spec"><strong>ABV:</strong> 5.4%</span>
-                            <span class="spec"><strong>IBU:</strong> 15</span>
+                            <h4 style="font-family: var(--font-heading); font-size: var(--font-size-lg); text-transform: uppercase; margin-bottom: var(--space-md); margin-top: var(--space-xl);">ALREADY ON TAP:</h4>
+                            <p style="margin-bottom: var(--space-sm);">• Paprika Restaurant</p>
+                            <p style="margin-bottom: var(--space-sm);">• Nápoje Bubeneč</p>
+                            <p style="margin-top: var(--space-md); margin-bottom: var(--space-sm);"><strong>Also featured at festivals:</strong></p>
+                            <p style="margin-bottom: var(--space-sm);">• Israel on the Vltava Festival</p>
+                            <p style="margin-bottom: var(--space-sm);">• Zažít Břevnov jinak</p>
                         </div>
                     </div>
                 </article>
             </div>
+            
+            <div class="beer-cta" style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-primary" id="viewPricingBtn" data-i18n="beer.btnPricing">View Pricing</button>
+            </div>
         </div>
     </section>
+
+    <!-- Pricing Modal -->
+    <div id="pricingModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="pricingModalClose">&times;</span>
+            <h2 class="modal-title">Pricing & Orders</h2>
+            <form class="tasting-form" id="pricingForm">
+                <div class="form-group">
+                    <label for="business-name">Business Name</label>
+                    <input type="text" id="business-name" name="business-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-name">Contact Name</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Phone</label>
+                    <input type="tel" id="contact-phone" name="contact-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Estimated Monthly Volume</label>
+                    <select id="quantity" name="quantity" required>
+                        <option value="">Select volume</option>
+                        <option value="1-10">1-10 kegs</option>
+                        <option value="11-25">11-25 kegs</option>
+                        <option value="26-50">26-50 kegs</option>
+                        <option value="50+">50+ kegs</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pricing-message">Additional Information</label>
+                    <textarea id="pricing-message" name="pricing-message" rows="4" placeholder="Tell us about your business and specific pricing needs"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Request Pricing</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Orders Section -->
     <section id="orders" class="orders-section">
         <div class="container">
             <header class="section-header fade-in">
                 <h2 class="section-title" data-i18n="orders.title">Get JEBREWSALEM</h2>
-                <p class="section-subtitle" data-i18n="orders.subtitle">Bring the spirit of two cities to your table</p>
+                <p class="section-subtitle" data-i18n="orders.subtitle">How to experience our craft beer</p>
             </header>
 
             <div class="orders-grid">
@@ -178,13 +214,13 @@
                     </div>
                     <h3 class="order-title" data-i18n="orders.direct.title">Direct Order</h3>
                     <p class="order-description" data-i18n="orders.direct.description">
-                        Order directly from our brewery. Choose your favorites, 
-                        select quantity, and we'll deliver the craft right to your door.
+                        Interested in ordering directly? Contact us to discuss availability, 
+                        quantities, and delivery options for your location.
                     </p>
                     <ul class="order-features">
-                        <li data-i18n="orders.direct.feature1">Free delivery on orders over $50</li>
+                        <li data-i18n="orders.direct.feature1">Custom order inquiries welcome</li>
                         <li data-i18n="orders.direct.feature2">Fresh from the brewery</li>
-                        <li data-i18n="orders.direct.feature3">Special packaging available</li>
+                        <li data-i18n="orders.direct.feature3">Special packaging for events</li>
                     </ul>
                     <a href="#" class="btn btn-primary" data-i18n="orders.direct.btn">Order Online</a>
                 </div>
@@ -214,13 +250,13 @@
                     </div>
                     <h3 class="order-title" data-i18n="orders.club.title">Beer Club</h3>
                     <p class="order-description" data-i18n="orders.club.description">
-                        Join our monthly beer club for exclusive releases, 
-                        limited editions, and special merchandise. Members get first taste of everything new.
+                        Stay connected with JEBREWSALEM. Sign up to receive updates about 
+                        new releases, special batches, and community events.
                     </p>
                     <ul class="order-features">
-                        <li data-i18n="orders.club.feature1">Monthly exclusive releases</li>
-                        <li data-i18n="orders.club.feature2">Members-only events</li>
-                        <li data-i18n="orders.club.feature3">Priority access to limited editions</li>
+                        <li data-i18n="orders.club.feature1">Early announcements of new beers</li>
+                        <li data-i18n="orders.club.feature2">Invitations to tasting events</li>
+                        <li data-i18n="orders.club.feature3">Behind-the-scenes updates</li>
                     </ul>
                     <a href="#" class="btn btn-primary" data-i18n="orders.club.btn">Join the Club</a>
                 </div>
@@ -344,7 +380,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h4>JEBREWSALEM</h4>
+                    <p class="footer-brand-name"><strong>JEBREWSALEM</strong></p>
                     <p data-i18n="footer.tagline">Craft beer with soul</p>
                 </div>
                 <div class="footer-legal">
