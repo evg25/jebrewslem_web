@@ -21,13 +21,8 @@
 </div><div class="language-switcher" role="group" aria-label="Language"><button class="lang-btn" type="button" data-lang="cs" aria-pressed="true">CS</button><button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button></div></div></header>
 <noscript data-i18n="noScript">Pro objednání piva prosím povolte JavaScript.</noscript>
 <main>
-<p id="storage-warning" class="storage-warning" data-i18n="storageWarning" hidden>Prohlížeč nepovoluje ukládání. Přihlášení a košík budou fungovat pouze do zavření stránky.</p>
-<section id="auth" class="auth panel" aria-labelledby="auth-title">
-<p class="eyebrow" data-i18n="authEyebrow">Pro naši komunitu</p><h1 id="auth-title" data-i18n="authTitle">Vítejte u Golema.</h1><p class="muted" data-i18n="authIntro">Zadejte společné heslo a vyberte si svoje pivo.</p>
-<form id="login-form"><label class="field"><span data-i18n="password">Heslo</span><input id="password" type="password" autocomplete="current-password" required></label><p id="login-error" class="error" hidden></p><button id="login-button" class="primary" type="submit" data-i18n="loginButton">Otevřít nabídku</button></form>
-<p class="security-note" data-i18n="securityNote">Heslo omezuje náhodný přístup. Katalog je veřejný soubor na statickém hostingu.</p>
-</section>
-<section id="shop" hidden>
+<p id="storage-warning" class="storage-warning" data-i18n="storageWarning" hidden>Prohlížeč nepovoluje ukládání. Košík nebude uložen po zavření stránky.</p>
+<section id="shop">
 <div class="intro"><p class="eyebrow" data-i18n="shopEyebrow">Dobré pivo. Dobrá společnost.</p><h1 data-i18n="shopTitle">Co si dáte příště?</h1><p class="muted" data-i18n="shopIntro">Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.</p></div>
 <div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div>[...]
 <aside id="basket" class="basket panel" aria-labelledby="basket-title"><h2 id="basket-title" data-i18n="basketTitle">Váš košík</h2><div id="cart-items"></div><button id="restore-cart" class="restore" type="button" data-i18n="restoreCart">Obnovit košík</button></aside>
@@ -41,19 +36,16 @@ const TEXT = {
  cs: {
   title:'Beer Golem — komunitní objednávky',description:'Komunitní objednávky piva Beer Golem. Vyberte si pivo a pošlete objednávku přes WhatsApp.',
   language:'Jazyk',brandSubtitle:'Komunitní objednávky',noScript:'Pro objednání piva prosím povolte JavaScript.',
-  storageWarning:'Prohlížeč nepovoluje ukládání. Přihlášení a košík budou fungovat pouze do zavření stránky.',
-  authEyebrow:'Pro naši komunitu',authTitle:'Vítejte u Golema.',authIntro:'Zadejte společné heslo a vyberte si svoje pivo.',
-  password:'Heslo',loginButton:'Otevřít nabídku',securityNote:'Heslo omezuje náhodný přístup. Katalog je veřejný soubor na statickém hostingu.',
+  storageWarning:'Prohlížeč nepovoluje ukládání. Košík nebude uložen po zavření stránky.',
   shopEyebrow:'Dobré pivo. Dobrá společnost.',shopTitle:'Co si dáte příště?',
-  shopIntro:'Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.',logout:'Odhlásit se',
+  shopIntro:'Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.',
   catalogTitle:'Nabídka piva',catalogUpdated:'Nabídka aktualizována',filterByCategory:'Filtrovat podle typu piva',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vyma[...]
   name:'Jméno *',phone:'Telefon *',fulfillmentTitle:'Převzetí objednávky *',pickup:'Vyzvednutí v Beer Golem',pickupDetails:'Pohořelec 153/2, Praha 1 · ne–pá 12:00–18:00',delivery:'Doručen[...]
   orderButton:'Objednat přes WhatsApp',orderNotice:'WhatsApp otevře připravenou zprávu. Objednávka je potvrzena až po naší odpovědi. Košík se po otevření WhatsAppu vymaže.',
   address:'Pohořelec 153/2, Praha 1',emptyCatalog:'Nabídku právě připravujeme. Brzy zde najdete dostupná piva.',
   emptyCart:'Zatím tu není žádné pivo. Vyberte si z nabídky.',loading:'Načítáme nabídku…',
   loadError:'Nabídku se nepodařilo načíst. Zkontrolujte soubor beers.json nebo to zkuste znovu.',invalidItemsSkipped:'Některá neplatná piva nebyla zobrazena.',
-  retry:'Zkusit znovu',httpsError:'Pro přihlášení otevřete stránku přes HTTPS.',
-  passwordUnset:'Heslo stránky ještě není nastavené.',wrongPassword:'Nesprávné heslo. Zkuste to znovu.',
+  retry:'Zkusit znovu',
   add:'Přidat',remove:'Odebrat',quantity:'Počet kusů',pieces:'ks',alcohol:'% alkoholu',
   needBeer:'Nejprve přidejte pivo do košíku.',required:'Vyplňte prosím jméno a telefon.',addressRequired:'Vyplňte prosím adresu doručení.',
   whatsappError:'Číslo WhatsApp není správně nastavené.',orderTitle:'Beer Golem — nová objednávka',
@@ -64,19 +56,16 @@ const TEXT = {
  en: {
   title:'Beer Golem — community orders',description:'Community beer orders from Beer Golem. Choose your beer and send your order via WhatsApp.',
   language:'Language',brandSubtitle:'Community orders',noScript:'Please enable JavaScript to order beer.',
-  storageWarning:'Your browser does not allow storage. Sign-in and your cart will only work until you close this page.',
-  authEyebrow:'For our community',authTitle:'Welcome to Golem.',authIntro:'Enter the shared password and choose your beer.',
-  password:'Password',loginButton:'Open the selection',securityNote:'The password limits casual access. The catalog is a public file on static hosting.',
+  storageWarning:'Your browser does not allow storage. Your cart will not be saved after you close this page.',
   shopEyebrow:'Good beer. Good company.',shopTitle:'What will you have next?',
-  shopIntro:'Choose your beer, add your contact details, and send us your order via WhatsApp.',logout:'Sign out',
+  shopIntro:'Choose your beer, add your contact details, and send us your order via WhatsApp.',
   catalogTitle:'Beer selection',catalogUpdated:'Selection updated',filterByCategory:'Filter by beer type',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',restoreCart:'Re[...]
   name:'Name *',phone:'Phone *',fulfillmentTitle:'How you will receive the order *',pickup:'Pick up at Beer Golem',pickupDetails:'Pohořelec 153/2, Prague 1 · Sun–Fri 12:00–18:00',delivery:'Deliv[...]
   orderButton:'Order via WhatsApp',orderNotice:'WhatsApp will open a prepared message. Your order is confirmed only after our reply. Your cart will be cleared when WhatsApp opens.',
   address:'Pohořelec 153/2, Prague 1',emptyCatalog:'We are preparing the selection. Available beers will appear here soon.',
   emptyCart:'There is no beer here yet. Choose from the selection.',loading:'Loading the selection…',
   loadError:'Could not load the selection. Check beers.json or try again.',invalidItemsSkipped:'Some invalid beers were not displayed.',
-  retry:'Try again',httpsError:'Open this page over HTTPS to sign in.',
-  passwordUnset:'The page password has not been configured.',wrongPassword:'Incorrect password. Please try again.',
+  retry:'Try again',
   add:'Add',remove:'Remove',quantity:'Quantity',pieces:'pcs',alcohol:'% ABV',
   needBeer:'Add beer to your cart first.',required:'Please enter your name and phone number.',addressRequired:'Please enter the delivery address.',
   whatsappError:'The WhatsApp number is not configured correctly.',orderTitle:'Beer Golem — new order',
@@ -107,27 +96,22 @@ function setLanguage(lang) {
  if(loaded) {renderCatalog();renderCart();}
 }
 const CONFIG = {
-    passwordHash: "c2bb9abc9f8382e824d7259b7266f6ab31cffc1197307f5d3f4edb4a0ff2dfb2",
-    whatsappNumber: "420775431677",
-    authDays: 30
+    whatsappNumber: "420775431677"
 };
 // Catalog schema lives exclusively in beers.json. Start with [] and add objects:
 // id, brewery, name, style, category (lager/wheat/ipa/sour/nonalcoholic/stout), abv, plato (optional), volume, price, description/description_cs/description_en, image, available, sort.
-const KEYS = {auth:'beer-golem:auth:v1',cart:'beer-golem:cart:v1',contact:'beer-golem:contact:v1',lastCart:'beer-golem:last-cart:v1'};
+const KEYS = {cart:'beer-golem:cart:v1',contact:'beer-golem:contact:v1',lastCart:'beer-golem:last-cart:v1'};
 const MAX_QUANTITY = 6;
 const LAST_CART_TTL = 24*60*60*1000;
 const $ = id => document.getElementById(id);
 const money = value => new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ', {maximumFractionDigits:2}).format(value) + (currentLang==='en'?' CZK':' Kč');
 const FILTER_CATEGORIES=['','lager','wheat','ipa','sour','nonalcoholic','stout'];
-let beers = [], cart = Object.create(null), loaded = false, loading = false, sessionExpires = 0, catalogMessage = '', activeCategory = '', skippedBeers = 0, catalogUpdatedAt = null;
+let beers = [], cart = Object.create(null), loaded = false, loading = false, catalogMessage = '', activeCategory = '', skippedBeers = 0, catalogUpdatedAt = null;
 document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
 translatePage();
 function readStored(key) {try {return JSON.parse(localStorage.getItem(key));} catch {return null;}}
 function saveStored(key, value) {try {localStorage.setItem(key, JSON.stringify(value));} catch {$('storage-warning').hidden = false;}}
 function removeStored(key) {try {localStorage.removeItem(key);} catch {$('storage-warning').hidden = false;}}
-function validAuth(auth) {return !!auth && auth.hash === CONFIG.passwordHash && Number.isFinite(auth.expires) && auth.expires > Date.now() && auth.expires <= Date.now() + CONFIG.authDays * 86400000 + [...]
-function hasAuth() {return sessionExpires > Date.now() || validAuth(readStored(KEYS.auth));}
-function requireAuth() {if (hasAuth()) return true; sessionExpires=0; $('shop').hidden=true; $('auth').hidden=false; $('password').focus(); return false;}
 function element(tag, className, value) {const el=document.createElement(tag); if(className) el.className=className; if(value !== undefined) el.textContent=value; return el;}
 function showError(id, message) {$(id).textContent=message; $(id).hidden=!message;}
 function safeImage(value) {if(typeof value !== 'string' || !value.trim()) return null; try {const url=new URL(value,location.href); return ['https:','http:'].includes(url.protocol)?url.href:null;} cat[...]
@@ -202,7 +186,7 @@ function renderCatalogMessage() {
  else box.textContent='';
 }
 function changeQuantity(id,delta) {
- if(!requireAuth() || !loaded || !beers.some(b=>b.id===id)) return;
+ if(!loaded || !beers.some(b=>b.id===id)) return;
  const qty=Math.max(0,Math.min(MAX_QUANTITY,(cart[id]||0)+delta)); if(qty) cart[id]=qty; else delete cart[id]; saveStored(KEYS.cart,cart);
  // Keep product controls in place to preserve touch and keyboard focus.
  for(const el of $('catalog').querySelectorAll('[data-quantity-id]')) if(el.dataset.quantityId===id) {el.textContent=String(qty); el.setAttribute('aria-label',t('quantity')+': '+qty);}
@@ -211,22 +195,10 @@ function changeQuantity(id,delta) {
 }
 async function loadCatalog() {
  if(loading) return; loading=true; loaded=false; skippedBeers=0; catalogUpdatedAt=null; catalogMessage='loading'; renderCatalogMessage();
- try {const response=await fetch('./beers.json',{cache:'no-store'}); if(!response.ok) throw new Error('HTTP '+response.status); const next=validateCatalog(await response.json()); if(!hasAuth()) return[...]
+ try {const response=await fetch('./beers.json',{cache:'no-store'}); if(!response.ok) throw new Error('HTTP '+response.status); const next=validateCatalog(await response.json()); const modified=response.headers.get('last-modified')||document.lastModified, parsed=new Date(modified); catalogUpdatedAt=Number.isNaN(parsed.getTime())?null:parsed; beers=next.items; skippedBeers=next.skipped; cart=cleanCart(readStored(KEYS.cart)); saveStored(KEYS.cart,cart); loaded=true; catalogMessage=''; renderCatalogMessage(); renderCatalog(); renderCart();}
  catch(error) {catalogMessage='loadError'; renderCatalogMessage(); $('order-button').disabled=true;}
  finally {loading=false;}
 }
-function openShop() {$('auth').hidden=true; $('shop').hidden=false; $('password').value=''; loadCatalog();}
-$('login-form').addEventListener('submit',async event=>{
- event.preventDefault(); showError('login-error',''); $('login-button').disabled=true;
- try {
-  if(!globalThis.crypto?.subtle) throw new Error(t('httpsError'));
-  if(!/^[a-f0-9]{64}$/i.test(CONFIG.passwordHash)) throw new Error(t('passwordUnset'));
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode($('password').value)); const hash=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
-  if(hash!==CONFIG.passwordHash.toLowerCase()) throw new Error(t('wrongPassword'));
-  sessionExpires=Date.now()+CONFIG.authDays*86400000; saveStored(KEYS.auth,{hash:CONFIG.passwordHash,expires:sessionExpires}); openShop();
- } catch(error) {showError('login-error',error.message);} finally {$('login-button').disabled=false;}
-});
-$('logout').addEventListener('click',()=>{sessionExpires=0; removeStored(KEYS.auth); requireAuth();});
 function restoreContact() {const contact=readStored(KEYS.contact); if(!contact || typeof contact!=='object') return; if(typeof contact.name==='string') $('customer-name').value=contact.name; if(typeof[...]
 function saveContact() {saveStored(KEYS.contact,{name:$('customer-name').value.trim(),phone:$('customer-phone').value.trim()});}
 function updateFulfillment() {const delivery=document.querySelector('input[name="fulfillment"]:checked')?.value==='delivery'; $('delivery-address-field').hidden=!delivery; $('delivery-address').requir[...]
@@ -234,8 +206,8 @@ for(const id of ['customer-name','customer-phone']) $(id).addEventListener('chan
 document.querySelectorAll('input[name="fulfillment"]').forEach(input=>input.addEventListener('change',updateFulfillment));
 restoreContact(); updateFulfillment();
 for(const id of ['catalog','cart-items']) $(id).addEventListener('click',event=>{const button=event.target.closest('button[data-id]'); if(button && !button.disabled) changeQuantity(button.dataset.id,N[...]
-$('clear-cart').addEventListener('click',()=>{if(!requireAuth()) return; cart=Object.create(null); saveStored(KEYS.cart,cart); renderCatalog(); renderCart(); showError('order-error','');});
-$('restore-cart').addEventListener('click',()=>{if(!requireAuth()) return; const restored=restorableCart(); if(!Object.keys(restored).length) {renderCart(); return;} cart=restored; saveStored(KEYS.car[...]
+$('clear-cart').addEventListener('click',()=>{cart=Object.create(null); saveStored(KEYS.cart,cart); renderCatalog(); renderCart(); showError('order-error','');});
+$('restore-cart').addEventListener('click',()=>{const restored=restorableCart(); if(!Object.keys(restored).length) {renderCart(); return;} cart=restored; saveStored(KEYS.cart,cart); renderCatalog(); renderCart();});
 function orderMessage(name,phone,note,fulfillment,address) {
  const total=totals(), lines=[t('orderTitle'),' ',t('orderName')+': '+name,t('orderPhone')+': '+phone,t('orderMethod')+': '+(fulfillment==='delivery'?t('delivery'):t('pickup'))];
  if(fulfillment==='delivery') lines.push(t('orderAddress')+': '+address);
@@ -244,7 +216,7 @@ function orderMessage(name,phone,note,fulfillment,address) {
  lines.push('',t('orderTotal')+': '+total.count+' '+t('pieces'),t('orderPrice')+': '+money(total.cents/100)); if(note) lines.push('',t('orderNote')+': '+note); return lines.join('\n');
 }
 $('order-form').addEventListener('submit',event=>{
- event.preventDefault(); showError('order-error',''); if(!requireAuth()) return;
+ event.preventDefault(); showError('order-error','');
  if(!loaded || !totals().count) {showError('order-error',t('needBeer')); return;}
  const name=$('customer-name').value.trim(), phone=$('customer-phone').value.trim(), note=$('customer-note').value.trim(), fulfillment=document.querySelector('input[name="fulfillment"]:checked')?.valu[...]
  if(!name || !phone) {showError('order-error',t('required')); (!name?$('customer-name'):$('customer-phone')).focus(); return;}
@@ -255,9 +227,8 @@ $('order-form').addEventListener('submit',event=>{
  cart=Object.create(null); saveStored(KEYS.cart,cart); renderCatalog(); renderCart();
  location.href=whatsappUrl;
 });
-window.addEventListener('storage',event=>{if(event.key===KEYS.auth || event.key===null) {const auth=readStored(KEYS.auth); sessionExpires=validAuth(auth)?auth.expires:0; requireAuth();} if(loaded && ([...]
-window.addEventListener('pageshow',()=>{if(!$('shop').hidden) requireAuth();});
-if(validAuth(readStored(KEYS.auth))) {sessionExpires=readStored(KEYS.auth).expires; openShop();}
+window.addEventListener('storage',event=>{if(loaded && (event.key===KEYS.cart || event.key===null)) {cart=cleanCart(readStored(KEYS.cart)); renderCatalog(); renderCart();}});
+loadCatalog();
 </script>
 </body>
 </html>
