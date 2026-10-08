@@ -4,7 +4,7 @@
 
 ```
 /
-├── index.html          (Home page)
+├── shop.html           (Home page)
 ├── beer.html           (Beer page)
 ├── tap-rental.html     (Tap Rental page)
 ├── merchandise.html    (Merchandise page)
@@ -25,7 +25,7 @@ The logo file must be:
 
 ## Local Testing
 
-Open `index.html` in a web browser to view the website locally.
+Open `shop.html` in a web browser to view the website locally.
 
 All pages are linked and functional.
 
