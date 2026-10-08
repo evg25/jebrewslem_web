@@ -5,13 +5,15 @@
     "name": "Goldie 11°",
     "style": "Weizenbier",
     "category": "wheat",
-    "abv": null,
+    "abv": 4.9,
     "volume": "0.5 l",
     "price": 79,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 10
+    "sort": 10,
+    "plato": 11,
+    "imageSource": null
   },
   {
     "id": "vinohradsky-pivovar-vinohradska-12-nealko",
@@ -19,13 +21,15 @@
     "name": "Vinohradská 12 Nealko",
     "style": "Nealkoholické pivo",
     "category": "nonalcoholic",
-    "abv": null,
+    "abv": 0.5,
     "volume": "0.5 l",
     "price": 85,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 20
+    "sort": 20,
+    "plato": 12,
+    "imageSource": null
   },
   {
     "id": "clock-red-baron-13",
@@ -33,13 +37,15 @@
     "name": "Red Baron 13°",
     "style": "Nakouřený ležák",
     "category": "lager",
-    "abv": null,
+    "abv": 5.4,
     "volume": "0.5 l",
     "price": 89,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 30
+    "sort": 30,
+    "plato": 13,
+    "imageSource": null
   },
   {
     "id": "kolcavka-mrtvy-kostelnik-15",
@@ -47,13 +53,15 @@
     "name": "Mrtvý kostelník 15°",
     "style": "",
     "category": "stout",
-    "abv": null,
+    "abv": 6.5,
     "volume": "0.5 l",
     "price": 109,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 40
+    "sort": 40,
+    "plato": 15,
+    "imageSource": null
   },
   {
     "id": "permon-zarikavac-chmele",
@@ -61,13 +69,15 @@
     "name": "Zaříkávač Chmele",
     "style": "",
     "category": "ipa",
-    "abv": 7.5,
+    "abv": 8,
     "volume": "0.5 l",
     "price": 89,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 50
+    "sort": 50,
+    "plato": 17,
+    "imageSource": null
   },
   {
     "id": "kolcavka-ipa-15",
@@ -75,13 +85,15 @@
     "name": "IPA 15°",
     "style": "IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 6.5,
     "volume": "0.5 l",
     "price": 99,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 60
+    "sort": 60,
+    "plato": 15,
+    "imageSource": null
   },
   {
     "id": "fiesta-12",
@@ -89,13 +101,15 @@
     "name": "Fiesta 12°",
     "style": "",
     "category": "sour",
-    "abv": null,
+    "abv": 5.1,
     "volume": "0.5 l",
     "price": 109,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 70
+    "sort": 70,
+    "plato": 12,
+    "imageSource": null
   },
   {
     "id": "cold-brew-berries-12",
@@ -103,13 +117,15 @@
     "name": "Cold Brew Berries 12°",
     "style": "",
     "category": "sour",
-    "abv": null,
+    "abv": 5.1,
     "volume": "0.5 l",
     "price": 119,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 80
+    "sort": 80,
+    "plato": 12,
+    "imageSource": null
   },
   {
     "id": "jantarova-13",
@@ -117,13 +133,15 @@
     "name": "Jantarová 13°",
     "style": "",
     "category": "lager",
-    "abv": null,
+    "abv": 4.9,
     "volume": "0.5 l",
     "price": 79,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 90
+    "sort": 90,
+    "plato": 13,
+    "imageSource": null
   },
   {
     "id": "sibeeria-yummy-pineapple-papaya-coconut",
@@ -131,13 +149,15 @@
     "name": "Yummy Pineapple, Papaya & Coconut",
     "style": "",
     "category": "sour",
-    "abv": null,
+    "abv": 5.1,
     "volume": "0.5 l",
     "price": 139,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 100
+    "sort": 100,
+    "plato": 24,
+    "imageSource": null
   },
   {
     "id": "sibeeria-raspberry-sorbet",
@@ -149,9 +169,11 @@
     "volume": "0.5 l",
     "price": 109,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 110
+    "sort": 110,
+    "plato": "N/A",
+    "imageSource": null
   },
   {
     "id": "winter-affair-weed-neipa",
@@ -159,13 +181,15 @@
     "name": "Winter Affair Weed NEIPA",
     "style": "NEIPA",
     "category": "ipa",
-    "abv": null,
+    "abv": "N/A",
     "volume": "0.5 l",
     "price": 129,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 120
+    "sort": 120,
+    "plato": "N/A",
+    "imageSource": null
   },
   {
     "id": "kolcavka-svetla-11",
@@ -173,13 +197,15 @@
     "name": "Světlá 11°",
     "style": "Světlý ležák",
     "category": "lager",
-    "abv": null,
+    "abv": 4.5,
     "volume": "0.5 l",
     "price": 85,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 130
+    "sort": 130,
+    "plato": 11,
+    "imageSource": null
   },
   {
     "id": "sibeeria-namachan-smoke-lady",
@@ -191,9 +217,11 @@
     "volume": "0.5 l",
     "price": 99,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 140
+    "sort": 140,
+    "plato": "N/A",
+    "imageSource": null
   },
   {
     "id": "permon-sherpa-ipa",
@@ -201,13 +229,15 @@
     "name": "Sherpa IPA",
     "style": "IPA",
     "category": "ipa",
-    "abv": 6.5,
+    "abv": 7.5,
     "volume": "0.5 l",
     "price": 85,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 150
+    "sort": 150,
+    "plato": 16,
+    "imageSource": null
   },
   {
     "id": "zichovec-drink-and-swim",
@@ -215,13 +245,15 @@
     "name": "Drink And Swim Ø",
     "style": "",
     "category": "nonalcoholic",
-    "abv": null,
+    "abv": 0.5,
     "volume": "0.5 l",
     "price": 99,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 160
+    "sort": 160,
+    "plato": "N/A",
+    "imageSource": null
   },
   {
     "id": "kolcavka-extra-horka-12",
@@ -229,12 +261,14 @@
     "name": "Extra Hořká 12°",
     "style": "",
     "category": "lager",
-    "abv": null,
+    "abv": 5,
     "volume": "0.5 l",
     "price": 89,
     "description": "",
-    "image": "",
+    "image": null,
     "available": true,
-    "sort": 170
+    "sort": 170,
+    "plato": 12,
+    "imageSource": null
   }
 ]
