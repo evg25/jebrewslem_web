@@ -172,7 +172,8 @@ const translations = {
         
         // Footer
         footer: {
-            tagline: 'Craft beer with soul',
+            quote: '“My heart is in the East, and I am at the edge of the West.”',
+            attribution: '— Yehuda Halevi, 12th century',
             copyright: '© 2026 JEBREWSALEM. All rights reserved.',
             disclaimer: 'Drink responsibly. You must be 18+ to consume alcohol.'
         },
@@ -412,7 +413,8 @@ const translations = {
         
         // Footer
         footer: {
-            tagline: 'Řemeslné pivo s duší',
+            quote: '“My heart is in the East, and I am at the edge of the West.”',
+            attribution: '— Yehuda Halevi, 12th century',
             copyright: '© 2026 JEBREWSALEM. Všechna práva vyhrazena.',
             disclaimer: 'Pijte odpovědně. Musíte být starší 18 let.'
         },

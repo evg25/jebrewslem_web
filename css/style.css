@@ -1174,6 +1174,21 @@ address {
     margin-bottom: var(--space-xl);
 }
 
+.footer-brand .footer-quote {
+    max-width: 42rem;
+    margin: 0 auto var(--space-xs);
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+    text-wrap: balance;
+}
+
+.footer-brand .footer-attribution {
+    margin-bottom: var(--space-xl);
+    font-size: var(--font-size-xs);
+    color: var(--color-warm-gray);
+    letter-spacing: 0.04em;
+}
+
 /* Location sub-line in footer — smaller, less prominent than tagline.
    Use .footer-brand .footer-location for specificity over .footer-brand p */
 .footer-brand .footer-location {
