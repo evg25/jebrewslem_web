@@ -584,7 +584,7 @@
                 var kegQty  = form.querySelector('#kegQty');
                 var kegDate = form.querySelector('#kegDate');
                 var kegDel  = form.querySelector('#kegDelivery');
-                lines.push('Beer: Brevnov Ale - 2024 / 30 L');
+                lines.push('Beer: Jebrewsalem APA 12° / 30 L');
                 if (kegQty  && kegQty.value)  lines.push('Kegs: ' + kegQty.value);
                 if (kegDate && kegDate.value) lines.push('Date: ' + kegDate.value);
                 if (kegDel  && kegDel.value)  lines.push('Delivery: ' + kegDel.options[kegDel.selectedIndex].text);

@@ -30,18 +30,50 @@ const translations = {
             title: 'AMERICAN PALE ALE',
             subtitle: 'A light, refreshing, and easy-drinking craft beer<br>with a stable, proven recipe',
             btnPricing: 'View Pricing',
+            name: 'Jebrewsalem APA 12°',
+            style: 'APA',
+            onTap: 'ALREADY ON TAP:',
+            festivals: 'Also featured at festivals:',
+            facts: {
+                style: 'Style:',
+                styleValue: 'American Pale Ale',
+                abv: 'ABV:',
+                abvValue: '5%',
+                ibu: 'IBU:',
+                ibuValue: '22',
+                plato: 'Original Gravity:',
+                platoValue: '12° Plato',
+                taste: 'Taste:',
+                tasteValue: 'light, refreshing, easy-drinking',
+                hops: 'Hops:',
+                hopsValue: 'Mosaic, Magnum',
+                consistency: 'Flavor consistency:',
+                consistencyValue: 'brewed for 2+ years, no experimental batches',
+                delivery: 'Delivery format:',
+                deliveryValue: '30L kegs'
+            },
             untappdLabel: 'View on Untappd',
-            brevnovAle: {
-                name: 'Brevnov Ale - 2024',
-                style: 'APA',
-                description: 'Brewed in the shadow of Prague\'s oldest monastery. Bright, hoppy, and balanced — our first craft ale.'
-            }
         },
         
         // Orders / Request Form Section
         orders: {
             title: 'Order & Event Request',
             subtitle: 'T-shirts, kegs, and event tap setups — tell us what you need.',
+            direct: {
+                title: 'Direct orders',
+                description: 'Contact us to discuss orders, events and current availability.',
+                feature1: 'Custom order enquiries welcome',
+                feature2: 'Availability confirmed on request',
+                feature3: 'Special packaging for events',
+                btn: 'Contact us'
+            },
+            nearby: {
+                title: 'Partner locations',
+                description: 'Find Jebrewsalem at partner locations.',
+                feature1: '5 partner locations',
+                feature2: 'Availability varies by location',
+                btn: 'Shop information'
+            },
             typeLabel: 'What would you like to order?',
             type: {
                 tshirt: 'T-shirt',
@@ -95,19 +127,23 @@ const translations = {
         // Merchandise Section
         merch: {
             title: 'Merchandise',
-            subtitle: 'Wear the spirit of two cities',
+            subtitle: 'Jebrewsalem merchandise',
             tshirt: {
-                name: 'JEBREWSALEM Classic Tee',
-                price: '500 Kč',
-                description: 'Limited Jebrewsalem brewery T-shirt with original artwork. Soft everyday wear for craft beer lovers, festivals, and taproom events.',
-                sizes: 'Sizes:',
-                sizesValue: 'S, M, L, XL, XXL',
-                material: 'Material:',
-                materialValue: '100% Cotton',
-                colors: 'Colors:',
-                colorsValue: 'Black, White, Sand',
-                btn: 'Order Now'
-            }
+                label: 'T-shirt',
+                name: 'Jebrewsalem T-shirt',
+                price: '599 Kč'
+            },
+            glass: {
+                label: 'Beer glass',
+                name: 'Jebrewsalem beer glass',
+                price: '150 Kč'
+            },
+            bag: {
+                label: 'Shopper bag',
+                name: 'Jebrewsalem shopper bag',
+                price: '150 Kč'
+            },
+            ask: 'Ask about this item'
         },
         
         // Gallery Section
@@ -119,17 +155,19 @@ const translations = {
         // Contacts Section
         contacts: {
             title: 'Contact',
-            subtitle: 'Get in touch with us',
-            visit: 'Visit Us',
-            brewery: 'JEBREWSALEM Brewery',
-            location: 'Old Town Quarter',
-            city: 'Prague / Jerusalem',
-            hours: 'Opening Hours: Mon-Sat, 10:00-22:00',
-            reach: 'Reach Out',
+            subtitle: 'Contact Jebrewsalem s.r.o.',
+            company: 'Company',
+            reach: 'Contact',
             email: 'Email:',
             phone: 'Phone:',
-            press: 'Press:',
-            follow: 'Follow Our Journey'
+            emailPurposes: 'For general, wholesale, event and press enquiries.',
+            shopName: 'Beer Golem',
+            shopOfficial: 'Official physical shop of Jebrewsalem',
+            shopAddressNote: 'Shop address only; not a beer production facility.',
+            shopAddress: 'Pohořelec 153/2, Prague 1, Czech Republic',
+            shopHours: 'Sunday–Friday, 12:00–19:00. Saturday: closed.',
+            shopLink: 'Visit the shop',
+            mapsLink: 'Open in Google Maps'
         },
         
         // Footer
@@ -142,11 +180,14 @@ const translations = {
         // Keg Rental page
         kegRental: {
             title: 'Beer Keg Rental Prague | JEBREWSALEM',
-            metaDesc: 'Rent a 30\u202fL craft beer keg in Prague. Brevnov Ale delivered or picked up. No minimum order, 12\u202fh lead time. 1\u2009000\u202fCZK deposit.',
+            metaDesc: 'Rent a 30\u202fL Jebrewsalem APA 12° beer keg in Prague. Pickup or delivery by arrangement.',
             h1: 'Beer Keg Rental Prague',
-            intro: 'Order a 30\u202fL keg of our Brevnov Ale craft beer for your event, party, or personal enjoyment. We operate in Prague only.',
+            intro: 'Request a 30\u202fL keg of Jebrewsalem APA 12° for your event or party. Service is available in Prague.',
             whatTitle: 'What you get',
-            whatDesc: 'A full 30\u202fL keg of Brevnov Ale \u2014 our Prague-brewed American Pale Ale (5\u202f% ABV, 22\u202fIBU). Available keg-only or keg\u202f+\u202ftap equipment.',
+            whatDesc: 'A 30\u202fL keg of Jebrewsalem APA 12° \u2014 American Pale Ale (5\u202f% ABV, 22\u202fIBU). Available keg-only or keg\u202f+\u202ftap equipment.',
+            beerSpecs: 'Jebrewsalem APA 12° \u2014 APA, 5\u202f% ABV, 22\u202fIBU',
+            volume: 'Keg volume: 30\u202fL',
+            formats: 'Available as keg-only or keg\u202f+\u202ftap equipment',
             detailsTitle: 'Rental details',
             deposit: 'Keg deposit',
             depositValue: '1\u202f000\u202fCZK (refundable)',
@@ -162,17 +203,20 @@ const translations = {
             ctaDesc: 'Fill out the order form on our homepage and select \u201c30\u202fL beer keg\u201d.',
             ctaBtn: 'Go to order form',
             contactTitle: 'Questions?',
-            contactDesc: 'Contact us by email or WhatsApp.'
+            contactDesc: 'Contact us by email or phone.'
         },
 
         // Tap Rental page
         tapRental: {
             title: 'Beer Tap Rental Prague | JEBREWSALEM',
-            metaDesc: 'Beer tap equipment rental for events in Prague. Keg + tap setup, private parties and corporate events. 10\u202f000\u202fCZK deposit, 12\u202fh lead time.',
+            metaDesc: 'Beer tap equipment rental for private parties, corporate events and celebrations in Prague.',
             h1: 'Beer Tap Rental Prague',
-            intro: 'Full beer tap setup with our Brevnov Ale craft beer for your event. Private parties, corporate events, and celebrations in Prague.',
+            intro: 'Beer tap setup with Jebrewsalem APA 12° for private parties, corporate events and celebrations in Prague.',
             whatTitle: 'What is included',
-            whatDesc: 'A complete beer on tap solution: 30\u202fL keg(s) of Brevnov Ale plus tap equipment. Ideal for events where guests appreciate fresh draft beer.',
+            whatDesc: 'A complete beer on tap solution: 30\u202fL keg(s) of Jebrewsalem APA 12° plus tap equipment.',
+            beerSpecs: 'Jebrewsalem APA 12° \u2014 APA, 5\u202f% ABV, 22\u202fIBU',
+            volume: 'Keg volume: 30\u202fL',
+            equipment: 'Tap equipment included',
             detailsTitle: 'Service details',
             deposit: 'Equipment deposit',
             depositValue: '10\u202f000\u202fCZK (refundable)',
@@ -188,7 +232,7 @@ const translations = {
             ctaDesc: 'Fill out the order form on our homepage and select \u201cBeer with tap equipment\u201d.',
             ctaBtn: 'Go to order form',
             contactTitle: 'Questions?',
-            contactDesc: 'Contact us by email or WhatsApp.'
+            contactDesc: 'Contact us by email or phone.'
         },
 
         // Cookie consent banner
@@ -226,18 +270,50 @@ const translations = {
             title: 'AMERICAN PALE ALE',
             subtitle: 'Lehké, osvěžující a snadno pitelné řemeslné pivo<br>se stabilním, prověřeným receptem',
             btnPricing: 'Zobrazit ceny',
+            name: 'Jebrewsalem APA 12°',
+            style: 'APA',
+            onTap: 'JIŽ NA ČEPU:',
+            festivals: 'Také na festivalech:',
+            facts: {
+                style: 'Styl:',
+                styleValue: 'American Pale Ale',
+                abv: 'Alkohol:',
+                abvValue: '5 %',
+                ibu: 'IBU:',
+                ibuValue: '22',
+                plato: 'Původní stupňovitost:',
+                platoValue: '12° Plato',
+                taste: 'Chuť:',
+                tasteValue: 'lehká, osvěžující, snadno pitelná',
+                hops: 'Chmely:',
+                hopsValue: 'Mosaic, Magnum',
+                consistency: 'Stálost chuti:',
+                consistencyValue: 'vařeno déle než 2 roky, bez experimentálních várek',
+                delivery: 'Balení:',
+                deliveryValue: '30l sudy'
+            },
             untappdLabel: 'Zobrazit na Untappd',
-            brevnovAle: {
-                name: 'Brevnov Ale - 2024',
-                style: 'APA',
-                description: 'Uvařeno ve stínu nejstaršího pražského kláštera. Svěží, chmelové a vyvážené — naše první craft ale.'
-            }
         },
         
         // Orders / Request Form Section
         orders: {
             title: 'Objednávka / poptávka na akci',
             subtitle: 'Trička, sudy, výčepní zařízení na akce \u2014 napište nám, co potřebujete.',
+            direct: {
+                title: 'Přímé objednávky',
+                description: 'Napište nám ohledně objednávek, akcí a aktuální dostupnosti.',
+                feature1: 'Vítáme individuální poptávky',
+                feature2: 'Dostupnost potvrdíme na dotaz',
+                feature3: 'Speciální balení na akce',
+                btn: 'Kontaktujte nás'
+            },
+            nearby: {
+                title: 'Partnerská místa',
+                description: 'Jebrewsalem najdete u našich partnerů.',
+                feature1: '5 partnerských míst',
+                feature2: 'Dostupnost se může lišit podle místa',
+                btn: 'Informace o prodejně'
+            },
             typeLabel: 'Co si chcete objednat?',
             type: {
                 tshirt: 'Tričko',
@@ -291,19 +367,23 @@ const translations = {
         // Merchandise Section
         merch: {
             title: 'Zboží',
-            subtitle: 'Noste ducha dvou měst',
+            subtitle: 'Produkty Jebrewsalem',
             tshirt: {
-                name: 'JEBREWSALEM Klasické tričko',
-                price: '500 Kč',
-                description: 'Limitované tričko pivovaru Jebrewsalem s originálním artwork. Pohodné každodenní oblečení pro milovníky craft piva, festivaly a taproom akce.',
-                sizes: 'Velikosti:',
-                sizesValue: 'S, M, L, XL, XXL',
-                material: 'Materiál:',
-                materialValue: '100% bavlna',
-                colors: 'Barvy:',
-                colorsValue: 'Černá, Bílá, Písková',
-                btn: 'Objednat nyní'
-            }
+                label: 'Tričko',
+                name: 'Tričko Jebrewsalem',
+                price: '599 Kč'
+            },
+            glass: {
+                label: 'Pivní sklenice',
+                name: 'Pivní sklenice Jebrewsalem',
+                price: '150 Kč'
+            },
+            bag: {
+                label: 'Nákupní taška',
+                name: 'Nákupní taška Jebrewsalem',
+                price: '150 Kč'
+            },
+            ask: 'Zeptat se na produkt'
         },
         
         // Gallery Section
@@ -315,17 +395,19 @@ const translations = {
         // Contacts Section
         contacts: {
             title: 'Kontakt',
-            subtitle: 'Ozvěte se nám',
-            visit: 'Navštivte nás',
-            brewery: 'Pivovar JEBREWSALEM',
-            location: 'Čtvrť Starého Města',
-            city: 'Praha / Jeruzalém',
-            hours: 'Otevírací doba: Po-So, 10:00-22:00',
-            reach: 'Kontaktovat',
+            subtitle: 'Kontaktujte Jebrewsalem s.r.o.',
+            company: 'Společnost',
+            reach: 'Kontakt',
             email: 'Email:',
             phone: 'Telefon:',
-            press: 'Tisk:',
-            follow: 'Sledujte naši cestu'
+            emailPurposes: 'Obecné dotazy, velkoobchod, akce a tisk.',
+            shopName: 'Beer Golem',
+            shopOfficial: 'Oficiální kamenná prodejna značky Jebrewsalem',
+            shopAddressNote: 'Adresa prodejny; nejde o adresu výroby piva.',
+            shopAddress: 'Pohořelec 153/2, Praha 1, Česká republika',
+            shopHours: 'Neděle–pátek, 12:00–19:00. V sobotu zavřeno.',
+            shopLink: 'Navštívit prodejnu',
+            mapsLink: 'Otevřít v Google Maps'
         },
         
         // Footer
@@ -338,11 +420,14 @@ const translations = {
         // Keg Rental page
         kegRental: {
             title: 'Pronájem pivního sudu Praha | JEBREWSALEM',
-            metaDesc: 'Pronájem 30l pivního sudu v Praze. Craft pivo Brevnov Ale \u2014 osobní odběr nebo doručení. Bez minimální objednávky, do 12 hodin. Záloha 1\u202f000\u202fKč.',
+            metaDesc: 'Pronájem 30l sudu piva Jebrewsalem APA 12° v Praze. Osobní odběr nebo doručení po dohodě.',
             h1: 'Pronájem pivního sudu Praha',
-            intro: 'Půjčte si 30l sud našeho craft piva Brevnov Ale na párty, oslavu nebo firemní akci. Provozujeme pouze na území Prahy.',
+            intro: 'Poptávejte 30l sud piva Jebrewsalem APA 12° na párty, oslavu nebo firemní akci v Praze.',
             whatTitle: 'Co dostanete',
-            whatDesc: 'Plný 30l sud piva Brevnov Ale \u2014 Prague-brewed American Pale Ale (5\u202f% alc., 22\u202fIBU). Na výběr: pouze sud, nebo sud\u202f+\u202fvýčepní zařízení.',
+            whatDesc: '30l sud piva Jebrewsalem APA 12° \u2014 American Pale Ale (5\u202f% alkoholu, 22\u202fIBU). Na výběr: pouze sud, nebo sud\u202f+\u202fvýčepní zařízení.',
+            beerSpecs: 'Jebrewsalem APA 12° \u2014 APA, 5\u202f% alkoholu, 22\u202fIBU',
+            volume: 'Objem sudu: 30\u202fl',
+            formats: 'K dispozici samotný sud nebo sud\u202f+\u202fvýčepní zařízení',
             detailsTitle: 'Detaily pronájmu',
             deposit: 'Záloha za sud',
             depositValue: '1\u202f000\u202fKč (vratná)',
@@ -358,17 +443,20 @@ const translations = {
             ctaDesc: 'Vyplňte poptávkový formulář na úvodní stránce a vyberte \u201eSud piva 30\u202fl\u201c.',
             ctaBtn: 'Přejít na formulář',
             contactTitle: 'Máte dotazy?',
-            contactDesc: 'Kontaktujte nás e-mailem nebo přes WhatsApp.'
+            contactDesc: 'Kontaktujte nás e-mailem nebo telefonicky.'
         },
 
         // Tap Rental page
         tapRental: {
             title: 'Pronájem výčepu Praha | JEBREWSALEM',
-            metaDesc: 'Pronájem pivního výčepu na akce v Praze. Keg + výčepní zařízení, soukromé a firemní akce. Záloha 10\u202f000\u202fKč, dodání do 12 hodin.',
+            metaDesc: 'Pronájem pivního výčepu na soukromé a firemní akce a oslavy v Praze.',
             h1: 'Pronájem výčepu na akce Praha',
-            intro: 'Kompletní výčepní servis s naším craft pivem Brevnov Ale. Soukromé párty, firemní akce a oslavy na území Prahy.',
+            intro: 'Výčepní zařízení s pivem Jebrewsalem APA 12° na soukromé a firemní akce a oslavy v Praze.',
             whatTitle: 'Co je součástí služby',
-            whatDesc: 'Kompletní řešení čepovaného piva: 30l sud(y) Brevnov Ale + výčepní zařízení. Ideální pro akce, kde si hosté chtějí vychutnat čerstvé pivo přímo z pipy.',
+            whatDesc: 'Kompletní řešení čepovaného piva: 30l sud(y) Jebrewsalem APA 12° + výčepní zařízení.',
+            beerSpecs: 'Jebrewsalem APA 12° \u2014 APA, 5\u202f% alkoholu, 22\u202fIBU',
+            volume: 'Objem sudu: 30\u202fl',
+            equipment: 'Výčepní zařízení je součástí balíčku',
             detailsTitle: 'Detaily služby',
             deposit: 'Záloha za výčepní zařízení',
             depositValue: '10\u202f000\u202fKč (vratná)',
@@ -384,7 +472,7 @@ const translations = {
             ctaDesc: 'Vyplňte poptávkový formulář na úvodní stránce a vyberte \u201ePivo s výčepním zařízením\u201c.',
             ctaBtn: 'Přejít na formulář',
             contactTitle: 'Máte dotazy?',
-            contactDesc: 'Kontaktujte nás e-mailem nebo přes WhatsApp.'
+            contactDesc: 'Kontaktujte nás e-mailem nebo telefonicky.'
         },
 
         // Souhlas s cookies

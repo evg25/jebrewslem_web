@@ -1,14 +1,14 @@
 # JEBREWSALEM
 
-> Prague craft brewery fusing the cultural heritage of Jerusalem and Czech brewing traditions.
+> Czech beer brand inspired by the cultural heritage of Jerusalem and Prague.
 
 ## About
 
-JEBREWSALEM is a Prague-based independent craft brewery. The brand name combines "Jerusalem" and "brew", reflecting a concept of two ancient cities united through beer. Beers are brewed with references to Prague's monastery brewing history and Israeli cultural identity.
+JEBREWSALEM is a Czech beer brand. Beer Golem is the official physical shop associated with the brand; it is a shop, not a brewery or production facility.
 
 ## Products & Services
 
-- **Craft Beer** — small-batch craft ales brewed in Prague (available on Untappd)
+- **Craft Beer** — Jebrewsalem APA 12°
 - **Keg Rental** — beer keg rental for events and private parties in Prague
 - **Beer Tap Rental** — full beer tap equipment rental for events in Prague
 - **Branded Merchandise** — JEBREWSALEM T-shirts and accessories
@@ -19,11 +19,13 @@ Czech (primary), English
 
 ## Location
 
-Prague, Czech Republic
+Beer Golem shop: Pohořelec 153/2, Praha 1, Czech Republic. Sunday–Friday, 12:00–19:00; Saturday closed. This is the shop address, not a beer production address.
 
 ## Links
 
 - Website: https://jebrewsalem.cz/
+- Official shop: https://jebrewsalem.cz/shop/
+- Shop address in Google Maps: https://www.google.com/maps/search/?api=1&query=Poho%C5%99elec%20153%2F2%2C%20Praha%201%2C%20Czech%20Republic
 - Orders & inquiries: https://jebrewsalem.cz/#orders
 - Contact: https://jebrewsalem.cz/#contacts
 - Email: jebrewsalem@gmail.com
