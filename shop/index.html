@@ -39,6 +39,15 @@
 .card-stepper button:disabled{opacity:.42}
 @media(max-width:380px){.card{padding:15px;gap:12px}.product-top{gap:8px}.product-price{max-width:96px}.product-price .price{font-size:19px}.product-volume{font-size:12px}.beer-badge{min-height:30px;padding:5px 9px;font-size:13px}.availability{gap:7px;font-size:13px}.card-stepper{gap:5px}.card-stepper button{width:40px;min-width:40px;min-height:40px}.card-stepper .quantity{min-width:38px;min-height:40px}}
 </style>
+<style>
+/* Short bilingual beer descriptions; keep the approved card layout unchanged. */
+.beer-description{min-width:0;margin:0 0 8px}
+.beer-description-text{font-size:14px;line-height:1.45;color:var(--muted);margin:0;overflow-wrap:anywhere}
+.beer-description-text.is-collapsed{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+.beer-description-toggle{appearance:none;border:0;background:transparent;color:inherit;text-decoration:underline;font:inherit;font-size:13px;font-weight:650;padding:3px 0;cursor:pointer}
+.beer-description-toggle[hidden]{display:none}
+.beer-description-toggle:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
 </head>
 <body>
 <header><div class="header-inner"><div class="brand">
@@ -73,7 +82,7 @@ const TEXT = {
   address:'Pohořelec 153/2, Praha 1',emptyCatalog:'Nabídku právě připravujeme. Brzy zde najdete dostupná piva.',
   emptyCart:'Zatím tu není žádné pivo. Vyberte si z nabídky.',loading:'Načítáme nabídku…',
   missingCatalog:'Soubor s nabídkou teď není dostupný. Zkuste to prosím později.',networkError:'Nabídku se nepodařilo načíst. Zkontrolujte připojení a zkuste to znovu.',invalidJson:'Nabídku se nepodařilo zobrazit. Zkuste to prosím znovu později.',invalidStructure:'Nabídku se nepodařilo zobrazit. Zkuste to prosím znovu později.',invalidItemsSkipped:'Některá neplatná piva nebyla zobrazena.',
-  retry:'Zkusit znovu',
+  retry:'Zkusit znovu',descriptionMore:'Více',descriptionLess:'Méně',
   add:'Přidat',remove:'Odebrat',quantity:'Počet kusů',pieces:'ks',alcohol:'% alkoholu',abvBadge:'% alkoholu',platoBadge:'° Plato',nonalcoholicBadge:'NEALKO',inStock:'Skladem',outOfStock:'Není skladem',
   needBeer:'Nejprve přidejte pivo do košíku.',required:'Vyplňte prosím jméno a telefon.',addressRequired:'Vyplňte prosím adresu doručení.',
   whatsappError:'Číslo WhatsApp není správně nastavené.',orderTitle:'Beer Golem — nová objednávka',
@@ -94,7 +103,7 @@ const TEXT = {
   address:'Pohořelec 153/2, Prague 1',emptyCatalog:'We are preparing the selection. Available beers will appear here soon.',
   emptyCart:'There is no beer here yet. Choose from the selection.',loading:'Loading the selection…',
   missingCatalog:'The beer selection is temporarily unavailable. Please try again later.',networkError:'Could not load the beer selection. Check your connection and try again.',invalidJson:'The beer selection could not be displayed. Please try again later.',invalidStructure:'The beer selection could not be displayed. Please try again later.',invalidItemsSkipped:'Some invalid beers were not displayed.',
-  retry:'Try again',
+  retry:'Try again',descriptionMore:'More',descriptionLess:'Less',
   add:'Add',remove:'Remove',quantity:'Quantity',pieces:'pcs',alcohol:'% ABV',abvBadge:'% ABV',platoBadge:'° Plato',nonalcoholicBadge:'NEALKO',inStock:'In stock',outOfStock:'Out of stock',
   needBeer:'Add beer to your cart first.',required:'Please enter your name and phone number.',addressRequired:'Please enter the delivery address.',
   whatsappError:'The WhatsApp number is not configured correctly.',orderTitle:'Beer Golem — new order',
@@ -172,7 +181,14 @@ function validateCatalog(data) {
   if(!Number.isFinite(beer.sort)) reasons.push('sort must be a number');
   if(beer.abv != null && (!Number.isFinite(beer.abv) || beer.abv<0 || beer.abv>100)) reasons.push('abv must be a number from 0 to 100 or null');
   if(beer.plato != null && (!Number.isFinite(beer.plato) || beer.plato<0)) reasons.push('plato must be a non-negative number or null');
-  for(const key of ['brewery','style','description','description_cs','description_en','image']) if(beer[key] !== undefined && typeof beer[key] !== 'string') reasons.push(`${key} must be a string`);
+  for(const key of ['brewery','style','description_cs','description_en','image']) if(beer[key] !== undefined && typeof beer[key] !== 'string') reasons.push(`${key} must be a string`);
+  // An invalid optional description must never hide an otherwise valid product.
+  const description=beer.description;
+  const validDescription=description==null || typeof description==='string' ||
+   (typeof description==='object' && !Array.isArray(description) &&
+    Object.keys(description).every(key=>['cs','en'].includes(key)) &&
+    Object.values(description).every(value=>typeof value==='string'));
+  if(!validDescription) console.warn('[Beer Golem] Ignoring invalid description.',{index:index+1,id:beer.id,description});
   if(reasons.length) {console.error(`[Beer Golem] beers.json item ${index+1} rejected.`,{id:beer.id,name:beer.name,reasons,item:beer}); skipped++; continue;}
   valid.push(beer);
  }
@@ -228,7 +244,29 @@ function stepper(beer, where) {
  wrap.append(minus,qty,plus); return wrap;
 }
 function styleLabel(style) {return TEXT[currentLang].styles[style]||style;}
-function beerDescription(beer) {return currentLang==='en'?(beer.description_en||beer.description||beer.description_cs||''):(beer.description_cs||beer.description||beer.description_en||'');}
+function beerDescription(beer) {
+ const value=beer.description;
+ const bilingual=value && typeof value==='object' && !Array.isArray(value) ? value : null;
+ const preferred=currentLang==='en'?'en':'cs', alternate=currentLang==='en'?'cs':'en';
+ const localized=bilingual ? (bilingual[preferred]||bilingual[alternate]) : (typeof value==='string'?value:'');
+ const legacy=currentLang==='en'?(beer.description_en||beer.description_cs):(beer.description_cs||beer.description_en);
+ return (typeof localized==='string'&&localized.trim()?localized:typeof legacy==='string'?legacy:'').trim();
+}
+const expandedDescriptions=new Set();
+function updateDescriptionOverflow(container) {
+ const text=container.querySelector('.beer-description-text'), button=container.querySelector('.beer-description-toggle');
+ if(!text||!button||!text.isConnected)return;
+ const expanded=expandedDescriptions.has(container.dataset.beerId);
+ text.classList.toggle('is-collapsed',!expanded);
+ button.textContent=t(expanded?'descriptionLess':'descriptionMore');
+ button.setAttribute('aria-expanded',String(expanded));
+ if(expanded) {button.hidden=false;return;}
+ // Check the actual rendered line clamp, rather than showing a useless More control.
+ button.hidden= text.scrollHeight <= text.clientHeight+1;
+}
+function refreshDescriptionOverflows() {
+ requestAnimationFrame(()=>document.querySelectorAll('.beer-description').forEach(updateDescriptionOverflow));
+}
 function beerCountLabel(count,total) {
  const noun=currentLang==='en'?(count===1?'beer':'beers'):(count===1?'pivo':count>=2&&count<=4?'piva':'piv');
  if(total==null) return count+' '+noun;
@@ -253,6 +291,17 @@ function renderCatalog() {
   if(typeof beer.style==='string'&&beer.style.trim()) identity.append(element('div','beer-style',styleLabel(beer.style)));
   const price=element('div','product-price'); price.append(element('strong','price',money(beer.price)),element('span','product-volume',beer.volume));
   top.append(identity,price); card.append(top);
+  const description=beerDescription(beer);
+  if(description) {
+   const wrap=element('div','beer-description'); wrap.dataset.beerId=beer.id;
+   const content=element('p','beer-description-text',description);
+   const toggle=element('button','beer-description-toggle',t(expandedDescriptions.has(beer.id)?'descriptionLess':'descriptionMore'));
+   toggle.type='button';toggle.dataset.descriptionId=beer.id;
+   toggle.setAttribute('aria-expanded',String(expandedDescriptions.has(beer.id)));
+   toggle.hidden=true;
+   if(!expandedDescriptions.has(beer.id)) content.classList.add('is-collapsed');
+   wrap.append(content,toggle);card.append(wrap);
+  }
   const facts=element('div','beer-facts');
   const numberFormat=new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ');
   const validAbv=typeof beer.abv==='number'&&Number.isFinite(beer.abv)&&beer.abv>=0&&beer.abv<=100;
@@ -268,7 +317,16 @@ function renderCatalog() {
   availability.append(indicator,element('span','',beer.available?t('inStock'):t('outOfStock')));
   bottom.append(availability,stepper(beer,'catalog')); card.append(bottom); $('catalog').append(card);
  }
+ refreshDescriptionOverflows();
 }
+$('catalog').addEventListener('click',event=>{
+ const button=event.target.closest('button[data-description-id]');
+ if(!button)return;
+ const id=button.dataset.descriptionId;
+ if(expandedDescriptions.has(id))expandedDescriptions.delete(id);else expandedDescriptions.add(id);
+ updateDescriptionOverflow(button.closest('.beer-description'));
+});
+window.addEventListener('resize',refreshDescriptionOverflows);
 $('category-filters').addEventListener('click',event=>{const button=event.target.closest('button[data-category]'); if(!button) return; activeCategory=button.dataset.category; renderCatalog();});
 $('beer-search').addEventListener('input',renderCatalog);
 for(const id of ['brewery-filter','style-filter','sort-order']) $(id).addEventListener('change',renderCatalog);
