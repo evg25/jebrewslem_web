@@ -48,6 +48,10 @@
 .beer-description-toggle[hidden]{display:none}
 .beer-description-toggle:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </style>
+<style>
+.minimum-order-notice{margin:12px 0 10px;padding:10px 12px;background:#fff4d2;border:1px solid #e8c970;border-radius:10px;font-size:14px;line-height:1.4}
+.minimum-order-notice.minimum-met{background:#eff8ed;border-color:#b5d7b0}
+</style>
 </head>
 <body>
 <header><div class="header-inner"><div class="brand">
@@ -62,7 +66,7 @@
 <div class="intro"><p class="eyebrow" data-i18n="shopEyebrow">Dobré pivo. Dobrá společnost.</p><h1 data-i18n="shopTitle">Co si dáte příště?</h1><p class="muted" data-i18n="shopIntro">Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.</p></div>
 <div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div><p id="catalog-updated" class="catalog-updated muted" hidden></p><div class="discovery-controls" role="search" aria-label="Hledat a filtrovat piva"><label class="search-field"><span data-i18n="searchLabel">Hledat pivo nebo pivovar</span><input id="beer-search" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Zadejte název nebo pivovar"></label><label><span data-i18n="breweryFilter">Pivovar</span><select id="brewery-filter"><option value="" data-i18n="allBreweries">Všechny pivovary</option></select></label><label><span data-i18n="styleFilter">Styl piva</span><select id="style-filter"><option value="" data-i18n="allStyles">Všechny styly</option></select></label><label class="discovery-check"><input id="nonalcoholic-filter" type="checkbox"><span data-i18n="nonalcoholicFilter">Nealkoholická piva (do 0,5 %)</span></label><button id="clear-filters" class="clear-filters" type="button" data-i18n="clearFilters">Zrušit filtry</button><label><span data-i18n="sortLabel">Řazení</span><select id="sort-order"><option value="catalog" data-i18n="sortCatalog">Doporučené pořadí</option><option value="name" data-i18n="sortName">Název A–Z</option><option value="price-asc" data-i18n="sortPriceAsc">Cena vzestupně</option><option value="price-desc" data-i18n="sortPriceDesc">Cena sestupně</option><option value="abv-asc" data-i18n="sortAbvAsc">Alkohol vzestupně</option><option value="abv-desc" data-i18n="sortAbvDesc">Alkohol sestupně</option></select></label></div><div id="catalog-status" class="status" role="status"></div><div id="catalog" class="catalog"></div></section>
 <aside id="basket" class="basket panel" aria-labelledby="basket-title"><h2 id="basket-title" data-i18n="basketTitle">Váš košík</h2><div id="cart-items"></div><button id="restore-cart" class="restore-button" type="button" hidden data-i18n="restoreCart">Obnovit poslední košík</button><div class="totals" aria-live="polite" aria-atomic="true"><div class="row"><span data-i18n="itemCount">Počet kusů</span><strong id="total-count">0 ks</strong></div><div class="row"><span data-i18n="total">Celkem</span><span id="total-price">0 Kč</span></div></div><button id="clear-cart" class="text-button" type="button" disabled data-i18n="clearCart">Vymazat košík</button><p class="muted notice max-notice" data-i18n="maxQuantityNotice">Maximálně 6 ks od jednoho piva.</p>
-<form id="order-form" class="checkout"><label class="field"><span data-i18n="name">Jméno *</span><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></label><label class="field"><span data-i18n="phone">Telefon *</span><input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="50" required></label><fieldset class="fulfillment"><legend data-i18n="fulfillmentTitle">Převzetí objednávky *</legend><label class="fulfillment-option"><input type="radio" name="fulfillment" value="pickup" checked><span><strong data-i18n="pickup">Vyzvednutí v Beer Golem</strong><small data-i18n="pickupDetails">Pohořelec 153/2, Praha 1 · ne–pá 12:00–19:00</small></span></label><label class="fulfillment-option"><input type="radio" name="fulfillment" value="delivery"><span><strong data-i18n="delivery">Doručení</strong><small data-i18n="deliveryDetails">Podmínky a cenu potvrdíme přes WhatsApp.</small></span></label></fieldset><label id="delivery-address-field" class="field" hidden><span data-i18n="deliveryAddress">Adresa doručení *</span><input id="delivery-address" name="deliveryAddress" autocomplete="street-address" maxlength="300"></label><label class="field"><span data-i18n="note">Poznámka</span><textarea id="customer-note" name="note" rows="3" maxlength="1500" placeholder="Např. kdy si pivo vyzvednete" data-i18n-placeholder="notePlaceholder"></textarea></label><label class="age-check"><input id="age-confirmation" type="checkbox" required><span data-i18n="ageConfirm">Potvrzuji, že mi bylo 18 let.</span></label><p id="order-error" class="error" role="alert" hidden></p><button id="order-button" type="submit" class="primary" disabled data-i18n="orderButton">Objednat přes WhatsApp</button><p class="muted notice" data-i18n="orderNotice">WhatsApp otevře připravenou zprávu. Objednávka je potvrzena až po naší odpovědi. Košík zůstane uložený i po otevření WhatsAppu.</p></form></aside></div>
+<form id="order-form" class="checkout"><label class="field"><span data-i18n="name">Jméno *</span><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></label><label class="field"><span data-i18n="phone">Telefon *</span><input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="50" required></label><fieldset class="fulfillment"><legend data-i18n="fulfillmentTitle">Převzetí objednávky *</legend><label class="fulfillment-option"><input type="radio" name="fulfillment" value="pickup" checked><span><strong data-i18n="pickup">Vyzvednutí v Beer Golem</strong><small data-i18n="pickupDetails">Pohořelec 153/2, Praha 1 · ne–pá 12:00–19:00</small></span></label><label class="fulfillment-option"><input type="radio" name="fulfillment" value="delivery"><span><strong data-i18n="delivery">Doručení</strong><small data-i18n="deliveryDetails">Podmínky a cenu potvrdíme přes WhatsApp.</small></span></label></fieldset><label id="delivery-address-field" class="field" hidden><span data-i18n="deliveryAddress">Adresa doručení *</span><input id="delivery-address" name="deliveryAddress" autocomplete="street-address" maxlength="300"></label><label class="field"><span data-i18n="note">Poznámka</span><textarea id="customer-note" name="note" rows="3" maxlength="1500" placeholder="Např. kdy si pivo vyzvednete" data-i18n-placeholder="notePlaceholder"></textarea></label><label class="age-check"><input id="age-confirmation" type="checkbox" required><span data-i18n="ageConfirm">Potvrzuji, že mi bylo 18 let.</span></label><p id="minimum-order-notice" class="minimum-order-notice" role="status" aria-live="polite"></p><p id="order-error" class="error" role="alert" hidden></p><button id="order-button" type="submit" class="primary" disabled data-i18n="orderButton">Objednat přes WhatsApp</button><p class="muted notice" data-i18n="orderNotice">WhatsApp otevře připravenou zprávu. Objednávka je potvrzena až po naší odpovědi. Košík zůstane uložený i po otevření WhatsAppu.</p></form></aside></div>
 <a id="cart-link" class="sticky-cart" href="#basket" hidden><span><span data-i18n="basketTitle">Váš košík</span> · <span id="mobile-count">0 ks</span></span><span id="mobile-price">0 Kč</span></a>
 </section>
 </main><footer><strong>Beer Golem</strong><br><span data-i18n="address">Pohořelec 153/2, Praha 1</span></footer>
@@ -84,6 +88,7 @@ const TEXT = {
   missingCatalog:'Soubor s nabídkou teď není dostupný. Zkuste to prosím později.',networkError:'Nabídku se nepodařilo načíst. Zkontrolujte připojení a zkuste to znovu.',invalidJson:'Nabídku se nepodařilo zobrazit. Zkuste to prosím znovu později.',invalidStructure:'Nabídku se nepodařilo zobrazit. Zkuste to prosím znovu později.',invalidItemsSkipped:'Některá neplatná piva nebyla zobrazena.',
   retry:'Zkusit znovu',descriptionMore:'Více',descriptionLess:'Méně',
   add:'Přidat',remove:'Odebrat',quantity:'Počet kusů',pieces:'ks',alcohol:'% alkoholu',abvBadge:'% alkoholu',platoBadge:'° Plato',nonalcoholicBadge:'NEALKO',inStock:'Skladem',outOfStock:'Není skladem',
+  minimumOrder:'Minimální objednávka: 500 Kč.',minimumRemaining:'Pro objednání přidejte ještě zboží za {amount}.',minimumReached:'Minimální hodnota objednávky splněna.',minimumError:'Minimální objednávka je 500 Kč. Přidejte ještě zboží za {amount}.',
   needBeer:'Nejprve přidejte pivo do košíku.',required:'Vyplňte prosím jméno a telefon.',addressRequired:'Vyplňte prosím adresu doručení.',
   whatsappError:'Číslo WhatsApp není správně nastavené.',orderTitle:'Beer Golem — nová objednávka',
   orderName:'Jméno',orderPhone:'Telefon',orderMethod:'Převzetí',orderAddress:'Adresa doručení',orderTotal:'Celkem',orderPrice:'Cena celkem',orderNote:'Poznámka',
@@ -105,6 +110,7 @@ const TEXT = {
   missingCatalog:'The beer selection is temporarily unavailable. Please try again later.',networkError:'Could not load the beer selection. Check your connection and try again.',invalidJson:'The beer selection could not be displayed. Please try again later.',invalidStructure:'The beer selection could not be displayed. Please try again later.',invalidItemsSkipped:'Some invalid beers were not displayed.',
   retry:'Try again',descriptionMore:'More',descriptionLess:'Less',
   add:'Add',remove:'Remove',quantity:'Quantity',pieces:'pcs',alcohol:'% ABV',abvBadge:'% ABV',platoBadge:'° Plato',nonalcoholicBadge:'NEALKO',inStock:'In stock',outOfStock:'Out of stock',
+  minimumOrder:'Minimum order: 500 CZK.',minimumRemaining:'Add {amount} more to place your order.',minimumReached:'Minimum order amount reached.',minimumError:'The minimum order is 500 CZK. Add {amount} more.',
   needBeer:'Add beer to your cart first.',required:'Please enter your name and phone number.',addressRequired:'Please enter the delivery address.',
   whatsappError:'The WhatsApp number is not configured correctly.',orderTitle:'Beer Golem — new order',
   orderName:'Name',orderPhone:'Phone',orderMethod:'Fulfilment',orderAddress:'Delivery address',orderTotal:'Total',orderPrice:'Total price',orderNote:'Note',
@@ -142,6 +148,7 @@ const CONFIG = {
 // id, brewery, name, style, category (lager/wheat/ipa/sour/nonalcoholic/stout), abv, plato (optional), volume, price, description/description_cs/description_en, image, available, sort.
 const KEYS = {cart:'beer-golem:cart:v1',contact:'beer-golem:contact:v1',lastCart:'beer-golem:last-cart:v1'};
 const MAX_QUANTITY = 6;
+const MIN_ORDER_CENTS = 50000;
 const LAST_CART_TTL = 24*60*60*1000;
 const CATALOG_URL = new URL('./beers.json',document.baseURI).href;
 const $ = id => document.getElementById(id);
@@ -199,6 +206,8 @@ function jsonErrorContext(source,error) {const match=String(error?.message||'').
 function cleanCart(value) {const next=Object.create(null); if(value && typeof value==='object' && !Array.isArray(value)) for(const beer of beers) {const qty=value[beer.id]; if(beer.available&&Number.isSafeInteger(qty)&&qty>0) next[beer.id]=Math.min(qty,MAX_QUANTITY);} return next;}
 function selections() {return beers.filter(b=>b.available&&cart[b.id]>0).map(beer=>({beer,qty:cart[beer.id],cents:Math.round(beer.price*100)*cart[beer.id]}));}
 function totals() {return selections().reduce((acc,item)=>({count:acc.count+item.qty,cents:acc.cents+item.cents}),{count:0,cents:0});}
+function minimumRemainingCents() {return Math.max(0,MIN_ORDER_CENTS-totals().cents);}
+function formatMinimumText(key,remaining) {return t(key).replace('{amount}',money(remaining/100));}
 function beerLabel(beer) {return [beer.brewery,beer.name].filter(Boolean).join(' ');}
 function normalizeSearch(value) {return String(value||'').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLocaleLowerCase();}
 function populateFilter(selectId,values,placeholderKey) {
@@ -340,7 +349,13 @@ function renderCart() {
  const items=selections(), total=totals(); $('cart-items').replaceChildren();
  if(!items.length) $('cart-items').append(element('p','muted',t('emptyCart')));
  for(const {beer,qty,cents} of items) {const line=element('div','cart-item'); line.append(element('strong','',beerLabel(beer)),element('span','meta',beer.volume+' · '+money(beer.price)+' / ks')); const row=element('div','row'); row.append(stepper(beer,'cart'),element('strong','',money(cents/100))); line.append(row); $('cart-items').append(line);}
- $('total-count').textContent=$('mobile-count').textContent=total.count+' '+t('pieces'); $('total-price').textContent=$('mobile-price').textContent=money(total.cents/100); $('clear-cart').disabled=!total.count; $('order-button').disabled=!loaded || !total.count; $('cart-link').hidden=!total.count; $('restore-cart').hidden=!!total.count || !Object.keys(restorableCart()).length;
+ $('total-count').textContent=$('mobile-count').textContent=total.count+' '+t('pieces'); $('total-price').textContent=$('mobile-price').textContent=money(total.cents/100); $('clear-cart').disabled=!total.count;
+ const remaining=Math.max(0,MIN_ORDER_CENTS-total.cents);
+ const notice=$('minimum-order-notice');
+ notice.textContent=t('minimumOrder')+' '+(remaining?formatMinimumText('minimumRemaining',remaining):t('minimumReached'));
+ notice.classList.toggle('minimum-met',remaining===0);
+ $('order-button').disabled=!loaded || !total.count || remaining>0;
+ $('cart-link').hidden=!total.count; $('restore-cart').hidden=!!total.count || !Object.keys(restorableCart()).length;
 }
 function renderCatalogMessage() {
  const box=$('catalog-status');
@@ -397,6 +412,7 @@ function orderMessage(name,phone,note,fulfillment,address) {
 $('order-form').addEventListener('submit',event=>{
  event.preventDefault(); showError('order-error','');
  if(!loaded || !totals().count) {showError('order-error',t('needBeer')); return;}
+ if(minimumRemainingCents()>0) {showError('order-error',formatMinimumText('minimumError',minimumRemainingCents())); return;}
  const name=$('customer-name').value.trim(), phone=$('customer-phone').value.trim(), note=$('customer-note').value.trim(), fulfillment=document.querySelector('input[name="fulfillment"]:checked')?.value||'pickup', address=$('delivery-address').value.trim();
  if(!name || !phone) {showError('order-error',t('required')); (!name?$('customer-name'):$('customer-phone')).focus(); return;}
  if(fulfillment==='delivery' && !address) {showError('order-error',t('addressRequired')); $('delivery-address').focus(); return;}
