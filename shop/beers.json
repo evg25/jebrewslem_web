@@ -8,7 +8,7 @@
     "category": "lager",
     "abv": 5,
     "volume": "0.5 l",
-    "price": 90,
+    "price": 89,
     "description": {
       "cs": "Měděný ležák s jemně sladovým tělem a výraznou hořkostí českých chmelů.",
       "en": "Copper-coloured lager with a gently malty body and pronounced Czech-hop bitterness."
@@ -28,7 +28,7 @@
     "category": "stout",
     "abv": 6.5,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Silné tmavé pivo s plnou sladovou chutí, praženými tóny a americkým chmelením.",
       "en": "Strong dark beer with a rich malty character, roasted notes and American hopping."
@@ -68,7 +68,7 @@
     "category": "ipa",
     "abv": 3,
     "volume": "0.5 l",
-    "price": 95,
+    "price": 94,
     "description": {
       "cs": "Lehká nízkoalkoholická Micro NEIPA od pivovaru Zichovec.",
       "en": "Light, lower-alcohol Micro NEIPA from Zichovec."
@@ -88,7 +88,7 @@
     "category": "ipa",
     "abv": 4.1,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Cold IPA od pivovaru Zichovec. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Cold IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
@@ -128,7 +128,7 @@
     "category": "ipa",
     "abv": 6.5,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Výrazně chmelená IPA s citrusovými a tropickými tóny chmelů Cascade, Citra a Mosaic.",
       "en": "Boldly hopped IPA with citrus and tropical notes from Cascade, Citra and Mosaic."
@@ -148,7 +148,7 @@
     "category": "sour",
     "abv": 3.9,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -168,7 +168,7 @@
     "category": "sour",
     "abv": 4.5,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -188,7 +188,7 @@
     "category": "ipa",
     "abv": 9,
     "volume": "0.5 l",
-    "price": 120,
+    "price": 119,
     "description": {
       "cs": "Strong Ale od pivovaru Zichovec. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Strong Ale from Zichovec. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -208,7 +208,7 @@
     "category": "nonalcoholic",
     "abv": 0.5,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Nealkoholický malinový kyseláč (méně než 0,5 % alkoholu).",
       "en": "Non-alcoholic raspberry sour ale (less than 0.5% ABV)."
@@ -228,7 +228,7 @@
     "category": "sour",
     "abv": 5.5,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Ovocný kyseláč s višněmi, vanilkou, skořicí, hřebíčkem a rumovými tóny.",
       "en": "Fruited sour ale with cherries, vanilla, cinnamon, cloves and rum-like notes."
@@ -248,7 +248,7 @@
     "category": "ipa",
     "abv": 7.7,
     "volume": "0.5 l",
-    "price": 90,
+    "price": 89,
     "description": {
       "cs": "Silně chmelená Double IPA s odrůdami Columbus, Amarillo, Cascade a Centennial.",
       "en": "Heavily hopped Double IPA featuring Columbus, Amarillo, Cascade and Centennial."
@@ -268,7 +268,7 @@
     "category": "other",
     "abv": 10.7,
     "volume": "0.5 l",
-    "price": 135,
+    "price": 134,
     "description": {
       "cs": "Barleywine od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Barleywine from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -288,7 +288,7 @@
     "category": "sour",
     "abv": 6.1,
     "volume": "0.5 l",
-    "price": 135,
+    "price": 134,
     "description": {
       "cs": "Pastry Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Pastry Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -308,7 +308,7 @@
     "category": "sour",
     "abv": 4.4,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -328,7 +328,7 @@
     "category": "nonalcoholic",
     "abv": 0.5,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Nealkoholický kyseláč s výraznou chutí marakuji a intenzivní osvěžující kyselostí.",
       "en": "Non-alcoholic sour with vibrant passion fruit flavour and intensely refreshing tartness."
@@ -348,7 +348,7 @@
     "category": "ipa",
     "abv": 7.5,
     "volume": "0.5 l",
-    "price": 80,
+    "price": 79,
     "description": {
       "cs": "Chmelená IPA s odrůdami Columbus, Amarillo, Cascade a Citra.",
       "en": "Hop-forward IPA brewed with Columbus, Amarillo, Cascade and Citra."
@@ -368,7 +368,7 @@
     "category": "lager",
     "abv": 4.9,
     "volume": "0.5 l",
-    "price": 60,
+    "price": 59,
     "description": {
       "cs": "Jantarový ležák s plnější sladovou chutí, lehkým karamelem a vyváženou hořkostí.",
       "en": "Amber lager with a full malty taste, subtle caramel notes and balanced bitterness."
@@ -388,7 +388,7 @@
     "category": "sour",
     "abv": 3.9,
     "volume": "0.5 l",
-    "price": 95,
+    "price": 94,
     "description": {
       "cs": "Gose od pivovaru Vinohradský pivovar. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Gose from Vinohradský pivovar. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -408,7 +408,7 @@
     "category": "ipa",
     "abv": 6.2,
     "volume": "0.5 l",
-    "price": 80,
+    "price": 79,
     "description": {
       "cs": "Brut IPA od pivovaru Vinohradský pivovar. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Brut IPA from Vinohradský pivovar. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
@@ -428,7 +428,7 @@
     "category": "nonalcoholic",
     "abv": 0.5,
     "volume": "0.5 l",
-    "price": 80,
+    "price": 79,
     "description": {
       "cs": "Nealkoholický ležák s jemným chmelovým aroma a vyváženou hořkostí.",
       "en": "Non-alcoholic lager with a delicate hop aroma and balanced bitterness."
@@ -448,7 +448,7 @@
     "category": "sour",
     "abv": 3.7,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Osvěžující Berliner Weisse s limetkou, mátou a bezovým květem. Lehké tělo, příjemná kyselost a vysoká pitelnost.",
       "en": "Refreshing Berliner Weisse with lime, mint and elderflower. Light-bodied, pleasantly tart and highly drinkable."
@@ -468,7 +468,7 @@
     "category": "ipa",
     "abv": 2.9,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Lehký, osvěžující Summer Ale s chmely Simcoe a Citra. Jemné tělo, citrusové aroma a příjemná hořkost.",
       "en": "A light, refreshing summer ale hopped with Simcoe and Citra, offering citrus aromas and a pleasantly bitter finish."
@@ -488,7 +488,7 @@
     "category": "ipa",
     "abv": 4.9,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Britský Golden Ale s kultivovanou, osvěžující chutí a jemným ovocným charakterem.",
       "en": "A British golden ale with a balanced, refreshing taste and subtle fruity character."
@@ -508,7 +508,7 @@
     "category": "ipa",
     "abv": 6.4,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "West Coast IPA s ovocnými tóny, jehličnatým aroma a výrazným chmelovým charakterem.",
       "en": "A West Coast IPA with fruity notes, pine aromas and a pronounced hop character."
@@ -528,7 +528,7 @@
     "category": "wheat",
     "abv": 4.9,
     "volume": "0.5 l",
-    "price": 65,
+    "price": 64,
     "description": {
       "cs": "Pšeničné pivo s vůní banánu a hřebíčku, plnější sladovou chutí a jemnou hořkostí.",
       "en": "Wheat beer with banana and clove aromas, a rounded malty taste and gentle bitterness."
@@ -548,7 +548,7 @@
     "category": "sour",
     "abv": 6.7,
     "volume": "0.5 l",
-    "price": 135,
+    "price": 134,
     "description": {
       "cs": "Pastry Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Pastry Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -568,7 +568,7 @@
     "category": "sour",
     "abv": 5.1,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Gose inspirované koktejlem pickle shot od pivovaru Zichovec.",
       "en": "Pickle-shot-inspired gose from Zichovec."
@@ -588,7 +588,7 @@
     "category": "ipa",
     "abv": 5.1,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Fruit Pale Ale od pivovaru Zichovec. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruit Pale Ale from Zichovec. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -608,7 +608,7 @@
     "category": "sour",
     "abv": 5.1,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Kyselá IPA inspirovaná Margaritou: limetka, špetka soli, pomeranč a chmel Motueka.",
       "en": "Margarita-inspired sour IPA with lime, a touch of salt, orange and Motueka hops."
@@ -628,7 +628,7 @@
     "category": "ipa",
     "abv": 3.2,
     "volume": "0.5 l",
-    "price": 95,
+    "price": 94,
     "description": {
       "cs": "Lehký Easy Hazy 9°: jemný, zakalený ale s krémovým charakterem a nízkým obsahem alkoholu.",
       "en": "A light, hazy ale with a soft, creamy character and low alcohol content."
@@ -648,7 +648,7 @@
     "category": "sour",
     "abv": 4,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Ovocný Pastry Sour Ale s černým rybízem, malinami a ostružinami. Výrazně ovocný a kyselý.",
       "en": "A fruit-forward pastry sour ale with blackcurrants, raspberries and blackberries, combining bold berry flavours with tartness."
@@ -668,7 +668,7 @@
     "category": "sour",
     "abv": 6,
     "volume": "0.5 l",
-    "price": 125,
+    "price": 124,
     "description": {
       "cs": "Kyselý dezertní ale uvařený se japonským pivovarem Teenage Brewing. Mango, banán, kokos, listy kafrové limety a kari koření doplňují chmely Citra, Strata a Simcoe. Plné sladkokyselé tělo obsahuje laktózu a maltodextrin.",
       "en": "A pastry sour brewed with Japan’s Teenage Brewing. Mango, banana, coconut, kaffir lime leaves and curry spices meet Citra, Strata and Simcoe hops. Full-bodied and sweet-tart, with lactose and maltodextrin."
@@ -688,7 +688,7 @@
     "category": "ipa",
     "abv": 4.8,
     "volume": "0.5 l",
-    "price": 105,
+    "price": 104,
     "description": {
       "cs": "Grapefruit IPA od pivovaru Chroust. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Grapefruit IPA from Chroust. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
@@ -708,7 +708,7 @@
     "category": "ipa",
     "abv": 5.3,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Pale Ale od pivovaru Chroust. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Pale Ale from Chroust. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -728,7 +728,7 @@
     "category": "sour",
     "abv": 5.1,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Ovocný kyseláč s malinami, ostružinami, černým rybízem, cold brew kávou a vanilkou.",
       "en": "Fruited sour with raspberries, blackberries, blackcurrants, cold brew coffee and vanilla."
@@ -748,7 +748,7 @@
     "category": "sour",
     "abv": 5.5,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Cocktail-inspired Sour od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Cocktail-inspired Sour from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -768,7 +768,7 @@
     "category": "sour",
     "abv": 6.5,
     "volume": "0.5 l",
-    "price": 105,
+    "price": 104,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -788,7 +788,7 @@
     "category": "sour",
     "abv": 5.1,
     "volume": "0.5 l",
-    "price": 145,
+    "price": 144,
     "description": {
       "cs": "Hutný, sladší kyseláč s ananasem, papájou, kokosem a vanilkou, inspirovaný piña coladou.",
       "en": "Rich, sweet-leaning pastry sour with pineapple, papaya, coconut and vanilla, inspired by piña colada."
@@ -808,7 +808,7 @@
     "category": "lager",
     "abv": 5.5,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Tmavý nakuřovaný ležák s výrazným kouřem a tóny čokolády a pražených oříšků.",
       "en": "Dark smoked lager with pronounced smokiness, chocolate and roasted nut notes."
@@ -828,7 +828,7 @@
     "category": "other",
     "abv": 9.3,
     "volume": "0.5 l",
-    "price": 120,
+    "price": 119,
     "description": {
       "cs": "Belgian Quadrupel od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Belgian Quadrupel from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -848,7 +848,7 @@
     "category": "sour",
     "abv": 4.4,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Lehký malinový kyseláč s jemnou kyselostí a hladkým pšeničným tělem.",
       "en": "Light raspberry sour with gentle tartness and a smooth wheat-based body."
@@ -868,7 +868,7 @@
     "category": "ipa",
     "abv": 4.6,
     "volume": "0.5 l",
-    "price": 95,
+    "price": 94,
     "description": {
       "cs": "Lehká a dobře pitelná Session IPA s chmely Mosaic, Chinook a Vista. Slámově žlutá barva, ovocné tóny a jemně travnatý charakter.",
       "en": "A light, easy-drinking Session IPA hopped with Mosaic, Chinook and Vista. Straw-yellow, with fruity notes and a gentle grassy edge."
@@ -888,7 +888,7 @@
     "category": "nonalcoholic",
     "abv": 0.5,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Nealkoholický ovocný sour s mangem a guavou, vyváženou kyselostí a čistým závěrem. Obsah alkoholu dle pivovaru: méně než 0,5 % obj.",
       "en": "Non-alcoholic fruited sour with mango and guava, balanced tartness and a clean finish. Brewery-stated alcohol content: less than 0.5% ABV."
@@ -908,7 +908,7 @@
     "category": "lager",
     "abv": 4.8,
     "volume": "0.5 l",
-    "price": 75,
+    "price": 74,
     "description": {
       "cs": "Czech Lager od pivovaru Pivní spoj. Styl: lager. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
@@ -928,7 +928,7 @@
     "category": "lager",
     "abv": 4.8,
     "volume": "0.5 l",
-    "price": 75,
+    "price": 74,
     "description": {
       "cs": "Czech Lager od pivovaru Pivní spoj. Styl: lager. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
@@ -948,7 +948,7 @@
     "category": "lager",
     "abv": 4.8,
     "volume": "0.5 l",
-    "price": 75,
+    "price": 74,
     "description": {
       "cs": "Czech Lager od pivovaru Pivní spoj. Styl: lager. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
@@ -968,7 +968,7 @@
     "category": "other",
     "abv": 5.8,
     "volume": "0.5 l",
-    "price": 90,
+    "price": 89,
     "description": {
       "cs": "Pumpkin Ale od pivovaru Permon. Styl: spiced beer. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Pumpkin Ale from Permon. Style: Spiced Beer. Ingredients and detailed tasting notes have not yet been verified."
@@ -988,7 +988,7 @@
     "category": "sour",
     "abv": 5.8,
     "volume": "0.5 l",
-    "price": 100,
+    "price": 99,
     "description": {
       "cs": "Apricot Gose od pivovaru Permon. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Apricot Gose from Permon. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -1008,7 +1008,7 @@
     "category": "ipa",
     "abv": 5,
     "volume": "0.5 l",
-    "price": 120,
+    "price": 119,
     "description": {
       "cs": "IPA od pivovaru Zichovec. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
@@ -1028,7 +1028,7 @@
     "category": "sour",
     "abv": 5.1,
     "volume": "0.5 l",
-    "price": 110,
+    "price": 109,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -1048,7 +1048,7 @@
     "category": "lager",
     "abv": 5,
     "volume": "0.5 l",
-    "price": 90,
+    "price": 89,
     "description": {
       "cs": "Český tmavý ležák s jemnými praženými a karamelovými tóny. Kombinace ječných sladů, dekokční rmutování, český chmel a dlouhé zrání vytvářejí čistý, vyvážený profil bez přehnané sladkosti.",
       "en": "Czech dark lager with gentle roasted and caramel notes. A blend of barley malts, decoction mashing, Czech hops and extended lagering create a clean, balanced profile without excessive sweetness."
@@ -1068,7 +1068,7 @@
     "category": "ipa",
     "abv": 6.1,
     "volume": "0.5 l",
-    "price": 105,
+    "price": 104,
     "description": {
       "cs": "IPA s kávou z pražírny Candycane a chmely Riwaka, Chinook a Simcoe. Kávový charakter doplňují tóny mandarinek a ananasu.",
       "en": "IPA brewed with coffee from Candycane roastery and Riwaka, Chinook and Simcoe hops. Coffee character meets notes of mandarin and pineapple."
@@ -1088,7 +1088,7 @@
     "category": "ipa",
     "abv": 6,
     "volume": "0.5 l",
-    "price": 105,
+    "price": 104,
     "description": {
       "cs": "Zakalená a šťavnatá New England IPA s chmely Sabro, Idaho 7 a Vista. Tropické ovoce, citrusová kůra, peckoviny a jemná borovicová hořkost.",
       "en": "A hazy, juicy New England IPA with Sabro, Idaho 7 and Vista hops. Tropical fruit, citrus peel, stone fruit and gentle pine bitterness."
@@ -1108,7 +1108,7 @@
     "category": "ipa",
     "abv": 8,
     "volume": "0.5 l",
-    "price": 115,
+    "price": 114,
     "description": {
       "cs": "Silná tmavá Double Black IPA s chmely HBC 638, El Dorado a Columbus Cryo. Pryskyřičné a citrusové tóny doplňují náznaky ananasu, manga a melounu; tělo je plné, ale stále výrazně chmelené.",
       "en": "Bold Double Black IPA hopped with HBC 638, El Dorado and Columbus Cryo. Resin and citrus meet hints of pineapple, mango and melon, with a full yet hop-forward body."
@@ -1128,7 +1128,7 @@
     "category": "ipa",
     "abv": 8,
     "volume": "0.5 l",
-    "price": 120,
+    "price": 119,
     "description": {
       "cs": "Šťavnatá Double NEIPA s plnějším tělem, citrusovými, limetkovými, broskvovými a melounovými tóny. Chmely Ekuanot, Azacca, Azacca CGX a Dolcita.",
       "en": "Juicy Double NEIPA with a fuller body and notes of citrus, lime, peach and melon. Hopped with Ekuanot, Azacca, Azacca CGX and Dolcita."
@@ -1148,7 +1148,7 @@
     "category": "ipa",
     "abv": 8.8,
     "volume": "0.5 l",
-    "price": 145,
+    "price": 144,
     "description": {
       "cs": "Výrazně hořká Double West Coast IPA s chmely Citra, Simcoe a Idaho 7. Citrusové a pryskyřičné tóny doplňuje jalovec a borovice. Suchý, hořký závěr; 70 IBU.",
       "en": "Intensely bitter Double West Coast IPA with Citra, Simcoe and Idaho 7 hops. Citrus and resin notes are complemented by juniper and pine. Dry, bitter finish; 70 IBU."
@@ -1168,7 +1168,7 @@
     "category": "ipa",
     "abv": 4.6,
     "volume": "0.5 l",
-    "price": 120,
+    "price": 119,
     "description": {
       "cs": "Lehká, dobře pitelná session IPA se sníženým obsahem lepku. Australské chmely Enigma a Galaxy přinášejí tóny tropického a bobulového ovoce i citrusů; 30 IBU. Snížený obsah lepku neznamená bezlepkové pivo.",
       "en": "Easy-drinking session IPA with reduced gluten content. Australian Enigma and Galaxy hops bring tropical fruit, berry and citrus notes; 30 IBU. Reduced gluten does not mean gluten-free."
