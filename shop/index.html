@@ -92,7 +92,7 @@ const TEXT = {
   needBeer:'Nejprve přidejte pivo do košíku.',required:'Vyplňte prosím jméno a telefon.',addressRequired:'Vyplňte prosím adresu doručení.',
   whatsappError:'Číslo WhatsApp není správně nastavené.',orderTitle:'Beer Golem — nová objednávka',
   orderName:'Jméno',orderPhone:'Telefon',orderMethod:'Převzetí',orderAddress:'Adresa doručení',orderTotal:'Celkem',orderPrice:'Cena celkem',orderNote:'Poznámka',
-  categories:{'':'Všechny styly',lager:'Ležáky',wheat:'Pšeničná',ipa:'IPA / Pale Ale',sour:'Sour',nonalcoholic:'Nealkoholické',stout:'Stout & Porter'},
+  categories:{'':'Všechny styly',lager:'Ležáky',wheat:'Pšeničná',ipa:'IPA / Pale Ale',sour:'Sour',nonalcoholic:'Nealkoholické',stout:'Stout & Porter',other:'Ostatní'},
   styles:{'Weizenbier':'Pšeničné pivo','Nealkoholické pivo':'Nealkoholické pivo','Nakouřený ležák':'Nakouřený ležák','Polotmavý ležák':'Polotmavý ležák','Světlý ležák':'Světlý ležák','IPA':'IPA','NEIPA':'NEIPA','Sour Ale w/ Raspberry':'Malinový sour ale','Rauchbier':'Kouřový ležák'}
  },
  en: {
@@ -114,7 +114,7 @@ const TEXT = {
   needBeer:'Add beer to your cart first.',required:'Please enter your name and phone number.',addressRequired:'Please enter the delivery address.',
   whatsappError:'The WhatsApp number is not configured correctly.',orderTitle:'Beer Golem — new order',
   orderName:'Name',orderPhone:'Phone',orderMethod:'Fulfilment',orderAddress:'Delivery address',orderTotal:'Total',orderPrice:'Total price',orderNote:'Note',
-  categories:{'':'All styles',lager:'Lager',wheat:'Wheat',ipa:'IPA / Pale Ale',sour:'Sour',nonalcoholic:'Non-alcoholic',stout:'Stout & Porter'},
+  categories:{'':'All styles',lager:'Lager',wheat:'Wheat',ipa:'IPA / Pale Ale',sour:'Sour',nonalcoholic:'Non-alcoholic',stout:'Stout & Porter',other:'Other'},
   styles:{'Weizenbier':'Wheat beer','Nealkoholické pivo':'Non-alcoholic beer','Nakouřený ležák':'Smoked lager','Polotmavý ležák':'Semi-dark lager','Světlý ležák':'Pale lager','IPA':'IPA','NEIPA':'NEIPA','Sour Ale w/ Raspberry':'Raspberry sour ale','Rauchbier':'Smoked lager'}
  }
 };
@@ -153,7 +153,7 @@ const LAST_CART_TTL = 24*60*60*1000;
 const CATALOG_URL = new URL('./beers.json',document.baseURI).href;
 const $ = id => document.getElementById(id);
 const money = value => new Intl.NumberFormat(currentLang==='en'?'en-GB':'cs-CZ', {maximumFractionDigits:2}).format(value) + (currentLang==='en'?' CZK':' Kč');
-const FILTER_CATEGORIES=['','lager','wheat','ipa','sour','nonalcoholic','stout'];
+const FILTER_CATEGORIES=['','lager','wheat','ipa','sour','nonalcoholic','stout','other'];
 let beers = [], cart = Object.create(null), lastCartMemory = null, loaded = false, loading = false, catalogMessage = '', skippedBeers = 0, catalogUpdatedAt = null;
 document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
 translatePage();
@@ -196,6 +196,7 @@ function validateCatalog(data) {
     Object.values(description).every(value=>typeof value==='string'));
   if(!validDescription) console.warn('[Beer Golem] Ignoring invalid description.',{index:index+1,id:beer.id,description});
   if(reasons.length) {console.error(`[Beer Golem] beers.json item ${index+1} rejected.`,{id:beer.id,name:beer.name,reasons,item:beer}); skipped++; continue;}
+  if(beer.available === false) continue; // Keep archived beers in JSON, but hide them from catalog and orders.
   valid.push(beer);
  }
  console.info(`[Beer Golem] beers.json validated: ${valid.length} available, ${skipped} rejected, ${data.length-valid.length-skipped} unavailable.`);
