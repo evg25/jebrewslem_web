@@ -62,6 +62,22 @@
 @media(max-width:600px){.header-inner{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:6px}}
 @media(max-width:360px){.header-inner{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:4px}}
 </style>
+<style>
+/* Compact shop introduction and discovery controls, without changing their behavior. */
+#shop .intro{max-width:none;margin:0 0 18px}
+#shop .intro h1{font-size:clamp(24px,3vw,32px);line-height:1.2;letter-spacing:-.025em;margin:0 0 5px}
+#shop .intro-detail{font-size:14px;color:var(--muted);margin:0}
+#shop .toolbar{margin-bottom:8px}
+#shop .toolbar h2{font-size:21px}
+#shop .discovery-controls{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px;align-items:end}
+#shop .discovery-controls label{gap:3px}
+#shop .discovery-controls select{min-height:42px;padding:7px 9px}
+#shop .discovery-check{min-height:42px;padding:7px 9px}
+#shop .clear-filters{min-height:42px}
+#shop .basket{border-color:#dfc77a;background:#fffdf8;box-shadow:0 5px 16px #0405070d}
+#shop .basket #basket-title{background:#f5e8bd;color:var(--ink);padding:13px 22px;font-size:21px;margin-bottom:14px}
+@media(max-width:699px){#shop .discovery-controls{grid-template-columns:repeat(2,minmax(0,1fr))}#shop .intro{margin-bottom:14px}#shop .intro h1{font-size:clamp(23px,6vw,28px)}}
+</style>
 </head>
 <body>
 <header><div class="header-inner"><div class="brand">
@@ -73,7 +89,7 @@
 <main>
 <p id="storage-warning" class="storage-warning" data-i18n="storageWarning" hidden>Prohlížeč nepovoluje ukládání. Košík bude fungovat pouze do zavření stránky.</p>
 <section id="shop">
-<div class="intro"><h1 data-i18n="shopTitle">Řemeslná piva z českých pivovarů. Objev svého dalšího favorita.</h1></div>
+<div class="intro"><h1 data-i18n="shopTitle">Objev český craft beer</h1><p class="intro-detail" data-i18n="shopTagline">Piva z českých pivovarů. Vyber si svého favorita.</p></div>
 <div class="layout"><section aria-labelledby="catalog-title"><div class="toolbar"><h2 id="catalog-title" data-i18n="catalogTitle">Nabídka piva</h2><span id="catalog-count" class="muted"></span></div><div class="discovery-controls" role="search" aria-label="Hledat a filtrovat piva"><label><span data-i18n="breweryFilter">Pivovar</span><select id="brewery-filter"><option value="" data-i18n="allBreweries">Všechny pivovary</option></select></label><label><span data-i18n="styleFilter">Styl piva</span><select id="style-filter"><option value="" data-i18n="allStyles">Všechny styly</option></select></label><label class="discovery-check"><input id="nonalcoholic-filter" type="checkbox"><span data-i18n="nonalcoholicFilter">Nealkoholická piva (do 0,5 %)</span></label><button id="clear-filters" class="clear-filters" type="button" data-i18n="clearFilters">Zrušit filtry</button><label><span data-i18n="sortLabel">Řazení</span><select id="sort-order"><option value="catalog" data-i18n="sortCatalog">Doporučené pořadí</option><option value="name" data-i18n="sortName">Název A–Z</option><option value="price-asc" data-i18n="sortPriceAsc">Cena vzestupně</option><option value="price-desc" data-i18n="sortPriceDesc">Cena sestupně</option><option value="abv-asc" data-i18n="sortAbvAsc">Alkohol vzestupně</option><option value="abv-desc" data-i18n="sortAbvDesc">Alkohol sestupně</option></select></label></div><div id="catalog-status" class="status" role="status"></div><div id="catalog" class="catalog"></div></section>
 <aside id="basket" class="basket panel" aria-labelledby="basket-title"><h2 id="basket-title" data-i18n="basketTitle">Váš košík</h2><div id="cart-items"></div><button id="restore-cart" class="restore-button" type="button" hidden data-i18n="restoreCart">Obnovit poslední košík</button><div class="totals" aria-live="polite" aria-atomic="true"><div class="row"><span data-i18n="itemCount">Počet kusů</span><strong id="total-count">0 ks</strong></div><div class="row"><span data-i18n="total">Celkem</span><span id="total-price">0 Kč</span></div></div><button id="clear-cart" class="text-button" type="button" disabled data-i18n="clearCart">Vymazat košík</button><p class="muted notice max-notice" data-i18n="maxQuantityNotice">Maximálně 6 ks od jednoho piva.</p>
 <form id="order-form" class="checkout"><label class="field"><span data-i18n="name">Jméno *</span><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></label><label class="field"><span data-i18n="phone">Telefon *</span><input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="50" required></label><fieldset class="fulfillment"><legend data-i18n="fulfillmentTitle">Převzetí objednávky *</legend><label class="fulfillment-option"><input type="radio" name="fulfillment" value="pickup" checked><span><strong data-i18n="pickup">Vyzvednutí v Beer Golem</strong><small data-i18n="pickupDetails">Pohořelec 153/2, Praha 1 · ne–pá 12:00–19:00</small></span></label><label class="fulfillment-option"><input type="radio" name="fulfillment" value="delivery"><span><strong data-i18n="delivery">Doručení</strong><small data-i18n="deliveryDetails">Podmínky a cenu potvrdíme přes WhatsApp.</small></span></label></fieldset><label id="delivery-address-field" class="field" hidden><span data-i18n="deliveryAddress">Adresa doručení *</span><input id="delivery-address" name="deliveryAddress" autocomplete="street-address" maxlength="300"></label><label class="field"><span data-i18n="note">Poznámka</span><textarea id="customer-note" name="note" rows="3" maxlength="1500" placeholder="Např. kdy si pivo vyzvednete" data-i18n-placeholder="notePlaceholder"></textarea></label><label class="age-check"><input id="age-confirmation" type="checkbox" required><span data-i18n="ageConfirm">Potvrzuji, že mi bylo 18 let.</span></label><p id="minimum-order-notice" class="minimum-order-notice" role="status" aria-live="polite"></p><p id="order-error" class="error" role="alert" hidden></p><button id="order-button" type="submit" class="primary" disabled data-i18n="orderButton">Objednat přes WhatsApp</button><p class="muted notice" data-i18n="orderNotice">WhatsApp otevře připravenou zprávu. Objednávka je potvrzena až po naší odpovědi. Košík zůstane uložený i po otevření WhatsAppu.</p></form></aside></div>
@@ -87,7 +103,7 @@ const TEXT = {
   title:'Beer Golem — komunitní objednávky',description:'Komunitní objednávky piva Beer Golem. Vyberte si pivo a pošlete objednávku přes WhatsApp.',
   language:'Jazyk',brandSubtitle:'Komunitní objednávky',noScript:'Pro objednání piva prosím povolte JavaScript.',
   storageWarning:'Prohlížeč nepovoluje ukládání. Košík bude fungovat pouze do zavření stránky.',
-  shopTitle:'Řemeslná piva z českých pivovarů. Objev svého dalšího favorita.',
+  shopTitle:'Objev český craft beer',shopTagline:'Piva z českých pivovarů. Vyber si svého favorita.',
   shopIntro:'Vyberte pivo, přidejte kontakt a pošlete nám objednávku přes WhatsApp.',
   searchLabel:'Hledat pivo nebo pivovar',searchPlaceholder:'Zadejte název nebo pivovar',breweryFilter:'Pivovar',allBreweries:'Všechny pivovary',styleFilter:'Styl piva',allStyles:'Všechny styly',nonalcoholicFilter:'Nealkoholická piva (do 0,5 %)',clearFilters:'Zrušit filtry',sortLabel:'Řazení',sortCatalog:'Doporučené pořadí',sortName:'Název A–Z',sortPriceAsc:'Cena vzestupně',sortPriceDesc:'Cena sestupně',sortAbvAsc:'Alkohol vzestupně',sortAbvDesc:'Alkohol sestupně',noResults:'Těmto filtrům neodpovídá žádné pivo.',
   catalogTitle:'Nabídka piva',catalogUpdated:'Nabídka aktualizována',filterByCategory:'Filtrovat podle typu piva',basketTitle:'Váš košík',itemCount:'Počet kusů',total:'Celkem',clearCart:'Vymazat košík',restoreCart:'Obnovit poslední košík',maxQuantityNotice:'Maximálně 6 ks od jednoho piva.',
@@ -109,7 +125,7 @@ const TEXT = {
   title:'Beer Golem — community orders',description:'Community beer orders from Beer Golem. Choose your beer and send your order via WhatsApp.',
   language:'Language',brandSubtitle:'Community orders',noScript:'Please enable JavaScript to order beer.',
   storageWarning:'Your browser does not allow storage. Your cart will only work until you close this page.',
-  shopTitle:'Craft beer from Czech breweries. Find your next favourite.',
+  shopTitle:'Discover Czech Craft Beer',shopTagline:'Beers from Czech breweries. Choose your favourites.',
   shopIntro:'Choose your beer, add your contact details, and send us your order via WhatsApp.',
   searchLabel:'Search beer or brewery',searchPlaceholder:'Enter a beer name or brewery',breweryFilter:'Brewery',allBreweries:'All breweries',styleFilter:'Beer style',allStyles:'All styles',nonalcoholicFilter:'Non-alcoholic (up to 0.5%)',clearFilters:'Clear filters',sortLabel:'Sort by',sortCatalog:'Recommended order',sortName:'Name A–Z',sortPriceAsc:'Price: low to high',sortPriceDesc:'Price: high to low',sortAbvAsc:'ABV: low to high',sortAbvDesc:'ABV: high to low',noResults:'No beers match these filters.',
   catalogTitle:'Beer selection',catalogUpdated:'Selection updated',filterByCategory:'Filter by beer type',basketTitle:'Your cart',itemCount:'Items',total:'Total',clearCart:'Clear cart',restoreCart:'Restore last cart',maxQuantityNotice:'Maximum 6 cans of each beer.',
