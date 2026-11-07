@@ -203,15 +203,15 @@
     "id": "zichovec-drink-and-razz",
     "brewery": "Zichovec",
     "name": "Drink And Razz",
-    "style": "Sour Ale",
-    "substyle": "Fruited Sour Ale",
-    "category": "sour",
-    "abv": null,
+    "style": "Non-alcoholic",
+    "substyle": "Non-alcoholic Fruited Sour",
+    "category": "nonalcoholic",
+    "abv": 0.5,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Nealkoholické ovocné kyselé pivo od pivovaru Zichovec.",
+      "en": "Non-alcoholic fruited sour beer from Zichovec."
     },
     "image": "",
     "available": true,
@@ -443,15 +443,15 @@
     "id": "pivovar-vik-minty-fetisch-9",
     "brewery": "Pivovar Vik",
     "name": "Minty Fetisch 9°",
-    "style": "Pale Ale",
-    "substyle": "Session Ale",
-    "category": "ipa",
+    "style": "Berliner Weisse",
+    "substyle": "Berliner Weisse",
+    "category": "sour",
     "abv": null,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Session Ale od pivovaru Pivovar Vik. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Session Ale from Pivovar Vik. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Berliner Weisse od pivovaru Vik.",
+      "en": "Berliner Weisse from Vik brewery."
     },
     "image": "",
     "available": true,
