@@ -54,7 +54,7 @@
       "en": "American pale ale with a hop-forward aroma and pleasant bitterness."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 20,
     "plato": 12,
     "imageSource": null
@@ -64,17 +64,17 @@
     "brewery": "Zichovec",
     "name": "All Day Banger 8",
     "style": "IPA",
-    "substyle": "Micro NEIPA",
+    "substyle": "Session IPA",
     "category": "ipa",
-    "abv": 3,
+    "abv": null,
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Lehká nízkoalkoholická Micro NEIPA od pivovaru Zichovec.",
-      "en": "Light, lower-alcohol Micro NEIPA from Zichovec."
+      "cs": "Session IPA od pivovaru Zichovec. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Session IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 30,
     "plato": null,
     "imageSource": null
@@ -94,7 +94,7 @@
       "en": "Cold IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 40,
     "plato": null,
     "imageSource": null
@@ -114,7 +114,7 @@
       "en": "Classic Czech pale lager with balanced maltiness and pleasant Saaz hop bitterness."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 50,
     "plato": 11,
     "imageSource": null
@@ -168,7 +168,7 @@
     "category": "sour",
     "abv": 4.5,
     "volume": "0.5 l",
-    "price": 114,
+    "price": 109,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -203,15 +203,15 @@
     "id": "zichovec-drink-and-razz",
     "brewery": "Zichovec",
     "name": "Drink And Razz",
-    "style": "Non-alcoholic",
-    "substyle": "Non-alcoholic Raspberry Sour Ale",
-    "category": "nonalcoholic",
-    "abv": 0.5,
+    "style": "Sour Ale",
+    "substyle": "Fruited Sour Ale",
+    "category": "sour",
+    "abv": null,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Nealkoholický malinový kyseláč (méně než 0,5 % alkoholu).",
-      "en": "Non-alcoholic raspberry sour ale (less than 0.5% ABV)."
+      "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -224,17 +224,17 @@
     "brewery": "Zichovec",
     "name": "Like A Čert 13°",
     "style": "Sour Ale",
-    "substyle": "Spiced Cherry Sour Ale",
+    "substyle": "Fruited Sour Ale",
     "category": "sour",
-    "abv": 5.5,
+    "abv": null,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Ovocný kyseláč s višněmi, vanilkou, skořicí, hřebíčkem a rumovými tóny.",
-      "en": "Fruited sour ale with cherries, vanilla, cinnamon, cloves and rum-like notes."
+      "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 110,
     "plato": 13,
     "imageSource": null
@@ -254,7 +254,7 @@
       "en": "Heavily hopped Double IPA featuring Columbus, Amarillo, Cascade and Centennial."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 130,
     "plato": 17,
     "imageSource": null
@@ -265,10 +265,10 @@
     "name": "Nostalgie 70s: Cedar Aged American Barleywine",
     "style": "Strong Ale",
     "substyle": "Barleywine",
-    "category": "other",
+    "category": "ipa",
     "abv": 10.7,
     "volume": "0.5 l",
-    "price": 134,
+    "price": 139,
     "description": {
       "cs": "Barleywine od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Barleywine from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -288,7 +288,7 @@
     "category": "sour",
     "abv": 6.1,
     "volume": "0.5 l",
-    "price": 134,
+    "price": 139,
     "description": {
       "cs": "Pastry Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Pastry Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -354,7 +354,7 @@
       "en": "Hop-forward IPA brewed with Columbus, Amarillo, Cascade and Citra."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 180,
     "plato": 16,
     "imageSource": null
@@ -394,7 +394,7 @@
       "en": "Gose from Vinohradský pivovar. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 200,
     "plato": null,
     "imageSource": null
@@ -406,7 +406,7 @@
     "style": "IPA",
     "substyle": "Brut IPA",
     "category": "ipa",
-    "abv": 6.2,
+    "abv": null,
     "volume": "0.5 l",
     "price": 79,
     "description": {
@@ -434,7 +434,7 @@
       "en": "Non-alcoholic lager with a delicate hop aroma and balanced bitterness."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 220,
     "plato": 12,
     "imageSource": null
@@ -443,15 +443,15 @@
     "id": "pivovar-vik-minty-fetisch-9",
     "brewery": "Pivovar Vik",
     "name": "Minty Fetisch 9°",
-    "style": "Sour Ale",
-    "substyle": "Berliner Weisse",
-    "category": "sour",
-    "abv": 3.7,
+    "style": "Pale Ale",
+    "substyle": "Session Ale",
+    "category": "ipa",
+    "abv": null,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Osvěžující Berliner Weisse s limetkou, mátou a bezovým květem. Lehké tělo, příjemná kyselost a vysoká pitelnost.",
-      "en": "Refreshing Berliner Weisse with lime, mint and elderflower. Light-bodied, pleasantly tart and highly drinkable."
+      "cs": "Session Ale od pivovaru Pivovar Vik. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Session Ale from Pivovar Vik. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -463,15 +463,15 @@
     "id": "twinberg-bicycle-dream-8-ale",
     "brewery": "Twinberg",
     "name": "Bicycle Dream 8°",
-    "style": "Summer Ale",
-    "substyle": "Summer Ale",
+    "style": "Pale Ale",
+    "substyle": "Pale Ale",
     "category": "ipa",
-    "abv": 2.9,
+    "abv": null,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Lehký, osvěžující Summer Ale s chmely Simcoe a Citra. Jemné tělo, citrusové aroma a příjemná hořkost.",
-      "en": "A light, refreshing summer ale hopped with Simcoe and Citra, offering citrus aromas and a pleasantly bitter finish."
+      "cs": "Pale Ale od pivovaru Twinberg. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Pale Ale from Twinberg. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -484,17 +484,17 @@
     "brewery": "Twinberg",
     "name": "Sherlock 12°",
     "style": "Pale Ale",
-    "substyle": "British Golden Ale",
+    "substyle": "Pale Ale",
     "category": "ipa",
-    "abv": 4.9,
+    "abv": null,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Britský Golden Ale s kultivovanou, osvěžující chutí a jemným ovocným charakterem.",
-      "en": "A British golden ale with a balanced, refreshing taste and subtle fruity character."
+      "cs": "Pale Ale od pivovaru Twinberg. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Pale Ale from Twinberg. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 250,
     "plato": 12,
     "imageSource": null
@@ -504,17 +504,17 @@
     "brewery": "Twinberg",
     "name": "Amelia 14°",
     "style": "IPA",
-    "substyle": "West Coast IPA",
+    "substyle": "India Pale Ale",
     "category": "ipa",
-    "abv": 6.4,
+    "abv": null,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "West Coast IPA s ovocnými tóny, jehličnatým aroma a výrazným chmelovým charakterem.",
-      "en": "A West Coast IPA with fruity notes, pine aromas and a pronounced hop character."
+      "cs": "India Pale Ale od pivovaru Twinberg. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "India Pale Ale from Twinberg. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 260,
     "plato": 14,
     "imageSource": null
@@ -548,7 +548,7 @@
     "category": "sour",
     "abv": 6.7,
     "volume": "0.5 l",
-    "price": 134,
+    "price": 139,
     "description": {
       "cs": "Pastry Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Pastry Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -564,17 +564,17 @@
     "brewery": "Zichovec",
     "name": "Like A Pickle Shot 12",
     "style": "Sour Ale",
-    "substyle": "Gose",
+    "substyle": "Cocktail-inspired Sour",
     "category": "sour",
-    "abv": 5.1,
+    "abv": null,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Gose inspirované koktejlem pickle shot od pivovaru Zichovec.",
-      "en": "Pickle-shot-inspired gose from Zichovec."
+      "cs": "Cocktail-inspired Sour od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Cocktail-inspired Sour from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 290,
     "plato": null,
     "imageSource": null
@@ -623,15 +623,15 @@
     "id": "twinberg-easy-hazy-9-ale",
     "brewery": "Twinberg",
     "name": "Easy Hazy 9° ALE",
-    "style": "Pale Ale",
-    "substyle": "Cream Ale / Hazy Pale Ale",
+    "style": "IPA",
+    "substyle": "Hazy IPA",
     "category": "ipa",
-    "abv": 3.2,
+    "abv": null,
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Lehký Easy Hazy 9°: jemný, zakalený ale s krémovým charakterem a nízkým obsahem alkoholu.",
-      "en": "A light, hazy ale with a soft, creamy character and low alcohol content."
+      "cs": "Hazy IPA od pivovaru Twinberg. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Hazy IPA from Twinberg. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -644,17 +644,17 @@
     "brewery": "Twinberg",
     "name": "Brew Berry More 12° Pastry Sour",
     "style": "Sour Ale",
-    "substyle": "Fruit Pastry Sour Ale",
+    "substyle": "Pastry Sour Ale",
     "category": "sour",
-    "abv": 4,
+    "abv": null,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Ovocný Pastry Sour Ale s černým rybízem, malinami a ostružinami. Výrazně ovocný a kyselý.",
-      "en": "A fruit-forward pastry sour ale with blackcurrants, raspberries and blackberries, combining bold berry flavours with tartness."
+      "cs": "Pastry Sour Ale od pivovaru Twinberg. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Pastry Sour Ale from Twinberg. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 330,
     "plato": 12,
     "imageSource": null
@@ -663,20 +663,20 @@
     "id": "sibeeria-teenage-ensemble",
     "brewery": "Sibeeria",
     "name": "Teenage Ensemble",
-    "style": "Sour Ale",
-    "substyle": "Pastry Sour Ale",
-    "category": "sour",
-    "abv": 6,
+    "style": "IPA",
+    "substyle": "IPA",
+    "category": "ipa",
+    "abv": null,
     "volume": "0.5 l",
     "price": 124,
     "description": {
-      "cs": "Kyselý dezertní ale uvařený se japonským pivovarem Teenage Brewing. Mango, banán, kokos, listy kafrové limety a kari koření doplňují chmely Citra, Strata a Simcoe. Plné sladkokyselé tělo obsahuje laktózu a maltodextrin.",
-      "en": "A pastry sour brewed with Japan’s Teenage Brewing. Mango, banana, coconut, kaffir lime leaves and curry spices meet Citra, Strata and Simcoe hops. Full-bodied and sweet-tart, with lactose and maltodextrin."
+      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
     "sort": 340,
-    "plato": 18,
+    "plato": null,
     "imageSource": null
   },
   {
@@ -688,7 +688,7 @@
     "category": "ipa",
     "abv": 4.8,
     "volume": "0.5 l",
-    "price": 104,
+    "price": 109,
     "description": {
       "cs": "Grapefruit IPA od pivovaru Chroust. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Grapefruit IPA from Chroust. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
@@ -748,7 +748,7 @@
     "category": "sour",
     "abv": 5.5,
     "volume": "0.5 l",
-    "price": 114,
+    "price": 119,
     "description": {
       "cs": "Cocktail-inspired Sour od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Cocktail-inspired Sour from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -768,7 +768,7 @@
     "category": "sour",
     "abv": 6.5,
     "volume": "0.5 l",
-    "price": 104,
+    "price": 99,
     "description": {
       "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
       "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
@@ -825,7 +825,7 @@
     "name": "Nostalgie 80s: Belgian Quadruple",
     "style": "Strong Ale",
     "substyle": "Belgian Quadrupel",
-    "category": "other",
+    "category": "ipa",
     "abv": 9.3,
     "volume": "0.5 l",
     "price": 119,
@@ -863,20 +863,20 @@
     "id": "sibeeria-exotic-orchard",
     "brewery": "Sibeeria",
     "name": "Exotic Orchard",
-    "style": "IPA",
-    "substyle": "Session IPA",
+    "style": "Unverified",
+    "substyle": "Unverified",
     "category": "ipa",
-    "abv": 4.6,
+    "abv": null,
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Lehká a dobře pitelná Session IPA s chmely Mosaic, Chinook a Vista. Slámově žlutá barva, ovocné tóny a jemně travnatý charakter.",
-      "en": "A light, easy-drinking Session IPA hopped with Mosaic, Chinook and Vista. Straw-yellow, with fruity notes and a gentle grassy edge."
+      "cs": "Ale od pivovaru Sibeeria. Styl: ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Ale from Sibeeria. Style: Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
     "sort": 440,
-    "plato": 11,
+    "plato": null,
     "imageSource": null
   },
   {
@@ -886,15 +886,15 @@
     "style": "Non-alcoholic",
     "substyle": "Non-alcoholic Fruited Sour",
     "category": "nonalcoholic",
-    "abv": 0.5,
+    "abv": null,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Nealkoholický ovocný sour s mangem a guavou, vyváženou kyselostí a čistým závěrem. Obsah alkoholu dle pivovaru: méně než 0,5 % obj.",
-      "en": "Non-alcoholic fruited sour with mango and guava, balanced tartness and a clean finish. Brewery-stated alcohol content: less than 0.5% ABV."
+      "cs": "Non-alcoholic Fruited Sour od pivovaru Pivovar Vik. Styl: non-alcoholic. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Non-alcoholic Fruited Sour from Pivovar Vik. Style: Non-alcoholic. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 450,
     "plato": null,
     "imageSource": null
@@ -906,7 +906,7 @@
     "style": "Lager",
     "substyle": "Czech Lager",
     "category": "lager",
-    "abv": 4.8,
+    "abv": null,
     "volume": "0.5 l",
     "price": 74,
     "description": {
@@ -914,7 +914,7 @@
       "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 460,
     "plato": 12,
     "imageSource": null
@@ -926,7 +926,7 @@
     "style": "Lager",
     "substyle": "Czech Lager",
     "category": "lager",
-    "abv": 4.8,
+    "abv": null,
     "volume": "0.5 l",
     "price": 74,
     "description": {
@@ -946,7 +946,7 @@
     "style": "Lager",
     "substyle": "Czech Lager",
     "category": "lager",
-    "abv": 4.8,
+    "abv": null,
     "volume": "0.5 l",
     "price": 74,
     "description": {
@@ -965,7 +965,7 @@
     "name": "Pumpkin Ale 15°",
     "style": "Spiced Beer",
     "substyle": "Pumpkin Ale",
-    "category": "other",
+    "category": "ipa",
     "abv": 5.8,
     "volume": "0.5 l",
     "price": 89,
@@ -986,7 +986,7 @@
     "style": "Sour Ale",
     "substyle": "Apricot Gose",
     "category": "sour",
-    "abv": 5.8,
+    "abv": null,
     "volume": "0.5 l",
     "price": 99,
     "description": {
@@ -1014,7 +1014,7 @@
       "en": "IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 510,
     "plato": 18,
     "imageSource": null
@@ -1043,18 +1043,18 @@
     "id": "sibeeria-shadowfarer-13",
     "brewery": "Sibeeria",
     "name": "Shadowfarer 13°",
-    "style": "Lager",
-    "substyle": "Czech Dark Lager",
-    "category": "lager",
+    "style": "IPA",
+    "substyle": "IPA",
+    "category": "ipa",
     "abv": 5,
     "volume": "0.5 l",
     "price": 89,
     "description": {
-      "cs": "Český tmavý ležák s jemnými praženými a karamelovými tóny. Kombinace ječných sladů, dekokční rmutování, český chmel a dlouhé zrání vytvářejí čistý, vyvážený profil bez přehnané sladkosti.",
-      "en": "Czech dark lager with gentle roasted and caramel notes. A blend of barley malts, decoction mashing, Czech hops and extended lagering create a clean, balanced profile without excessive sweetness."
+      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 530,
     "plato": 13,
     "imageSource": null
@@ -1066,12 +1066,12 @@
     "style": "IPA",
     "substyle": "Coffee IPA",
     "category": "ipa",
-    "abv": 6.1,
+    "abv": null,
     "volume": "0.5 l",
-    "price": 104,
+    "price": 109,
     "description": {
-      "cs": "IPA s kávou z pražírny Candycane a chmely Riwaka, Chinook a Simcoe. Kávový charakter doplňují tóny mandarinek a ananasu.",
-      "en": "IPA brewed with coffee from Candycane roastery and Riwaka, Chinook and Simcoe hops. Coffee character meets notes of mandarin and pineapple."
+      "cs": "Coffee IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Coffee IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -1084,14 +1084,14 @@
     "brewery": "Sibeeria",
     "name": "Nebulous Trail 14°",
     "style": "IPA",
-    "substyle": "New England IPA",
+    "substyle": "IPA",
     "category": "ipa",
-    "abv": 6,
+    "abv": null,
     "volume": "0.5 l",
     "price": 104,
     "description": {
-      "cs": "Zakalená a šťavnatá New England IPA s chmely Sabro, Idaho 7 a Vista. Tropické ovoce, citrusová kůra, peckoviny a jemná borovicová hořkost.",
-      "en": "A hazy, juicy New England IPA with Sabro, Idaho 7 and Vista hops. Tropical fruit, citrus peel, stone fruit and gentle pine bitterness."
+      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -1103,15 +1103,15 @@
     "id": "sibeeria-podzim-2026-18",
     "brewery": "Sibeeria",
     "name": "Podzim 2026 18°",
-    "style": "IPA",
-    "substyle": "Double Black IPA",
+    "style": "Strong Ale",
+    "substyle": "Strong Ale",
     "category": "ipa",
-    "abv": 8,
+    "abv": null,
     "volume": "0.5 l",
-    "price": 114,
+    "price": 109,
     "description": {
-      "cs": "Silná tmavá Double Black IPA s chmely HBC 638, El Dorado a Columbus Cryo. Pryskyřičné a citrusové tóny doplňují náznaky ananasu, manga a melounu; tělo je plné, ale stále výrazně chmelené.",
-      "en": "Bold Double Black IPA hopped with HBC 638, El Dorado and Columbus Cryo. Resin and citrus meet hints of pineapple, mango and melon, with a full yet hop-forward body."
+      "cs": "Strong Ale od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Strong Ale from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -1124,17 +1124,17 @@
     "brewery": "Sibeeria",
     "name": "Hekla 19°",
     "style": "IPA",
-    "substyle": "Double NEIPA",
+    "substyle": "IPA",
     "category": "ipa",
     "abv": 8,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Šťavnatá Double NEIPA s plnějším tělem, citrusovými, limetkovými, broskvovými a melounovými tóny. Chmely Ekuanot, Azacca, Azacca CGX a Dolcita.",
-      "en": "Juicy Double NEIPA with a fuller body and notes of citrus, lime, peach and melon. Hopped with Ekuanot, Azacca, Azacca CGX and Dolcita."
+      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 570,
     "plato": 19,
     "imageSource": null
@@ -1146,12 +1146,12 @@
     "style": "IPA",
     "substyle": "Double West Coast IPA",
     "category": "ipa",
-    "abv": 8.8,
+    "abv": null,
     "volume": "0.5 l",
-    "price": 144,
+    "price": 139,
     "description": {
-      "cs": "Výrazně hořká Double West Coast IPA s chmely Citra, Simcoe a Idaho 7. Citrusové a pryskyřičné tóny doplňuje jalovec a borovice. Suchý, hořký závěr; 70 IBU.",
-      "en": "Intensely bitter Double West Coast IPA with Citra, Simcoe and Idaho 7 hops. Citrus and resin notes are complemented by juniper and pine. Dry, bitter finish; 70 IBU."
+      "cs": "Double West Coast IPA od pivovaru Pivovar Vik. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Double West Coast IPA from Pivovar Vik. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -1164,14 +1164,14 @@
     "brewery": "Pivovar Vik",
     "name": "EASY AUSSIE / Gluten Reduced Session Australian IPA 11°",
     "style": "IPA",
-    "substyle": "Gluten Reduced Session Australian IPA",
+    "substyle": "Session IPA",
     "category": "ipa",
-    "abv": 4.6,
+    "abv": null,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Lehká, dobře pitelná session IPA se sníženým obsahem lepku. Australské chmely Enigma a Galaxy přinášejí tóny tropického a bobulového ovoce i citrusů; 30 IBU. Snížený obsah lepku neznamená bezlepkové pivo.",
-      "en": "Easy-drinking session IPA with reduced gluten content. Australian Enigma and Galaxy hops bring tropical fruit, berry and citrus notes; 30 IBU. Reduced gluten does not mean gluten-free."
+      "cs": "Session IPA od pivovaru Pivovar Vik. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
+      "en": "Session IPA from Pivovar Vik. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
     },
     "image": "",
     "available": true,
@@ -1194,7 +1194,7 @@
       "en": "A non-alcoholic raspberry sour ale with a bright fruit character and refreshing acidity. Packed with raspberry flavour, it stays light and highly drinkable at 0.5% ABV."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 600,
     "plato": 6,
     "imageSource": null
@@ -1214,7 +1214,7 @@
       "en": "A lightly hazy non-alcoholic IPA hopped with Cryo Citra, Columbus and El Dorado. Citrus aromas, tropical notes and balanced bitterness. Less than 0.5% ABV."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 610,
     "plato": null,
     "imageSource": null
@@ -1234,7 +1234,7 @@
       "en": "A rich Imperial Stout with coffee and maple syrup, featuring caramel, roasted nut and chocolate notes."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 620,
     "plato": null,
     "imageSource": null
@@ -1254,7 +1254,7 @@
       "en": "A non-alcoholic fruit sour with strawberries and basil, clean acidity and a refreshing dry finish. Less than 0.5% ABV."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 630,
     "plato": null,
     "imageSource": null
@@ -1274,7 +1274,7 @@
       "en": "A light alcohol-free sour ale with mango and passion fruit, combining sweet and tart fruit notes."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 640,
     "plato": 6,
     "imageSource": null
@@ -1294,7 +1294,7 @@
       "en": "A non-alcoholic Cherry Milk Stout with sour cherries, roasted malt and dark-chocolate notes. Lactose adds a creamy texture alongside coffee-like bitterness."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 650,
     "plato": null,
     "imageSource": null
@@ -1314,7 +1314,7 @@
       "en": "A lighter, drinkable Session NEIPA with Citra and Mosaic hops, bringing bright citrus and juicy fruit notes."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 660,
     "plato": 13,
     "imageSource": null
@@ -1334,7 +1334,7 @@
       "en": "A light New Zealand Pale Lager dry-hopped with Wakatu, with lime, lemongrass and floral notes. Saaz Shine adds gentle bitterness."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 670,
     "plato": 8,
     "imageSource": null
@@ -1354,7 +1354,7 @@
       "en": "A light Session West Coast IPA with Chinook and Simcoe hops, resinous and citrus notes, and a pleasantly bitter finish."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 680,
     "plato": 12,
     "imageSource": null
@@ -1374,9 +1374,429 @@
       "en": "A full-bodied Imperial Stout with cocoa beans, vanilla and tonka beans. Chocolate and spice notes are balanced by roasted flavours and bitterness."
     },
     "image": "",
-    "available": true,
+    "available": false,
     "sort": 690,
     "plato": 28,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-drink-and-drive-12",
+    "brewery": "Zichovec",
+    "name": "Drink and Drive Ø",
+    "style": "IPA - New England",
+    "substyle": "IPA - New England",
+    "category": "ipa",
+    "abv": 0.5,
+    "volume": "0.5 l",
+    "price": 79,
+    "description": {
+      "cs": "Pro naše druhé nealko jsme vyslechli vaše prosby a našli způsob jak pasterovat plechovky, můžete se tak těšit na naše první plechovkové nealko. Pro tuto verzi jsme si vybrali styl, který je nám nejblíž, kalnou voňavou IPA s chmely Cryo Pop a Citra Spectrum. Tak ochutnejte a buďte zodpovědní! For our second non-alcoholic beer we listened to your requests and found a way to pasteurize the cans, so you can look forward to our first canned AF beer. For this release we chose the style that is closest to our hearts, a hazy fragrant IPA with Cryo Pop and Citra Spectrum hops. So give it a taste and stay resposible!",
+      "en": "Drink and Drive Ø by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 700,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "clock-helga-13",
+    "brewery": "Clock",
+    "name": "Helga",
+    "style": "Festbier",
+    "substyle": "Festbier",
+    "category": "other",
+    "abv": 5.5,
+    "volume": "0.5 l",
+    "price": 89,
+    "description": {
+      "cs": "Silnější spodně kvašené pivo zlaté barvy, plné chuti a nižší hořkosti. Chmeleno německými chmely Perle a Hallertau Blanc. Doporučujeme konzumovat z tupláku.",
+      "en": "Helga by Clock."
+    },
+    "image": "",
+    "available": true,
+    "sort": 710,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "vik-chocolate-cherry-brownie",
+    "brewery": "Pivovar Vik",
+    "name": "CHOCOLATE CHERRY BROWNIE / Imperial Stout With Cherries & Cocoa Nibs",
+    "style": "Stout - Imperial",
+    "substyle": "Stout - Imperial",
+    "category": "other",
+    "abv": 9,
+    "volume": "0.5 l",
+    "price": 149,
+    "description": {
+      "cs": "Imperial stout with cherries and cocoa nibs",
+      "en": "CHOCOLATE CHERRY BROWNIE / Imperial Stout With Cherries & Cocoa Nibs by Vik."
+    },
+    "image": "",
+    "available": true,
+    "sort": 720,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "pivní-spoj-vanocni-mazacka-12",
+    "brewery": "Pivní spoj",
+    "name": "Vánoční Mazačka 12°",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 89,
+    "description": {
+      "cs": "Pivo Vánoční Mazačka 12°.",
+      "en": "Vánoční Mazačka 12° beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 730,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-the-future-is-now-hbc-638-14",
+    "brewery": "Zichovec",
+    "name": "The Future Is Now HBC 638 14",
+    "style": "IPA - American",
+    "substyle": "IPA - American",
+    "category": "ipa",
+    "abv": 6.5,
+    "volume": "0.5 l",
+    "price": 99,
+    "description": {
+      "cs": "West Coast IPA v moderním pojetí, postavená na jednom z experimentálních chmelů z programu Hop Breeding Company – HBC 638. Tenhle chmel zatím nemá finální jméno, ale už teď ukazuje, proč se na něj tolik čeká. Profil HBC 638 stojí na výrazné ovocnosti s tóny tropického ovoce, citrusů a peckovin, doplněné o lehkou sladší linku připomínající bobulové ovoce. V kombinaci se suchým, dobře prokvašeným tělem a výraznější hořkostí vzniká čistá, moderní West Coast IPA s jasným charakterem. The Future Is Now je o ochutnávání toho, co přijde a tenhle chmel má budoucnost dost hlasitou.",
+      "en": "The Future Is Now HBC 638 14 by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 740,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "pivní-spoj-pivni-spoj-tatra-t3-6102-12",
+    "brewery": "Pivní spoj",
+    "name": "Pivní spoj Tatra T3 6102 12° 0,5 l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 89,
+    "description": {
+      "cs": "Pivo Pivní spoj Tatra T3 6102 12° 0,5 l plechovka.",
+      "en": "Pivní spoj Tatra T3 6102 12° 0,5 l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 750,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "vik-fluff-off-24-imperial-gose",
+    "brewery": "Pivovar Vik",
+    "name": "FLUFF OFF 24° Imperial Gose 0,5l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 169,
+    "description": {
+      "cs": "Pivo FLUFF OFF 24° Imperial Gose 0,5l plechovka.",
+      "en": "FLUFF OFF 24° Imperial Gose 0,5l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 760,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-drink-and-bike",
+    "brewery": "Zichovec",
+    "name": "Drink And Bike",
+    "style": "IPA - New England",
+    "substyle": "IPA - New England",
+    "category": "ipa",
+    "abv": 0.5,
+    "volume": "0.5 l",
+    "price": 99,
+    "description": {
+      "cs": "Nealko pro ty, kteří nechtějí brzdit ani ve chvíli, kdy si otevřou pivo. Drink and Bike je nealkoholická Hazy IPA, ve které jsme spojili výrazné chmelení s několika funkčními ingrediencemi. Citra přináší tóny citrusů a tropického ovoce, novozélandská Motueka pak hlavně limetku a svěží bylinnou linku. Tu dál rozvíjí citronová tráva, která pivu dodává čistý citronový charakter a lehce kořeněné aroma. Extrakt z guarany obsahuje přirozený kofein, konkrétně 10 mg na 100 ml piva. Ve složení najdete také sodík, hořčík, draslík a vápník ve formě elektrolytů, které se běžně podílejí na správném fungování organismu při fyzické aktivitě. Vitamin C doplňuje celkové funkční zaměření nápoje. Výsledkem je výrazně chmelené, citrusové a osvěžující nealko s chutí limetky, citronové trávy a moderních aromatických chmelů. Funkční pivo, které pořád chutná především jako pivo.",
+      "en": "Drink And Bike by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 770,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-kren-12",
+    "brewery": "Zichovec",
+    "name": "Křen 12",
+    "style": "Sour - Other Gose",
+    "substyle": "Sour - Other Gose",
+    "category": "sour",
+    "abv": 5.1,
+    "volume": "0.5 l",
+    "price": 109,
+    "description": {
+      "cs": "Křen je pivo, které si nebere servítky. Stylově vychází z německého gose, ale chuťově jde úplně vlastní cestou. Do základu jsme přidali pořádnou dávku čerstvého křenu, který přináší ostrou štiplavost, svěžest a nepřehlédnutelný charakter. Doplnili jsme ho špetkou čerstvého kopru, který pivu přidává lehce bylinný tón a spolu s typickou slaností tvoří překvapivě vyvážený a chuťově vrstevnatý celek. Kyselost drží vše hezky pohromadě a dává pivu osvěžující říz. Výsledek? Pivo jako křen. Osvěžující, výrazné, hravé – ideální pro všechny, kdo se nebojí vybočit ze zajetých pivních kolejí.",
+      "en": "Křen 12 by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 780,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-nectar-of-happiness-17",
+    "brewery": "Zichovec",
+    "name": "Nectar of Happiness 17",
+    "style": "IPA - New England",
+    "substyle": "IPA - New England",
+    "category": "ipa",
+    "abv": 7,
+    "volume": "0.5 l",
+    "price": 109,
+    "description": {
+      "cs": "Nejprodávanější new england ipa pivovaru. V chuti i vůni výrazné tóny ananasu, manga a žlutého melounu. V půlce roku 2019 vyhlášeno serverem Untappd.com nejlepším pivem v České republice. Jedná se o námi zamilovaný styl NEIPA, pro který je typické extrémní množství použitého aromatického chmele v pozdních fázích výroby, to z důvodu, abychom dosáhli maximální možné ovocitosti ve vůni i v chuti, ale hořkost stále drželi na uzdě. Dále se používají ovesné vločky, které zjemní strukturu těla a pivo je pak krásně sametové. A v neposlední řadě, hraje významnou roli speciální kmen kvasnic. ___ The brewery's best selling New England IPA. In taste and aroma, distinct notes of pineapple, mango and yellow melon. In the middle of 2019, Untappd.com announced it as the best beer in the Czech Republic. This is the NEIPA style we love, which is characterized by the extreme amount of aromatic hops used in the late stages of production, achieving maximum possible fruitiness in the aroma and taste.",
+      "en": "Nectar of Happiness 17 by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 790,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "sibeeria-tuletorn-sibeeria-kompott",
+    "brewery": "Sibeeria",
+    "name": "Tuletorn/Sibeeria Kompott CAN 0,44 l",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.44 l",
+    "price": 159,
+    "description": {
+      "cs": "Pivo Tuletorn/Sibeeria Kompott CAN 0,44 l.",
+      "en": "Tuletorn/Sibeeria Kompott CAN 0,44 l beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 800,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "sibeeria-sibeeria-black-dog-autumn-barking",
+    "brewery": "Sibeeria",
+    "name": "Autumn Barking",
+    "style": "Pilsner - New Zealand",
+    "substyle": "Pilsner - New Zealand",
+    "category": "other",
+    "abv": 4,
+    "volume": "0.5 l",
+    "price": 99,
+    "description": {
+      "cs": "West Coast Pilsner, 10° Plato, 4% ABV. Česká kooperace. S přáteli z Black Dogu jsme se tentokrát pustili do West Coast Pilsneru – piva, které spojuje lehkost a pitelnost světlého ležáku s výrazným chmelovým charakterem moderního West Coastu. Základ jsme postavili tak, aby zůstal čistý, suchý a osvěžující, a hlavní slovo přenechali chmelům. Cryo Mosaic, který výborně funguje při studeném dry hopu, přináší intenzivní ovocnou aromatiku, zatímco Motueka a z ní vyrobený Limequat Hop Kief posouvají profil výrazně směrem k čerstvé limetce a dalším svěžím citrusům. Czech collaboration. ?? Together with our friends from Black Dog, we brewed a West Coast Pilsner combining the lightness and drinkability of a pale lager with the expressive hop character of the modern West Coast. We kept the base clean, dry, and refreshing, leaving plenty of room for the hops to shine. Cryo Mosaic, which performs beautifully when dry-hopped at low temperatures, brings an intense fruity aroma, while Motueka and the Motueka-derived Limequat Hop Kief push the profile firmly towards fresh lime and bright citrus.",
+      "en": "Autumn Barking by Sibeeria."
+    },
+    "image": "",
+    "available": true,
+    "sort": 810,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "sibeeria-sibeeria-mango-passion-fruit-sorbet",
+    "brewery": "Sibeeria",
+    "name": "Mango & Passion Fruit Sorbet",
+    "style": "Sour - Fruited",
+    "substyle": "Sour - Fruited",
+    "category": "sour",
+    "abv": 4.4,
+    "volume": "0.5 l",
+    "price": 109,
+    "description": {
+      "cs": "Sour Ale w/ Mango & Passion Fruit, 11° Plato, 4.4% ABV. Všichni jsme věděli, že to musí jednou přijít - a už je to tady! Nový Sorbet s hvězdným spojením manga a marakuji. Vzhledná mangová barva s neodolatelným aroma nabízí všechno, co slibuje: sladkou chuť zralého manga vyvažuje osvěžující kyselost marakuji, a to na podkladu Berliner Weisse, které neustále zdokonalujeme tak, abychom dosáhli ještě jemnější textury a přitom zachovali nízký obsah alkoholu. All of us knew this has to happen and here it is - a new Sorbet with the dream team of mango and passion fruit. Charming mango-ish color and irresistible aroma deliver exactly what they promise: sweet taste of ripe mango is balanced with refreshing acidity of passion fruit, all set up against the berliner weisse base that we perpetually improve to make it even smoother while keeping the alcohol content low.",
+      "en": "Mango & Passion Fruit Sorbet by Sibeeria."
+    },
+    "image": "",
+    "available": true,
+    "sort": 820,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-jezisek-18",
+    "brewery": "Zichovec",
+    "name": "Ježíšek 18° 0,5l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 139,
+    "description": {
+      "cs": "Pivo Ježíšek 18° 0,5l plechovka.",
+      "en": "Ježíšek 18° 0,5l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 830,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-kometa-20",
+    "brewery": "Zichovec",
+    "name": "Kometa 20° 0,5l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 149,
+    "description": {
+      "cs": "Pivo Kometa 20° 0,5l plechovka.",
+      "en": "Kometa 20° 0,5l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 840,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-ticha-noc-28",
+    "brewery": "Zichovec",
+    "name": "Tichá Noc 28",
+    "style": "Stout - Imperial",
+    "substyle": "Stout - Imperial",
+    "category": "other",
+    "abv": 10,
+    "volume": "0.5 l",
+    "price": 119,
+    "description": {
+      "cs": "Tichá noc, svatá noc, zahalená v krémově jemném stoutu, který doplňuje pražený kokos, sladké datle a vanilka, která příjemně zahřeje. Základem je silný Double Milk Stout s ovesnými vločkami a laktózou, díky kterým má pivo hutné, sladší a sametově jemné tělo. Pražené slady přinášejí tóny čokolády a kávy, na které přirozeně navazuje oříškový charakter kokosu. Datlový sirup přidává hlubší ovocnou sladkost připomínající sušené ovoce a karamel, zatímco vanilka celý profil zjemňuje a propojuje. Výsledkem je bohatý, hřejivý stout jako stvořený pro pomalé popíjení během dlouhých zimních večerů.",
+      "en": "Tichá Noc 28 by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 850,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-vanocka-13",
+    "brewery": "Zichovec",
+    "name": "Vánočka 13",
+    "style": "Lager - IPL (India Pale Lager)",
+    "substyle": "Lager - IPL (India Pale Lager)",
+    "category": "lager",
+    "abv": 5.5,
+    "volume": "0.5 l",
+    "price": 89,
+    "description": {
+      "cs": "Abychom vás na Vánoce nezásobili pouze těmi nejsilnějšími pivy, vaříme pro vás i Vánočku, lehkou IPA, elegantně chmelenou chmelem Citra do whirlpoolu a poté chmely, Simcoe, Simcoe Cryo a Nelson Sauvin na studené chmelení. Očekávejte tedy výrazný chmelový charakter. Vánočka je díky vyššímu prokvašení krásně lehoučká a tak vám skvěle poslouží jako osvěžení při smažení řízků nebo při rozpálených debatách nad štědrovečerním stolem.",
+      "en": "Vánočka 13 by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 860,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "zichovec-vanocni-zmrzka-18",
+    "brewery": "Zichovec",
+    "name": "Vánoční Zmrzka 18",
+    "style": "Sour - Smoothie",
+    "substyle": "Sour - Smoothie",
+    "category": "sour",
+    "abv": 5,
+    "volume": "0.5 l",
+    "price": 119,
+    "description": {
+      "cs": "Kdo se chce hřát u punče, když si může dát u stromku zmrzlinu? Vánoční zmrzka je dezertní kyseláč se švestkami, zázvorem, perníkovým kořením a vanilkou, který spojuje výraznou ovocnost, příjemnou kyselost a sladší krémové tělo do jedné sváteční kombinace. Na naše zmrzlinové pastry soury používáme místo laktózy veganský zmrzlinový prášek, který funguje podobně, pomáhá vytvořit plnější, jemnější a dezertnější pocit v ústech, ale neobsahuje žádné živočišné složky. Švestky přinášejí hlubokou ovocnou chuť s lehce povidlovým charakterem, zázvor přidává svěží pikantní linku a směs perníkového koření pivo posouvá do známých vánočních tónů skořice, hřebíčku a dalšího sladkého koření. Vanilka pak celý profil uhlazuje a propojujei do jednoho krémového celku. Výsledkem je sladkokyselý, ovocný a kořenitý pastry sour, který chutná trochu jako švestkový dezert, trochu jako perník a trochu jako zmrzlina, tedy přesně tak nenápadně přehnaně, jak se na Vánoce sluší.",
+      "en": "Vánoční Zmrzka 18 by Zichovec."
+    },
+    "image": "",
+    "available": true,
+    "sort": 870,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "twinberg-kaspar-15-sour",
+    "brewery": "Twinberg",
+    "name": "Kašpar 15° SOUR 0,5l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 129,
+    "description": {
+      "cs": "Pivo Kašpar 15° SOUR 0,5l plechovka.",
+      "en": "Kašpar 15° SOUR 0,5l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 880,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "twinberg-baltazar-15-ipa",
+    "brewery": "Twinberg",
+    "name": "Baltazar 15° IPA 0,5l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 119,
+    "description": {
+      "cs": "Pivo Baltazar 15° IPA 0,5l plechovka.",
+      "en": "Baltazar 15° IPA 0,5l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 890,
+    "plato": null,
+    "imageSource": null
+  },
+  {
+    "id": "twinberg-melichar-12-pl",
+    "brewery": "Twinberg",
+    "name": "Melichar 12° PL 0,5l plechovka",
+    "style": "Beer",
+    "substyle": "Beer",
+    "category": "other",
+    "abv": null,
+    "volume": "0.5 l",
+    "price": 99,
+    "description": {
+      "cs": "Pivo Melichar 12° PL 0,5l plechovka.",
+      "en": "Melichar 12° PL 0,5l plechovka beer."
+    },
+    "image": "",
+    "available": true,
+    "sort": 900,
+    "plato": null,
     "imageSource": null
   }
 ]
