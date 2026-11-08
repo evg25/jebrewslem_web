@@ -1703,15 +1703,15 @@
     "id": "zichovec-vanocka-13",
     "brewery": "Zichovec",
     "name": "Vánočka 13",
-    "style": "IPA",
-    "substyle": "India Pale Lager (IPL)",
+    "style": "Lager",
+    "substyle": "Czech Premium Pale Lager",
     "category": "lager",
     "abv": 5.5,
     "volume": "0.5 l",
     "price": 89,
     "description": {
-      "cs": "Abychom vás na Vánoce nezásobili pouze těmi nejsilnějšími pivy, vaříme pro vás i Vánočku, lehkou IPA, elegantně chmelenou chmelem Citra do whirlpoolu a poté chmely, Simcoe, Simcoe Cryo a Nelson Sauvin na studené chmelení. Očekávejte tedy výrazný chmelový charakter. Vánočka je díky vyššímu prokvašení krásně lehoučká a tak vám skvěle poslouží jako osvěžení při smažení řízků nebo při rozpálených debatách nad štědrovečerním stolem.",
-      "en": "A light, highly attenuated festive IPA from Zichovec, hopped with Citra in the whirlpool and dry-hopped with Simcoe, Simcoe Cryo and Nelson Sauvin. Expect an expressive hop aroma and a refreshingly light body."
+      "cs": "Vánočka 13° je plnější, ale skvěle pitelný český světlý ležák s příjemně sladovým tělem, vyšším řízem a nadýchanou pěnou. Plzeňský slad a delší ležení vytvářejí čistý, harmonický základ. Chmely Saaz Special a Žatecký poloraný červeňák dodávají bylinné, kořenité a květinové tóny, pevnější, příjemnou hořkost a dlouhé chmelové doznívání. Sváteční třináctka s obsahem alkoholu 5,5 %.",
+      "en": "Vánočka 13° is a full-bodied yet highly drinkable Czech premium pale lager with a pleasant malt character, lively carbonation and a fluffy head. Pilsner malt and extended lagering create a clean, harmonious base. Saaz Special and Žatecký poloraný červeňák hops bring herbal, spicy and floral notes, balanced but firm bitterness and a long hop finish. A festive 13° lager at 5.5% ABV."
     },
     "image": "",
     "available": true,
