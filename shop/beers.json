@@ -644,14 +644,14 @@
     "brewery": "Twinberg",
     "name": "Brew Berry More 12° Pastry Sour",
     "style": "Sour Ale",
-    "substyle": "Pastry Sour Ale",
+    "substyle": "Pastry Sour",
     "category": "sour",
-    "abv": null,
+    "abv": 4,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Brew Berry More 12° Pastry Sour od pivovaru Twinberg je svěží kyselé pivo ve stylu Pastry Sour.",
-      "en": "Brew Berry More 12° Pastry Sour by Twinberg is a refreshing sour beer in the pastry sour style."
+      "cs": "Brew Berry More 12° je výrazně ovocný, sladkokyselý Pastry Sour Ale z pivovaru Twinberg. Bohatá kombinace malin, černého rybízu a ostružin vytváří intenzivní bobulový charakter, v němž se ovocná sladkost střídá se svěží kyselostí. Svrchně kvašené ochucené pivo je nefiltrované a nepasterizované. 12° EPM, 4,0 % alkoholu.",
+      "en": "Brew Berry More 12° is a boldly fruity, sweet-and-sour Pastry Sour Ale from Twinberg. A generous combination of raspberries, blackcurrants and blackberries creates an intense berry character, balancing fruit sweetness with refreshing tartness. This flavoured, top-fermented beer is unfiltered and unpasteurised. 12° Plato, 4.0% ABV."
     },
     "image": "",
     "available": false,
