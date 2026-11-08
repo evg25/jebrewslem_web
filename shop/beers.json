@@ -70,8 +70,8 @@
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Session IPA od pivovaru Zichovec. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Session IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo All Day Banger 8 od pivovaru Zichovec. Styl: Session IPA.",
+      "en": "Hop-forward beer All Day Banger 8 from Zichovec. Style: Session IPA."
     },
     "image": "",
     "available": false,
@@ -90,8 +90,8 @@
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Cold IPA od pivovaru Zichovec. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Cold IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Lil Freeze 10 od pivovaru Zichovec. Styl: Cold IPA.",
+      "en": "Hop-forward beer Lil Freeze 10 from Zichovec. Style: Cold IPA."
     },
     "image": "",
     "available": false,
@@ -150,8 +150,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Blackcurrant Sorbet 11° od pivovaru Sibeeria. Styl: Fruited Sour Ale.",
+      "en": "Sour beer Blackcurrant Sorbet 11° from Sibeeria. Style: Fruited Sour Ale."
     },
     "image": "",
     "available": true,
@@ -170,8 +170,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Margherita Juice 13° od pivovaru Sibeeria. Styl: Tomato Sour.",
+      "en": "Sour beer Margherita Juice 13° from Sibeeria. Style: Tomato Sour."
     },
     "image": "",
     "available": true,
@@ -190,8 +190,8 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Strong Ale od pivovaru Zichovec. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Strong Ale from Zichovec. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo 14 Years of MegaHappiness 20° od pivovaru Zichovec. Styl: Imperial IPA.",
+      "en": "Hop-forward beer 14 Years of MegaHappiness 20° from Zichovec. Style: Imperial IPA."
     },
     "image": "",
     "available": true,
@@ -230,8 +230,8 @@
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Like A Čert 13° od pivovaru Zichovec. Styl: Fruited Sour Ale.",
+      "en": "Sour beer Like A Čert 13° from Zichovec. Style: Fruited Sour Ale."
     },
     "image": "",
     "available": false,
@@ -270,8 +270,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Barleywine od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Barleywine from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Pivní speciál Nostalgie 70s: Cedar Aged American Barleywine od pivovaru Sibeeria. Styl: American Barleywine.",
+      "en": "Specialty beer Nostalgie 70s: Cedar Aged American Barleywine from Sibeeria. Style: American Barleywine."
     },
     "image": "",
     "available": true,
@@ -290,8 +290,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Pastry Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pastry Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Yummy Blackcurrant, Prunes & Tonka od pivovaru Sibeeria. Styl: Smoothie Sour.",
+      "en": "Sour beer Yummy Blackcurrant, Prunes & Tonka from Sibeeria. Style: Smoothie Sour."
     },
     "image": "",
     "available": true,
@@ -310,8 +310,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Sea Buckthorn Sorbet od pivovaru Sibeeria. Styl: Fruited Sour Ale.",
+      "en": "Sour beer Sea Buckthorn Sorbet from Sibeeria. Style: Fruited Sour Ale."
     },
     "image": "",
     "available": true,
@@ -390,8 +390,8 @@
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Gose od pivovaru Vinohradský pivovar. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Gose from Vinohradský pivovar. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Seaman Gose od pivovaru Vinohradský pivovar. Styl: Gose.",
+      "en": "Sour beer Seaman Gose from Vinohradský pivovar. Style: Gose."
     },
     "image": "",
     "available": false,
@@ -410,8 +410,8 @@
     "volume": "0.5 l",
     "price": 79,
     "description": {
-      "cs": "Brut IPA od pivovaru Vinohradský pivovar. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Brut IPA from Vinohradský pivovar. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Less Sugars More Fun Brut IPA od pivovaru Vinohradský pivovar. Styl: Brut IPA.",
+      "en": "Hop-forward beer Less Sugars More Fun Brut IPA from Vinohradský pivovar. Style: Brut IPA."
     },
     "image": "",
     "available": true,
@@ -470,8 +470,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Pale Ale od pivovaru Twinberg. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pale Ale from Twinberg. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Bicycle Dream 8° od pivovaru Twinberg. Styl: Pale Ale.",
+      "en": "Hop-forward beer Bicycle Dream 8° from Twinberg. Style: Pale Ale."
     },
     "image": "",
     "available": true,
@@ -490,8 +490,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Pale Ale od pivovaru Twinberg. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pale Ale from Twinberg. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Sherlock 12° od pivovaru Twinberg. Styl: Pale Ale.",
+      "en": "Hop-forward beer Sherlock 12° from Twinberg. Style: Pale Ale."
     },
     "image": "",
     "available": false,
@@ -510,8 +510,8 @@
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "India Pale Ale od pivovaru Twinberg. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "India Pale Ale from Twinberg. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Amelia 14° od pivovaru Twinberg. Styl: India Pale Ale.",
+      "en": "Hop-forward beer Amelia 14° from Twinberg. Style: India Pale Ale."
     },
     "image": "",
     "available": false,
@@ -550,8 +550,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Pastry Sour Ale od pivovaru Sibeeria. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pastry Sour Ale from Sibeeria. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Yummy Mango with Apricot od pivovaru Sibeeria. Styl: Smoothie Sour.",
+      "en": "Sour beer Yummy Mango with Apricot from Sibeeria. Style: Smoothie Sour."
     },
     "image": "",
     "available": true,
@@ -570,8 +570,8 @@
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Cocktail-inspired Sour od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Cocktail-inspired Sour from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Like A Pickle Shot 12 od pivovaru Zichovec. Styl: Pickle Gose.",
+      "en": "Sour beer Like A Pickle Shot 12 from Zichovec. Style: Pickle Gose."
     },
     "image": "",
     "available": false,
@@ -590,8 +590,8 @@
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Fruit Pale Ale od pivovaru Zichovec. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruit Pale Ale from Zichovec. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Robin na grepu 12 od pivovaru Zichovec. Styl: Fruit Pale Ale.",
+      "en": "Hop-forward beer Robin na grepu 12 from Zichovec. Style: Fruit Pale Ale."
     },
     "image": "",
     "available": true,
@@ -630,8 +630,8 @@
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Hazy IPA od pivovaru Twinberg. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Hazy IPA from Twinberg. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Easy Hazy 9° ALE od pivovaru Twinberg. Styl: Hazy IPA.",
+      "en": "Hop-forward beer Easy Hazy 9° ALE from Twinberg. Style: Hazy IPA."
     },
     "image": "",
     "available": true,
@@ -650,8 +650,8 @@
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Pastry Sour Ale od pivovaru Twinberg. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pastry Sour Ale from Twinberg. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Brew Berry More 12° Pastry Sour od pivovaru Twinberg. Styl: Pastry Sour Ale.",
+      "en": "Sour beer Brew Berry More 12° Pastry Sour from Twinberg. Style: Pastry Sour Ale."
     },
     "image": "",
     "available": false,
@@ -670,8 +670,8 @@
     "volume": "0.5 l",
     "price": 124,
     "description": {
-      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Teenage Ensemble od pivovaru Sibeeria. Styl: IPA.",
+      "en": "Hop-forward beer Teenage Ensemble from Sibeeria. Style: IPA."
     },
     "image": "",
     "available": true,
@@ -690,8 +690,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Grapefruit IPA od pivovaru Chroust. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Grapefruit IPA from Chroust. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Grepwaka od pivovaru Chroust. Styl: Fruited Pale Ale.",
+      "en": "Hop-forward beer Grepwaka from Chroust. Style: Fruited Pale Ale."
     },
     "image": "",
     "available": true,
@@ -710,8 +710,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Pale Ale od pivovaru Chroust. Styl: pale ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pale Ale from Chroust. Style: Pale Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Lučiny a bučiny od pivovaru Chroust. Styl: Fruited Gose.",
+      "en": "Sour beer Lučiny a bučiny from Chroust. Style: Fruited Gose."
     },
     "image": "",
     "available": true,
@@ -750,8 +750,8 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Cocktail-inspired Sour od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Cocktail-inspired Sour from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Like A Whisky Sour 13 od pivovaru Zichovec. Styl: Cocktail-inspired Sour.",
+      "en": "Sour beer Like A Whisky Sour 13 from Zichovec. Style: Cocktail-inspired Sour."
     },
     "image": "",
     "available": true,
@@ -770,8 +770,8 @@
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Pivní speciál Winter Affair Gossip: Cantina Errante od pivovaru Zichovec. Styl: Saison.",
+      "en": "Specialty beer Winter Affair Gossip: Cantina Errante from Zichovec. Style: Saison."
     },
     "image": "",
     "available": true,
@@ -830,8 +830,8 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Belgian Quadrupel od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Belgian Quadrupel from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Pivní speciál Nostalgie 80s: Belgian Quadruple od pivovaru Sibeeria. Styl: Belgian Quadrupel.",
+      "en": "Specialty beer Nostalgie 80s: Belgian Quadruple from Sibeeria. Style: Belgian Quadrupel."
     },
     "image": "",
     "available": true,
@@ -870,8 +870,8 @@
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Ale od pivovaru Sibeeria. Styl: ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Ale from Sibeeria. Style: Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Exotic Orchard od pivovaru Sibeeria. Styl: speciální pivo.",
+      "en": "Hop-forward beer Exotic Orchard from Sibeeria. Style: specialty beer."
     },
     "image": "",
     "available": true,
@@ -890,8 +890,8 @@
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Non-alcoholic Fruited Sour od pivovaru Pivovar Vik. Styl: non-alcoholic. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Non-alcoholic Fruited Sour from Pivovar Vik. Style: Non-alcoholic. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Nealkoholické pivo Sourprise! Nealko od pivovaru Pivovar Vik. Styl: Non-alcoholic Fruited Sour.",
+      "en": "Non-alcoholic beer Sourprise! Nealko from Pivovar Vik. Style: Non-alcoholic Fruited Sour."
     },
     "image": "",
     "available": false,
@@ -910,8 +910,8 @@
     "volume": "0.5 l",
     "price": 74,
     "description": {
-      "cs": "Czech Lager od pivovaru Pivní spoj. Styl: lager. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Ležák Pivní spoj EČS 81-709 12° od pivovaru Pivní spoj. Styl: Czech Lager.",
+      "en": "Lager Pivní spoj EČS 81-709 12° from Pivní spoj. Style: Czech Lager."
     },
     "image": "",
     "available": false,
@@ -930,8 +930,8 @@
     "volume": "0.5 l",
     "price": 74,
     "description": {
-      "cs": "Czech Lager od pivovaru Pivní spoj. Styl: lager. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Ležák Pivní spoj Karosa B732 12° od pivovaru Pivní spoj. Styl: Czech Lager.",
+      "en": "Lager Pivní spoj Karosa B732 12° from Pivní spoj. Style: Czech Lager."
     },
     "image": "",
     "available": true,
@@ -950,8 +950,8 @@
     "volume": "0.5 l",
     "price": 74,
     "description": {
-      "cs": "Czech Lager od pivovaru Pivní spoj. Styl: lager. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Czech Lager from Pivní spoj. Style: Lager. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Ležák Pivní spoj Motorový vůz 810 12° od pivovaru Pivní spoj. Styl: Czech Lager.",
+      "en": "Lager Pivní spoj Motorový vůz 810 12° from Pivní spoj. Style: Czech Lager."
     },
     "image": "",
     "available": true,
@@ -970,8 +970,8 @@
     "volume": "0.5 l",
     "price": 89,
     "description": {
-      "cs": "Pumpkin Ale od pivovaru Permon. Styl: spiced beer. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Pumpkin Ale from Permon. Style: Spiced Beer. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Pivní speciál Pumpkin Ale 15° od pivovaru Permon. Styl: Pumpkin Ale.",
+      "en": "Specialty beer Pumpkin Ale 15° from Permon. Style: Pumpkin Ale."
     },
     "image": "",
     "available": true,
@@ -990,8 +990,8 @@
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Apricot Gose od pivovaru Permon. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Apricot Gose from Permon. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Joe Meruňka 12° od pivovaru Permon. Styl: Apricot Gose.",
+      "en": "Sour beer Joe Meruňka 12° from Permon. Style: Apricot Gose."
     },
     "image": "",
     "available": true,
@@ -1010,8 +1010,8 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "IPA od pivovaru Zichovec. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "IPA from Zichovec. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo 14 Years of Innovation 18° od pivovaru Zichovec. Styl: Dessert Fruited Sour.",
+      "en": "Sour beer 14 Years of Innovation 18° from Zichovec. Style: Dessert Fruited Sour."
     },
     "image": "",
     "available": false,
@@ -1030,8 +1030,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Fruited Sour Ale od pivovaru Zichovec. Styl: sour ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Fruited Sour Ale from Zichovec. Style: Sour Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Kyselé pivo Pink Breeze 12° od pivovaru Zichovec. Styl: Fruited Sour Ale.",
+      "en": "Sour beer Pink Breeze 12° from Zichovec. Style: Fruited Sour Ale."
     },
     "image": "",
     "available": true,
@@ -1050,8 +1050,8 @@
     "volume": "0.5 l",
     "price": 89,
     "description": {
-      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Ležák Shadowfarer 13° od pivovaru Sibeeria. Styl: Czech Dark Lager.",
+      "en": "Lager Shadowfarer 13° from Sibeeria. Style: Czech Dark Lager."
     },
     "image": "",
     "available": false,
@@ -1070,8 +1070,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Coffee IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Coffee IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Coffee IPA 14° od pivovaru Sibeeria. Styl: Coffee IPA.",
+      "en": "Hop-forward beer Coffee IPA 14° from Sibeeria. Style: Coffee IPA."
     },
     "image": "",
     "available": true,
@@ -1090,8 +1090,8 @@
     "volume": "0.5 l",
     "price": 104,
     "description": {
-      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Nebulous Trail 14° od pivovaru Sibeeria. Styl: IPA.",
+      "en": "Hop-forward beer Nebulous Trail 14° from Sibeeria. Style: IPA."
     },
     "image": "",
     "available": true,
@@ -1110,8 +1110,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Strong Ale od pivovaru Sibeeria. Styl: strong ale. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Strong Ale from Sibeeria. Style: Strong Ale. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Podzim 2026 18° od pivovaru Sibeeria. Styl: Double Black IPA.",
+      "en": "Hop-forward beer Podzim 2026 18° from Sibeeria. Style: Double Black IPA."
     },
     "image": "",
     "available": true,
@@ -1130,8 +1130,8 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "IPA od pivovaru Sibeeria. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "IPA from Sibeeria. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo Hekla 19° od pivovaru Sibeeria. Styl: Imperial IPA.",
+      "en": "Hop-forward beer Hekla 19° from Sibeeria. Style: Imperial IPA."
     },
     "image": "",
     "available": false,
@@ -1150,8 +1150,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Double West Coast IPA od pivovaru Pivovar Vik. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Double West Coast IPA from Pivovar Vik. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo DEEP WOODS // Double west coast IPA 20° od pivovaru Pivovar Vik. Styl: Double West Coast IPA.",
+      "en": "Hop-forward beer DEEP WOODS // Double west coast IPA 20° from Pivovar Vik. Style: Double West Coast IPA."
     },
     "image": "",
     "available": true,
@@ -1170,8 +1170,8 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Session IPA od pivovaru Pivovar Vik. Styl: ipa. Podrobnosti o surovinách a chuťovém profilu zatím nejsou ověřené.",
-      "en": "Session IPA from Pivovar Vik. Style: IPA. Ingredients and detailed tasting notes have not yet been verified."
+      "cs": "Chmelené pivo EASY AUSSIE / Gluten Reduced Session Australian IPA 11° od pivovaru Pivovar Vik. Styl: Session IPA.",
+      "en": "Hop-forward beer EASY AUSSIE / Gluten Reduced Session Australian IPA 11° from Pivovar Vik. Style: Session IPA."
     },
     "image": "",
     "available": true,
