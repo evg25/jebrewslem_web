@@ -144,14 +144,14 @@
     "brewery": "Sibeeria",
     "name": "Blackcurrant Sorbet 11°",
     "style": "Sour Ale",
-    "substyle": "Fruited Sour Ale",
+    "substyle": "Blackcurrant Berliner Weisse",
     "category": "sour",
     "abv": 3.9,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Blackcurrant Sorbet 11° od pivovaru Sibeeria je svěží kyselé pivo s ovocným charakterem.",
-      "en": "Blackcurrant Sorbet 11° by Sibeeria is a refreshing sour beer with a fruit-forward character."
+      "cs": "Osvěžující Blackcurrant Berliner Weisse od Sibeerie s černým rybízem. Výrazná ovocná kyselost a charakteristická chuť rybízu tvoří svěží, lehce pitelný kyseláč. Alkohol 3,9 %.",
+      "en": "A refreshing Blackcurrant Berliner Weisse from Sibeeria made with blackcurrants. Lively fruit acidity meets the distinctive character of blackcurrant in this easy-drinking sour ale. 3.9% ABV."
     },
     "image": "",
     "available": true,
@@ -170,8 +170,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Margherita Juice 13° od pivovaru Sibeeria je svěží kyselé pivo s rajčatovým charakterem.",
-      "en": "Margherita Juice 13° by Sibeeria is a refreshing sour beer with a tomato-led character."
+      "cs": "Netradiční rajčatový kyseláč inspirovaný středomořskými chutěmi: rajčata, bazalka, sůl a koriandr. Jemná slanost, kyselost a výrazné umami vytvářejí originální gastronomické pivo. Alkohol 4,5 %.",
+      "en": "An unconventional tomato sour inspired by Mediterranean flavours, featuring tomatoes, basil, salt and coriander. Gentle salinity, acidity and savoury umami make this a distinctive food-friendly beer. 4.5% ABV."
     },
     "image": "",
     "available": true,
@@ -270,8 +270,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Nostalgie 70s: Cedar Aged American Barleywine od pivovaru Sibeeria je silné svrchně kvašené pivo ve stylu barleywine v americkém pojetí.",
-      "en": "Nostalgie 70s: Cedar Aged American Barleywine by Sibeeria is a strong barleywine-style ale in the American interpretation."
+      "cs": "Silný American Barleywine z řady Nostalgie, stařený na cedrovém dřevě. Chmely Simcoe, Citra, Mosaic a Chinook přinášejí citrusový a pryskyřičný charakter. Alkohol 10,7 %.",
+      "en": "A powerful American Barleywine from the Nostalgie series, aged with cedar wood. Simcoe, Citra, Mosaic and Chinook hops bring citrus and resinous notes. 10.7% ABV."
     },
     "image": "",
     "available": true,
@@ -290,8 +290,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Yummy Blackcurrant, Prunes & Tonka od pivovaru Sibeeria je svěží kyselé pivo s hustším ovocným charakterem.",
-      "en": "Yummy Blackcurrant, Prunes & Tonka by Sibeeria is a refreshing sour beer with a smoothie-style fruit character."
+      "cs": "Hustý ovocný pastry sour s černým rybízem, sušenými švestkami a tonkovými boby. Výrazná ovocná kyselost se propojuje s plnějším, dezertním charakterem. Alkohol 6,1 %.",
+      "en": "A rich, fruit-packed pastry sour with blackcurrants, prunes and tonka beans. Vibrant fruit acidity balances its fuller, dessert-like character. 6.1% ABV."
     },
     "image": "",
     "available": true,
@@ -310,8 +310,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Sea Buckthorn Sorbet od pivovaru Sibeeria je svěží kyselé pivo s ovocným charakterem.",
-      "en": "Sea Buckthorn Sorbet by Sibeeria is a refreshing sour beer with a fruit-forward character."
+      "cs": "Ovocný kyseláč od Sibeerie s rakytníkem a mangem. Výrazná kyselost rakytníku se potkává s tropickým ovocným charakterem manga. Alkohol 4,4 %.",
+      "en": "A fruited sour from Sibeeria with sea buckthorn and mango. The tangy character of sea buckthorn meets the tropical fruit character of mango. 4.4% ABV."
     },
     "image": "",
     "available": true,
@@ -550,8 +550,8 @@
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Yummy Mango with Apricot od pivovaru Sibeeria je svěží kyselé pivo s hustším ovocným charakterem.",
-      "en": "Yummy Mango with Apricot by Sibeeria is a refreshing sour beer with a smoothie-style fruit character."
+      "cs": "Hustý ovocný pastry sour s mangem, meruňkami, ovesnými vločkami a vanilkou. Tropické a peckové ovoce doplňuje jemnější, dezertní charakter. Alkohol 6,7 %.",
+      "en": "A thick, fruit-forward pastry sour with mango, apricots, oats and vanilla. Tropical and stone-fruit flavours meet a soft, dessert-like character. 6.7% ABV."
     },
     "image": "",
     "available": true,
