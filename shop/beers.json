@@ -1762,21 +1762,21 @@
   {
     "id": "twinberg-baltazar-15-ipa",
     "brewery": "Twinberg",
-    "name": "Baltazar 15° IPA 0,5l plechovka",
-    "style": "IPA",
-    "substyle": "IPA (substyle unverified)",
-    "category": "ipa",
-    "abv": null,
+    "name": "Baltazar 26 15° Oatmeal Stout 0,5l plechovka",
+    "style": "Stout",
+    "substyle": "Oatmeal Stout",
+    "category": "dark",
+    "abv": 6,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Baltazar 15° IPA od pivovaru Twinberg. Výrazně chmelené pivo; přesný podstyl není potvrzen.",
-      "en": "Baltazar 15° IPA by Twinberg. A hop-forward beer; the exact substyle is not confirmed."
+      "cs": "Baltazar 26 je sváteční 15° Oatmeal Stout s temnou barvou, plným tělem a sametově hebkou texturou. Pražený slad doplňuje aroma kakaových slupek a jemný nádech pomeranče. Hřejivé, tmavé, svrchně kvašené pivo, nefiltrované a nepasterizované. Obsah alkoholu 6,0 %.",
+      "en": "Baltazar 26 is a festive 15° Oatmeal Stout with a deep dark colour, full body and velvety-smooth texture. Roasted malt is complemented by cocoa husk aromas and a subtle hint of orange, creating a warming seasonal beer. Top-fermented, unfiltered and unpasteurised. 6.0% ABV."
     },
     "image": "",
     "available": true,
     "sort": 890,
-    "plato": null,
+    "plato": 15,
     "imageSource": null
   },
   {
