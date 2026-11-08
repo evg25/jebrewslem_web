@@ -64,19 +64,19 @@
     "brewery": "Zichovec",
     "name": "All Day Banger 8",
     "style": "IPA",
-    "substyle": "Session IPA",
+    "substyle": "Session NEIPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 3,
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "All Day Banger 8 od pivovaru Zichovec je výrazně chmelené pivo. Styl: Session IPA.",
-      "en": "All Day Banger 8 by Zichovec is a hop-forward beer. Style: Session IPA."
+      "cs": "Lehká Session NEIPA, 8° Plato a 3 % alkoholu, s chmely Citra, Strata a Superdelic. Šťavnaté citrusové, tropické a červeně ovocné tóny při vysoké pitelnosti.",
+      "en": "A light Session NEIPA at 8° Plato and 3% ABV, hopped with Citra, Strata and Superdelic. Juicy citrus, tropical and red-fruit notes with excellent drinkability."
     },
     "image": "",
     "available": false,
     "sort": 30,
-    "plato": null,
+    "plato": 8,
     "imageSource": null
   },
   {
@@ -84,19 +84,19 @@
     "brewery": "Zichovec",
     "name": "Lil Freeze 10",
     "style": "IPA",
-    "substyle": "Cold IPA",
+    "substyle": "Session Cold New Zealand IPA",
     "category": "ipa",
     "abv": 4.1,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Lil Freeze 10 od pivovaru Zichovec je výrazně chmelené pivo ve stylu Cold IPA.",
-      "en": "Lil Freeze 10 by Zichovec is a hop-forward beer in the Cold IPA style."
+      "cs": "Lehká Session Cold New Zealand IPA, 10° Plato a 4,1 % alkoholu, s chmely Nelson Sauvin, Riwaka a Superdelic a rýžovými vločkami. Suchá a čistá, s tóny bílých hroznů, limetky a grepu.",
+      "en": "A light Session Cold New Zealand IPA at 10° Plato and 4.1% ABV, with Nelson Sauvin, Riwaka and Superdelic hops and rice flakes. Dry and clean, with white grape, lime and grapefruit."
     },
     "image": "",
     "available": false,
     "sort": 40,
-    "plato": null,
+    "plato": 10,
     "imageSource": null
   },
   {
@@ -150,8 +150,8 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Osvěžující Blackcurrant Berliner Weisse od Sibeerie s černým rybízem. Výrazná ovocná kyselost a charakteristická chuť rybízu tvoří svěží, lehce pitelný kyseláč. Alkohol 3,9 %.",
-      "en": "A refreshing Blackcurrant Berliner Weisse from Sibeeria made with blackcurrants. Lively fruit acidity meets the distinctive character of blackcurrant in this easy-drinking sour ale. 3.9% ABV."
+      "cs": "Lehký ovocný Sour Ale s černým rybízem, 11° Plato a 3,9 % alkoholu. Rybíz dodává výraznou kyselost, lehkou trpkost a purpurovou barvu.",
+      "en": "A light blackcurrant Sour Ale at 11° Plato and 3.9% ABV. Blackcurrant brings bright tartness, gentle astringency and a distinctive purple colour."
     },
     "image": "",
     "available": true,
@@ -164,14 +164,14 @@
     "brewery": "Sibeeria",
     "name": "Margherita Juice 13°",
     "style": "Sour Ale",
-    "substyle": "Tomato Sour",
+    "substyle": "Tomato & Basil Gose",
     "category": "sour",
     "abv": 4.5,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Netradiční rajčatový kyseláč inspirovaný středomořskými chutěmi: rajčata, bazalka, sůl a koriandr. Jemná slanost, kyselost a výrazné umami vytvářejí originální gastronomické pivo. Alkohol 4,5 %.",
-      "en": "An unconventional tomato sour inspired by Mediterranean flavours, featuring tomatoes, basil, salt and coriander. Gentle salinity, acidity and savoury umami make this a distinctive food-friendly beer. 4.5% ABV."
+      "cs": "Gose s rajčaty a bazalkou, 13° Plato a 4,5 % alkoholu, uvařené s BeerGeekem. Lehce slané a nasládlé, výrazně rajčatové a plné umami, s koriandrem a jemnou kyselostí.",
+      "en": "A tomato-and-basil Gose brewed with BeerGeek, at 13° Plato and 4.5% ABV. Lightly salty and sweet, tomato-forward and rich in umami, with coriander and gentle acidity."
     },
     "image": "",
     "available": true,
@@ -184,14 +184,14 @@
     "brewery": "Zichovec",
     "name": "14 Years of MegaHappiness 20°",
     "style": "IPA",
-    "substyle": "Imperial IPA",
+    "substyle": "Double NEIPA",
     "category": "ipa",
     "abv": 9,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "14 Years of MegaHappiness 20° od pivovaru Zichovec je výrazně chmelené pivo. Styl: Imperial IPA.",
-      "en": "14 Years of MegaHappiness 20° by Zichovec is a hop-forward beer. Style: Imperial IPA."
+      "cs": "Výrazná Double NEIPA, 20° Plato a 9 % alkoholu, s chmely Citra, Citra Cryo, Superdelic a Phantasm. Intenzivní citrusy a tropické ovoce doplňuje měkké plné tělo s ovsem a mírnější hořkostí.",
+      "en": "An intense Double NEIPA at 20° Plato and 9% ABV, featuring Citra, Citra Cryo, Superdelic and Phantasm. Citrus and tropical fruit meet a soft oat-rich body and restrained bitterness."
     },
     "image": "",
     "available": true,
@@ -224,14 +224,14 @@
     "brewery": "Zichovec",
     "name": "Like A Čert 13°",
     "style": "Sour Ale",
-    "substyle": "Fruited Sour Ale",
+    "substyle": "Cherry-spice Sour Ale",
     "category": "sour",
-    "abv": null,
+    "abv": 5.5,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Like A Čert 13° od pivovaru Zichovec je svěží kyselé pivo s ovocným charakterem.",
-      "en": "Like A Čert 13° by Zichovec is a refreshing sour beer with a fruit-forward character."
+      "cs": "Višňový Sour Ale, 13° Plato a 5,5 % alkoholu, s vanilkou, skořicí, hřebíčkem, dubem a rumovým aromatem. Višňovou kyselost doplňuje hřejivé koření a likérový závěr.",
+      "en": "A sour-cherry ale at 13° Plato and 5.5% ABV with vanilla, cinnamon, cloves, oak and rum aroma. Cherry tartness meets warming spices and a liqueur-like finish."
     },
     "image": "",
     "available": false,
@@ -264,19 +264,19 @@
     "brewery": "Sibeeria",
     "name": "Nostalgie 70s: Cedar Aged American Barleywine",
     "style": "Barleywine",
-    "substyle": "American Barleywine",
+    "substyle": "Cedar Aged American Barleywine",
     "category": "other",
     "abv": 10.7,
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Silný American Barleywine z řady Nostalgie, stařený na cedrovém dřevě. Chmely Simcoe, Citra, Mosaic a Chinook přinášejí citrusový a pryskyřičný charakter. Alkohol 10,7 %.",
-      "en": "A powerful American Barleywine from the Nostalgie series, aged with cedar wood. Simcoe, Citra, Mosaic and Chinook hops bring citrus and resinous notes. 10.7% ABV."
+      "cs": "Silný Cedar Aged American Barleywine, 25° Plato a 10,7 % alkoholu. Chmely Simcoe, Citra, Mosaic a Chinook přinášejí citrusové a pryskyřičné aroma; zrání na cedrovém dřevě přidává jemný dřevitý tón.",
+      "en": "A powerful cedar-aged American Barleywine at 25° Plato and 10.7% ABV. Simcoe, Citra, Mosaic and Chinook contribute citrus and resinous notes, while cedar ageing adds a subtle woody layer."
     },
     "image": "",
     "available": true,
     "sort": 140,
-    "plato": null,
+    "plato": 25,
     "imageSource": null
   },
   {
@@ -284,19 +284,19 @@
     "brewery": "Sibeeria",
     "name": "Yummy Blackcurrant, Prunes & Tonka",
     "style": "Sour Ale",
-    "substyle": "Smoothie Sour",
+    "substyle": "Pastry Sour Ale",
     "category": "sour",
     "abv": 6.1,
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Hustý ovocný pastry sour s černým rybízem, sušenými švestkami a tonkovými boby. Výrazná ovocná kyselost se propojuje s plnějším, dezertním charakterem. Alkohol 6,1 %.",
-      "en": "A rich, fruit-packed pastry sour with blackcurrants, prunes and tonka beans. Vibrant fruit acidity balances its fuller, dessert-like character. 6.1% ABV."
+      "cs": "Hutný Pastry Sour Ale s černým rybízem, sušenými švestkami a tonkou, 23° Plato a 6,1 % alkoholu. Výrazná ovocná kyselost se snoubí s jemně kouřovými švestkami a aromatickou tonkou; laktóza podporuje krémovou texturu.",
+      "en": "A rich Pastry Sour Ale with blackcurrants, prunes and tonka beans at 23° Plato and 6.1% ABV. Berry tartness meets lightly smoky prunes and aromatic tonka; lactose supports a creamy texture."
     },
     "image": "",
     "available": true,
     "sort": 150,
-    "plato": null,
+    "plato": 23,
     "imageSource": null
   },
   {
@@ -310,13 +310,13 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Ovocný kyseláč od Sibeerie s rakytníkem a mangem. Výrazná kyselost rakytníku se potkává s tropickým ovocným charakterem manga. Alkohol 4,4 %.",
-      "en": "A fruited sour from Sibeeria with sea buckthorn and mango. The tangy character of sea buckthorn meets the tropical fruit character of mango. 4.4% ABV."
+      "cs": "Osvěžující ovocný Sour Ale s rakytníkem a mangem, 11° Plato a 4,4 % alkoholu. Výraznou kyselost rakytníku zjemňuje sladší tropický charakter manga.",
+      "en": "A refreshing sea-buckthorn and mango Sour Ale at 11° Plato and 4.4% ABV. Bright sea-buckthorn tartness is softened by mango's tropical fruit character."
     },
     "image": "",
     "available": true,
     "sort": 160,
-    "plato": null,
+    "plato": 11,
     "imageSource": null
   },
   {
@@ -390,13 +390,13 @@
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Seaman Gose od pivovaru Vinohradský pivovar je svěží kyselé pivo. Styl: Gose.",
-      "en": "Seaman Gose by Vinohradský pivovar is a refreshing sour beer. Style: Gose."
+      "cs": "Svěží Gose, 10° Plato a 3,9 % alkoholu, z plzeňského a pšeničného sladu se solí, koriandrem a chmelem Sládek. Lehce kyselé, slané a bylinné, téměř bez hořkosti.",
+      "en": "A refreshing Gose at 10° Plato and 3.9% ABV, brewed with Pilsner and wheat malt, salt, coriander and Sládek hops. Lightly tart, saline and herbal, with almost no bitterness."
     },
     "image": "",
     "available": false,
     "sort": 200,
-    "plato": null,
+    "plato": 10,
     "imageSource": null
   },
   {
@@ -406,12 +406,12 @@
     "style": "IPA",
     "substyle": "Brut IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 6.2,
     "volume": "0.5 l",
     "price": 79,
     "description": {
-      "cs": "Less Sugars More Fun Brut IPA od pivovaru Vinohradský pivovar je výrazně chmelené pivo ve stylu Brut IPA.",
-      "en": "Less Sugars More Fun Brut IPA by Vinohradský pivovar is a hop-forward beer in the Brut IPA style."
+      "cs": "Velmi suchá Brut IPA, 6,2 % alkoholu, chmelená odrůdami Cascade, Nelson Sauvin a Simcoe. Výrazná chmelová vůně, lehké tělo, nižší hořkost a ovocné tóny připomínající angrešt.",
+      "en": "A very dry Brut IPA at 6.2% ABV, hopped with Cascade, Nelson Sauvin and Simcoe. Vivid hop aroma, a light body, restrained bitterness and gooseberry-like fruit notes."
     },
     "image": "",
     "available": true,
@@ -464,14 +464,14 @@
     "brewery": "Twinberg",
     "name": "Bicycle Dream 8°",
     "style": "Pale Ale",
-    "substyle": "Pale Ale",
+    "substyle": "Summer Ale",
     "category": "ipa",
-    "abv": null,
+    "abv": 2.9,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Bicycle Dream 8° od pivovaru Twinberg je svrchně kvašené pivo ve stylu pale ale. Styl: Pale Ale.",
-      "en": "Bicycle Dream 8° by Twinberg is a pale ale. Style: Pale Ale."
+      "cs": "Lehký osvěžující letní Summer Ale, 8° Plato a 2,9 % alkoholu. Pozor: jde o osmístupňovou verzi, nikoli starší 11° variantu.",
+      "en": "A light, refreshing Summer Ale at 8° Plato and 2.9% ABV. This is the 8° version, not the older 11° release."
     },
     "image": "",
     "available": true,
@@ -486,12 +486,12 @@
     "style": "Pale Ale",
     "substyle": "Pale Ale",
     "category": "ipa",
-    "abv": null,
+    "abv": 4.9,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Sherlock 12° od pivovaru Twinberg je svrchně kvašené pivo ve stylu pale ale. Styl: Pale Ale.",
-      "en": "Sherlock 12° by Twinberg is a pale ale. Style: Pale Ale."
+      "cs": "Zlatavý a osvěžující ale, 12° Plato a 4,9 % alkoholu, s jemně ovocným charakterem. Přesné chmelení není doloženo.",
+      "en": "A golden, refreshing ale at 12° Plato and 4.9% ABV, with a gentle fruity character. The exact hop bill is not documented."
     },
     "image": "",
     "available": false,
@@ -504,14 +504,14 @@
     "brewery": "Twinberg",
     "name": "Amelia 14°",
     "style": "IPA",
-    "substyle": "India Pale Ale",
+    "substyle": "West Coast IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 6.4,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Amelia 14° od pivovaru Twinberg je výrazně chmelené pivo. Styl: India Pale Ale.",
-      "en": "Amelia 14° by Twinberg is a hop-forward beer. Style: India Pale Ale."
+      "cs": "West Coast IPA, 14° Plato a 6,4 % alkoholu. Konkrétní chmely a chuťové deskriptory této várky nejsou spolehlivě doloženy.",
+      "en": "A West Coast IPA at 14° Plato and 6.4% ABV. The exact hops and batch-specific tasting notes are not reliably documented."
     },
     "image": "",
     "available": false,
@@ -544,19 +544,19 @@
     "brewery": "Sibeeria",
     "name": "Yummy Mango with Apricot",
     "style": "Sour Ale",
-    "substyle": "Smoothie Sour",
+    "substyle": "Imperial Pastry Sour Ale",
     "category": "sour",
     "abv": 6.7,
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "Hustý ovocný pastry sour s mangem, meruňkami, ovesnými vločkami a vanilkou. Tropické a peckové ovoce doplňuje jemnější, dezertní charakter. Alkohol 6,7 %.",
-      "en": "A thick, fruit-forward pastry sour with mango, apricots, oats and vanilla. Tropical and stone-fruit flavours meet a soft, dessert-like character. 6.7% ABV."
+      "cs": "Imperial Pastry Sour Ale s mangem a meruňkami, 22° Plato a 6,7 % alkoholu. Oves, laktóza a vanilka doplňují intenzivní ovocnost o jemnou, plnou dezertní texturu.",
+      "en": "An Imperial Pastry Sour Ale with mango and apricot at 22° Plato and 6.7% ABV. Oats, lactose and vanilla complement the intense fruit with a soft, full dessert-like texture."
     },
     "image": "",
     "available": true,
     "sort": 280,
-    "plato": null,
+    "plato": 22,
     "imageSource": null
   },
   {
@@ -564,19 +564,19 @@
     "brewery": "Zichovec",
     "name": "Like A Pickle Shot 12",
     "style": "Sour Ale",
-    "substyle": "Pickle Gose",
+    "substyle": "Pickle Gose with Oak",
     "category": "sour",
-    "abv": null,
+    "abv": 5.1,
     "volume": "0.5 l",
     "price": 114,
     "description": {
-      "cs": "Like A Pickle Shot 12 od pivovaru Zichovec je svěží kyselé pivo inspirované nakládanými okurkami.",
-      "en": "Like A Pickle Shot 12 by Zichovec is a refreshing sour beer inspired by pickles."
+      "cs": "Neobvyklé Gose, 12° Plato a 5,1 % alkoholu, s okurkovým nálevem, solí, kořením a dubovými chipsy. Kyselé a slané, s okurkovým charakterem a jemným dubovým dozvukem.",
+      "en": "An unusual Gose at 12° Plato and 5.1% ABV, with pickle brine, salt, spices and oak chips. Tart and saline, with distinctive pickle character and a subtle oak finish."
     },
     "image": "",
     "available": false,
     "sort": 290,
-    "plato": null,
+    "plato": 12,
     "imageSource": null
   },
   {
@@ -584,19 +584,19 @@
     "brewery": "Zichovec",
     "name": "Robin na grepu 12",
     "style": "Pale Ale",
-    "substyle": "Fruit Pale Ale",
+    "substyle": "Grapefruit APA",
     "category": "ipa",
     "abv": 5.1,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Robin na grepu 12 od pivovaru Zichovec je svrchně kvašené pivo ve stylu pale ale. Styl: Fruit Pale Ale.",
-      "en": "Robin na grepu 12 by Zichovec is a pale ale. Style: Fruit Pale Ale."
+      "cs": "Svěží grepová APA, 12° Plato a 5,1 % alkoholu, s grepovými oleji a chmely Citra a Simcoe. Citrusový charakter grepu podporuje chmelovou ovocnost a vysokou pitelnost.",
+      "en": "A refreshing grapefruit APA at 12° Plato and 5.1% ABV, with grapefruit oils and Citra and Simcoe hops. Grapefruit boosts the bright citrus hop character and drinkability."
     },
     "image": "",
     "available": true,
     "sort": 300,
-    "plato": null,
+    "plato": 12,
     "imageSource": null
   },
   {
@@ -623,15 +623,15 @@
     "id": "twinberg-easy-hazy-9-ale",
     "brewery": "Twinberg",
     "name": "Easy Hazy 9° ALE",
-    "style": "IPA",
-    "substyle": "Hazy IPA",
+    "style": "Pale Ale",
+    "substyle": "Hazy Pale Ale",
     "category": "ipa",
-    "abv": null,
+    "abv": 3.2,
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Easy Hazy 9° ALE od pivovaru Twinberg je výrazně chmelené pivo. Styl: Hazy IPA.",
-      "en": "Easy Hazy 9° ALE by Twinberg is a hop-forward beer. Style: Hazy IPA."
+      "cs": "Lehký Hazy Pale Ale, 9° Plato a 3,2 % alkoholu. Konkrétní chmelové odrůdy nejsou v dostupných produktových údajích uvedeny.",
+      "en": "A light Hazy Pale Ale at 9° Plato and 3.2% ABV. Specific hop varieties are not documented in the available product information."
     },
     "image": "",
     "available": true,
@@ -663,20 +663,20 @@
     "id": "sibeeria-teenage-ensemble",
     "brewery": "Sibeeria",
     "name": "Teenage Ensemble",
-    "style": "IPA",
-    "substyle": "IPA",
-    "category": "ipa",
-    "abv": null,
+    "style": "Sour Ale",
+    "substyle": "Pastry Sour Ale",
+    "category": "sour",
+    "abv": 6,
     "volume": "0.5 l",
     "price": 124,
     "description": {
-      "cs": "Teenage Ensemble od pivovaru Sibeeria je výrazně chmelené pivo. Styl: IPA.",
-      "en": "Teenage Ensemble by Sibeeria is a hop-forward beer. Style: IPA."
+      "cs": "Pastry Sour Ale uvařený s japonským pivovarem Teenage, 18° Plato a 6 % alkoholu. Mango, banán a kokos doplňují kaffirové limetové listy a kari; laktóza a maltodextrin vytvářejí plnější sladkokyselé tělo.",
+      "en": "A Pastry Sour Ale brewed with Japan's Teenage Brewery, at 18° Plato and 6% ABV. Mango, banana and coconut meet kaffir lime leaves and curry spice; lactose and maltodextrin give it a fuller sweet-tart body."
     },
     "image": "",
     "available": true,
     "sort": 340,
-    "plato": null,
+    "plato": 18,
     "imageSource": null
   },
   {
@@ -684,14 +684,14 @@
     "brewery": "Chroust",
     "name": "Grepwaka",
     "style": "Pale Ale",
-    "substyle": "Fruited Pale Ale",
+    "substyle": "Grapefruit Pale Ale",
     "category": "ipa",
     "abv": 4.8,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Grepwaka od pivovaru Chroust je svrchně kvašené pivo ve stylu pale ale. Styl: Fruited Pale Ale.",
-      "en": "Grepwaka by Chroust is a pale ale. Style: Fruited Pale Ale."
+      "cs": "Suchý a příjemně hořký grepový Pale Ale, 4,8 % alkoholu. Grapefruit a chmel Riwaka vytvářejí výrazný citrusový charakter a osvěžující pitelnost.",
+      "en": "A dry, pleasantly bitter grapefruit Pale Ale at 4.8% ABV. Grapefruit and Riwaka hops bring vivid citrus character and refreshing drinkability."
     },
     "image": "",
     "available": true,
@@ -704,14 +704,14 @@
     "brewery": "Chroust",
     "name": "Lučiny a bučiny",
     "style": "Sour Ale",
-    "substyle": "Fruited Gose",
+    "substyle": "Elderflower & Orange Gose",
     "category": "sour",
     "abv": 5.3,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Lučiny a bučiny od pivovaru Chroust je svěží kyselé pivo. Styl: Fruited Gose.",
-      "en": "Lučiny a bučiny by Chroust is a refreshing sour beer. Style: Fruited Gose."
+      "cs": "Osvěžující Gose, 5,3 % alkoholu, s bezovým květem, pomerančem, citronem, solí a koriandrem. Ovocná kyselost, květinové aroma a jemná slanost.",
+      "en": "A refreshing Gose at 5.3% ABV with elderflower, orange, lemon, salt and coriander. Bright citrus tartness, floral aroma and gentle salinity."
     },
     "image": "",
     "available": true,
@@ -750,13 +750,13 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Like A Whisky Sour 13 od pivovaru Zichovec je svěží kyselé pivo. Styl: Cocktail-inspired Sour.",
-      "en": "Like A Whisky Sour 13 by Zichovec is a refreshing sour beer. Style: Cocktail-inspired Sour."
+      "cs": "Kyselé pivo inspirované koktejlem Whisky Sour, 13° Plato a 5,5 % alkoholu. Pečené citrony, laktóza a dubové chipsy macerované v bourbonu přinášejí citronovou kyselost, vanilku a dřevitý dozvuk.",
+      "en": "A Whisky Sour-inspired beer at 13° Plato and 5.5% ABV. Roasted lemons, lactose and bourbon-soaked oak chips bring lemon tartness, vanilla and an oaky finish."
     },
     "image": "",
     "available": true,
     "sort": 380,
-    "plato": null,
+    "plato": 13,
     "imageSource": null
   },
   {
@@ -764,14 +764,14 @@
     "brewery": "Zichovec",
     "name": "Winter Affair Gossip: Cantina Errante",
     "style": "Farmhouse Ale",
-    "substyle": "Saison",
+    "substyle": "Mixed-yeast Saison",
     "category": "other",
     "abv": 6.5,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Winter Affair Gossip: Cantina Errante od pivovaru Zichovec je svrchně kvašené pivo ve stylu saison. Styl: Saison.",
-      "en": "Winter Affair Gossip: Cantina Errante by Zichovec is a saison-style farmhouse ale. Style: Saison."
+      "cs": "Suchý mixed-yeast Saison, 6,5 % alkoholu, kvašený také kvasinkami Saccharomyces „Bruxellensis“ Trois a chmelený Saaz Shine. Jemně funky, kořenitě ovocný profil s bílým pepřem a peckovinami.",
+      "en": "A dry mixed-yeast Saison at 6.5% ABV, featuring Saccharomyces ‘Bruxellensis’ Trois and Saaz Shine hops. Subtle funk, white pepper and stone-fruit notes define its spicy-fruity profile."
     },
     "image": "",
     "available": true,
@@ -830,13 +830,13 @@
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Nostalgie 80s: Belgian Quadruple od pivovaru Sibeeria je silné belgické pivo ve stylu belgického quadrupelu.",
-      "en": "Nostalgie 80s: Belgian Quadruple by Sibeeria is a strong Belgian-style ale in the Belgian quadrupel style."
+      "cs": "Silný Belgian Quadrupel, 23° Plato a 9,3 % alkoholu, zrající přibližně 100 dní. Kvasnice typu Westmalle a tmavý cukrový sirup přinášejí tóny rozinek, sušeného ovoce, karamelu a koření.",
+      "en": "A strong Belgian Quadrupel at 23° Plato and 9.3% ABV, matured for around 100 days. Westmalle-type yeast and dark sugar syrup create notes of raisins, dried fruit, caramel and spice."
     },
     "image": "",
     "available": true,
     "sort": 420,
-    "plato": null,
+    "plato": 23,
     "imageSource": null
   },
   {
@@ -863,20 +863,20 @@
     "id": "sibeeria-exotic-orchard",
     "brewery": "Sibeeria",
     "name": "Exotic Orchard",
-    "style": "Unverified",
-    "substyle": "Unverified",
+    "style": "IPA",
+    "substyle": "Session IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 4.6,
     "volume": "0.5 l",
     "price": 94,
     "description": {
-      "cs": "Exotic Orchard od pivovaru Sibeeria je pivní speciál.",
-      "en": "Exotic Orchard by Sibeeria is a specialty beer."
+      "cs": "Lehká Session IPA, 11° Plato a 4,6 % alkoholu. Chmely Mosaic, Chinook a Vista vytvářejí ovocný, citrusový a lehce travnatý charakter.",
+      "en": "A light Session IPA at 11° Plato and 4.6% ABV. Mosaic, Chinook and Vista hops bring fruit, citrus and subtle grassy notes."
     },
     "image": "",
     "available": true,
     "sort": 440,
-    "plato": null,
+    "plato": 11,
     "imageSource": null
   },
   {
@@ -886,12 +886,12 @@
     "style": "Non-alcoholic",
     "substyle": "Non-alcoholic Fruited Sour",
     "category": "nonalcoholic",
-    "abv": null,
+    "abv": 0.5,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Sourprise! Nealko od pivovaru Pivovar Vik je nealkoholické pivo. Styl: Non-alcoholic Fruited Sour.",
-      "en": "Sourprise! Nealko by Pivovar Vik is a non-alcoholic beer. Style: Non-alcoholic Fruited Sour."
+      "cs": "Nealkoholický ovocný Sour s mangem a guavou, do 0,5 % alkoholu. Lehké, tropicky ovocné a osvěžujícím způsobem kyselé pivo.",
+      "en": "A non-alcoholic fruited sour with mango and guava, up to 0.5% ABV. Light, tropical and refreshingly tart."
     },
     "image": "",
     "available": false,
@@ -970,8 +970,8 @@
     "volume": "0.5 l",
     "price": 89,
     "description": {
-      "cs": "Pumpkin Ale 15° od pivovaru Permon je kořeněný pivní speciál s dýňovým charakterem.",
-      "en": "Pumpkin Ale 15° by Permon is a spiced beer with a pumpkin character."
+      "cs": "Dýňový ale, 15° Plato a 5,8 % alkoholu, s dýní a kořením. Výraznější sladový základ doplňuje dýňový a kořenitý charakter.",
+      "en": "A pumpkin ale at 15° Plato and 5.8% ABV, brewed with pumpkin and spices. A fuller malt base supports its pumpkin and spice character."
     },
     "image": "",
     "available": true,
@@ -990,8 +990,8 @@
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "Joe Meruňka 12° od pivovaru Permon je svěží kyselé pivo s meruňkovým charakterem.",
-      "en": "Joe Meruňka 12° by Permon is a refreshing sour beer with an apricot character."
+      "cs": "Meruňkové Gose, 12° Plato, s jemnou slaností a ovocnou kyselostí. Meruňky doplňuje ovesná a pšeničná složka.",
+      "en": "An apricot Gose at 12° Plato, with gentle salinity and fruit-driven tartness. Apricot is complemented by oats and wheat."
     },
     "image": "",
     "available": true,
@@ -1004,14 +1004,14 @@
     "brewery": "Zichovec",
     "name": "14 Years of Innovation 18°",
     "style": "Sour Ale",
-    "substyle": "Dessert Fruited Sour",
+    "substyle": "Vegan Carrot Ice Cream Sour",
     "category": "sour",
     "abv": 5,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "14 Years of Innovation 18° od pivovaru Zichovec je svěží kyselé pivo. Styl: Dessert Fruited Sour.",
-      "en": "14 Years of Innovation 18° by Zichovec is a refreshing sour beer. Style: Dessert Fruited Sour."
+      "cs": "Veganský mrkvový ice-cream Sour, 18° Plato a 5 % alkoholu. Mrkev, ananas, citron, skořice, oves a veganská zmrzlinová složka tvoří krémový sladkokyselý dezertní profil bez laktózy.",
+      "en": "A vegan carrot ice-cream sour at 18° Plato and 5% ABV. Carrot, pineapple, lemon, cinnamon, oats and a vegan ice-cream ingredient create a creamy sweet-tart dessert profile without lactose."
     },
     "image": "",
     "available": false,
@@ -1050,8 +1050,8 @@
     "volume": "0.5 l",
     "price": 89,
     "description": {
-      "cs": "Shadowfarer 13° od pivovaru Sibeeria je spodně kvašený ležák v českém tmavém stylu.",
-      "en": "Shadowfarer 13° by Sibeeria is a bottom-fermented lager in the Czech dark lager style."
+      "cs": "Klasický český tmavý ležák, 13° Plato a 5 % alkoholu. Hladký a dobře pitelný, s jemnou pražeností, karamelem a sladovými tóny; dekokční rmutování a dlouhé zrání podporují čistý charakter.",
+      "en": "A classic Czech dark lager at 13° Plato and 5% ABV. Smooth and drinkable, with gentle roast, caramel and malt notes; decoction mashing and long maturation support its clean lager character."
     },
     "image": "",
     "available": false,
@@ -1066,12 +1066,12 @@
     "style": "IPA",
     "substyle": "Coffee IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 6.1,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Coffee IPA 14° od pivovaru Sibeeria je výrazně chmelené pivo spojující styl IPA s kávou.",
-      "en": "Coffee IPA 14° by Sibeeria is a hop-forward beer combining IPA with coffee."
+      "cs": "Coffee IPA, 14° Plato a 6,1 % alkoholu, s kolumbijskou kávou od Candycane a chmely Riwaka, Chinook a Simcoe. Kávový charakter se propojuje s tóny mandarinky, ananasu a vyváženou hořkostí.",
+      "en": "A Coffee IPA at 14° Plato and 6.1% ABV, featuring Colombian coffee from Candycane and Riwaka, Chinook and Simcoe hops. Coffee meets mandarin and pineapple notes with balanced bitterness."
     },
     "image": "",
     "available": true,
@@ -1084,14 +1084,14 @@
     "brewery": "Sibeeria",
     "name": "Nebulous Trail 14°",
     "style": "IPA",
-    "substyle": "IPA",
+    "substyle": "New England IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 6,
     "volume": "0.5 l",
     "price": 104,
     "description": {
-      "cs": "Nebulous Trail 14° od pivovaru Sibeeria je výrazně chmelené pivo. Styl: IPA.",
-      "en": "Nebulous Trail 14° by Sibeeria is a hop-forward beer. Style: IPA."
+      "cs": "Šťavnatá New England IPA, 14° Plato a 6 % alkoholu, s chmely Vista, Talus, HBC 630, Idaho 7 a Columbus. Tropické ovoce a citrusovou kůru doplňují peckoviny a jemná borovicová hořkost.",
+      "en": "A juicy New England IPA at 14° Plato and 6% ABV, hopped with Vista, Talus, HBC 630, Idaho 7 and Columbus. Tropical fruit, citrus peel and stone fruit meet gentle pine bitterness."
     },
     "image": "",
     "available": true,
@@ -1106,12 +1106,12 @@
     "style": "IPA",
     "substyle": "Double Black IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 8,
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Podzim 2026 18° od pivovaru Sibeeria je výrazně chmelené pivo v tmavé, silnější variantě Black IPA.",
-      "en": "Podzim 2026 18° by Sibeeria is a hop-forward beer in a stronger, dark Black IPA expression."
+      "cs": "Double Black IPA, 18° Plato a 8 % alkoholu, s chmely HBC 638, El Dorado a Columbus Cryo. Pryskyřičné a citrusové tóny doplňují ananas, mango a meloun; tělo zůstává poměrně suché.",
+      "en": "A Double Black IPA at 18° Plato and 8% ABV, hopped with HBC 638, El Dorado and Columbus Cryo. Resin and citrus meet pineapple, mango and melon over a relatively dry body."
     },
     "image": "",
     "available": true,
@@ -1124,14 +1124,14 @@
     "brewery": "Sibeeria",
     "name": "Hekla 19°",
     "style": "IPA",
-    "substyle": "Imperial IPA",
+    "substyle": "Double NEIPA",
     "category": "ipa",
     "abv": 8,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "Hekla 19° od pivovaru Sibeeria je výrazně chmelené pivo. Styl: Imperial IPA.",
-      "en": "Hekla 19° by Sibeeria is a hop-forward beer. Style: Imperial IPA."
+      "cs": "Double NEIPA, 19° Plato a 8 % alkoholu, s chmely Ekuanot, Azacca, Azacca CGX a Dolcita. Citrusové a lehce travnaté aroma přechází do tónů broskve a melounu.",
+      "en": "A Double NEIPA at 19° Plato and 8% ABV, hopped with Ekuanot, Azacca, Azacca CGX and Dolcita. Citrus and lightly grassy aromas soften into peach and melon."
     },
     "image": "",
     "available": false,
@@ -1146,12 +1146,12 @@
     "style": "IPA",
     "substyle": "Double West Coast IPA",
     "category": "ipa",
-    "abv": null,
+    "abv": 8.8,
     "volume": "0.5 l",
     "price": 139,
     "description": {
-      "cs": "DEEP WOODS // Double west coast IPA 20° od pivovaru Pivovar Vik je výrazně chmelené pivo. Styl: Double West Coast IPA.",
-      "en": "DEEP WOODS // Double west coast IPA 20° by Pivovar Vik is a hop-forward beer. Style: Double West Coast IPA."
+      "cs": "Výrazně chmelená Double West Coast IPA, 20° Plato a 8,8 % alkoholu, s pevnou hořkostí a intenzivním chmelovým charakterem.",
+      "en": "A heavily hopped Double West Coast IPA at 20° Plato and 8.8% ABV, with firm bitterness and an intense hop-driven character."
     },
     "image": "",
     "available": true,
@@ -1164,14 +1164,14 @@
     "brewery": "Pivovar Vik",
     "name": "EASY AUSSIE / Gluten Reduced Session Australian IPA 11°",
     "style": "IPA",
-    "substyle": "Session IPA",
+    "substyle": "Gluten Reduced Session Australian IPA",
     "category": "ipa",
     "abv": null,
     "volume": "0.5 l",
     "price": 119,
     "description": {
-      "cs": "EASY AUSSIE / Gluten Reduced Session Australian IPA 11° od pivovaru Pivovar Vik je výrazně chmelené pivo. Styl: Session IPA.",
-      "en": "EASY AUSSIE / Gluten Reduced Session Australian IPA 11° by Pivovar Vik is a hop-forward beer. Style: Session IPA."
+      "cs": "Lehká Session Australian IPA, 11° Plato, se sníženým obsahem lepku. Přesné chmely a další chuťové charakteristiky nejsou potvrzené.",
+      "en": "A light gluten-reduced Session Australian IPA at 11° Plato. Exact hop varieties and further product-specific tasting notes are not confirmed."
     },
     "image": "",
     "available": true,
@@ -1506,12 +1506,12 @@
     "style": "Sour Ale",
     "substyle": "Imperial Fruited Gose",
     "category": "sour",
-    "abv": null,
+    "abv": 8.1,
     "volume": "0.5 l",
     "price": 169,
     "description": {
-      "cs": "FLUFF OFF 24° Imperial Gose od pivovaru Pivovar Vik je svěží kyselé pivo v silném ovocném stylu gose.",
-      "en": "FLUFF OFF 24° Imperial Gose by Pivovar Vik is a refreshing sour beer in a strong, fruit-led gose style."
+      "cs": "Silné Imperial Gose, 24° Plato a 8,1 % alkoholu, s višněmi, malinami a borůvkami. Hustý, výrazně ovocný charakter a intenzivní kyselost.",
+      "en": "A powerful Imperial Gose at 24° Plato and 8.1% ABV, with sour cherries, raspberries and blueberries. Dense berry character and assertive tartness."
     },
     "image": "",
     "available": true,
@@ -1584,14 +1584,14 @@
     "brewery": "Sibeeria",
     "name": "Tuletorn/Sibeeria Kompott CAN 0,44 l",
     "style": "Sour Ale",
-    "substyle": "Smoothie Sour",
+    "substyle": "Pastry / Smoothie Sour",
     "category": "sour",
-    "abv": null,
+    "abv": 5.5,
     "volume": "0.44 l",
     "price": 159,
     "description": {
-      "cs": "Tuletorn/Sibeeria Kompott od pivovaru Sibeeria je svěží kyselé pivo s hustším ovocným charakterem.",
-      "en": "Tuletorn/Sibeeria Kompott by Sibeeria is a refreshing sour beer with a smoothie-style fruit character."
+      "cs": "Česko-estonský Pastry Sour uvařený s pivovarem Tuletorn v Tallinnu. Jablka, černý rybíz a třešně vytvářejí výrazně ovocný, kyselý smoothie charakter; 5,5 % alkoholu, plechovka 0,44 l.",
+      "en": "A Czech-Estonian Pastry Sour brewed with Tuletorn in Tallinn. Apples, blackcurrants and cherries create a tart, smoothie-like fruit profile; 5.5% ABV in a 0.44 l can."
     },
     "image": "",
     "available": true,
@@ -1604,19 +1604,19 @@
     "brewery": "Sibeeria",
     "name": "Autumn Barking",
     "style": "Lager",
-    "substyle": "New Zealand Pilsner",
+    "substyle": "West Coast Pilsner",
     "category": "lager",
     "abv": 4,
     "volume": "0.5 l",
     "price": 99,
     "description": {
-      "cs": "West Coast Pilsner, 10° Plato, 4% ABV. Česká kooperace. S přáteli z Black Dogu jsme se tentokrát pustili do West Coast Pilsneru – piva, které spojuje lehkost a pitelnost světlého ležáku s výrazným chmelovým charakterem moderního West Coastu. Základ jsme postavili tak, aby zůstal čistý, suchý a osvěžující, a hlavní slovo přenechali chmelům. Cryo Mosaic, který výborně funguje při studeném dry hopu, přináší intenzivní ovocnou aromatiku, zatímco Motueka a z ní vyrobený Limequat Hop Kief posouvají profil výrazně směrem k čerstvé limetce a dalším svěžím citrusům. Czech collaboration. ?? Together with our friends from Black Dog, we brewed a West Coast Pilsner combining the lightness and drinkability of a pale lager with the expressive hop character of the modern West Coast. We kept the base clean, dry, and refreshing, leaving plenty of room for the hops to shine. Cryo Mosaic, which performs beautifully when dry-hopped at low temperatures, brings an intense fruity aroma, while Motueka and the Motueka-derived Limequat Hop Kief push the profile firmly towards fresh lime and bright citrus.",
-      "en": "Autumn Barking by Sibeeria."
+      "cs": "West Coast Pilsner uvařený s Black Dogem, 10° Plato a 4 % alkoholu. Suchý a osvěžující ležákový základ doplňují Cryo Mosaic, Motueka a Limequat Hop Kief s limetkovými a citrusovými tóny.",
+      "en": "A West Coast Pilsner brewed with Black Dog at 10° Plato and 4% ABV. A dry, refreshing lager base meets Cryo Mosaic, Motueka and Limequat Hop Kief for fresh lime and citrus notes."
     },
     "image": "",
     "available": true,
     "sort": 810,
-    "plato": null,
+    "plato": 10,
     "imageSource": null
   },
   {
@@ -1630,13 +1630,13 @@
     "volume": "0.5 l",
     "price": 109,
     "description": {
-      "cs": "Sour Ale w/ Mango & Passion Fruit, 11° Plato, 4.4% ABV. Všichni jsme věděli, že to musí jednou přijít - a už je to tady! Nový Sorbet s hvězdným spojením manga a marakuji. Vzhledná mangová barva s neodolatelným aroma nabízí všechno, co slibuje: sladkou chuť zralého manga vyvažuje osvěžující kyselost marakuji, a to na podkladu Berliner Weisse, které neustále zdokonalujeme tak, abychom dosáhli ještě jemnější textury a přitom zachovali nízký obsah alkoholu. All of us knew this has to happen and here it is - a new Sorbet with the dream team of mango and passion fruit. Charming mango-ish color and irresistible aroma deliver exactly what they promise: sweet taste of ripe mango is balanced with refreshing acidity of passion fruit, all set up against the berliner weisse base that we perpetually improve to make it even smoother while keeping the alcohol content low.",
-      "en": "Mango & Passion Fruit Sorbet by Sibeeria."
+      "cs": "Ovocný Sour Ale s mangem a marakujou, 11° Plato a 4,4 % alkoholu. Sladkost zralého manga vyvažuje svěží kyselost marakuji na jemném základě ječného a pšeničného sladu s ovsem.",
+      "en": "A mango and passion-fruit Sour Ale at 11° Plato and 4.4% ABV. Ripe mango sweetness is balanced by passion-fruit tartness over a soft base of barley and wheat malt with oats."
     },
     "image": "",
     "available": true,
     "sort": 820,
-    "plato": null,
+    "plato": 11,
     "imageSource": null
   },
   {
