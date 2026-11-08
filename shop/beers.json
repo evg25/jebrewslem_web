@@ -1744,19 +1744,19 @@
     "brewery": "Twinberg",
     "name": "Kašpar 15° SOUR 0,5l plechovka",
     "style": "Sour Ale",
-    "substyle": "Sour Ale (substyle unverified)",
+    "substyle": "Red Currant Pastry Sour",
     "category": "sour",
-    "abv": null,
+    "abv": 5.3,
     "volume": "0.5 l",
     "price": 129,
     "description": {
-      "cs": "Kašpar 15° SOUR od pivovaru Twinberg. Svěží kyselé pivo; přesný podstyl není potvrzen.",
-      "en": "Kašpar 15° SOUR by Twinberg. A refreshing sour beer; the exact substyle is not confirmed."
+      "cs": "Kašpar 15° je sváteční Pastry Sour s pořádnou porcí červeného rybízu. Nabízí šťavnatou ovocnou chuť, svěží kyselost a zářivou barvu; v závěru jemně připomíná vánoční linecké cukroví. Sladkokyselý, výrazně ovocný speciál, svrchně kvašený, nefiltrovaný a nepasterizovaný. 5,3 % alkoholu.",
+      "en": "Kašpar 15° is a festive redcurrant Pastry Sour packed with juicy berry flavour, bright acidity and vibrant colour. Its sweet-and-tart character finishes with a subtle note reminiscent of traditional Christmas Linzer cookies. This top-fermented speciality is unfiltered and unpasteurised, with 5.3% ABV."
     },
     "image": "",
     "available": true,
     "sort": 880,
-    "plato": null,
+    "plato": 15,
     "imageSource": null
   },
   {
